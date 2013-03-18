@@ -2,7 +2,7 @@
 <object name="portal_css">
 
     <stylesheet title="Gites Theme Styles"
-                id="++theme++gites.theme/style.css"
+                id="++theme++gites.theme/css/style.css"
                 media="screen" 
                 rel="stylesheet"
                 rendering="link"
@@ -14,7 +14,7 @@
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
     <stylesheet title="Gites Print Styles"
-                id="++theme++gites.theme/print.css"
+                id="++theme++gites.theme/css/print.css"
                 cacheable="True"
                 compression="save"
                 cookable="True"
