@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+
+    <stylesheet title="Gites Theme Styles"
+                id="++theme++gites.theme/style.css"
+                media="screen" 
+                rel="stylesheet"
+                rendering="link"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
+    <stylesheet title="Gites Print Styles"
+                id="++theme++gites.theme/print.css"
+                cacheable="True"
+                compression="save"
+                cookable="True"
+                enabled="1"
+                expression=""
+                media="print"
+                rel="stylesheet"
+                rendering="import"/>
+
+</object>
