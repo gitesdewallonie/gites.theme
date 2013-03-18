@@ -1,11 +1,35 @@
 <?xml version="1.0"?>
 <object name="portal_css">
 
+    <stylesheet title="Reset Styles"
+                id="++theme++gites.theme/css/reset.css"
+                media="screen" 
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
+    <stylesheet title="Bootstrap Styles"
+                id="++theme++gites.theme/bootstrap/css/bootstrap.css"
+                media="screen" 
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
     <stylesheet title="Gites Theme Styles"
                 id="++theme++gites.theme/css/style.css"
                 media="screen" 
                 rel="stylesheet"
-                rendering="link"
+                rendering="import"
                 cacheable="True"
                 compression="safe"
                 cookable="True"
@@ -15,13 +39,14 @@
 
     <stylesheet title="Gites Print Styles"
                 id="++theme++gites.theme/css/print.css"
+                media="print"
+                rel="stylesheet"
+                rendering="import"
                 cacheable="True"
                 compression="save"
                 cookable="True"
                 enabled="1"
-                expression=""
-                media="print"
-                rel="stylesheet"
-                rendering="import"/>
+                applyPrefix="True"
+                expression=""/>
 
 </object>

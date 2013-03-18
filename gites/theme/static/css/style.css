@@ -2,3 +2,16 @@
 CSS by Affinitic
 mars 2013
 */
+
+/*
+Override bootstrap "mistakes"
+*/
+
+label {
+display: inline !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+margin: 4px 4px 4px 0px;
+}
