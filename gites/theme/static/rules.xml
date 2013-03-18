@@ -21,6 +21,9 @@
         theme-children="/html/head"
         />
 
-    <replace css:content-children="#visual-portal-wrapper" css:theme-children="#main" />
+    <copy attributes="xmlns lang xml:lang" content="/html" theme="/html" />
+    <copy attributes="class id dir" content="/html/body" theme="/html/body" />
+
+    <replace css:content-children="#visual-portal-wrapper" css:theme-children="#visual-portal-wrapper" />
 
 </rules>
