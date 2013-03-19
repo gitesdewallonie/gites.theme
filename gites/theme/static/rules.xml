@@ -27,11 +27,12 @@
     <replace css:content="#portal-top" css:theme="#plonetop" />
 
     <after css:content="#header" css:theme-children="#beforecontent" />
+    <after css:content="#zone-produit-package" css:theme-children="#beforecontent" />
     <after css:content="#zone-offres" css:theme-children="#beforecontent" />
 
     <replace css:content="#portal-column-content" css:theme="#content" />
 
-    <drop css:theme="#aftercontent" />
+    <after css:content="#zone-essentiel" css:theme-children="#aftercontent" />
 
     <after css:content="#zone-video" css:theme-children="#bottompage" />
     <after css:content="#footer" css:theme-children="#bottompage" />

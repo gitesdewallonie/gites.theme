@@ -69,7 +69,11 @@
 
       <div id="viewlet-gites-header" tal:content="structure provider:gites.header" />
 
+      <div id="viewlet-gites-packages" tal:content="structure provider:gites.produitpackage" />
+
       <div id="viewlet-gites-offres" tal:content="structure provider:gites.offres" />
+
+      <div id="viewlet-gites-essentiel" tal:content="structure provider:gites.essentiel" />
 
       <div id="portal-column-content">
 
