@@ -67,9 +67,13 @@
         <div tal:replace="structure provider:plone.portaltop" tal:condition="not:ajax_load" />
       </div>
 
-      <div id="viewlet-gites-offre" tal:content="structure provider:gites.header" />
+      <div id="header">
 
-      <div id="viewlet-gites-offre" tal:content="structure provider:gites.offres" />
+          <div id="viewlet-gites-offre" tal:content="structure provider:gites.header" />
+
+          <div id="viewlet-gites-offre" tal:content="structure provider:gites.offres" />
+
+      </div>
 
       <div id="portal-column-content">
 
