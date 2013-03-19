@@ -24,6 +24,17 @@
     <copy attributes="xmlns lang xml:lang" content="/html" theme="/html" />
     <copy attributes="class id dir" content="/html/body" theme="/html/body" />
 
-    <replace css:content-children="#visual-portal-wrapper" css:theme-children="#visual-portal-wrapper" />
+    <replace css:content="#portal-top" css:theme="#plonetop" />
+
+    <after css:content="#header" css:theme-children="#beforecontent" />
+    <after css:content="#zone-offres" css:theme-children="#beforecontent" />
+
+    <replace css:content="#portal-column-content" css:theme="#content" />
+
+    <drop css:theme="#aftercontent" />
+
+    <after css:content="#zone-video" css:theme-children="#bottompage" />
+    <after css:content="#footer" css:theme-children="#bottompage" />
+    <after css:content="#colophon" css:theme-children="#bottompage" />
 
 </rules>

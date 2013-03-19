@@ -67,13 +67,9 @@
         <div tal:replace="structure provider:plone.portaltop" tal:condition="not:ajax_load" />
       </div>
 
-      <div id="header">
+      <div id="viewlet-gites-header" tal:content="structure provider:gites.header" />
 
-          <div id="viewlet-gites-offre" tal:content="structure provider:gites.header" />
-
-          <div id="viewlet-gites-offre" tal:content="structure provider:gites.offres" />
-
-      </div>
+      <div id="viewlet-gites-offres" tal:content="structure provider:gites.offres" />
 
       <div id="portal-column-content">
 
@@ -138,7 +134,7 @@
 
       <div class="visualClear"><!-- --></div>
 
-      <div id="viewlet-gites-offre" tal:content="structure provider:gites.footer" />
+      <div id="viewlet-gites-footer" tal:content="structure provider:gites.footer" />
 
     </div>
 <div id="kss-spinner" tal:condition="not:ajax_load"><img tal:attributes="src string:${portal_url}/spinner.gif" alt="" /></div>
