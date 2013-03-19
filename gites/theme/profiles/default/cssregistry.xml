@@ -47,6 +47,19 @@
                 cookable="True"
                 enabled="1"
                 applyPrefix="True"
-                expression=""/>
+		expression=""/>
+
+    <stylesheet title="Chosen css"
+	        id="++resource++plonewidgets/chosen.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
 
 </object>

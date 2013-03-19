@@ -26,4 +26,5 @@ setup(name='gites.theme',
           'setuptools',
           'plone.app.theming',
           'plone.app.themingplugins',
+          'plone.widgets'
       ])
