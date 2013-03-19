@@ -57,11 +57,808 @@ Language selector
 Override bootstrap "mistakes"
 */
 
-label {
+
+@font-face {
+font-family: 'PTSansNArrow';
+src: url('font/PTSansBold.ttf');
+src: url('font/PTSansCaption.ttf') format('truetype'),
+url('font/PTSansItalic.ttf') format('truetype'),
+url('font/PTSansNarrow.ttf') format('truetype'),
+url('font/PTSansNarrowBold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+body{
+font-family:arial, helvetica, verdana, sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+font-size:12pt;
+color:#fff;
+background:#191919;
+padding:0;
+margin:0;
+}
+
+label{
 display: inline !important;
 }
 
 input[type="radio"],
-input[type="checkbox"] {
+input[type="checkbox"]{
 margin: 4px 4px 4px 0px;
+}
+
+.break-float{
+clear: both;
+}
+
+#wrapper{
+width:1100px;
+min-height:2800px;
+margin:auto;
+background-color:#303030;
+}
+
+/*** HEADER ***/
+#header{
+height:195px; 		
+box-shadow:0px 5px 8px #000;
+}
+
+#top-header{
+height: 24px;
+padding-top:2px;
+background-color:#000;
+/*background-image:url(../images/bg-menu-haut.png);*/
+}
+
+#titre-site{
+float:left;
+margin-left:10px;
+font-weight:bold;
+}
+
+
+
+/*** LISTE ICONES ***/
+#icone-reseaux-sociaux{
+float:left;
+margin-left: 520px;
+height: 20px;
+}
+
+#icone-reseaux-sociaux ul{
+display:inline;
+list-style:none;
+padding:0;
+margin-right:70px;
+}
+
+#icone-reseaux-sociaux ul li{
+display:inline-block;
+height:20px;
+width:23px;
+}
+
+#icone-reseaux-sociaux ul li a{
+display:block;
+width:23px;
+height:20px;
+}
+
+#android{
+background-image:url(../images/icon_top_header.png);
+}
+
+#apple{
+background:url(../images/icon_top_header.png);
+background-position:-22px 0px;
+}
+
+#rss{
+background:url(../images/icon_top_header.png);
+background-position:-70px 0;
+}
+
+#iconyoutube{
+background:url(../images/icon_top_header.png);
+background-position:-96px 0;
+}
+
+#google{
+background:url(../images/icon_top_header.png);
+background-position:-120px 0;
+}
+
+#twitter{
+background:url(../images/icon_top_header.png);
+background-position:-144px 0;
+}
+
+#facebook{
+background:url(../images/icon_top_header.png);
+background-position:-168px 0;
+}
+
+#Pinterest{
+background:url(../images/icon_top_header.png);
+background-position:-190px 0;
+}
+
+#mail{
+background:url(../images/icon_top_header.png);
+background-position:-235px 0;
+width:20px !important;
+margin-left:3px;
+}
+
+
+#selecteur-langue select{
+color: #777;
+background: rgba(0,0,0,0.2);
+width:80px;
+float: right;
+border: none;
+border-radius: 0;
+-webkit-appearance:none;
+-moz- appearance:none;
+
+}
+
+.styled-select{
+position: relative;
+float: right;
+margin-right: 20px;
+width:120px;
+height: 17px;
+overflow: hidden;
+background: url(../images/arrow-select.png) no-repeat right;
+}
+
+option{
+background: none;
+color:#fff;
+}
+
+/*---------------------END LISTE ICONES------------------*/
+
+
+
+
+
+
+#main-header{
+height: 164px;
+padding-top: 6px;
+background: url(../images/bg-orange.png);
+
+}
+
+#logo{
+float: left;
+background: url(../images/logo.png);
+margin-left: 12px;
+margin-right: 12px;
+margin-top: 12px;
+height: 129px;
+width: 129px;
+}
+
+
+
+#je-recherche{
+position: relative;
+float: left;
+padding: 10px;
+padding-top: 5px;
+background: rgba(255,255,255,0.1);
+margin-right: 20px;
+border: 1px solid #888;
+border-radius: 12px;
+height: 139px;
+width: 402px;
+box-shadow: 3px 3px 5px #000;
+}
+
+h1{
+margin-top: -3px;
+font-size: 23px;
+font-weight: lighter;
+color: #000;
+text-shadow: 1px 1px 2px #fff;
+margin-bottom: 1px;
+
+}
+
+#RA{
+float: right;
+margin-right: -8px;
+color:#000;
+font-weight: lighter;
+}
+
+
+.dd, .dd3,.dd2{
+margin-right:10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+}
+
+.bh{
+margin-left: 20px;
+}
+
+img{
+margin-top: 5px;
+margin-right: 5px;
+}
+
+.trouver{
+position: absolute;
+bottom: 5px;
+right: 10px;
+float: right;
+width: 149px;
+margin-right: -5px;
+height: 32px;
+background: url(../images/trouver.png);
+}
+
+.trouver:hover{
+opacity: 0.2;
+}
+
+
+#RA a{
+color: #fff;
+text-decoration: none;
+}
+
+
+
+
+#je-connais{
+position: relative;
+float: left;
+background: rgba(255,255,255,0.1);
+margin-right: 12px;
+border-radius: 12px;
+border: 1px solid #888;
+box-shadow: 3px 3px 5px #000;
+height: 139px;
+width: 217px;
+padding: 10px;
+padding-top: 5px;
+}
+
+#info{
+margin-left: 130px;
+margin-bottom: -12px;
+}
+
+#jcn{
+margin-left: 7px;
+margin-bottom: 28px;
+}
+
+
+#je-decouvre{
+float: left;
+background: rgba(255,255,255,0.1);
+box-shadow: 3px 3px 5px #000;
+border-radius: 12px;
+border: 1px solid #888;
+height: 139px;
+width: 217px;
+padding: 10px;
+padding-top: 5px;
+}
+
+#giteetmeuble{
+margin-left: 20px;
+background: url(../images/bouton-gite.png);
+width: 199px;
+height: 59px;
+
+}
+
+#maisonhote{
+margin-left: 20px;
+background: url(../images/bouton-gite.png);
+background-position: 0px 59px;
+margin-top: -17px;
+width: 199px;
+height: 59px;
+}
+
+#giteetmeuble:hover,#maisonhote:hover{
+opacity: 0.7;
+}
+
+
+
+/* --------------------END HEADER------------------------*/
+
+
+#containt{
+position: relative;
+z-index: 0;
+
+}
+
+/*------------------PHOTO-------------------*/
+
+#photo{
+position: relative;
+background: url(../images/photo-mice.png);
+height: 422px;
+}
+
+#legende{
+position: relative;
+top: 378px;
+background: url(../images/quadrillage.png);
+opacity: 0.8;
+height: 44px;
+}
+
+.legende{
+margin-left: 0;
+float: left;
+
+}
+
+.legende li{
+font-size: 13pt;
+font-weight: lighter;
+width: 106px;
+display: inline-block;
+margin-top: -2px;
+}
+
+.legende li a{
+text-decoration: none;
+
+}
+
+.legende li a:hover{
+color: #ccc;
+}
+
+.legende li a:focus{
+color: #ccc;
+}
+
+.mice{
+width: 80px;
+color: green;
+width: 52px;
+padding-right: 20px;
+margin-left: 26px;
+border-right:2px solid #888;
+}
+
+.city-trip{
+color: #406cd3;
+padding-right: 20px;
+border-right:2px solid #888;
+
+
+}
+
+.insolite{
+color: #ff00bd;
+margin-left: 10px;
+}
+
+.bouton{
+position: absolute;
+bottom: 5px;
+right: 5px;
+padding-top: 8px; 
+padding-left: 60px;
+margin-top: 5px;
+margin-right: 10px;
+
+height:25px; 
+width:138px;
+background: url(../images/boutonjaune.png);
+color:#000;
+
+}
+
+.bouton:hover{
+opacity: 0.2;
+}
+
+/*------------------OFFRES------------------*/
+
+
+#offres{
+position: relative;
+height: 352px;
+background: url(../images/bgblancligne.png);
+background-position: 0px 53px;
+box-shadow: 0px 5px 8px #000;
+z-index: 10;
+
+}
+
+#titre{
+height: 42px;
+padding-top: 10px;
+background: url(../images/degrade-orange.png);
+border-bottom: 1px solid #d49549;
+
+}
+
+.offres{
+width: 120px;
+margin: auto;
+color: #000;
+font-weight: lighter;
+text-shadow: 2px 2px 3px #fff;
+}
+
+#tableauoffre,#tableauoffre-2,#tableauoffre-3,#tableauoffre-4{
+width: 235px;
+position: relative;
+background: url(../images/bg-etiquette.png);
+background-position: 2px -5px;
+margin-left: 6px;
+margin-top: 15px;
+height: 236px;
+padding: 15px;
+float: left;
+box-shadow: 3px 3px 7px #444;
+
+}
+
+.etiquette{
+font-size: 15pt;
+}
+
+.bordeaux{
+font-size: 17px;
+font-weight: bold;
+color: #4f0000;
+
+}
+
+
+
+
+
+
+
+#tableauoffre img,#tableauoffre-2 img,#tableauoffre-3 img ,#tableauoffre-4 img{
+height: 116px;
+width: 178px;
+margin-left: 60px;
+margin-top: 5px;
+}
+
+
+
+#tableauoffre p,#tableauoffre-2 p,#tableauoffre-3 p,#tableauoffre-4 p{
+color:#444;
+font-size: 12px;
+font-weight: lighter;
+}
+
+#tableauoffre-2 .red{
+width: 100px;
+margin-left: 60px;
+font-size: 14px;
+font-weight: bold;
+color: red;
+margin-right: 0px;
+float: left;
+
+}
+
+#tableauoffre-2 .bonhomme{
+width: 25px;
+height: 25px;
+margin-left: 10px;
+margin-top: 8px;
+float: left;
+margin-bottom: 16px;
+
+
+}
+
+.ensavoirplus a{
+position: absolute;
+bottom: 7px;
+right: 10px;
+text-decoration: none;
+color: #ccc1b3;						
+}
+
+
+.idee{
+	width: 114px;
+	background: url(../images/puce-fleche.png)no-repeat;
+	background-position: 103px 4px;
+}
+
+.last{
+	width: 135px;
+	background: url(../images/puce-fleche.png)no-repeat;
+	background-position: 125px 4px;
+}
+
+.plus{
+	width: 60px;
+	background: url(../images/puce-fleche.png)no-repeat;
+	background-position: 50px 4px;
+}
+
+.shop{
+	width: 82px;
+	background: url(../images/puce-fleche.png)no-repeat;
+	background-position: 72px 4px;
+}
+
+.ensavoirplus a:hover{
+opacity: 0.3;
+}
+
+/*----------------ESSENTIEL-----------------*/
+
+#essentiel{
+height: 425px;
+padding-top: 30px;
+background: url(../images/bgessentiel.png);
+}
+
+#colonnes-gauche,#colonnes-droite{
+float: left;
+margin-top: 10px;
+margin-left:100px ;
+height:299px;
+width: 400px;
+color: #313131;
+
+}
+
+.Zapfino{
+margin-left: 100px;
+width:678px; 
+height:80px;
+font-size:68px;
+text-shadow: 2px 2px 2px #fff;
+font-family: 'Italianno', cursive;
+
+}
+
+
+/*-----------------YOUTUBE------------------*/
+
+#youtube{
+height: 548px;
+background: url(../images/video-youtube.png);
+}
+
+
+/*-----------------CONTACT------------------*/
+
+#contact{
+background: url(../images/degrade-gris.png);
+height: 414px;
+padding-left: 45px;
+}
+
+#colonne-contact,#colonne-contact-1,#colonne-contact-2,#colonne-contact-3,#colonne-contact-4{
+
+height: 312px;
+width: 180px;
+float: left;
+margin-right: 25px;
+margin-top: 50px;
+padding-left: 15px;
+}
+
+#colonne-contact-4{
+margin-left: 25px;
+margin-right: 0px;
+width: 120px;
+}
+
+.titre-contact{
+margin-left: -35px;
+margin-top: -25px;
+font-weight: bold;
+font-size: 18px;
+}
+
+.RN{
+border-left: 1px solid #00dde6;
+color: #00dde6;
+}
+
+.CN{
+border-left: 1px solid #fe606b;
+color: #fe606b;
+}
+
+.DW{
+border-left: 1px solid #d8b2ec;
+color: #d8b2ec;
+}
+
+.LA{
+border-left: 1px solid #74c7f7;
+color: #74c7f7;
+margin-left: -20px;
+
+}
+
+.NAS{
+border-left: 1px solid #1fda60;
+color: #1fda60;
+width: 131px;
+
+}
+
+.contact-ul,.texte-ul,.DW-ul,.NAS-ul{
+margin-left: 0;
+position: relative;
+display: inherit;
+color: #d2d2d2;
+list-style: inside;
+list-style-type: square;
+
+
+}
+
+.contact-ul li{
+height: auto;
+width: auto;
+display: inherit;
+
+}
+
+.texte-ul{
+margin-left: 60px;
+margin-top:-10px;
+
+}
+
+.texte-ul li{
+height: auto;
+width: 180px;
+display: inherit;
+font-size: 12px;
+margin-bottom: 43px;
+
+}
+
+
+.DW-ul li, .NAS-ul li{
+height: auto;
+width: 180px;
+font-size: 12px;
+margin-left: -40px;
+
+}
+
+
+.NAS-ul{
+color:#1fda60; 
+}
+
+.DW-ul{
+color: #d8b2ec;
+}
+
+.texte-lite{
+color: #d2d2d2;
+}
+
+
+.RN p, .CN p, .DW p, .LA p, .NAS p{
+font-size: 12px;
+color: #d2d2d2;
+
+}
+
+
+
+#retour{
+position: relative;
+float: right;
+margin-top: -20px;
+right: 10px;
+font-size: 11px;
+}
+
+#retour img{
+margin-left: 5px;
+}
+
+#retour a{
+text-decoration: none;
+color:#d2d2d2;
+}
+
+
+
+/*** FOOTER ***/
+
+#footer{
+height:274px;
+background: url(../images/bgfooter.png);
+padding-top:10px; 
+
+}
+
+#credit{
+width: 650px;
+text-align: center;
+margin: auto;
+font-size: 9px;
+font-weight: bold;
+font-family: verdana,sans-serif;
+
+}
+
+
+#eurogite,#feder,#wl-tourisme,#wal-bxl-tourisme{
+float: left;
+margin-top: 20px;
+text-align: center;
+font-size: 9px;
+font-weight: bold;
+font-family: verdana,sans-serif;
+color:#d2d2d2;
+
+}
+
+#eurogite{
+margin-left: 100px;
+width: 87px;
+height:120px;
+}
+
+#feder{
+margin-left:105px;
+width: 250px;
+height:180px;
+
+}
+
+#wl-tourisme{
+margin-left: 156px;
+width: 114px;
+height:140px;
+}
+
+#wal-bxl-tourisme{
+margin-left: 137px;
+width: 100px;
+height:100px;
+}
+
+#affinitic{
+width: 220px;
+font-size: 9px;
+font-family: verdana,sans-serif;
+font-weight: bold;
+height: 30px;
+margin: auto;
+margin-top: 220px;
+color:#fff;
+
+}
+
+.gris{
+color: #999;
+}
+
+#affinitic a{
+text-decoration: none;
+color:#999;
 }
