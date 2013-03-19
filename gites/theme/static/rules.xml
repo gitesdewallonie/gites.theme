@@ -24,6 +24,8 @@
     <copy attributes="xmlns lang xml:lang" content="/html" theme="/html" />
     <copy attributes="class id dir" content="/html/body" theme="/html/body" />
 
+    <drop css:content="#portal-personaltools-wrapper" css:if-content="#anon-personalbar" />
+
     <replace css:content="#portal-top" css:theme="#plonetop" />
 
     <after css:content="#header" css:theme-children="#beforecontent" />
