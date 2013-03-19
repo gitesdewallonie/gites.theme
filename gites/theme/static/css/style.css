@@ -230,7 +230,9 @@ width:402px;
 box-shadow:3px 3px 5px #000;
 }
 
-#je-recherche h2{
+#je-recherche h2,
+#je-connais h2,
+#je-decouvre h2{
 float:left;
 margin-top:-3px;
 font-family:"PTSansNArrow";
@@ -249,21 +251,24 @@ font-weight:normal;
 color:#000;
 text-shadow:1px 1px 2px rgba(255,255,255,0.5);
 padding-right:10px;
-background-image:url(../images/icon-fleche.png);
+background-image:url(../images/icon_fleche.png);
 background-repeat:no-repeat;
 background-position:right 6px;
 }
 
-#je-recherche #gite-meuble,
-#je-recherche #chambre-hote{
+#je-recherche #zone-gite-meuble,
+#je-recherche #zone-chambre-hote{
 float:left;
 width:150px;
+margin-left:15px;
 }
 
-#je-recherche #gite-meuble label,
-#je-recherche #gite-meuble input[checkbox],{
+/*
+#je-recherche #zone-gite-meuble label,
+#je-recherche #zone-gite-meuble input[checkbox],{
 display:inline !important;
 }
+*/
 
 #je-recherche #date-start,
 #je-recherche #date-end,
@@ -289,14 +294,17 @@ background-position:left center;
 padding-left:25px;
 }
 
+#je-recherche #proximite{
+float:left;
+}
 
-#je-recherche .trouver{
-position:absolute;
-bottom:5px;
-right:10px;
+
+#je-recherche .trouver,
+#je-connais .trouver{
 float:right;
+right:10px;
+border:none;
 width:149px;
-margin-right:-5px;
 height:32px;
 background:url(../images/trouver.png);
 }
