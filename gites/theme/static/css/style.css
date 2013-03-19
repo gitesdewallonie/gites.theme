@@ -54,9 +54,8 @@ Language selector
 
 
 /*
-Override bootstrap "mistakes"
+Skin styles
 */
-
 
 @font-face {
 font-family: 'PTSansNArrow';
@@ -69,7 +68,6 @@ font-weight: normal;
 font-style: normal;
 }
 
-
 body{
 font-family:arial, helvetica, verdana, sans-serif;
 font-family: 'PT Sans Narrow', sans-serif;
@@ -78,15 +76,6 @@ color:#fff;
 background:#191919;
 padding:0;
 margin:0;
-}
-
-label{
-display: inline !important;
-}
-
-input[type="radio"],
-input[type="checkbox"]{
-margin: 4px 4px 4px 0px;
 }
 
 .break-float{
@@ -861,4 +850,18 @@ color: #999;
 #affinitic a{
 text-decoration: none;
 color:#999;
+}
+
+
+/*
+Override bootstrap "mistakes"
+*/
+
+label{
+display: inline !important;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+margin: 4px 4px 4px 0px;
 }
