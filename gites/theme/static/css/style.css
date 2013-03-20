@@ -354,12 +354,34 @@ opacity:0.7;
 
 
 /*** ZONE PRODUIT PACKAGE ***/
+
+/*
+Carousel
+*/
+
+#package-carousel {
+height: 377px;
+}
+
+#package-carousel .carousel-inner {
+overflow:hidden;
+margin: auto;
+position:relative;
+}
+
+#package-carousel .carousel-inner .item img {
+height: 377px;
+width: 100%;
+}
+
+#package-carousel .carousel-control {
+line-height: 40px;
+}
+
 #zone-produit-pacakage{
 }
 
-
 #zone-photo{
-background:url(../images/photo-mice.png);
 height:422px;
 }
 

@@ -8,6 +8,14 @@
                 compression="safe"
                 cookable="True"
                 enabled="True"
+                id="++theme++gites.theme/bootstrap-carousel/js/bootstrap.js"
+                inline="False" />
+
+    <javascript cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="True"
+                insert-after="++theme++gites.theme/bootstrap-carousel/js/bootstrap.js"
                 id="++resource++plonewidgets/chosen.init.js"
                 inline="False" />
 
