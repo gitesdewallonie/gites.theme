@@ -73,8 +73,6 @@
 
       <div id="viewlet-gites-offres" tal:content="structure provider:gites.offres" />
 
-      <div id="viewlet-gites-essentiel" tal:content="structure provider:gites.essentiel" />
-
       <div id="portal-column-content">
 
         <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />

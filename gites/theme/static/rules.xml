@@ -34,8 +34,6 @@
 
     <replace css:content="#portal-column-content" css:theme="#content" />
 
-    <after css:content="#zone-essentiel" css:theme-children="#aftercontent" />
-
     <after css:content="#zone-video" css:theme-children="#bottompage" />
     <after css:content="#footer" css:theme-children="#bottompage" />
     <after css:content="#colophon" css:theme-children="#bottompage" />
