@@ -355,10 +355,7 @@ opacity:0.7;
 
 /*** ZONE PRODUIT PACKAGE ***/
 
-/*
-Carousel
-*/
-
+/*Carousel*/
 #package-carousel {
 height: 377px;
 }
@@ -386,8 +383,8 @@ height:422px;
 }
 
 #zone-packperm-membre{
-position:relative;
-top:378px;
+/*position:relative;
+top:378px;*/
 height:44px;
 width:100%;
 background:url(../images/quadrillage.png);
