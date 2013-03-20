@@ -8,4 +8,8 @@
     <viewlet name="plone.global_sections" />
   </hidden>
 
+  <hidden manager="plone.abovecontent" skinname="Gites theme">
+    <viewlet name="plone.path_bar" />
+  </hidden>
+
 </object>
