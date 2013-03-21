@@ -638,18 +638,19 @@ height: 260px;
 width: 425px;
 }
 
-/*** CONTACT ***/
-#contact{
+
+/*** FOOTER ***/
+#footer{
 background:url(../images/degrade-gris.png);
 height:414px;
 padding-left:45px;
 }
 
-#colonne-contact,
-#colonne-contact-1,
-#colonne-contact-2,
-#colonne-contact-3,
-#colonne-contact-4{
+div#reseaux-sociaux,
+div#contact,
+div#destination-wallonie,
+div#association,
+div#autres-sites{
 height:312px;
 width:180px;
 float:left;
@@ -658,7 +659,7 @@ margin-top:50px;
 padding-left:15px;
 }
 
-#colonne-contact-4{
+div#association{
 margin-left:25px;
 margin-right:0px;
 width:120px;
@@ -784,8 +785,8 @@ margin:10px auto 10px auto;
 
 
 
-/*** FOOTER ***/
-#footer{
+/*** COLOPHON ***/
+#colophon{
 height:274px;
 background:url(../images/bgfooter.png);
 padding-top:10px;
@@ -799,7 +800,6 @@ font-size:9px;
 font-weight:bold;
 font-family:verdana,sans-serif;
 }
-
 
 #eurogite,#feder,#wl-tourisme,#wal-bxl-tourisme{
 float:left;
@@ -854,5 +854,4 @@ color:#999;
 text-decoration:none;
 color:#999;
 }
-
 
