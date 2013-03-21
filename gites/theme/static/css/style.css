@@ -486,14 +486,14 @@ z-index:10;
 div#zone-offres h2{
 height:42px;
 padding-top:10px;
-background-color:f4dbba;
+background-color:#f4dbba;
 border-bottom:1px solid #d49549;
 }
 
-#zone-idee-sejour,
-#zone-derniere-minute,
-#zone-allo-chambre-hote,
-#zone-la-boutique{
+div#zone-offres div#zone-idee-sejour,
+div#zone-offres div#zone-derniere-minute,
+div#zone-offres div#zone-allo-chambre-hote,
+div#zone-offres div#zone-la-boutique{
 width:235px;
 position:relative;
 background:url(../images/bg-etiquette.png);
@@ -504,6 +504,8 @@ height:236px;
 padding:15px;
 float:left;
 box-shadow:3px 3px 7px #444;
+color:#666;
+font-size:0.9em;
 }
 
 .etiquette{
@@ -555,10 +557,10 @@ float:left;
 margin-bottom:16px;
 }
 
-.ensavoirplus a{
-position:absolute;
-bottom:7px;
-right:10px;
+.plus-info{
+border-top:1px dashed #999;
+}
+.plus-info a{
 text-decoration:none;
 color:#ccc1b3;
 }
@@ -593,39 +595,47 @@ opacity:0.3;
 }
 
 /*** ESSENTIEL ***/
-#essentiel{
-height:425px;
+div#content{
+color:#666;
+min-height:425px;
 padding-top:30px;
 background:url(../images/bgessentiel.png);
 }
 
-#colonnes-gauche,#colonnes-droite{
-float:left;
-margin-top:10px;
-margin-left:100px ;
-height:299px;
-width:400px;
-color:#313131;
-
-}
-
-.Zapfino{
+div#content.Zapfino{
 margin-left:100px;
 width:678px;
 height:80px;
 font-size:68px;
 text-shadow:2px 2px 2px #fff;
 font-family:'Italianno', cursive;
-
 }
 
+div#content div.texte-colonne{
+padding:5px 1.3em;
+-moz-column-width: 250px;
+-webkit-column-width: 250px;
+-moz-column-gap: 20px;
+-webkit-column-gap: 20px;
+-moz-column-rule: 1px solid #ddccb5;
+-webkit-column-rule: 1px solid #ddccb5;
+}
 
 /*** ZONE-VIDEO ***/
-#zone-video{
-height:800px;
-background:url(../images/video-youtube.png);
+div#zone-video{
+min-height:600px;
+background-image:url(../images/video-youtube.png);
+background-repeat:no-repeat;
 }
 
+
+/*** ZONE TROMBINO FACEBOOK ***/
+div#trombino-facebook{
+float:right;
+margin-right:10px;
+height: 260px;
+width: 425px;
+}
 
 /*** CONTACT ***/
 #contact{
