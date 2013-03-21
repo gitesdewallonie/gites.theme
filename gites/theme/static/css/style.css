@@ -490,18 +490,10 @@ background:url(../images/degrade-orange.png);
 border-bottom:1px solid #d49549;
 }
 
-.offres{
-width:120px;
-margin:auto;
-color:#000;
-font-weight:lighter;
-text-shadow:2px 2px 3px #fff;
-}
-
-#tableauoffre,
-#tableauoffre-2,
-#tableauoffre-3,
-#tableauoffre-4{
+#zone-idee-sejour,
+#zone-derniere-minute,
+#zone-allo-chambre-hote,
+#zone-la-boutique{
 width:235px;
 position:relative;
 background:url(../images/bg-etiquette.png);
