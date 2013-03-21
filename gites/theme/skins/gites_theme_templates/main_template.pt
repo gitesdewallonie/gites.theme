@@ -93,8 +93,8 @@
               <metal:slot define-slot="body">
               <div id="content" 
                    class=""
-                   tal:define="portal_root context/@@plone_context_state/is_portal_root"
-                   tal:attributes="class python: portal_root and 'ploneroot' or ''">
+                   tal:define="frontpage context/@@diazo-parameters/isPortalFrontPage"
+                   tal:attributes="class python: frontpage and 'ploneroot' or ''">
                 <metal:header define-slot="header" tal:content="nothing">
                   Visual Header
                 </metal:header>

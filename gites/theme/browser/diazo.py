@@ -9,6 +9,7 @@ from Acquisition import aq_inner
 from five import grok
 from zope.interface import Interface
 from zope.component import getMultiAdapter
+from Products.CMFCore.utils import getToolByName
 
 grok.context(Interface)
 
@@ -20,7 +21,7 @@ class DiazoParametersView(grok.View):
     grok.name('diazo-parameters')
     grok.require('zope2.View')
 
-    def isPortalRoot(self):
+    def isPortalFrontPage(self):
         """
         Returns True if we are on portal root or default page
         """
@@ -32,7 +33,19 @@ class DiazoParametersView(grok.View):
 
         context_state = getMultiAdapter((aq_inner(self.context), self.request),
                                         name=u'plone_context_state')
-        return context_state.is_portal_root()
+        isRoot = context_state.is_portal_root()
+        if not isRoot:
+            return False
 
-    def render():
+        portalUrl = getToolByName(self.context, 'portal_url')
+        portal = portalUrl.getPortalObject()
+        frontPageName = portal.getDefaultPage()
+        frontPage = self.context.restrictedTraverse(frontPageName)
+        translation = frontPage.getTranslation()
+        if self.context == translation:
+            return True
+
+        return False
+
+    def render(self):
         pass
