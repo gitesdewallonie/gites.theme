@@ -54,7 +54,7 @@ content:" ▼";
 
 
 /*** SKIN STYLES ***/
-/*
+
 @font-face {
 font-family:'PTSansNArrow';
 src:url('font/PTSansBold.ttf');
@@ -65,7 +65,7 @@ url('font/PTSansNarrowBold.ttf') format('truetype');
 font-weight:normal;
 font-style:normal;
 }
-*/
+
 
 body{
 font-family:arial, helvetica, verdana, sans-serif;
@@ -221,7 +221,7 @@ box-shadow:3px 3px 5px #000;
 #je-connais h2,
 #je-decouvre h2{
 float:left;
-margin-top:-3px;
+margin-top:-8px;
 font-family:"PTSansNArrow";
 font-size:1.2em;
 font-weight:bold;
@@ -263,8 +263,7 @@ display:inline !important;
 #je-recherche #nbre-personne{
 float:left;
 height:27px;
-margin-right:10px;
-padding-right:7px;
+margin:10px 5px;
 background-repeat:no-repeat;
 background-position:right top;
 }
@@ -272,28 +271,16 @@ background-position:right top;
 #je-recherche #date-start,
 #je-recherche #date-end{
 background-image:url(../images/icon_calendrier.png);
-width:100px;
+width:106px;
 }
 
 #je-recherche #nbre-personne{
 background-image:url(../images/icon_gugus.png);
-width:62px;
+width:68px;
 }
 
 #je-recherche #proximite{
 float:left;
-}
-
-
-#je-recherche .trouver,
-#je-connais .trouver{
-position:relative;
-top:13px;
-left:69px;
-border:none;
-width:149px;
-height:32px;
-background:url(../images/trouver.png);
 }
 
 #je-connais{
@@ -308,6 +295,27 @@ width:217px;
 padding:10px;
 padding-top:5px;
 }
+
+#je-connais #nom-ou-reference{
+margin-top:15px;
+}
+
+#je-recherche .trouver,
+#je-connais .trouver{
+border:none;
+width:149px;
+height:32px;
+background:url(../images/trouver.png);
+}
+#je-recherche .trouver{
+margin-top:4px;
+margin-left:259px;
+}
+#je-connais .trouver{
+margin-top:35px;
+margin-left:75px;
+}
+
 
 #info{
 margin-left:130px;
@@ -331,34 +339,40 @@ padding:10px;
 padding-top:5px;
 }
 
-#giteetmeuble{
-margin-left:20px;
-background:url(../images/btn_je_decouvre.png);
+#gitemeuble,
+#maisonhote{
+background-image:url(../images/btn_je_decouvre.png);
+background-repeat:no-repeat;
 width:198px;
 height:56px;
+padding-top:5px;
+padding-left:3px;
+}
+
+#giteetmeuble{
+background-position:left top;
 }
 
 #maisonhote{
-margin-left:20px;
-background:url(../imagesss/btn_je_decouvre.png);
-background-position:0px 59px;
-margin-top:-17px;
-width:198px;
-height:56px;
+background-position:left -59px;
+margin-top:5px;
 }
 
-#giteetmeuble:hover,
-#maisonhote:hover{
-opacity:0.7;
-}
+#gitemeuble a,
+#maisonhote a{
+display:block;
+width:100px;
+margin-left:5px;
+font-weight:bold;
+font-size:1.1em;
+color:#fff !important;
+text-shadow:1px 1px 1px rgba(50,50,50,0.5);
 
+}
 
 /*** ZONE PRODUIT PACKAGE ***/
 
-/*
-Carousel
-*/
-
+/*Carousel*/
 #package-carousel {
 height: 377px;
 }
@@ -370,9 +384,19 @@ position:relative;
 }
 
 #package-carousel .carousel-inner .item img {
-height: 377px;
-width: 100%;
+height:377px;
+width:100%;
 }
+
+/*
+#package-carousel .carousel-caption {
+position:absolute;
+top:-50px;
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+padding: 15px;
+}
+*/
+
 
 #package-carousel .carousel-control {
 line-height: 40px;
@@ -387,8 +411,8 @@ height:422px;
 }
 
 #zone-packperm-membre{
-position:relative;
-top:378px;
+/*position:relative;
+top:378px;*/
 height:44px;
 width:100%;
 background:url(../images/quadrillage.png);
@@ -404,12 +428,14 @@ line-height:33px;
 #zone-package-permanent{
 float:left;
 width:400px;
+margin-top:8px;
 }
 
-#zone-devenir-membre{
+#bouton-devenir-membre{
 float:right;
 width:198px;
 margin-right:15px;
+margin-top:8px;
 border:1px solid #9d7d11;
 border-radius:18px;
 text-align:center;
@@ -430,6 +456,7 @@ width:80px;
 border-right:2px solid #888;
 padding-right:20px;
 margin-left:25px;
+margin-top:8px;
 }
 
 #mice a{
@@ -448,7 +475,7 @@ border-right:none;
 
 
 /*** OFFRES PACKAGES ***/
-#offres{
+div#zone-offres{
 position:relative;
 height:352px;
 background:url(../images/bgblancligne.png);
@@ -457,25 +484,17 @@ box-shadow:0px 5px 8px #000;
 z-index:10;
 }
 
-#titre{
+div#zone-offres h2{
 height:42px;
 padding-top:10px;
-background:url(../images/degrade-orange.png);
+background-color:#f4dbba;
 border-bottom:1px solid #d49549;
 }
 
-.offres{
-width:120px;
-margin:auto;
-color:#000;
-font-weight:lighter;
-text-shadow:2px 2px 3px #fff;
-}
-
-#tableauoffre,
-#tableauoffre-2,
-#tableauoffre-3,
-#tableauoffre-4{
+div#zone-offres div#zone-idee-sejour,
+div#zone-offres div#zone-derniere-minute,
+div#zone-offres div#zone-allo-chambre-hote,
+div#zone-offres div#zone-la-boutique{
 width:235px;
 position:relative;
 background:url(../images/bg-etiquette.png);
@@ -486,6 +505,8 @@ height:236px;
 padding:15px;
 float:left;
 box-shadow:3px 3px 7px #444;
+color:#666;
+font-size:0.9em;
 }
 
 .etiquette{
@@ -537,10 +558,10 @@ float:left;
 margin-bottom:16px;
 }
 
-.ensavoirplus a{
-position:absolute;
-bottom:7px;
-right:10px;
+.plus-info{
+border-top:1px dashed #999;
+}
+.plus-info a{
 text-decoration:none;
 color:#ccc1b3;
 }
@@ -575,39 +596,47 @@ opacity:0.3;
 }
 
 /*** ESSENTIEL ***/
-#essentiel{
-height:425px;
+div#content{
+color:#666;
+min-height:425px;
 padding-top:30px;
 background:url(../images/bgessentiel.png);
 }
 
-#colonnes-gauche,#colonnes-droite{
-float:left;
-margin-top:10px;
-margin-left:100px ;
-height:299px;
-width:400px;
-color:#313131;
-
-}
-
-.Zapfino{
+div#content.Zapfino{
 margin-left:100px;
 width:678px;
 height:80px;
 font-size:68px;
 text-shadow:2px 2px 2px #fff;
 font-family:'Italianno', cursive;
-
 }
 
+div#content div.texte-colonne{
+padding:5px 1.3em;
+-moz-column-width: 250px;
+-webkit-column-width: 250px;
+-moz-column-gap: 20px;
+-webkit-column-gap: 20px;
+-moz-column-rule: 1px solid #ddccb5;
+-webkit-column-rule: 1px solid #ddccb5;
+}
 
 /*** ZONE-VIDEO ***/
-#zone-video{
-height:800px;
-background:url(../images/video-youtube.png);
+div#zone-video{
+min-height:600px;
+background-image:url(../images/video-youtube.png);
+background-repeat:no-repeat;
 }
 
+
+/*** ZONE TROMBINO FACEBOOK ***/
+div#trombino-facebook{
+float:right;
+margin-right:10px;
+height: 260px;
+width: 425px;
+}
 
 /*** CONTACT ***/
 #contact{

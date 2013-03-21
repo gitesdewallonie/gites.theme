@@ -6,6 +6,7 @@
 
     <theme href="index.html" />
     <notheme if="$ajax_load" />
+    <notheme if-path="gestion_gites" />
 
     <!-- Common Plone rules -->
     <drop theme="/html/head/meta" />
