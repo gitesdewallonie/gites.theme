@@ -3,25 +3,29 @@
         <h2 i18n:translate="rejoignez_nous">Rejoignez-nous</h2>
         <ul class="contact-ul">
             <li>
-                <a href="https://www.facebook.com/GitesdeWallonie" target="_blank">
+                <a href="https://www.facebook.com/GitesdeWallonie"
+                   target="_blank">
                     <img src="++theme++gites.theme/images/facebook.png" alt="facebook">
                     <span i18n:translate="fans_facebook">Devenez fans sur facebook</span>
                 </a>
             </li>
             <li>
-                <a href="http://www.twitter.com/" target="_blank">
+                <a href="http://www.twitter.com/"
+                   target="_blank">
                     <img src="++theme++gites.theme/images/twitter.png" alt="twitter">
                     <span i18n:translate="suivez_nous_twitter">Suivez-nous sur twitter</span>
                 </a>
             </li>
             <li>
-                <a href="http://plus.google.com/" target="_blank">
+                <a href="http://plus.google.com/"
+                   target="_blank">
                     <img src="++theme++gites.theme/images/google.png" alt="google">
                     <span i18n:translate="fans_google">Devenez fans sur Google+</span>
                 </a>
             </li>
             <li>
-                <a href="http://www.youtube.com/user/GitesDeWallonie" target="_blank">
+                <a href="http://www.youtube.com/user/GitesDeWallonie"
+                   target="_blank">
                     <img src="++theme++gites.theme/images/youtube.png" alt="youtube">
                     <span i18n:translate="regardez_nous_youtube">Regardez-nous sur youtube</span>
                 </a>
@@ -84,5 +88,9 @@
             <li>Notre blog</li>
         </ul>
     </div><!--autres-sites-->
+    <div class="break-flaot"></div>
+
+    <div id="retour-haut"
+         i18n:translate="retour-vers-le-haut"><a href="#">Retour vers le haut</a></div>
 
 </div><!--footer-->

@@ -745,81 +745,21 @@ background-image:url(../images/icon_puce_autsite.png);
 }
 
 
-
-
-
-.contact-ul,.texte-ul,.DW-ul,.NAS-ul{
-margin-left:0;
-position:relative;
-display:inherit;
-color:#d2d2d2;
-list-style:inside;
-list-style-type:square;
-}
-
-.contact-ul li{
-height:auto;
-width:auto;
-display:inherit;
-}
-
-.texte-ul{
-margin-left:60px;
-margin-top:-10px;
-}
-
-.texte-ul li{
-height:auto;
-width:180px;
-display:inherit;
-font-size:12px;
-margin-bottom:43px;
-}
-
-
-.DW-ul li, .NAS-ul li{
-height:auto;
-width:180px;
-font-size:12px;
-margin-left:-40px;
-}
-
-
-.NAS-ul{
-color:#1fda60; 
-}
-
-.DW-ul{
-color:#d8b2ec;
-}
-
-.texte-lite{
-color:#d2d2d2;
-}
-
-
-.RN p, .CN p, .DW p, .LA p, .NAS p{
-font-size:12px;
-color:#d2d2d2;
-}
-
-
-
-#retour{
+#retour-haut{
 position:relative;
 float:right;
-margin-top:-20px;
+margin-top:37px;
 right:10px;
 font-size:11px;
 }
 
-#retour img{
-margin-left:5px;
-}
-
-#retour a{
+#retour-haut a{
 text-decoration:none;
-color:#d2d2d2;
+color:#ccc !important;
+padding-right:14px;
+background-image:url(../images/icon_fleche_haut.png);
+background-repeat:no-repeat;
+background-position:right center;
 }
 
 
