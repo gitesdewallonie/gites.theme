@@ -3,7 +3,7 @@
         <h2 i18n:translate="rejoignez_nous">Rejoignez-nous</h2>
         <ul class="contact-ul">
             <li>
-                <a href="http://www.facebook.com/" target="_blank">
+                <a href="https://www.facebook.com/GitesdeWallonie" target="_blank">
                     <img src="++theme++gites.theme/images/facebook.png" alt="facebook">
                     <span i18n:translate="fans_facebook">Devenez fans sur facebook</span>
                 </a>
@@ -21,13 +21,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <img src="++theme++gites.theme/images/rss.png" alt="rss">
-                    <span i18n:translate="file_rss">File RSS</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.youtube.com/" target="_blank">
+                <a href="http://www.youtube.com/user/GitesDeWallonie" target="_blank">
                     <img src="++theme++gites.theme/images/youtube.png" alt="youtube">
                     <span i18n:translate="regardez_nous_youtube">Regardez-nous sur youtube</span>
                 </a>

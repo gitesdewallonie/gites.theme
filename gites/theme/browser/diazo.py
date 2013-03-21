@@ -25,8 +25,9 @@ class DiazoParametersView(grok.View):
         Returns True if we are on portal root or default page
         """
         # Avoid error in plone.app.layout.navigation.defaultpage when getting
-        # unexisting objectIds() on FilesystemResourceDirectory class !
-        if self.context.__class__.__name__ == 'FilesystemResourceDirectory':
+        # unexisting objectIds() or getId()
+        if getattr(self.context, "getId", None) is None or \
+           getattr(self.context, "objectIds", None) is None:
             return False
 
         context_state = getMultiAdapter((aq_inner(self.context), self.request),
