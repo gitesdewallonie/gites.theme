@@ -776,71 +776,87 @@ margin:10px auto 10px auto;
 
 /*** COLOPHON ***/
 #colophon{
-height:274px;
+height:310px;
 background:url(../images/bgfooter.png);
+background-repeat:no-repeat;
 padding-top:10px;
 }
 
-#credit{
-width:650px;
+#coordonnee{
+font-size:0.8em;
+color:#ddd;
 text-align:center;
-margin:auto;
-font-size:9px;
-font-weight:bold;
-font-family:verdana,sans-serif;
+border-bottom:1px dashed #333;
 }
 
-#eurogite,#feder,#wl-tourisme,#wal-bxl-tourisme{
+
+/*** PARTENAIRRE ***/
+#partenaire img{
+display:block;
+margin:auto;
+margin-bottom:2px;
+}
+
+#eurogite,
+#feder,
+#wallonie-tourisme,
+#wallonie-bruxelles-tourisme{
 float:left;
-margin-top:20px;
+width:250px;
+margin:5px 20px 0px 0px;
 text-align:center;
 font-size:9px;
-font-weight:bold;
 font-family:verdana,sans-serif;
 color:#d2d2d2;
 }
 
 #eurogite{
-margin-left:100px;
-width:87px;
-height:120px;
 }
 
 #feder{
-margin-left:105px;
-width:250px;
-height:180px;
 }
 
-#wl-tourisme{
-margin-left:156px;
-width:114px;
-height:140px;
+#wallonie-tourisme{}
+
+#wallonie-bruxelle-tourisme{
 }
 
-#wal-bxl-tourisme{
-margin-left:137px;
-width:100px;
-height:100px;
+
+
+/*** MADE BY PLONE AFFINITIC ***/
+#madeby{
+width:95%;
+margin:auto;
+padding-top:3px;
+border-top:1px dashed #333;
 }
 
-#affinitic{
+#affinitic,
+#plone{
 width:220px;
 font-size:9px;
 font-family:verdana,sans-serif;
-font-weight:bold;
-height:30px;
-margin:auto;
-margin-top:220px;
-color:#fff;
+color:#666;
 }
 
-.gris{
-color:#999;
+#affinitic{
+float:left;
+text-align:left;
 }
 
-#affinitic a{
+#plone{
+float:right;
+text-align:right;
+}
+
+#affinitic a !important,
+#plone a !important{
 text-decoration:none;
 color:#999;
+}
+
+#affinitic a:hover,
+#plone a:hover{
+color:#ddd;
 }
 
