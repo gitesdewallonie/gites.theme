@@ -3,6 +3,14 @@ CSS by Affinitic
 mars 2013
 */
 
+/*
+Calendar picker fix
+*/
+
+#ui-datepicker-div {
+display: none;
+}
+
 
 /*
 Language selector
