@@ -400,7 +400,6 @@ padding: 15px;
 
 #package-carousel .carousel-control {
 line-height: 40px;
-color: #FFFFFF !important;
 }
 
 #zone-produit-pacakage{
@@ -651,53 +650,65 @@ div#contact,
 div#destination-wallonie,
 div#association,
 div#autres-sites{
+float:left;
 height:312px;
 width:180px;
-float:left;
 margin-right:25px;
 margin-top:50px;
 padding-left:15px;
 }
 
-div#association{
-margin-left:25px;
-margin-right:0px;
-width:120px;
-}
-
-.titre-contact{
+div#reseaux-sociaux h2,
+div#contact h2,
+div#destination-wallonie h2,
+div#association h2,
+div#autres-sites h2{
 margin-left:-35px;
 margin-top:-25px;
 font-weight:bold;
 font-size:18px;
 }
-
-.RN{
-border-left:1px solid #00dde6;
+div#reseaux-sociaux h2{
 color:#00dde6;
 }
 
-.CN{
-border-left:1px solid #fe606b;
+div#contact h2{
 color:#fe606b;
 }
 
-.DW{
-border-left:1px solid #d8b2ec;
+div#destination-wallonie h2{
 color:#d8b2ec;
 }
 
-.LA{
-border-left:1px solid #74c7f7;
+div#association h2{
 color:#74c7f7;
-margin-left:-20px;
 }
 
-.NAS{
-border-left:1px solid #1fda60;
+div#autres-sites h2{
 color:#1fda60;
-width:131px;
 }
+
+
+div#reseaux-sociaux{
+border-left:1px solid #00dde6;
+}
+
+div#contact{
+border-left:1px solid #fe606b;
+}
+
+div#destination-wallonie{
+border-left:1px solid #d8b2ec;
+}
+
+div#association{
+border-left:1px solid #74c7f7;
+}
+
+div#autres-sites{
+border-left:1px solid #1fda60;
+}
+
 
 .contact-ul,.texte-ul,.DW-ul,.NAS-ul{
 margin-left:0;
