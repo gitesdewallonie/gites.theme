@@ -5,6 +5,8 @@
    <include file="profiles.zcml" />
    <include file="skins.zcml" />
 
+   <include package=".viewlets"/>
+
    <plone:static type="theme" 
                  directory="static"
                  name="gites.theme" />
