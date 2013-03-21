@@ -474,7 +474,7 @@ border-right:none;
 
 
 /*** OFFRES PACKAGES ***/
-#offres{
+div#zone-offres{
 position:relative;
 height:352px;
 background:url(../images/bgblancligne.png);
@@ -483,10 +483,10 @@ box-shadow:0px 5px 8px #000;
 z-index:10;
 }
 
-#titre{
+div#zone-offres h2{
 height:42px;
 padding-top:10px;
-background:url(../images/degrade-orange.png);
+background-color:f4dbba;
 border-bottom:1px solid #d49549;
 }
 
