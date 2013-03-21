@@ -696,7 +696,7 @@ div#association h2,
 div#autres-sites h2{
 margin-left:-35px;
 margin-top:-25px;
-font-weight:bold;
+font-weight:normal;
 font-size:11pt;
 }
 div#reseaux-sociaux h2{
@@ -730,10 +730,21 @@ border-left:1px solid rgba(116,199,247,0.3);
 div#autres-sites{
 border-left:1px solid rgba(31,218,96,0.3);
 }
-div#destination-wallonie ul{
-list-style-type:none;
-list-style-image:url(../images/icon_puce_destwal.png);
+
+div#destination-wallonie li,
+div#autres-sites li{
+background-repeat:no-repeat;
+background-position:left center;
+padding-left:7px;
 }
+div#destination-wallonie li{
+background-image:url(../images/icon_puce_destwal.png);
+}
+div#autres-sites li{
+background-image:url(../images/icon_puce_autsite.png);
+}
+
+
 
 
 
