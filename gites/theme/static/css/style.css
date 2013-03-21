@@ -597,23 +597,47 @@ padding-top:30px;
 background:url(../images/bgessentiel.png);
 }
 
-div#content.Zapfino{
-margin-left:100px;
-width:678px;
-height:80px;
-font-size:68px;
-text-shadow:2px 2px 2px #fff;
+div#content.ploneroot{
+padding:0px 1em;
+}
+
+div#content.ploneroot h1{
+margin-left:50px;
+font-size:3em;
+text-shadow:2px 2px 2px rgba(255,255,255,0.5);
 font-family:'Italianno', cursive;
 }
 
-div#content div.texte-colonne{
-padding:5px 1.3em;
+div#content.ploneroot div#content-core{
 -moz-column-width: 250px;
 -webkit-column-width: 250px;
 -moz-column-gap: 20px;
 -webkit-column-gap: 20px;
 -moz-column-rule: 1px solid #ddccb5;
 -webkit-column-rule: 1px solid #ddccb5;
+}
+
+
+.documentActions{
+width:95%;
+margin:auto;
+margin-top:40px; 
+border-top:1px dashed #bbb;
+text-align:right;
+}
+
+.documentActions ul{
+margin, padding:0;
+}
+
+.documentActions ul li{
+list-style-type:none;
+display:inline !important;
+margin-left: 8px;
+}
+
+.documentActions ul li a{
+border-bottom: 0.1em solid #CCCCCC;
 }
 
 /*** ZONE-VIDEO ***/
@@ -626,7 +650,6 @@ background-repeat:no-repeat;
 
 /*** ZONE TROMBINO FACEBOOK ***/
 div#trombino-facebook{
-float:right;
 margin-right:10px;
 height: 260px;
 width: 425px;
@@ -637,7 +660,11 @@ width: 425px;
 #footer{
 background:url(../images/degrade-gris.png);
 height:414px;
-padding-left:45px;
+padding-left:25px;
+}
+
+#footer li{
+display:block;
 }
 
 div#reseaux-sociaux,
@@ -647,10 +674,11 @@ div#association,
 div#autres-sites{
 float:left;
 height:312px;
-width:180px;
+width:170px;
 margin-right:25px;
 margin-top:50px;
 padding-left:15px;
+font-size:9pt;
 }
 
 div#reseaux-sociaux h2,
@@ -661,48 +689,44 @@ div#autres-sites h2{
 margin-left:-35px;
 margin-top:-25px;
 font-weight:bold;
-font-size:18px;
+font-size:11pt;
 }
 div#reseaux-sociaux h2{
-color:#00dde6;
+color:rgba(0,221,230,1);
 }
-
 div#contact h2{
 color:#fe606b;
 }
-
 div#destination-wallonie h2{
 color:#d8b2ec;
 }
-
 div#association h2{
 color:#74c7f7;
 }
-
 div#autres-sites h2{
 color:#1fda60;
 }
 
-
 div#reseaux-sociaux{
-border-left:1px solid #00dde6;
+border-left:1px solid rgba(0,221,230,0.3);
 }
-
 div#contact{
-border-left:1px solid #fe606b;
+border-left:1px solid rgba(254,96,107,0.3);
 }
-
 div#destination-wallonie{
-border-left:1px solid #d8b2ec;
+border-left:1px solid rgba(216,178,236,0.3);
 }
-
 div#association{
-border-left:1px solid #74c7f7;
+border-left:1px solid rgba(116,199,247,0.3);
+}
+div#autres-sites{
+border-left:1px solid rgba(31,218,96,0.3);
+}
+div#destination-wallonie ul{
+list-style-type:none;
+list-style-image:url(../images/icon_puce_destwal.png);
 }
 
-div#autres-sites{
-border-left:1px solid #1fda60;
-}
 
 
 .contact-ul,.texte-ul,.DW-ul,.NAS-ul{
