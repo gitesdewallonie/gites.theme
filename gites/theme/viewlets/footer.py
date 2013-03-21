@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from Acquisition import aq_inner, aq_parent
+from Acquisition import aq_inner
 from five import grok
-from zope import interface
 from datetime import datetime
-from plone.app.layout.navigation.interfaces import INavigationRoot
+from zope import interface
+from zope.component import getMultiAdapter
 
 grok.templatedir('templates')
 grok.context(interface.Interface)
@@ -17,7 +17,9 @@ class VideoViewlet(grok.Viewlet):
     grok.order(10)
 
     def available(self):
-        return self.isMainPage()
+        context_state = getMultiAdapter((aq_inner(self.context), self.request),
+                                        name=u'plone_context_state')
+        return context_state.is_portal_root()
 
     def getUrl(self):
         language = self.request.get('LANGUAGE', 'fr')
@@ -27,13 +29,6 @@ class VideoViewlet(grok.Viewlet):
             return 'http://www.youtube.com/embed/BCJHP0T8g0k'
         else:
             return 'http://www.youtube.com/embed/qZ41Dpgqgds'
-
-    def isMainPage(self):
-        obj = aq_inner(self.context)
-        if INavigationRoot.providedBy(aq_parent(obj)):
-            return True
-        else:
-            return False
 
 
 class FacebookViewlet(grok.Viewlet):
