@@ -4,14 +4,26 @@
         cookie_persistence="False"
         default_skin="Gites theme">
 
+ <object name="gites_theme_images"
+         meta_type="Filesystem Directory View"
+         directory="gites.theme:skins/gites_theme_images"/>
+
+ <object name="gites_theme_scripts"
+         meta_type="Filesystem Directory View"
+         directory="gites.theme:skins/gites_theme_scripts"/>
+
  <object name="gites_theme_templates"
          meta_type="Filesystem Directory View"
          directory="gites.theme:skins/gites_theme_templates"/>
 
  <skin-path name="Gites theme"
             based-on="Sunburst Theme">
-  <layer name="gites_theme_templates"
+  <layer name="gites_theme_images"
          insert-after="custom"/>
+  <layer name="gites_theme_scripts"
+         insert-after="gites_theme_images"/>
+  <layer name="gites_theme_templates"
+         insert-after="gites_theme_scripts"/>
  </skin-path>
 
 </object>
