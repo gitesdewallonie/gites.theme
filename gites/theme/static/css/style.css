@@ -860,3 +860,64 @@ color:#999;
 color:#ddd;
 }
 
+
+/*** Accordeon ***/
+
+#descriptif-accordeon{
+height:586px;
+list-style:none !important;
+overflow:scroll;
+width:1040px;
+}
+#descriptif-accordeon li{
+height:586px;
+position:relative;
+}
+#descriptif-accordeon .slide_handle{
+background:url(../images/tab_accordeon.png);
+bottom:0;
+cursor:pointer;
+left:0;
+position:absolute;
+top:0;
+width:28px;
+}
+#descriptif-accordeon .slide2 .slide_handle{
+background-position:-28px 0;
+}
+#descriptif-accordeon .slide3 .slide_handle{
+background-position:-56px 0;
+}
+#descriptif-accordeon .slide4 .slide_handle{
+background-position:-84px 0;
+}
+#descriptif-accordeon .slide5 .slide_handle{
+background-position:-112px 0;
+}
+#descriptif-accordeon .slide6 .slide_handle{
+background-position:-140px 0;
+}
+#descriptif-accordeon .slide_handle div{
+background:url(../images/arrows.gif);
+bottom:16px;
+height:7px;
+left:10px;
+position:absolute;
+width:7px;
+}
+#descriptif-accordeon .slide_opened .slide_handle{
+cursor:default;
+}
+#descriptif-accordeon .slide_opened .slide_handle div{
+background-position:0 -7px;
+}
+#descriptif-accordeon .slide_content
+{
+background-color: white;
+bottom:0;
+left:28px; /* Matches the width of .slide_handle */
+position:absolute;
+right:0;
+top:0;
+padding: 15px;
+}
