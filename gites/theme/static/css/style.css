@@ -56,10 +56,6 @@ background:#205c90;
 color:White;
 }
 
-#languageselector dt.actionMenuHeader a:after {
-content:" ▼";
-}
-
 
 /*** SKIN STYLES ***/
 
@@ -603,6 +599,7 @@ color:#666;
 min-height:425px;
 padding-top:30px;
 background:url(../images/bgessentiel.png);
+background-repeat:repeat;
 }
 
 div#content.ploneroot{
@@ -927,6 +924,7 @@ padding: 15px;
 
 
 /*** LISTING RESULTAT ***/
+
 #aside{
 width:1097px;
 background-color:#00F;
@@ -936,8 +934,48 @@ top:230px;
 z-index:100;
 }
 
-.hebergement-listing{
-width:900px;
+div#listing-result-gite-theme,
+div#listing-result-block{
+float:left;
+border:1px solid #999;
+border-radius:12px;
+box-shadow:2px 2px 4px rgba(50,50,50,0.5);
+min-height:300px;
+min-width: 150px;
+margin-left: 1em;
+padding: 15px;
+}
+
+div#listing-result-gite-theme{
+background: -moz-linear-gradient(top,  rgba(251,131,250,0.1) 0%, rgba(233,60,236,0.1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(251,131,250,0.1)), color-stop(100%,rgba(233,60,236,0.1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(251,131,250,0.1) 0%,rgba(233,60,236,0.1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(251,131,250,0.1) 0%,rgba(233,60,236,0.1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(251,131,250,0.1) 0%,rgba(233,60,236,0.1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(251,131,250,0.1) 0%,rgba(233,60,236,0.1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1afb83fa', endColorstr='#1ae93cec',GradientType=0 ); /* IE6-9 */
+
+}
+
+div#listing-result-block{
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+div#listing-result-gite-theme label{
+}
+
+
+.hebergement-listing-detail{
+width:800px;
 margin:auto;
 border:1px solid #000;
 }
