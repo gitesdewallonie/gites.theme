@@ -968,17 +968,53 @@ background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
 
-
-
 div#listing-result-gite-theme label{
 }
 
+div#listing-result-block div#listing-result-batch{
+float:left;
+margin-left:10px;
+}
 
+div#listing-result-block div#sort{
+float:right;
+margin-right:10px;
+}
+
+
+.hebergement-listing-detail,
+#typetype{
+height:123px;
+}
 .hebergement-listing-detail{
 width:800px;
-margin:auto;
-border:1px solid #000;
+margin:10px auto;
+border:1px solid rgba(50,50,50,0.5);
+border-radius:0px 0px 0px 12px;
+box-shadow:2px 5px 8px rgba(50,50,50,0.3);
 }
+
+#typetype{
+float:left;
+width:100px;
+background-color:#ace087;
+color:#265902;
+text-shadow:1px 1px 1px rgba(255,255,255,0.5);
+border-radius:0px 0px 0px 12px;
+}
+
+#vignette{
+float:left;
+width:181px;
+height:115px;
+border:1px solid #999;
+box-shadow:2px 2px 4px rgba(50,50,50,0.3);
+margin-top: 3px;
+margin-right: 8px;
+}
+
+
+
 
 #typetype,
 #vignette,
