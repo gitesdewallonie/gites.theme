@@ -861,7 +861,7 @@ color:#ddd;
 }
 
 
-/*** Accordeon ***/
+/*** ACCORDEON DESCRIPTIF GITE ***/
 
 #descriptif-accordeon{
 height:586px;
@@ -921,3 +921,70 @@ right:0;
 top:0;
 padding: 15px;
 }
+
+
+
+
+
+/*** LISTING RESULTAT ***/
+#aside{
+width:1097px;
+background-color:#00F;
+left:100px;
+position:absolute;
+top:230px;
+z-index:100;
+}
+
+.hebergement-listing{
+width:900px;
+margin:auto;
+border:1px solid #000;
+}
+
+#typetype,
+#vignette,
+#type,
+#commune,
+#capacite-max,
+#capacite-unite,
+#chambre-nbre,
+#chambre-nbre-label,
+#epis,
+#epis-nbre,
+#epis-nbre-label,
+#icon-confort,
+#icon-confort-dog,
+#icon-confort-smoker{
+float:left;
+margin-left:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
