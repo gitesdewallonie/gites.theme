@@ -982,29 +982,74 @@ margin-right:10px;
 }
 
 
-.hebergement-listing-detail,
-#typetype{
-height:123px;
+div.hebergement-gite-listing-detail,
+div.hebergement-chambre-listing-detail,
+div#typetype{
+height:126px;
 }
-.hebergement-listing-detail{
+
+div.hebergement-gite-listing-detail,
+div.hebergement-chambre-listing-detail{
 width:800px;
 margin:10px auto;
-border:1px solid rgba(50,50,50,0.5);
+border:1px solid rgba(50,50,50,0.1);
 border-radius:0px 0px 0px 12px;
 box-shadow:2px 5px 8px rgba(50,50,50,0.3);
 }
 
-#typetype{
-float:left;
-width:100px;
-background-color:#ace087;
-color:#265902;
-text-shadow:1px 1px 1px rgba(255,255,255,0.5);
-border-radius:0px 0px 0px 12px;
+div.hebergement-gite-listing-detail{
+background-image:url(../images/bg_listing_gite.png);
+background-color:rgba(217,255,178,0.3);
 }
 
-#vignette{
+div.hebergement-chambre-listing-detail{
+background-image:url(../images/bg_listing_chambre.png);
+background-color:rgba(210,254,255,0.3);
+}
+
+
+div#typetype{
 float:left;
+width:100px;
+text-shadow:1px 1px 1px rgba(255,255,255,0.5);
+border-radius:0px 0px 0px 12px;
+font-size:1.2em;
+}
+div.hebergement-gite-listing-detail div#typetype{
+background-color:#ace087;
+color:#265902;
+}
+div.hebergement-chambre-listing-detail div#typetype{
+background-color:#82a7ea;
+color:#00336a;
+}
+
+
+div.hebergement-gite-listing-detail div#typetype div.btn-loupe-listing,
+div.hebergement-chambre-listing-detail div#typetype div.btn-loupe-listing{
+width:95px;
+height:100px;
+background-repeat:no-repeat;
+background-position:center bottom;
+}
+div.hebergement-gite-listing-detail div#typetype div.btn-loupe-listing a,
+div.hebergement-chambre-listing-detail div#typetype div.btn-loupe-listing a{
+display:block;
+width:95px;
+height:100px;
+border-bottom:none;
+}
+div.hebergement-gite-listing-detail div#typetype div.btn-loupe-listing{
+background-image:url(../images/btn_loupe_gite.png);
+}
+div.hebergement-chambre-listing-detail div#typetype div.btn-loupe-listing{
+background-image:url(../images/btn_loupe_chambre.png);
+}
+
+
+
+
+#vignette{
 width:181px;
 height:115px;
 border:1px solid #999;
@@ -1016,7 +1061,6 @@ margin-right: 8px;
 
 
 
-#typetype,
 #vignette,
 #type,
 #commune,
