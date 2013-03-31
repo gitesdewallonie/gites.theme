@@ -15,7 +15,7 @@
 
     <stylesheet title="Gites Theme Styles"
                 id="++theme++gites.theme/css/style.css"
-                media="screen" 
+                media="screen"
                 rel="stylesheet"
                 rendering="import"
                 cacheable="True"
@@ -35,13 +35,37 @@
                 cookable="True"
                 enabled="1"
                 applyPrefix="True"
-		        expression=""/>
+                expression=""/>
 
     <stylesheet title="Chosen css"
-	            id="++resource++plonewidgets/chosen.css"
+                id="++resource++plonewidgets/chosen.css"
                 media="screen"
                 rel="stylesheet"
                 rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
+    <stylesheet title=""
+                id="http://fonts.googleapis.com/css?family=Josefin+Sans:700"
+                media="screen"
+                rel="stylesheet"
+                rendering="link"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
+    <stylesheet title=""
+                id="http://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+                media="screen"
+                rel="stylesheet"
+                rendering="link"
                 cacheable="True"
                 compression="safe"
                 cookable="True"
