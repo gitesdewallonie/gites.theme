@@ -1262,9 +1262,37 @@ margin-right:5px;
 
 
 
+/*** DESCRIPTION HEBERGEMENT ***/
+div#description-heb{
+}
 
+div#description-info-sup{
+width:100%;
+height:66px;
+border:1px solid #888;
+border-radius:12px;
+margin-bottom:10px;
+line-height:65px;
+}
 
+div#nom-heb{
+float:left;
+margin-left:20px;
+margin-right:200px;
+font-size:2em;
+color:#555;
+}
 
+.etiquette-sup{
+float:left;
+width:93px;
+height:56px;
+margin-left:8px;
+margin-top:3px;
+background-color:#fff6bb;
+border:1px solid #555;
+border-radius:8px;
+}
 
 
 
