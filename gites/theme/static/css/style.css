@@ -924,14 +924,40 @@ padding: 15px;
 
 /*** LISTING RESULTAT ***/
 
-#aside{
-width:1097px;
-background-color:#00F;
-left:100px;
+div#aside{
+width:100%;
 position:absolute;
 top:230px;
-z-index:100;
+left:0px;
+z-index:2;
 }
+
+div#aside-content{
+width:1095px;
+margin:auto;
+border-radius:18px;
+
+background: rgb(246,230,180); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(246,230,180,1) 0%, rgba(237,144,23,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,230,180,1)), color-stop(100%,rgba(237,144,23,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* IE6-9 */
+}
+
+div#aside-content h1{
+margin-left:40px;
+margin-top: 5px;
+color:#333;
+text-shadow:1px 1px 1px rgba(250,250,250,0.5);
+}
+div#aside-content div#aside-info{
+margin-left:60px;
+color:#333;
+}
+
 
 div#listing-result-gite-theme,
 div#listing-result-block{
@@ -1021,7 +1047,6 @@ div.hebergement-chambre-listing-detail{
 background-image:url(../images/bg_listing_chambre.png);
 background-color:rgba(210,254,255,0.3);
 }
-
 
 div#typetype{
 float:left;
