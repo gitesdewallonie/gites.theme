@@ -600,6 +600,7 @@ min-height:425px;
 padding:3px 10px 1px 10px;
 background:url(../images/bgessentiel.png);
 background-repeat:repeat;
+margin-top:2px;
 }
 
 div#content.ploneroot{
@@ -923,19 +924,19 @@ padding: 15px;
 
 
 /*** LISTING PACKAGE ***/
-
 div#aside{
 width:100%;
 position:absolute;
-top:230px;
+top:210px;
 left:0px;
-z-index:2;
+z-index:0;
 }
 
 div#aside-content{
-width:1095px;
+width:1050px;
 margin:auto;
 border-radius:18px;
+box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8), -1px -1px 1px rgba(0, 19, 47, 0.3);
 background: rgb(246,230,180); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(246,230,180,1) 0%, rgba(237,144,23,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,230,180,1)), color-stop(100%,rgba(237,144,23,1))); /* Chrome,Safari4+ */
