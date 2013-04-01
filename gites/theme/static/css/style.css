@@ -61,11 +61,11 @@ color:White;
 
 @font-face {
 font-family:'PTSansNArrow';
-src:url('font/PTSansBold.ttf');
-src:url('font/PTSansCaption.ttf') format('truetype'),
-url('font/PTSansItalic.ttf') format('truetype'),
-url('font/PTSansNarrow.ttf') format('truetype'),
-url('font/PTSansNarrowBold.ttf') format('truetype');
+src:url('../font/PTSansBold.ttf');
+src:url('../font/PTSansCaption.ttf') format('truetype'),
+url('../font/PTSansItalic.ttf') format('truetype'),
+url('../font/PTSansNarrow.ttf') format('truetype'),
+url('../font/PTSansNarrowBold.ttf') format('truetype');
 font-weight:normal;
 font-style:normal;
 }
@@ -597,7 +597,7 @@ opacity:0.3;
 div#content{
 color:#666;
 min-height:425px;
-padding-top:30px;
+padding:3px 10px 1px 10px;
 background:url(../images/bgessentiel.png);
 background-repeat:repeat;
 }
@@ -922,7 +922,7 @@ padding: 15px;
 
 
 
-/*** LISTING RESULTAT ***/
+/*** LISTING PACKAGE ***/
 
 div#aside{
 width:100%;
@@ -936,7 +936,6 @@ div#aside-content{
 width:1095px;
 margin:auto;
 border-radius:18px;
-
 background: rgb(246,230,180); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(246,230,180,1) 0%, rgba(237,144,23,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,230,180,1)), color-stop(100%,rgba(237,144,23,1))); /* Chrome,Safari4+ */
@@ -958,6 +957,34 @@ margin-left:60px;
 color:#333;
 }
 
+div#package-large-photo{
+height:500px;
+width:900px;
+border:1px solid #000;
+margin:80px auto 20px;
+}
+
+div#package-description{
+font-size:1.2em;
+color:#666;
+font-weight:bold;
+}
+
+div#package-content{
+padding:0 2em;
+text-align:justify;
+-moz-column-width: 500px;
+-webkit-column-width: 500px;
+-moz-column-gap: 20px;
+-webkit-column-gap: 20px;
+-moz-column-rule: 1px solid #ddccb5;
+-webkit-column-rule: 1px solid #ddccb5;
+margin-bottom:10px;
+}
+
+
+
+/*** LISTING RESULTAT RECHERCHE ***/
 
 div#listing-result-gite-theme,
 div#listing-result-block{
