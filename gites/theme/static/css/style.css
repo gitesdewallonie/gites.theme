@@ -344,7 +344,7 @@ padding-top:5px;
 background-image:url(../images/btn_je_decouvre.png);
 background-repeat:no-repeat;
 width:198px;
-height:56px;
+height:52px;
 padding-top:5px;
 padding-left:3px;
 }
@@ -1277,24 +1277,44 @@ width:500px;
 }
 
 div#description-heb{
+width:1092px;
+height:690px;
+margin-left:-10px;
 background-image:url(../images/bg_descriptif.png);
 }
 
 div#description-info-sup{
-width:100%;
+width:98%;
 height:66px;
-border:1px solid #888;
-border-radius:12px;
+margin:auto;
 margin-bottom:10px;
-line-height:65px;
+
+border:2px solid rgba(250,250,250,0.3);
+border-radius:12px;
+background: rgb(215,212,206); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(215,212,206,1) 0%, rgba(242,242,242,1) 83%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(215,212,206,1)), color-stop(83%,rgba(242,242,242,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d4ce', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 }
+
 
 div#nom-heb{
 float:left;
-margin-left:20px;
-margin-right:200px;
-font-size:2em;
+width:330px;
+height:60px;
+margin-left:10px;
+margin-top:3px;
+width:330px;
+font-size:16pt;
+font-weight:bold;
 color:#555;
+text-align:center;
+text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+line-height:55px;
 }
 
 .etiquette-sup{
@@ -1302,12 +1322,20 @@ float:left;
 width:93px;
 height:56px;
 margin-left:8px;
-margin-top:3px;
+margin-top:4px;
 background-color:#fff6bb;
-border:1px solid #555;
 border-radius:8px;
+color:#333;
+text-align:center;
+font-weight:bold;
+box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);
 }
 
+.etiquette-sup span{
+display:block;
+margin-top:15px;
+font-size:2.5em;;
+}
 
 
 
