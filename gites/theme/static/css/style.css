@@ -861,6 +861,10 @@ color:#ddd;
 
 /*** ACCORDEON DESCRIPTIF GITE ***/
 
+#accordeon-spin{
+position: relative;
+top: 120px;
+}
 #descriptif-accordeon{
 height:586px;
 list-style:none !important;
