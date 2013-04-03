@@ -8,6 +8,7 @@ Calendar picker fix
 */
 
 #ui-datepicker-div {
+z-index: 1100 !important;
 display: none;
 }
 
