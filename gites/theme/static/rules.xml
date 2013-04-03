@@ -5,8 +5,17 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <theme href="index.html" />
-    <notheme if="$ajax_load" />
+
     <notheme if-path="gestion_gites" />
+
+    <notheme if="$ajax_load" />
+
+    <notheme if-path="presentation_view"/>
+    <notheme if-path="source_editor.htm"/>
+    <notheme if-path="ploneimage.htm"/>
+    <notheme if-path="anchor.htm"/>
+    <notheme if-path="table.htm"/>
+    <notheme if-path="attributes.htm"/>
 
     <!-- Common Plone rules -->
     <drop theme="/html/head/meta" />
