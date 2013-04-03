@@ -926,13 +926,16 @@ padding: 15px;
 /*** LISTING PACKAGE ***/
 div#aside{
 width:100%;
-position:absolute;
-top:210px;
-left:0px;
-z-index:0;
+margin-top:20px;
+}
+
+div#aside-container{
+width:1050px;
+margin:auto;
 }
 
 div#aside-content{
+z-index:1000;
 width:1050px;
 margin:auto;
 border-radius:18px;
@@ -962,7 +965,7 @@ div#package-large-photo{
 height:500px;
 width:900px;
 border:1px solid #000;
-margin:80px auto 20px;
+margin:20px auto 20px;
 }
 
 div#package-description{

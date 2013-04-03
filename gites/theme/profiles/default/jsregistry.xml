@@ -23,14 +23,6 @@
                 compression="safe"
                 cookable="True"
                 enabled="True"
-                insert-after="++theme++gites.theme/bootstrap-carousel/js/bootstrap.js"
-                id="++theme++gites.theme/sticky-float/stickyfloat.js"
-                inline="False" />
-
-    <javascript cacheable="True"
-                compression="safe"
-                cookable="True"
-                enabled="True"
                 insert-after="++resource++plonewidgets/chosen.init.js"
                 id="++resource++plonewidgets/chosen.js"
                 inline="False" />
