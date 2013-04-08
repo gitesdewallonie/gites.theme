@@ -912,13 +912,20 @@ margin:20px auto 20px;
 }
 
 div#package-description{
+margin-top:20px;
+}
+
+div#package-description,
+div#package-content{
+padding:0 2em;
+}
+div#package-description{
 font-size:1.2em;
 color:#666;
 font-weight:bold;
 }
 
 div#package-content{
-padding:0 2em;
 text-align:justify;
 -moz-column-width: 500px;
 -webkit-column-width: 500px;
@@ -1346,18 +1353,41 @@ font-family:'PT Sans Narrow'!important;
 font-weight:none;
 }
 
-.div-accordeon{
+div#description-bloc-sup,
+div#description-bloc-inf{
+border:1px solid #000;
+margin:10px 0px;
+}
+
+div#description-photo-heb{
 float:left;
-margin-left: 10px;
+margin-top:23px;
+box-shadow:3px 3px 6px rgba(50,50,50,0.5);
 }
 
 div#description-calendrier{
+float:right;
 width:216px;
-height:212px;
+height:228px;
+background-color:#fff;
 background-image:url(../images/bg_descriptif_calendrier.png);
 background-repeat:no-repeat;
+background-position:right bottom;
+border:1px solid #000;
 }
 
+div#tarification-gite,
+div#tarification-chambre{
+float:left;
+margin:0px 0px 0px 5px;
+border:1px solid #f00;
+}
+
+div#tarification-table-hote{
+float:right;
+margin:40px 2px 0px 0px;
+border:1px solid #0f0;
+}
 
 
 
