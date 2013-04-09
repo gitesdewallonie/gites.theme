@@ -522,6 +522,14 @@ color:#666;
 font-size:0.8em;
 }
 
+div#zone-offres div#zone-idee-sejour img,
+div#zone-offres div#zone-derniere-minute img,
+div#zone-offres div#zone-allo-chambre-hote img,
+div#zone-offres div#zone-la-boutique img{
+float:right;
+}
+
+
 .etiquette{
 font-size:15pt;
 }
@@ -572,11 +580,18 @@ margin-bottom:16px;
 }
 
 .plus-info{
-border-top:1px dashed #999;
+position:absolute;
+bottom:8px;
+width:230px;
+border-top:1px dashed #bbb;
+text-align:right;
+padding-right:8px;
 }
 .plus-info a{
 text-decoration:none;
 color:#ccc1b3;
+font-size:8pt;
+color:#a66723 !important;
 }
 
 
@@ -620,7 +635,7 @@ margin-bottom:5px;
 }
 
 div#content.ploneroot{
-padding:0px 1em;
+padding:18px 1em;
 }
 
 div#content.ploneroot h1{
@@ -947,7 +962,6 @@ margin-bottom:10px;
 
 
 /*** LISTING RESULTAT RECHERCHE ***/
-
 div#listing-result-gite-theme,
 div#listing-result-block{
 float:left;
@@ -959,6 +973,10 @@ min-width: 150px;
 margin-left: 1em;
 margin-bottom: 8px;
 padding: 15px;
+}
+
+.documentDescription{
+margin-bottom:15px;
 }
 
 div#listing-result-info{
