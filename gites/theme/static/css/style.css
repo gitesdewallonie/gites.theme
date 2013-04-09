@@ -1213,11 +1213,6 @@ margin-right:5px;
 
 
 /*** DESCRIPTION HEBERGEMENT ***/
-#description-map #map_div {
-height:300px;
-width:500px;
-}
-
 div#description-heb{
 width:1092px;
 height:690px;
@@ -1379,7 +1374,6 @@ margin-bottom: 15px;
 
 div#description-bloc-sup,
 div#description-bloc-inf{
-border:1px solid #000;
 margin:10px 0px;
 }
 
@@ -1397,30 +1391,59 @@ background-color:#fff;
 background-image:url(../images/bg_descriptif_calendrier.png);
 background-repeat:no-repeat;
 background-position:right bottom;
-border:1px solid #000;
 }
 
 div#tarification-gite,
 div#tarification-chambre{
 float:left;
 margin:0px 0px 0px 5px;
-border:1px solid #f00;
 }
 
 div#tarification-table-hote{
 float:right;
 margin:40px 2px 0px 0px;
-border:1px solid #0f0;
 }
 
 #content-core.contact-proprio {
 color:#555;
 }
 
+/*** slide localiѕation ***/
+div#description-heb div#description-map div#map_div {
+height:470px;
+width:660px;
+}
 
+div#description-heb div#map_div{
+float:left;
+border:1px solid #999;
+box-shadow:0px 3px 5px rgba(50, 50, 50, 0.5);
+}
+div#description-heb div#map-menu{
+float:right;
+padding:30px 10px;
+border:1px solid #999;
+border-radius:18px;
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+box-shadow:3px 3px 5px rgba(50, 50, 50, 0.5);
+}
 
+div#description-heb div#map-menu label{
+font-weight:normal;
+color:#555;
+text-shadow:1px 1px 1px rgba(250, 250, 250, 0.8);
+}
 
-
+div#description-heb div#map-menu input{
+margin:0px 3px;
+}
 
 
 
