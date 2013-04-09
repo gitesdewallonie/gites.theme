@@ -1055,8 +1055,8 @@ color:#00336a;
 }
 div#typetype .texte-vertical{
 position:relative;
-left:-32px;
-top:45px;
+left:-34px;
+top:50px;
 writing-mode:tb-rl;
 -webkit-transform:rotate(270deg);
 -moz-transform:rotate(270deg);
@@ -1096,14 +1096,12 @@ width:181px;
 height:115px;
 border:1px solid #999;
 box-shadow:2px 2px 4px rgba(50,50,50,0.3);
-margin-top: 3px;
-margin-right: 8px;
+margin:3px 8px 0px 3px;
 }
 
 div#info-bloc-sup{
 float:left;
 width:500px;
-
 }
 
 div#info-bloc-sup div#distance{
@@ -1133,8 +1131,6 @@ float:left;
 width:500px;
 margin-top:10px;
 }
-
-
 
 div.hebergement-gite-listing-detail div#info-bloc-inf div#capacite-max,
 div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-chambre,
@@ -1215,12 +1211,10 @@ background-position:left 0px;
 background-position:left -43px;
 }
 
-
 div#listing-result-block div#commune{
 float:right;
 margin-right:5px;
 }
-
 
 
 /*** DESCRIPTION HEBERGEMENT ***/
@@ -1238,7 +1232,6 @@ margin:auto;
 margin-bottom:10px;
 border:2px solid rgba(250,250,250,0.3);
 border-radius:12px;
-
 background: -moz-linear-gradient(top,  rgba(104,103,102,0.5) 0%, rgba(238,238,238,0.25) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(104,103,102,0.5)), color-stop(100%,rgba(238,238,238,0.25))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top,  rgba(104,103,102,0.5) 0%,rgba(238,238,238,0.25) 100%); /* Chrome10+,Safari5.1+ */
@@ -1246,7 +1239,6 @@ background: -o-linear-gradient(top,  rgba(104,103,102,0.5) 0%,rgba(238,238,238,0
 background: -ms-linear-gradient(top,  rgba(104,103,102,0.5) 0%,rgba(238,238,238,0.25) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(104,103,102,0.5) 0%,rgba(238,238,238,0.25) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80686766', endColorstr='#40eeeeee',GradientType=0 ); /* IE6-9 */
-
 }
 
 div#nom-heb{
@@ -1285,7 +1277,6 @@ font-size:2.5em;;
 
 
 /*** CAROUSSEL HEBERGEMENT ***/
-
 #hebergement-carousel {
 height: 377px;
 }
@@ -1312,7 +1303,6 @@ margin-top: 0px;
 
 
 /*** CONTENU ACCORDEON ***/
-
 #accordeon-spin{
 position: relative;
 top: 120px;
@@ -1374,7 +1364,6 @@ background: -o-linear-gradient(top,  rgba(252,253,251,1) 0%,rgba(235,234,234,1) 
 background: -ms-linear-gradient(top,  rgba(252,253,251,1) 0%,rgba(235,234,234,1) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(252,253,251,1) 0%,rgba(235,234,234,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfdfb', endColorstr='#ebeaea',GradientType=0 ); /* IE6-9 */
-
 position:absolute;
 left:28px; /* Matches the width of .slide_handle */
 right:0;
@@ -1391,7 +1380,6 @@ font-weight:none;
 margin-bottom: 15px;
 }
 
-
 /*** slide accueil ***/
 div#description-bloc-sup,
 div#description-bloc-inf{
@@ -1404,11 +1392,15 @@ margin-top:23px;
 box-shadow:3px 3px 6px rgba(50,50,50,0.5);
 }
 
+div#adresse-hebergement{
+float:left;
+margin-left:20px;
+}
+
 div#description-calendrier{
 float:right;
 width:216px;
 height:228px;
-background-color:#fff;
 background-image:url(../images/bg_descriptif_calendrier.png);
 background-repeat:no-repeat;
 background-position:right bottom;
@@ -1417,8 +1409,34 @@ background-position:right bottom;
 div#tarification-gite,
 div#tarification-chambre{
 float:left;
+width:440px;
+height:280px;
 margin:0px 0px 0px 5px;
+background-image:url(../images/bg_descriptif_tarif.png);
+background-repeat:no-repeat;
+padding-top:3px;
+padding-left:20px;
 }
+
+div#tarification-gite .tarif-periode,
+div#tarification-chambre .tarif-periode{
+color:#a66723;
+font-size:12pt;
+font-weight:bold;
+text-align:center;
+}
+
+div#tarification-gite .tarif-saison,
+div#tarification-chambre .tarif-saison{
+color:#222;
+font-size:10pt;
+text-align:left;
+}
+
+
+
+
+
 
 div#tarification-table-hote{
 float:right;
@@ -1428,6 +1446,8 @@ margin:40px 2px 0px 0px;
 #content-core.contact-proprio {
 color:#555;
 }
+
+
 
 /*** slide localiѕation ***/
 div#description-heb div#description-map div#map_div {
