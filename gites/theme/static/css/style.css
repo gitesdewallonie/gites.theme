@@ -430,19 +430,24 @@ margin-top:8px;
 #bouton-devenir-membre{
 float:right;
 width:198px;
+height:33px;
+line-height:33px;
 margin-right:15px;
-margin-top:8px;
+margin-top:3px;
 border:1px solid #9d7d11;
 border-radius:18px;
+font-family:"PT Sans Narrow";
 text-align:center;
-background: rgb(244,226,155);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%, rgba(236,206,95,1) 1%, rgba(232,195,57,1) 99%, rgba(244,226,155,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(244,226,155,1)), color-stop(1%,rgba(236,206,95,1)), color-stop(99%,rgba(232,195,57,1)), color-stop(100%,rgba(244,226,155,1)));
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
-background: -o-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
-background: radial-gradient(ellipse at center,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e29b', endColorstr='#f4e29b',GradientType=1 );
+color:#333;
+text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+background: rgb(237,207,95); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(237,207,95,1) 0%, rgba(232,194,57,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,207,95,1)), color-stop(100%,rgba(232,194,57,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edcf5f', endColorstr='#e8c239',GradientType=0 ); /* IE6-9 */
 }
 
 #bouton-devenir-membre a{
@@ -458,15 +463,12 @@ padding-right:20px;
 margin-left:25px;
 margin-top:8px;
 }
-
 #mice a{
 color:#0F0 !important;
 }
-
 #city-trip a{
 color:#406cd3 !important;
 }
-
 #insolite a{
 color:#ff00bd !important;
 border-right:none;
