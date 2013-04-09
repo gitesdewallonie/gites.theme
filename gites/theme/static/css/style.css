@@ -114,7 +114,7 @@ font-weight:bold;
 /*** LISTE ICONES ***/
 #icone-reseaux-sociaux{
 float:left;
-margin-left:520px;
+margin-left:450px;
 height:20px;
 }
 
@@ -519,7 +519,7 @@ padding:15px;
 float:left;
 box-shadow:3px 3px 7px #444;
 color:#666;
-font-size:0.9em;
+font-size:0.8em;
 }
 
 .etiquette{
