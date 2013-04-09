@@ -197,6 +197,12 @@ height:129px;
 width:129px;
 }
 
+#logo a{
+height:129px;
+width:129px;
+display:block;
+}
+
 #je-recherche{
 position:relative;
 float:left;
@@ -299,6 +305,7 @@ margin-top:15px;
 border:none;
 width:149px;
 height:32px;
+cursor: pointer;
 background:url(../images/trouver.png);
 }
 #je-recherche .trouver{
@@ -435,6 +442,10 @@ background: -o-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%,rg
 background: -ms-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
 background: radial-gradient(ellipse at center,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e29b', endColorstr='#f4e29b',GradientType=1 );
+}
+
+#bouton-devenir-membre a{
+display:block;
 }
 
 #mice,
