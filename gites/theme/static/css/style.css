@@ -145,6 +145,7 @@ width:23px;
 display:block;
 width:23px;
 height:20px;
+color:#ddd !important;
 }
 
 #android{
@@ -709,21 +710,21 @@ width: 425px;
 
 
 /*** FOOTER ***/
-#footer{
+div#footer{
 background:url(../images/degrade-gris.png);
 height:414px;
 padding-left:25px;
 }
 
-#footer li{
+div#footer li{
 display:block;
 }
 
-div#reseaux-sociaux,
-div#contact,
-div#destination-wallonie,
-div#association,
-div#autres-sites{
+div#footer div#reseaux-sociaux,
+div#footer div#contact,
+div#footer div#destination-wallonie,
+div#footer div#association,
+div#footer div#autres-sites{
 float:left;
 height:312px;
 width:170px;
@@ -733,62 +734,90 @@ padding-left:15px;
 font-size:9pt;
 }
 
-div#reseaux-sociaux h2,
-div#contact h2,
-div#destination-wallonie h2,
-div#association h2,
-div#autres-sites h2{
+div#footer div#reseaux-sociaux h2,
+div#footer div#contact h2,
+div#footer div#destination-wallonie h2,
+div#footer div#association h2,
+div#footer div#autres-sites h2{
 margin-left:-35px;
 margin-top:-25px;
 font-weight:normal;
 font-size:11pt;
 }
-div#reseaux-sociaux h2{
+div#footer div#reseaux-sociaux h2{
 color:rgba(0,221,230,1);
 }
-div#contact h2{
+div#footer div#reseaux-sociaux ul.contact-ul li a{
+display:block;
+height:35px;
+padding-left:52px;
+padding-top:15px;
+color:#ccc !important;
+font-size:0.8em;
+background-repeat:no-repeat;
+background-position:left top;
+margin:10px 0px;
+}
+
+div#footer div#reseaux-sociaux ul.contact-ul li a:hover{
+color:#fff !important;
+}
+
+div#footer div#reseaux-sociaux ul.contact-ul li #btn-facebook{
+background-image:url(../images/facebook.png);
+}
+div#footer div#reseaux-sociaux ul.contact-ul li #btn-twitter{
+background-image:url(../images/twitter.png);
+}
+div#footer div#reseaux-sociaux ul.contact-ul li #btn-google{
+background-image:url(../images/google.png);
+}
+div#footer div#reseaux-sociaux ul.contact-ul li #btn-youtube{
+background-image:url(../images/youtube.png);
+}
+
+
+div#footer div#contact h2{
 color:#fe606b;
 }
-div#destination-wallonie h2{
+div#footer div#destination-wallonie h2{
 color:#d8b2ec;
 }
-div#association h2{
+div#footer div#association h2{
 color:#74c7f7;
 }
-div#autres-sites h2{
+div#footer div#autres-sites h2{
 color:#1fda60;
 }
 
-div#reseaux-sociaux{
+div#footer div#reseaux-sociaux{
 border-left:1px solid rgba(0,221,230,0.3);
 }
-div#contact{
+div#footer div#contact{
 border-left:1px solid rgba(254,96,107,0.3);
 }
-div#destination-wallonie{
+div#footer div#destination-wallonie{
 border-left:1px solid rgba(216,178,236,0.3);
 }
-div#association{
+div#footer div#association{
 border-left:1px solid rgba(116,199,247,0.3);
 }
-div#autres-sites{
+div#footer div#autres-sites{
 border-left:1px solid rgba(31,218,96,0.3);
 }
 
-div#destination-wallonie li,
-div#autres-sites li{
+div#footer div#destination-wallonie li,
+div#footer div#autres-sites li{
 background-repeat:no-repeat;
 background-position:left center;
 padding-left:7px;
 }
-div#destination-wallonie li{
+div#footer div#destination-wallonie li{
 background-image:url(../images/icon_puce_destwal.png);
 }
-div#autres-sites li{
+div#footer div#autres-sites li{
 background-image:url(../images/icon_puce_autsite.png);
 }
-
-
 
 /*** FACEBOOK ***/
 #trombino-facebook{
@@ -841,7 +870,8 @@ color:#d2d2d2;
 #feder{
 }
 
-#wallonie-tourisme{}
+#wallonie-tourisme{
+}
 
 #wallonie-bruxelle-tourisme{
 }

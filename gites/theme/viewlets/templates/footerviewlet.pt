@@ -4,29 +4,33 @@
         <ul class="contact-ul">
             <li>
                 <a href="https://www.facebook.com/GitesdeWallonie"
-                   target="_blank">
-                    <img src="++theme++gites.theme/images/facebook.png" alt="facebook">
+                   target="_blank"
+                   id="btn-facebook">
+                    <!--img src="++theme++gites.theme/images/facebook.png" alt="facebook"-->
                     <span i18n:translate="fans_facebook">Devenez fans sur facebook</span>
                 </a>
             </li>
             <li>
                 <a href="http://www.twitter.com/"
-                   target="_blank">
-                    <img src="++theme++gites.theme/images/twitter.png" alt="twitter">
+                   target="_blank"
+                   id="btn-twitter">
+                    <!--img src="++theme++gites.theme/images/twitter.png" alt="twitter"-->
                     <span i18n:translate="suivez_nous_twitter">Suivez-nous sur twitter</span>
                 </a>
             </li>
             <li>
                 <a href="http://plus.google.com/"
-                   target="_blank">
-                    <img src="++theme++gites.theme/images/google.png" alt="google">
+                   target="_blank"
+                   id="btn-google">
+                    <!--img src="++theme++gites.theme/images/google.png" alt="google"-->
                     <span i18n:translate="fans_google">Devenez fans sur Google+</span>
                 </a>
             </li>
             <li>
                 <a href="http://www.youtube.com/user/GitesDeWallonie"
-                   target="_blank">
-                    <img src="++theme++gites.theme/images/youtube.png" alt="youtube">
+                   target="_blank"
+                   id="btn-youtube">
+                    <!--img src="++theme++gites.theme/images/youtube.png" alt="youtube"-->
                     <span i18n:translate="regardez_nous_youtube">Regardez-nous sur youtube</span>
                 </a>
             </li>
@@ -58,10 +62,10 @@
     <div id="association">
         <h2 i18n:translate="association">L'association</h2>
         <span i18n:translate="association_description">
-        <p>L'accueil est une valeur essentielle des 
+        <p>L'accueil est une valeur essentielle des
         Gîtes de Wallonie.</p>
 
-        <p>Un logement appartenant au réseau des 
+        <p>Un logement appartenant au réseau des
         Gîtes de Wallonie, c'est non seulement
         un aménagement répondant aux normes
         de confort moderne mais aussi et surtout
@@ -84,8 +88,6 @@
         <ul>
             <li>Allo chambre d'hôtes</li>
             <li>BnBelgium</li>
-            <li>Notre documentation</li>
-            <li>Notre blog</li>
         </ul>
     </div><!--autres-sites-->
     <div class="break-flaot"></div>
