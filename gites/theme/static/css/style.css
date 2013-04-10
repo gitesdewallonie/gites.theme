@@ -1104,6 +1104,10 @@ float:left;
 width:500px;
 }
 
+div#info-bloc-sup div#digit{
+float:left;
+}
+
 div#info-bloc-sup div#distance{
 float:left;
 margin-top:7px;
