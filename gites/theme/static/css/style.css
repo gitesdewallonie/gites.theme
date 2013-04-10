@@ -1463,15 +1463,13 @@ margin-bottom: 15px;
 }
 
 /*** slide accueil ***/
-div#description-bloc-gauche{
+div#accueil-bloc-gauche{
+border:1px solid #f00;
 float:left;
 }
-div#description-bloc-droite{
+div#accueil-bloc-droite{
+border:1px solid #0f0;
 float:right;
-}
-
-div#description-bloc-gauche,
-div#description-bloc-droite{
 }
 
 div#description-photo-heb{
@@ -1480,7 +1478,7 @@ box-shadow:3px 3px 6px rgba(50,50,50,0.5);
 }
 
 div#adresse-hebergement{
-height:⅝0px:
+height:80px:
 margin:10px 0;
 text-align:center;
 border:1px solid #bbb;
@@ -1524,7 +1522,6 @@ font-size:10pt;
 text-align:left;
 }
 
-
 div#tarification-table-hote{
 float:right;
 margin:40px 2px 0px 0px;
@@ -1533,6 +1530,20 @@ margin:40px 2px 0px 0px;
 #content-core.contact-proprio {
 color:#555;
 }
+
+
+/*** slide description ***/
+div#description-bloc-gauche{
+width:400px;
+border:1px solid #f00;
+float:left;
+}
+div#description-bloc-droite{
+width:400px;
+border:1px solid #0f0;
+float:right;
+}
+
 
 
 
