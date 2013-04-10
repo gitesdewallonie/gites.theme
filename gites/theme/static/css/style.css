@@ -1475,13 +1475,14 @@ margin:10px auto;
 box-shadow:3px 3px 6px rgba(50,50,50,0.5);
 }
 
-div#adresse-hebergement{
-margin-bottom:20px;
-padding:6px;
-text-align:center;
+div#description-adresse-hebergement,
+div#description-calendrier,
+div#tarification-gite,
+div#tarification-chambre,
+div#description-icone-confort,
+div#description-coordonnee{
 box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
 border-radius:18px;
-color:#333;
 text-shadow:1px 1px 1px rgba(250,250,250,0.8);
 background: rgb(255,255,255); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
@@ -1493,10 +1494,15 @@ background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
+div#adresse-hebergement{
+margin-bottom:20px;
+padding:6px;
+text-align:center;
+color:#333;
+text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+}
+
 div#description-calendrier{
-background-image:url(../images/bg_descriptif_tarif.png);
-background-repeat:no-repeat;
-background-position:right bottom;
 }
 
 div#description-calendrier div#calendars{
@@ -1509,13 +1515,9 @@ border-bottom: none;
 
 div#tarification-gite,
 div#tarification-chambre{
-width:440px;
-height:280px;
+width:480px;
 margin:0px 0px 0px 5px;
-background-image:url(../images/bg_descriptif_tarif.png);
-background-repeat:no-repeat;
-padding-top:3px;
-padding-left:20px;
+padding:8px 20px;
 }
 
 div#tarification-gite .tarif-periode,
@@ -1554,20 +1556,9 @@ float:right;
 }
 
 div#icone-confort{
-
 text-align:center;
 margin-top:8px;
 padding:6px;
-border-top:1px solid #ddd;
-border-radius:18px;
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 div#icone-confort .picto{
@@ -1633,35 +1624,32 @@ margin:0px 3px;
 
 
 /*** slide contact ***/
-div#description-heb div#descriptif-coordonnee{
+div#description-heb div#description-coordonnee{
 float:left;
 margin-top:20px;
 margin-left:20px;
 width:499px;
-height:236px;
 padding:15px;
-background-image:url(../images/bg_descriptif_contact.png);
-background-repeat:no-repeat;
 font-family:'PT Sans Narrow'!important;
 }
 
-div#description-heb div#descriptif-coordonnee div#nom-proprio,
-div#description-heb div#descriptif-coordonnee div#langue-proprio,
-div#description-heb div#descriptif-coordonnee div#phone-proprio,
-div#description-heb div#descriptif-coordonnee div#fax-proprio,
-div#description-heb div#descriptif-coordonnee div#gsm-proprio,
-div#description-heb div#descriptif-coordonnee div#email-proprio,
-div#description-heb div#descriptif-coordonnee div#url-proprio,
-div#description-heb div#descriptif-coordonnee div#contacter-proprio{
+div#description-heb div#description-coordonnee div#nom-proprio,
+div#description-heb div#description-coordonnee div#langue-proprio,
+div#description-heb div#description-coordonnee div#phone-proprio,
+div#description-heb div#description-coordonnee div#fax-proprio,
+div#description-heb div#description-coordonnee div#gsm-proprio,
+div#description-heb div#description-coordonnee div#email-proprio,
+div#description-heb div#description-coordonnee div#url-proprio,
+div#description-heb div#description-coordonnee div#contacter-proprio{
 margin:10px;
 }
 
-div#description-heb div#descriptif-coordonnee div#nom-proprio{
+div#description-heb div#description-coordonnee div#nom-proprio{
 margin-bottom:20px;
 font-size:14pt;
 }
 
-div#description-heb div#descriptif-coordonnee div#contacter-proprio{
+div#description-heb div#description-coordonnee div#contacter-proprio{
 margin-top:35px;
 margin-left:30px;
 padding-left:15px;
@@ -1670,12 +1658,12 @@ background-repeat:no-repeat;
 background-position:left 4px;
 }
 
-div#description-heb div#descriptif-coordonnee div#contacter-proprio a{
+div#description-heb div#description-coordonnee div#contacter-proprio a{
 border-bottom:none;
 }
 
 
-div#description-heb div#descriptif-photo-proprio{
+div#description-heb div#description-photo-proprio{
 float:right;
 margin-top:60px;
 margin-right:30px;
