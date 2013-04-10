@@ -1311,7 +1311,6 @@ background-image:url(../images/bg_descriptif.png);
 div#description-info-sup{
 width:98%;
 height:66px;
-margin:auto;
 margin-bottom:10px;
 border:2px solid rgba(250,250,250,0.3);
 border-radius:12px;
@@ -1464,34 +1463,43 @@ margin-bottom: 15px;
 }
 
 /*** slide accueil ***/
-div#description-bloc-sup,
-div#description-bloc-inf{
-margin:10px 0px;
+div#description-bloc-gauche{
+float:left;
+}
+div#description-bloc-droite{
+float:right;
+}
+
+div#description-bloc-gauche,
+div#description-bloc-droite{
 }
 
 div#description-photo-heb{
-float:left;
-margin-top:23px;
+margin:10px auto;
 box-shadow:3px 3px 6px rgba(50,50,50,0.5);
 }
 
 div#adresse-hebergement{
-float:left;
-margin-left:20px;
+height:⅝0px:
+margin:10px 0;
+text-align:center;
+border:1px solid #bbb;
+border-radius:18px;
+color:#555;
 }
 
 div#description-calendrier{
-float:right;
-width:216px;
-height:228px;
-background-image:url(../images/bg_descriptif_calendrier.png);
+background-image:url(../images/bg_descriptif_tarif.png);
 background-repeat:no-repeat;
 background-position:right bottom;
 }
 
+div#description-calendrier div#calendars{
+margin-left:40px;
+}
+
 div#tarification-gite,
 div#tarification-chambre{
-float:left;
 width:440px;
 height:280px;
 margin:0px 0px 0px 5px;
