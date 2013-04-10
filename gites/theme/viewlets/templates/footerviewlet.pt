@@ -90,7 +90,4 @@
     </div><!--autres-sites-->
     <div class="break-flaot"></div>
 
-    <div id="retour-haut"
-         i18n:translate="retour-vers-le-haut"><a href="#">Retour vers le haut</a></div>
-
 </div><!--footer-->

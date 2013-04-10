@@ -785,25 +785,6 @@ background-image:url(../images/icon_puce_autsite.png);
 }
 
 
-#retour-haut{
-position:relative;
-float:right;
-margin-top:37px;
-right:10px;
-font-size:11px;
-}
-
-#retour-haut a{
-text-decoration:none;
-color:#ccc !important;
-padding-right:14px;
-background-image:url(../images/icon_fleche_haut.png);
-background-repeat:no-repeat;
-background-position:right center;
-}
-
-
-
 
 /*** FACEBOOK ***/
 #trombino-facebook{
