@@ -27,4 +27,12 @@
                 id="++resource++plonewidgets/chosen.js"
                 inline="False" />
 
+    <javascript cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="True"
+                insert-after="++resource++plonewidgets/chosen.js"
+                id="++theme++gites.theme/scripts/gites.js"
+                inline="False" />
+
 </object>

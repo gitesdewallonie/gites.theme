@@ -55,6 +55,12 @@ color:White;
 }
 
 
+/*** EDIT BAR ***/
+#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
+z-index: 1500;
+}
+
+
 /*** SKIN STYLES ***/
 @font-face {
 font-family:'PT Sans Narrow';
@@ -114,7 +120,7 @@ font-weight:bold;
 /*** LISTE ICONES ***/
 #icone-reseaux-sociaux{
 float:left;
-margin-left:520px;
+margin-left:450px;
 height:20px;
 }
 
@@ -268,12 +274,13 @@ background-repeat:no-repeat;
 background-position:right top;
 }
 
+/*
 #je-recherche #date-start,
 #je-recherche #date-end{
 background-image:url(../images/icon_calendrier.png);
 width:106px;
 }
-
+*/
 #je-recherche #nbre-personne{
 background-image:url(../images/icon_gugus.png);
 width:68px;
@@ -375,7 +382,8 @@ text-shadow:1px 1px 1px rgba(50,50,50,0.5);
 
 /*Carousel*/
 #package-carousel {
-height: 377px;
+height: 333px;
+margin-bottom: 0px;
 }
 
 #package-carousel .carousel-inner {
@@ -385,12 +393,15 @@ position:relative;
 }
 
 #package-carousel .carousel-inner .item img {
-height:377px;
+height:333px;
 width:100%;
 }
 
-/*
 #package-carousel .carousel-caption {
+bottom: 0px;
+}
+
+/*
 position:absolute;
 top:-50px;
 background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
@@ -429,19 +440,24 @@ margin-top:8px;
 #bouton-devenir-membre{
 float:right;
 width:198px;
+height:33px;
+line-height:33px;
 margin-right:15px;
-margin-top:8px;
+margin-top:3px;
 border:1px solid #9d7d11;
 border-radius:18px;
+font-family:"PT Sans Narrow";
 text-align:center;
-background: rgb(244,226,155);
-background: -moz-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%, rgba(236,206,95,1) 1%, rgba(232,195,57,1) 99%, rgba(244,226,155,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(244,226,155,1)), color-stop(1%,rgba(236,206,95,1)), color-stop(99%,rgba(232,195,57,1)), color-stop(100%,rgba(244,226,155,1)));
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
-background: -o-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
-background: radial-gradient(ellipse at center,  rgba(244,226,155,1) 0%,rgba(236,206,95,1) 1%,rgba(232,195,57,1) 99%,rgba(244,226,155,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e29b', endColorstr='#f4e29b',GradientType=1 );
+color:#333;
+text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+background: rgb(237,207,95); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(237,207,95,1) 0%, rgba(232,194,57,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,207,95,1)), color-stop(100%,rgba(232,194,57,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edcf5f', endColorstr='#e8c239',GradientType=0 ); /* IE6-9 */
 }
 
 #bouton-devenir-membre a{
@@ -457,15 +473,12 @@ padding-right:20px;
 margin-left:25px;
 margin-top:8px;
 }
-
 #mice a{
 color:#0F0 !important;
 }
-
 #city-trip a{
 color:#406cd3 !important;
 }
-
 #insolite a{
 color:#ff00bd !important;
 border-right:none;
@@ -518,8 +531,16 @@ padding:15px;
 float:left;
 box-shadow:3px 3px 7px #444;
 color:#666;
-font-size:0.9em;
+font-size:0.8em;
 }
+
+div#zone-offres div#zone-idee-sejour img,
+div#zone-offres div#zone-derniere-minute img,
+div#zone-offres div#zone-allo-chambre-hote img,
+div#zone-offres div#zone-la-boutique img{
+float:right;
+}
+
 
 .etiquette{
 font-size:15pt;
@@ -571,11 +592,18 @@ margin-bottom:16px;
 }
 
 .plus-info{
-border-top:1px dashed #999;
+position:absolute;
+bottom:8px;
+width:230px;
+border-top:1px dashed #bbb;
+text-align:right;
+padding-right:8px;
 }
 .plus-info a{
 text-decoration:none;
 color:#ccc1b3;
+font-size:8pt;
+color:#a66723 !important;
 }
 
 
@@ -619,7 +647,7 @@ margin-bottom:5px;
 }
 
 div#content.ploneroot{
-padding:0px 1em;
+padding:18px 1em;
 }
 
 div#content.ploneroot h1{
@@ -755,25 +783,6 @@ background-image:url(../images/icon_puce_destwal.png);
 div#autres-sites li{
 background-image:url(../images/icon_puce_autsite.png);
 }
-
-
-#retour-haut{
-position:relative;
-float:right;
-margin-top:37px;
-right:10px;
-font-size:11px;
-}
-
-#retour-haut a{
-text-decoration:none;
-color:#ccc !important;
-padding-right:14px;
-background-image:url(../images/icon_fleche_haut.png);
-background-repeat:no-repeat;
-background-position:right center;
-}
-
 
 
 
@@ -946,7 +955,6 @@ margin-bottom:10px;
 
 
 /*** LISTING RESULTAT RECHERCHE ***/
-
 div#listing-result-gite-theme,
 div#listing-result-block{
 float:left;
@@ -958,6 +966,10 @@ min-width: 150px;
 margin-left: 1em;
 margin-bottom: 8px;
 padding: 15px;
+}
+
+.documentDescription{
+margin-bottom:15px;
 }
 
 div#listing-result-info{
@@ -1438,10 +1450,6 @@ text-align:left;
 }
 
 
-
-
-
-
 div#tarification-table-hote{
 float:right;
 margin:40px 2px 0px 0px;
@@ -1543,20 +1551,3 @@ height:170px;
 background-image:url(../images/bg_photo_proprio.png);
 background-repeat:no-repeat;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
