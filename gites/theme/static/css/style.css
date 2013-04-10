@@ -1503,6 +1503,10 @@ div#description-calendrier div#calendars{
 margin-left:40px;
 }
 
+div#description-calendrier div#calendars #calendars_menu a {
+border-bottom: none;
+}
+
 div#tarification-gite,
 div#tarification-chambre{
 width:440px;
@@ -1554,6 +1558,26 @@ position:absolute;
 margin-left:80px;
 bottom:20px;
 }
+
+
+/*** slide disponibilités ***/
+#description-dispo-calendrier #dispocalendars_menu a {
+border-bottom: none;
+}
+
+#dispocalendars_container table {
+margin: 0px 30px 30px 30px;
+text-align: center;
+}
+
+#dispocalendars_container table caption {
+margin-bottom: 5px;
+}
+
+#dispocalendars_menu {
+margin-bottom: 30px;
+}
+
 
 /*** slide localiѕation ***/
 div#description-heb div#description-map div#map_div {
