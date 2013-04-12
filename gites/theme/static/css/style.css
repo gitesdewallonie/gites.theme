@@ -1399,7 +1399,6 @@ top: 120px;
 #descriptif-accordeon{
 height:586px;
 list-style:none !important;
-overflow:scroll;
 width:1040px;
 }
 #descriptif-accordeon li.slide{
