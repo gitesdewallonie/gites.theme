@@ -1,12 +1,42 @@
 /*
-CSS by Affinitic
+CSS BY AFFINITIC
 mars 2013
+
+
 */
 
-/*
-Calendar picker fix
-*/
 
+
+/*** SKIN STYLES ***/
+@font-face {
+font-family:'PT Sans Narrow';
+src:url('../font/PTSansCaption.ttf') format('truetype'),
+url('../font/PTSansItalic.ttf') format('truetype'),
+url('../font/PTSansNarrow.ttf') format('truetype'),
+url('../font/PTSansNarrowBold.ttf') format('truetype');
+font-weight:normal;
+font-style:normal;
+}
+
+body{
+font-family:arial, helvetica, verdana, sans-serif;
+font-size:12pt;
+color:#333;
+background:#191919;
+padding:0;
+margin:0;
+}
+
+.break-float{
+clear:both;
+}
+
+a:hover{
+color:#205C90 !important;
+}
+
+
+/*** CALENDAR PICKER FIX ***/
 #ui-datepicker-div {
 z-index: 1100 !important;
 display: none;
@@ -18,7 +48,7 @@ display: none;
 float:right;
 background:#e3e3e3;
 position:relative;
-z-index:3; /* personaltools should be above #portal-header (with z-index:2) */
+z-index:3;          /* personaltools should be above #portal-header (with z-index:2) */
 top:0;
 right:0;
 padding:0.25em 0.5em;
@@ -65,35 +95,7 @@ margin-bottom:0px;
 }
 
 
-/*** SKIN STYLES ***/
-@font-face {
-font-family:'PT Sans Narrow';
-src:url('../font/PTSansCaption.ttf') format('truetype'),
-url('../font/PTSansItalic.ttf') format('truetype'),
-url('../font/PTSansNarrow.ttf') format('truetype'),
-url('../font/PTSansNarrowBold.ttf') format('truetype');
-font-weight:normal;
-font-style:normal;
-}
-
-
-body{
-font-family:arial, helvetica, verdana, sans-serif;
-font-size:12pt;
-color:#fff;
-background:#191919;
-padding:0;
-margin:0;
-}
-
-a{
-color:#000 !important;
-}
-
-.break-float{
-clear:both;
-}
-
+/*** INTERFACE ***/
 #wrapper{
 width:1100px;
 min-height:2800px;
@@ -101,11 +103,13 @@ margin:auto;
 background-color:#303030;
 }
 
+
 /*** HEADER ***/
 #header{
 height:200px;
 box-shadow:0px 5px 8px #000;
 }
+
 
 /*** TOP-HEADER ***/
 #top-header{
@@ -119,6 +123,7 @@ background-color:#000;
 float:left;
 margin-left:10px;
 font-weight:bold;
+color:#fff;
 }
 
 /*** LISTE ICONES ***/
@@ -198,6 +203,7 @@ background:url(../images/bg-orange.png);
 
 }
 
+/*** LOGO ***/
 #logo{
 float:left;
 background:url(../images/logo.png);
@@ -214,7 +220,9 @@ width:129px;
 display:block;
 }
 
-#je-recherche{
+
+/*** JE CHERCHE ***/
+div#je-recherche{
 position:relative;
 float:left;
 padding:10px;
@@ -228,12 +236,12 @@ width:402px;
 box-shadow:3px 3px 5px #000;
 }
 
-#je-recherche h2,
-#je-connais h2,
-#je-decouvre h2{
+div#je-recherche h2,
+div#je-connais h2,
+div#je-decouvre h2{
 float:left;
 margin-top:-8px;
-font-family:"PTSansNArrow";
+font-family:"PT Sans Narrow";
 font-size:1.2em;
 font-weight:bold;
 color:#000;
@@ -241,19 +249,32 @@ text-shadow:1px 1px 2px rgba(255,255,255,0.5);
 margin-bottom:1px;
 }
 
-#je-recherche h3{
+div#je-recherche h3 {
 float:right;
 margin:0;
-font-family:"PTSansNArrow";
-font-size:0.8em;
-font-weight:normal;
-color:#000;
-text-shadow:1px 1px 2px rgba(255,255,255,0.5);
 padding-right:10px;
 background-image:url(../images/icon_fleche.png);
 background-repeat:no-repeat;
 background-position:right center;
 }
+div#je-recherche h3 a {
+font-family:"PT Sans Narrow";
+font-size:0.8em;
+font-weight:normal;
+color:#000;
+text-shadow:1px 1px 2px rgba(255,255,255,0.5);
+}
+
+div#je-recherche h3 a:hover {
+font-family:"PT Sans Narrow";
+font-size:0.8em;
+font-weight:normal;
+color:#205C90;
+text-shadow:1px 1px 2px rgba(255,255,255,0.5);
+}
+
+
+
 
 #je-recherche #zone-gite-meuble,
 #je-recherche #zone-chambre-hote{
@@ -277,6 +298,11 @@ height:27px;
 margin:10px 5px;
 background-repeat:no-repeat;
 background-position:right top;
+}
+
+.ui-datepicker-trigger{
+margin-left:3px;
+margin-top:3px;
 }
 
 /*
@@ -329,7 +355,6 @@ margin-top:35px;
 margin-left:75px;
 }
 
-
 #info{
 margin-left:130px;
 margin-bottom:-12px;
@@ -380,12 +405,25 @@ font-weight:bold;
 font-size:1.1em;
 color:#fff !important;
 text-shadow:1px 1px 1px rgba(50,50,50,0.5);
-
 }
 
-/*** ZONE PRODUIT PACKAGE ***/
+/*** PORTAL-BREADCRUMBS ***/
+div#portal-breadcrumbs{
+margin:5px 0px;
+color:#ddd;
+}
 
-/*Carousel*/
+div#portal-breadcrumbs a{
+color:#c16c00 !important;
+}
+
+div#portal-breadcrumbs a:hover{
+color:#f79a05 !important;
+}
+
+
+/*** ZONE PRODUIT PACKAGE ***/
+/*** CAROUSEL ***/
 #package-carousel {
 height: 333px;
 margin-bottom: 0px;
@@ -413,7 +451,6 @@ background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
 padding: 15px;
 }
 */
-
 
 #zone-produit-pacakage{
 }
@@ -451,10 +488,6 @@ margin-right:15px;
 margin-top:3px;
 border:1px solid #9d7d11;
 border-radius:18px;
-font-family:"PT Sans Narrow";
-text-align:center;
-color:#333;
-text-shadow:1px 1px 1px rgba(250,250,250,0.8);
 background: rgb(237,207,95); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(237,207,95,1) 0%, rgba(232,194,57,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,207,95,1)), color-stop(100%,rgba(232,194,57,1))); /* Chrome,Safari4+ */
@@ -467,6 +500,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edcf5f', end
 
 #bouton-devenir-membre a{
 display:block;
+text-align:center;
+color:#333;
+text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+font-family:"PT Sans Narrow";
 }
 
 #mice,
@@ -488,7 +525,6 @@ color:#406cd3 !important;
 color:#ff00bd !important;
 border-right:none;
 }
-
 
 
 /*** OFFRES PACKAGES ***/
@@ -518,8 +554,15 @@ font-family:'PT Sans Narrow'!important;
 font-weight:none;
 text-align:center;
 text-shadow:1px 1px 1px rgba(250,250,250,0.6);
-
 }
+
+div#zone-offres h3 a{
+color:#000;
+}
+div#zone-offres h3 a:hover{
+color:#205C90;
+}
+
 
 div#zone-offres div#zone-idee-sejour,
 div#zone-offres div#zone-derniere-minute,
@@ -546,7 +589,6 @@ div#zone-offres div#zone-la-boutique img{
 float:right;
 }
 
-
 .etiquette{
 font-size:15pt;
 }
@@ -555,45 +597,6 @@ font-size:15pt;
 font-size:17px;
 font-weight:bold;
 color:#4f0000;
-}
-
-#tableauoffre img,
-#tableauoffre-2 img,
-#tableauoffre-3 img ,
-#tableauoffre-4 img{
-height:116px;
-width:178px;
-margin-left:60px;
-margin-top:5px;
-}
-
-#tableauoffre p,
-#tableauoffre-2 p,
-#tableauoffre-3 p,
-#tableauoffre-4 p{
-color:#444;
-font-size:12px;
-font-weight:lighter;
-}
-
-#tableauoffre-2 .red{
-width:100px;
-margin-left:60px;
-font-size:14px;
-font-weight:bold;
-color:red;
-margin-right:0px;
-float:left;
-
-}
-
-#tableauoffre-2 .bonhomme{
-width:25px;
-height:25px;
-margin-left:10px;
-margin-top:8px;
-float:left;
-margin-bottom:16px;
 }
 
 .plus-info{
@@ -610,7 +613,6 @@ color:#ccc1b3;
 font-size:8pt;
 color:#a66723 !important;
 }
-
 
 .idee{
 width:114px;
@@ -639,6 +641,7 @@ background-position:72px 4px;
 .ensavoirplus a:hover{
 opacity:0.3;
 }
+
 
 /*** ESSENTIEL ***/
 div#content{
@@ -693,6 +696,7 @@ margin-left: 8px;
 border-bottom: 0.1em solid #CCCCCC;
 }
 
+
 /*** ZONE-VIDEO ***/
 div#zone-video{
 min-height:600px;
@@ -714,6 +718,7 @@ div#footer{
 background:url(../images/degrade-gris.png);
 height:414px;
 padding-left:25px;
+color:#ddd;
 }
 
 div#footer li{
@@ -752,7 +757,7 @@ display:block;
 height:35px;
 padding-left:52px;
 padding-top:15px;
-color:#ccc !important;
+color:#ddd !important;
 font-size:0.8em;
 background-repeat:no-repeat;
 background-position:left top;
@@ -819,13 +824,13 @@ div#footer div#autres-sites li{
 background-image:url(../images/icon_puce_autsite.png);
 }
 
+
 /*** FACEBOOK ***/
 #trombino-facebook{
 width: 425px;
 height: 260px;
 margin:10px auto 10px auto;
 }
-
 
 
 /*** COLOPHON ***/
@@ -1052,7 +1057,6 @@ background: -o-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 
 background: -ms-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d4ce', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
-
 }
 
 div#listing-result-gite-theme{
@@ -1063,7 +1067,6 @@ background: -o-linear-gradient(top,  rgba(251,131,250,0.1) 0%,rgba(233,60,236,0.
 background: -ms-linear-gradient(top,  rgba(251,131,250,0.1) 0%,rgba(233,60,236,0.1) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(251,131,250,0.1) 0%,rgba(233,60,236,0.1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1afb83fa', endColorstr='#1ae93cec',GradientType=0 ); /* IE6-9 */
-
 }
 
 div#listing-result-block{
@@ -1181,6 +1184,7 @@ margin:3px 8px 0px 3px;
 div#info-bloc-sup{
 float:left;
 width:500px;
+height:26px;
 }
 
 div#info-bloc-sup div#digit{
@@ -1261,6 +1265,7 @@ float:left;
 margin-top:13px;
 margin-left:10px;
 }
+
 .dog,
 .no-dog{
 width:40px;
@@ -1268,9 +1273,11 @@ height:40px;
 background-image:url(../images/icon_dog.png);
 background-repeat:no-repeat;
 }
+
 .dog{
 background-position:left 0px;
 }
+
 .no-dog{
 background-position:left -43px;
 }
@@ -1462,7 +1469,7 @@ font-weight:none;
 margin-bottom: 15px;
 }
 
-/*** slide accueil ***/
+/*** SLIDE ACCUEIL ***/
 div#accueil-bloc-gauche{
 float:left;
 }
@@ -1494,8 +1501,28 @@ background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-div#adresse-hebergement{
-margin-bottom:20px;
+div#tarification-gite h3,
+div#tarification-chambre h3{
+color:#A66723;
+}
+
+div#tarification-gite table,
+div#tarification-chambre table,
+div#tarification-gite div#description-tarification-divers,
+div#tarification-chambre div#description-tarification-divers{
+width:300px;
+margin:auto;
+}
+
+div#tarification-gite div#description-tarification-divers,
+div#tarification-chambre div#description-tarification-divers{
+margin-top:10px;
+}
+
+
+
+div#description-adresse-hebergement{
+margin-bottom:10px;
 padding:6px;
 text-align:center;
 color:#333;
@@ -1506,7 +1533,7 @@ div#description-calendrier{
 }
 
 div#description-calendrier div#calendars{
-margin-left:40px;
+margin-left:65px;
 }
 
 div#description-calendrier div#calendars #calendars_menu a {
@@ -1545,7 +1572,7 @@ color:#555;
 }
 
 
-/*** slide description ***/
+/*** SLIDE DESCRIPTION ***/
 div#description-bloc-gauche{
 width:400px;
 float:left;
@@ -1566,7 +1593,7 @@ margin:0px 3px;
 }
 
 
-/*** slide disponibilités ***/
+/*** SLIDE DISPONIBILITES ***/
 #description-dispo-calendrier #dispocalendars_menu a {
 border-bottom: none;
 }
@@ -1585,7 +1612,7 @@ margin-bottom: 30px;
 }
 
 
-/*** slide localiѕation ***/
+/*** SLIDE LOCALIЅATION ***/
 div#description-heb div#description-map div#map_div {
 height:470px;
 width:660px;
@@ -1623,7 +1650,7 @@ margin:0px 3px;
 }
 
 
-/*** slide contact ***/
+/*** SLIDE CONTACT ***/
 div#description-heb div#description-coordonnee{
 float:left;
 margin-top:20px;
@@ -1661,7 +1688,6 @@ background-position:left 4px;
 div#description-heb div#description-coordonnee div#contacter-proprio a{
 border-bottom:none;
 }
-
 
 div#description-heb div#description-photo-proprio{
 float:right;
