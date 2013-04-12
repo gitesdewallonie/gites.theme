@@ -321,6 +321,10 @@ width:68px;
 float:left;
 }
 
+.ui-widget-content{
+background: #eeeeee;
+}
+
 #je-connais{
 float:left;
 background:rgba(255,255,255,0.1);
