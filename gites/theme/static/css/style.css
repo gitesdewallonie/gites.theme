@@ -995,6 +995,14 @@ div#aside-content div#aside-info{
 margin-left:60px;
 color:#333;
 }
+div#aside-content div#aside-menu{
+width:300px;
+position:relative;
+left:730px;
+top:-40px;
+text-align:right;
+}
+
 
 div#package-large-photo{
 height:500px;
