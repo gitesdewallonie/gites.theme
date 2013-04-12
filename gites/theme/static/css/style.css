@@ -1187,8 +1187,9 @@ width:500px;
 height:26px;
 }
 
-div#info-bloc-sup div#digit{
+div#info-bloc-sup .digit{
 float:left;
+cursor:pointer;
 }
 
 div#info-bloc-sup div#distance{
