@@ -1482,6 +1482,10 @@ margin:10px auto;
 box-shadow:3px 3px 6px rgba(50,50,50,0.5);
 }
 
+div#description-photo-heb img{
+cursor: pointer;
+}
+
 div#description-adresse-hebergement,
 div#description-calendrier,
 div#tarification-gite,
