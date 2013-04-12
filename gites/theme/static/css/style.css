@@ -1311,7 +1311,7 @@ margin-right:5px;
 /*** DESCRIPTION HEBERGEMENT ***/
 div#description-heb{
 width:1092px;
-height:690px;
+height:735px;
 margin-left:-10px;
 background-image:url(../images/bg_descriptif.png);
 }
@@ -1400,7 +1400,6 @@ top: 120px;
 #descriptif-accordeon{
 height:586px;
 list-style:none !important;
-overflow:scroll;
 width:1040px;
 }
 #descriptif-accordeon li.slide{
@@ -1481,6 +1480,10 @@ float:right;
 div#description-photo-heb{
 margin:10px auto;
 box-shadow:3px 3px 6px rgba(50,50,50,0.5);
+}
+
+div#description-photo-heb img{
+cursor: pointer;
 }
 
 div#description-adresse-hebergement,
@@ -1583,13 +1586,13 @@ width:400px;
 float:right;
 }
 
-div#icone-confort{
+div#description-icone-confort{
 text-align:center;
 margin-top:8px;
 padding:6px;
 }
 
-div#icone-confort .picto{
+div#description-icone-confort .picto{
 margin:0px 3px;
 }
 
