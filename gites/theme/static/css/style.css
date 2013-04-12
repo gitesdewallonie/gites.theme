@@ -1096,6 +1096,15 @@ float:right;
 margin-right:10px;
 }
 
+div#listing-result-block div#sort label{
+display:block;
+}
+
+div#listing-result-count{
+position:relative;
+top:-10px;
+width:550px;
+}
 
 div.hebergement-gite-listing-detail,
 div.hebergement-chambre-listing-detail,
@@ -1198,6 +1207,8 @@ cursor:pointer;
 div#info-bloc-sup div#distance{
 float:left;
 margin-top:7px;
+font-weight:bold;
+color:#555;
 }
 
 div#info-bloc-sup div#nom-hebergement{
