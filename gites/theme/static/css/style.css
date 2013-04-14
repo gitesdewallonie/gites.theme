@@ -343,18 +343,20 @@ margin-top:15px;
 }
 
 #je-recherche .trouver,
-#je-connais .trouver{
+#je-connais .trouver,
+#je-recherche #form-buttons-trouver{
 border:none;
 width:149px;
 height:32px;
 cursor: pointer;
 background:url(../images/trouver.png);
 }
-#je-recherche .trouver{
+#je-recherche .trouver,
+#je-recherche #form-buttons-trouver {
 margin-top:4px;
 margin-left:259px;
 }
-#je-connais .trouver{
+#je-connais .trouver {
 margin-top:35px;
 margin-left:75px;
 }
@@ -1752,3 +1754,7 @@ height:170px;
 background-image:url(../images/bg_photo_proprio.png);
 background-repeat:no-repeat;
 }
+
+/*** z3c.form ***/
+input.datepicker-widget { width: 80px; }
+input#form-widgets-capacityMin { width: 34px; }
