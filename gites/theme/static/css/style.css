@@ -286,15 +286,12 @@ font-family:'PT Sans Narrow';
 margin-left:5px;
 }
 
-
 #je-recherche #date-start,
 #je-recherche #date-end,
 #je-recherche #nbre-personne{
 float:left;
 height:27px;
 margin:10px 5px 10px 0px;
-background-repeat:no-repeat;
-background-position:right top;
 }
 
 .ui-datepicker-trigger{
@@ -303,12 +300,21 @@ margin-left:3px;
 
 #je-recherche #nbre-personne{
 background-image:url(../images/icon_gugus.png);
+background-repeat:no-repeat;
+background-position:right top;
 width:68px;
+padding-top:5px;
 }
 
 #je-recherche #proximite{
 float:left;
 }
+
+#je-recherche #proximite input[type=text]{
+float:left;
+width:250px;
+}
+
 
 .ui-widget-content{
 background: #eeeeee;
@@ -344,7 +350,7 @@ padding-right:32px;
 }
 
 #je-recherche .trouver{
-margin-top:-7px;
+margin-top:-10px;
 margin-left:259px;
 }
 
