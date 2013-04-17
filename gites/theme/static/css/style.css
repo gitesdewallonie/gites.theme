@@ -574,26 +574,35 @@ div#zone-offres div#zone-idee-sejour,
 div#zone-offres div#zone-derniere-minute,
 div#zone-offres div#zone-allo-chambre-hote,
 div#zone-offres div#zone-la-boutique{
-width:235px;
-position:relative;
+float:left;
+width:233px;
+height:241px;
+background-color:transparent;
 background:url(../images/bg-etiquette.png);
 background-position:2px -5px;
 margin-left:6px;
 margin-top:15px;
-height:236px;
-padding:15px;
-float:left;
+padding:10px 15px 15px 15px;
 box-shadow:3px 3px 7px #444;
+border-radius:4px;
 color:#666;
 font-size:0.8em;
 }
 
 div#zone-offres div#zone-idee-sejour img,
 div#zone-offres div#zone-derniere-minute img,
-div#zone-offres div#zone-allo-chambre-hote img,
 div#zone-offres div#zone-la-boutique img{
 float:right;
 }
+
+div#zone-offres div#zone-allo-chambre-hote div#allo-qrcode{
+position:relative;
+left:-6px;
+box-shadow:2px 2px 4px rgba(50,50,50,0.5);
+margin-bottom:6px;
+}
+
+
 
 .etiquette{
 font-size:15pt;
@@ -607,7 +616,7 @@ color:#4f0000;
 
 .plus-info{
 position:absolute;
-bottom:8px;
+bottom:25px;
 width:230px;
 border-top:1px dashed #bbb;
 text-align:right;
