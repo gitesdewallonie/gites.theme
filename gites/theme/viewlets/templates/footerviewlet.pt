@@ -39,48 +39,17 @@
 
     <div id="contact">
         <h2 i18n:translate="contactez_nous">Contactez-nous</h2>
-        Fédération des Gites de Wallonie asbl.<br />
-        Avenue Prince de Liège, 1/21<br />
-        B5100 Jambes (Namur) <br />
-        info@gitesdewallonie.<br />
-        Tel: 32(0) 81 311 800<br />
-        Fax: 32(0) 81 310 200<br />
+        <span tal:replace="structure python: here.restrictedTraverse('@@footer_view').getContent('contact')" />
     </div><!--contact-->
 
     <div id="destination-wallonie">
         <h2 i18n:translate="destination_wallonie">Destination Wallonie</h2>
-        <ul>
-            <li>Lorem ipsum dolor sit Amex</li>
-            <li>Lorem ipsum dolor sit Amex</li>
-            <li>Lorem ipsum dolor sit Amex</li>
-            <li>Lorem ipsum dolor sit Amex</li>
-            <li>Lorem ipsum dolor sit Amex</li>
-            <li>Lorem ipsum dolor sit Amex</li>
-        </ul>
+        <span tal:replace="structure python: here.restrictedTraverse('@@footer_view').getContent('destination-wallonie')" />
     </div><!--destination-wallonie-->
 
     <div id="association">
         <h2 i18n:translate="association">L'association</h2>
-        <span i18n:translate="association_description">
-        <p>L'accueil est une valeur essentielle des
-        Gîtes de Wallonie.</p>
-
-        <p>Un logement appartenant au réseau des
-        Gîtes de Wallonie, c'est non seulement
-        un aménagement répondant aux normes
-        de confort moderne mais aussi et surtout
-        une tradition de l'accueil.</p>
-
-        <p>Débutant ou expérimenté, les propriétaires
-        qui nous font confiance bénéficient d'un
-        programme de formation continue et d'un
-        encadrement professionnel, depuis le
-        premier contact jusqu'à la promotion de
-        leur hébergement.</p>
-
-        <p>Objectif avoué :<br />
-        la satisfaction de chaque hôte!</p>
-        </span>
+        <span tal:replace="structure python: here.restrictedTraverse('@@footer_view').getContent('association')" />
     </div><!--association-->
 
     <div id="autres-sites">
