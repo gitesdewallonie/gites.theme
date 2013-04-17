@@ -10,12 +10,15 @@ mars 2013
 /*** SKIN STYLES ***/
 @font-face {
 font-family:'PT Sans Narrow';
+src:url('../font/PTSansNarrow.ttf') format('truetype');
+font-weight:normal;
+font-style:normal;
+/*
 src:url('../font/PTSansCaption.ttf') format('truetype'),
 url('../font/PTSansItalic.ttf') format('truetype'),
 url('../font/PTSansNarrow.ttf') format('truetype'),
 url('../font/PTSansNarrowBold.ttf') format('truetype');
-font-weight:normal;
-font-style:normal;
+*/
 }
 
 body{
