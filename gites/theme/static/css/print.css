@@ -2,3 +2,67 @@
 Print CSS by Affinitic
 mars 2013
 */
+@import url("style.css") print;
+
+@media print {
+
+    * {
+        box-shadow:none !important;
+        border:none !important;
+        background-image:none !important;
+        border-radius:none !important;
+    }
+    #description-calendrier,
+    .slide3,
+    .slide4,
+    #beforecontent {
+        display: none !important;
+    }
+    #descriptif-accordeon {
+        overflow: visible !important;
+    }
+    #descriptif-accordeon li.slide {
+        page-break-before: always;
+        display: inline !important;
+    }
+    #edit-bar {
+        display: none;
+    }
+    #portal-top {
+        display: none;
+    }
+    #plone-document-byline {
+        display: none;
+    }
+    #viewlet-below-content {
+        display: none;
+    }
+    #bottompage {
+        display: none;
+    }
+    #aftercontent {
+        display: none;
+    }
+    #map_div {
+        overflow: visible !important;
+    }
+    #map_div > div:first-child {
+        overflow: visible !important;
+    }
+    #map_div > div:first-child > div:first-child {
+        overflow: visible !important;
+    }
+    .gmnoprint {
+        display: none !important;
+    }
+    .gmnoscreen {
+        display: none !important;
+    }
+    #viewlet-map {
+        page-break-before: always;
+        padding-top: 50px;
+    }
+    #sort, #menu {
+        display: none;
+    }
+ }
