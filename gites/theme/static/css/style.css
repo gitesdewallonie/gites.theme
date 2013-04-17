@@ -321,6 +321,10 @@ width:68px;
 float:left;
 }
 
+.ui-widget-content{
+background: #eeeeee;
+}
+
 #je-connais{
 float:left;
 background:rgba(255,255,255,0.1);
@@ -339,18 +343,20 @@ margin-top:15px;
 }
 
 #je-recherche .trouver,
-#je-connais .trouver{
+#je-connais .trouver,
+#je-recherche #form-buttons-trouver{
 border:none;
 width:149px;
 height:32px;
 cursor: pointer;
 background:url(../images/trouver.png);
 }
-#je-recherche .trouver{
+#je-recherche .trouver,
+#je-recherche #form-buttons-trouver {
 margin-top:4px;
 margin-left:259px;
 }
-#je-connais .trouver{
+#je-connais .trouver {
 margin-top:35px;
 margin-left:75px;
 }
@@ -991,6 +997,14 @@ div#aside-content div#aside-info{
 margin-left:60px;
 color:#333;
 }
+div#aside-content div#aside-menu{
+width:300px;
+position:relative;
+left:730px;
+top:-40px;
+text-align:right;
+}
+
 
 div#package-large-photo{
 height:500px;
@@ -1015,12 +1029,15 @@ font-weight:bold;
 
 div#package-content{
 text-align:justify;
+/* mise en colonne automatique */
+/*
 -moz-column-width: 500px;
 -webkit-column-width: 500px;
 -moz-column-gap: 20px;
 -webkit-column-gap: 20px;
 -moz-column-rule: 1px solid #ddccb5;
 -webkit-column-rule: 1px solid #ddccb5;
+*/
 margin-bottom:10px;
 }
 
@@ -1093,6 +1110,15 @@ float:right;
 margin-right:10px;
 }
 
+div#listing-result-block div#sort label{
+display:block;
+}
+
+div#listing-result-count{
+position:relative;
+top:-10px;
+width:550px;
+}
 
 div.hebergement-gite-listing-detail,
 div.hebergement-chambre-listing-detail,
@@ -1187,13 +1213,16 @@ width:500px;
 height:26px;
 }
 
-div#info-bloc-sup div#digit{
+div#info-bloc-sup .digit{
 float:left;
+cursor:pointer;
 }
 
 div#info-bloc-sup div#distance{
 float:left;
 margin-top:7px;
+font-weight:bold;
+color:#555;
 }
 
 div#info-bloc-sup div#nom-hebergement{
@@ -1399,7 +1428,6 @@ top: 120px;
 #descriptif-accordeon{
 height:586px;
 list-style:none !important;
-overflow:scroll;
 width:1040px;
 }
 #descriptif-accordeon li.slide{
@@ -1478,14 +1506,24 @@ float:right;
 }
 
 div#description-photo-heb{
-margin:10px auto;
+margin:0px auto 10px;
 box-shadow:3px 3px 6px rgba(50,50,50,0.5);
+border-radius:18px;
+}
+
+div#description-photo-heb img{
+border-radius:18px;
+}
+
+div#description-photo-heb img{
+cursor: pointer;
 }
 
 div#description-adresse-hebergement,
 div#description-calendrier,
 div#tarification-gite,
 div#tarification-chambre,
+div#tarification-table-hote,
 div#description-icone-confort,
 div#description-coordonnee{
 box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
@@ -1508,18 +1546,21 @@ color:#A66723;
 
 div#tarification-gite table,
 div#tarification-chambre table,
+div#tarification-table-hote table,
 div#tarification-gite div#description-tarification-divers,
 div#tarification-chambre div#description-tarification-divers{
-width:300px;
+width:400px;
 margin:auto;
+}
+
+div#tarification-table-hote{
+margin-top:15px;
 }
 
 div#tarification-gite div#description-tarification-divers,
 div#tarification-chambre div#description-tarification-divers{
 margin-top:10px;
 }
-
-
 
 div#description-adresse-hebergement{
 margin-bottom:10px;
@@ -1542,13 +1583,14 @@ border-bottom: none;
 
 div#tarification-gite,
 div#tarification-chambre{
-width:480px;
+width:460px;
 margin:0px 0px 0px 5px;
 padding:8px 20px;
 }
 
 div#tarification-gite .tarif-periode,
-div#tarification-chambre .tarif-periode{
+div#tarification-chambre .tarif-periode,
+div#tarification-table-hote .tarif-periode{
 color:#a66723;
 font-size:12pt;
 font-weight:bold;
@@ -1556,16 +1598,30 @@ text-align:center;
 }
 
 div#tarification-gite .tarif-saison,
-div#tarification-chambre .tarif-saison{
+div#tarification-chambre .tarif-saison,
+div#tarification-table-hote .tarif-saison{
 color:#222;
 font-size:10pt;
 text-align:left;
+padding:5px;
 }
 
-div#tarification-table-hote{
-float:right;
-margin:40px 2px 0px 0px;
+div#tarification-gite .tarif-prix,
+div#tarification-chambre .tarif-prix,
+div#tarification-table-hote .tarif-prix{
+text-align:center;
+padding:5px;
 }
+
+div#tarification-gite .empty-cell,
+div#tarification-chambre .empty-cell,
+div#tarification-table-hote .empty-cell{
+background-color:#fff
+padding:5px;
+min-width:30px;
+}
+
+
 
 #content-core.contact-proprio {
 color:#555;
@@ -1582,13 +1638,13 @@ width:400px;
 float:right;
 }
 
-div#icone-confort{
+div#description-icone-confort{
 text-align:center;
 margin-top:8px;
 padding:6px;
 }
 
-div#icone-confort .picto{
+div#description-icone-confort .picto{
 margin:0px 3px;
 }
 
@@ -1698,3 +1754,7 @@ height:170px;
 background-image:url(../images/bg_photo_proprio.png);
 background-repeat:no-repeat;
 }
+
+/*** z3c.form ***/
+input.datepicker-widget { width: 80px; }
+input#form-widgets-capacityMin { width: 34px; }
