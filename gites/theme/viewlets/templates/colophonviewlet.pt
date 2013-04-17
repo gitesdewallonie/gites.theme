@@ -7,7 +7,7 @@
         <br />
         B5100 Jambes (Namur)
         <br />
-        info@gitesdewallonie.be
+        <a href="" tal:attributes="href string:${context/@@plone_portal_state/portal_url}/contact-info">info@gitesdewallonie.be</a>
         <br />
         Tel: 32(0) 81 311 800 - Fax: 32(0) 81 310 200
     </div>
