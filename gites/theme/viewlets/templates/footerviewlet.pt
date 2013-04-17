@@ -37,19 +37,22 @@
         </ul>
     </div><!--reseaux-sociaux-->
 
-    <div id="contact">
-        <h2 i18n:translate="contactez_nous">Contactez-nous</h2>
-        <span tal:replace="structure python: here.restrictedTraverse('@@footer_view').getContent('contact')" />
+    <div id="contact"
+         tal:define="content python: here.restrictedTraverse('@@footer_view').getContent('contact')">
+        <h2 tal:content="content/Title | nothing">Contactez-nous</h2>
+        <span tal:replace="structure python: content and content.CookedBody() or ''" />
     </div><!--contact-->
 
-    <div id="destination-wallonie">
-        <h2 i18n:translate="destination_wallonie">Destination Wallonie</h2>
-        <span tal:replace="structure python: here.restrictedTraverse('@@footer_view').getContent('destination-wallonie')" />
+    <div id="destination-wallonie"
+         tal:define="content python: here.restrictedTraverse('@@footer_view').getContent('destination-wallonie')">
+        <h2 tal:content="content/Title | nothing">Destination Wallonie</h2>
+        <span tal:replace="structure python: content and content.CookedBody() or ''" />
     </div><!--destination-wallonie-->
 
-    <div id="association">
-        <h2 i18n:translate="association">L'association</h2>
-        <span tal:replace="structure python: here.restrictedTraverse('@@footer_view').getContent('association')" />
+    <div id="association"
+         tal:define="content python: here.restrictedTraverse('@@footer_view').getContent('association')">
+        <h2 tal:content="content/Title | nothing">L'association</h2>
+        <span tal:replace="structure python: content and content.CookedBody() or ''" />
     </div><!--association-->
 
     <div id="autres-sites">
