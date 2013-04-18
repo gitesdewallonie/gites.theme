@@ -746,8 +746,6 @@ border-bottom: 0.1em solid #CCCCCC;
 /*** ZONE-VIDEO ***/
 div#zone-video{
 min-height:600px;
-background-image:url(../images/video-youtube.png);
-background-repeat:no-repeat;
 }
 
 
@@ -839,6 +837,14 @@ color:#74c7f7;
 }
 div#footer div#autres-sites h2{
 color:#1fda60;
+}
+
+div#footer div#autres-sites li a {
+color:#1fda60;
+}
+
+div#footer div#autres-sites li a:hover {
+color:#138D3D !important;
 }
 
 div#footer div#reseaux-sociaux{
