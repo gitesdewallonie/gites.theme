@@ -40,7 +40,9 @@ class DiazoParametersView(grok.View):
         portalUrl = getToolByName(self.context, 'portal_url')
         portal = portalUrl.getPortalObject()
         frontPageName = portal.getDefaultPage()
-        frontPage = self.context.restrictedTraverse(frontPageName)
+        frontPage = self.context.restrictedTraverse(frontPageName, default=None)
+        if frontPage is None:
+            return False
         translation = frontPage.getTranslation()
         if self.context == translation:
             return True
