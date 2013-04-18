@@ -1483,13 +1483,27 @@ height:586px;
 position:relative;
 }
 #descriptif-accordeon .slide_handle{
-background:url(../images/tab_accordeon.png);
 bottom:0;
 cursor:pointer;
 left:0;
 position:absolute;
 top:0;
 width:28px;
+}
+#descriptif-accordeon .slide_handle_fr{
+background:url(../images/tab_accordeon_fr.png);
+}
+#descriptif-accordeon .slide_handle_en{
+background:url(../images/tab_accordeon_en.png);
+}
+#descriptif-accordeon .slide_handle_nl{
+background:url(../images/tab_accordeon_nl.png);
+}
+#descriptif-accordeon .slide_handle_it{
+background:url(../images/tab_accordeon_it.png);
+}
+#descriptif-accordeon .slide_handle_de{
+background:url(../images/tab_accordeon_de.png);
 }
 #descriptif-accordeon .slide2 .slide_handle{
 background-position:-28px 0;
