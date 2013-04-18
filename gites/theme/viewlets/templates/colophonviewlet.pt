@@ -34,7 +34,7 @@
                     FEDER<br />
                     PROGRAMMATION 2007-<span tal:replace="viewlet/getYear"/><br />
                 </span>
-                <span id="texte-feder" i18n:translate="feder_description">
+                <span id="texte-feder">
                     Axe prioritaire 3:D&eacute;veloppement territorial
                     &eacute;quilibr&eacute; et durable
                     <br />
