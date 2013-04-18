@@ -1,4 +1,5 @@
-<div id="footer">
+<div id="footer"
+     i18n:domain="gites">
     <div id="reseaux-sociaux">
         <h2 i18n:translate="rejoignez_nous">Rejoignez-nous</h2>
         <ul class="contact-ul">
@@ -6,7 +7,6 @@
                 <a href="https://www.facebook.com/GitesdeWallonie"
                    target="_blank"
                    id="btn-facebook">
-                    <!--img src="++theme++gites.theme/images/facebook.png" alt="facebook"-->
                     <span i18n:translate="fans_facebook">Devenez fans sur facebook</span>
                 </a>
             </li>
@@ -14,7 +14,6 @@
                 <a href="http://www.twitter.com/"
                    target="_blank"
                    id="btn-twitter">
-                    <!--img src="++theme++gites.theme/images/twitter.png" alt="twitter"-->
                     <span i18n:translate="suivez_nous_twitter">Suivez-nous sur twitter</span>
                 </a>
             </li>
@@ -22,7 +21,6 @@
                 <a href="http://plus.google.com/"
                    target="_blank"
                    id="btn-google">
-                    <!--img src="++theme++gites.theme/images/google.png" alt="google"-->
                     <span i18n:translate="fans_google">Devenez fans sur Google+</span>
                 </a>
             </li>
@@ -30,7 +28,6 @@
                 <a href="http://www.youtube.com/user/GitesDeWallonie"
                    target="_blank"
                    id="btn-youtube">
-                    <!--img src="++theme++gites.theme/images/youtube.png" alt="youtube"-->
                     <span i18n:translate="regardez_nous_youtube">Regardez-nous sur youtube</span>
                 </a>
             </li>
@@ -58,8 +55,12 @@
     <div id="autres-sites">
         <h2 i18n:translate="nos_autres_sites">Nos autres sites</h2>
         <ul>
-            <li>Allo chambre d'hôtes</li>
-            <li>BnBelgium</li>
+            <li>
+                <a href="http://www.allochambredhotes.be" target="_blank" title="Allo chambre d'hôtes">Allo chambre d'hôtes</a>
+            </li>
+            <li>
+                <a href="http://www.bnbelgium.be" target="_blank" title="BnBelgium">BnBelgium</a>
+            </li>
         </ul>
     </div><!--autres-sites-->
     <div class="break-flaot"></div>
