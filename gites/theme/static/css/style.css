@@ -1108,6 +1108,12 @@ min-width:150px;
 padding:15px;
 }
 
+
+div#heb-listing div#listing-result.list-container div#listing-result-block{
+float:right;
+}
+
+
 div#listing-result-gite-theme{
 float:left;
 margin-left:1em;
@@ -1135,6 +1141,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d4ce', end
 }
 
 div#listing-result-gite-theme{
+width:180px;
+word-wrap:break-word;
 background: -moz-linear-gradient(top,  rgba(251,131,250,0.1) 0%, rgba(233,60,236,0.1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(251,131,250,0.1)), color-stop(100%,rgba(233,60,236,0.1))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top,  rgba(251,131,250,0.1) 0%,rgba(233,60,236,0.1) 100%); /* Chrome10+,Safari5.1+ */
@@ -1156,6 +1164,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 div#listing-result-gite-theme label{
+font-weight:normal;
 }
 
 div#listing-result-block div#listing-result-batch{
@@ -1741,7 +1750,9 @@ margin-bottom: 30px;
 /*** SLIDE LOCALIЅATION ***/
 div#map_div{
 border:1px solid #999;
-box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
+box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);
+margin-bottom:12px;
+margin-top:10px;
 }
 
 div#description-heb div#description-map div#map_div {
@@ -1753,6 +1764,7 @@ div#description-heb div#map_div{
 float:left;
 border:1px solid #999;
 box-shadow:0px 3px 5px rgba(50, 50, 50, 0.5);
+margin-top:0px;
 }
 div#description-heb div#map_menu{
 float:right;
@@ -1813,7 +1825,7 @@ div#description-heb div#description-coordonnee div#contacter-proprio{
 margin-top:35px;
 margin-left:30px;
 padding-left:15px;
-background-image:url(icon_3_fleche_bleue.gif);
+background-image:url(../images/icon_3_fleche_bleue.gif);
 background-repeat:no-repeat;
 background-position:left 4px;
 }
