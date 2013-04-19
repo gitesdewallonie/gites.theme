@@ -1,4 +1,5 @@
-<div id="colophon">
+<div id="colophon"
+     i18n:domain="gites">
     <div id="coordonnee">
         Fédération des Gites de Wallonie asbl. -
         © 2004 - <span tal:replace="viewlet/getYear"/> - All rights reserved.
@@ -7,16 +8,16 @@
         <br />
         B5100 Jambes (Namur)
         <br />
-        info@gitesdewallonie.be
+        <a href="" tal:attributes="href string:${context/@@plone_portal_state/portal_url}/contact-info">info@gitesdewallonie.be</a>
         <br />
         Tel: 32(0) 81 311 800 - Fax: 32(0) 81 310 200
     </div>
 
     <div id="partenaire">
         <div id="eurogite">
-            <a href="http://www.eurogites.org/"
+            <a href="http://www.eurogites.org"
                target="_blank"
-               title="Eurogites">
+               title="Rural and Country Tourism in Europe">
                 <img src="++theme++gites.theme/images/logo_eurogit.png"
                      alt="Eurogites"
                      title="Eurogites" /></a>
@@ -26,14 +27,14 @@
         </div>
         <div id="feder">
             <img src="++theme++gites.theme/images/logo_wallonie_europe_feder.png"
-                 alt=""
-                 title="" />
+                 alt="FEDER – PROGRAMMATION 2007-2013"
+                 title="FEDER – PROGRAMMATION 2007-2013" />
             <span class="partenaire-info">
                 <span id="titre-feder">
                     FEDER<br />
                     PROGRAMMATION 2007-<span tal:replace="viewlet/getYear"/><br />
                 </span>
-                <span id="texte-feder" i18n:translate="feder_description">
+                <span id="texte-feder">
                     Axe prioritaire 3:D&eacute;veloppement territorial
                     &eacute;quilibr&eacute; et durable
                     <br />
@@ -55,7 +56,7 @@
                 <img src="++theme++gites.theme/images/logo_wallonie.gif"
                      alt="Tourisme en Wallonie"
                      title="Tourisme en Wallonie" /></a>
-            <span class="partenaire-info" i18n:translate="commissariat_general_tourisme">
+            <span class="partenaire-info">
                 Commissariat g&eacute;n&eacute;ral<br >
                 au Tourisme<br />
                 de la R&eacute;gion wallonne<br />
@@ -66,9 +67,9 @@
                target="_blank"
                title="Wallonie-Bruxelles tourisme">
                 <img src="++theme++gites.theme/images/logo_wallonie_bruxelles_tourisme.png"
-                     alt="FEDER Programmation 2007-2013"
-                     title="FEDER Programmation 2007-2013" /></a>
-            <span class="partenaire-info" i18n:translate="wallonie_bruxelles_tourisme">
+                     alt="Wallonie-Bruxelles tourisme"
+                     title="Wallonie-Bruxelles tourisme" /></a>
+            <span class="partenaire-info">
                     Wallonie-Bruxelles
                     <br/>tourisme.
             </span>
@@ -76,9 +77,9 @@
         <div class="break-float"></div>
     </div>
 
-    <div id="madeby" i18n:translate="made-by">
-        <div id="affinitic">Développé par <a href="http://www.affinitic.be" target="_blank">Affinitic</a></div>
-        <div id="plone">Propulsé par <a href="http://www.plone.org" target="_blank">Plone</a></div>
+    <div id="madeby">
+        <div id="affinitic"><span i18n:translate="developed_by">Développé par</span> <a href="http://www.affinitic.be" target="_blank">Affinitic</a></div>
+        <div id="plone"><span i18n:translate="made_with">Propulsé par</span> <a href="http://www.plone.org" target="_blank">Plone</a></div>
         <div class="break-float"></div>
     </div>
 </div>

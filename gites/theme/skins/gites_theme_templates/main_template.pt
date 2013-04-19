@@ -127,7 +127,7 @@
                               Page body text
                           </metal:text>
                       </div>
-                      <div tal:replace="structure provider:plone.belowcontentbody" />
+
                   </metal:main>
 
                 </metal:bodytext>
