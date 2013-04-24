@@ -1800,6 +1800,15 @@ div#description-heb div#map_menu input[type=checkbox]{
 margin:0px 3px;
 }
 
+div#map_menu #disable_legend_sentence {
+line-height: 1em;
+margin-top: 10px;
+}
+
+div#map_menu label.unzoomed_legend_label {
+color: #CECECE !important;
+}
+
 
 /*** SLIDE CONTACT ***/
 div#description-heb div#description-coordonnee{
