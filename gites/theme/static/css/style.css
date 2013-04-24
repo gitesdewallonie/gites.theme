@@ -1303,6 +1303,12 @@ margin-top:3px;
 margin-left:30px;
 }
 
+div#info-bloc-sup div#nom-hebergement a{
+color: #333333;
+text-decoration: none;
+border-bottom: none;
+}
+
 div#info-bloc-sup div#type{
 float:right;
 font-size:0.9em;
