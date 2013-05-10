@@ -2,13 +2,9 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:cmf="http://namespaces.zope.org/cmf">
 
-   <cmf:registerDirectory
-        name="gites_theme_images"/>
-
-   <cmf:registerDirectory
-        name="gites_theme_scripts"/>
-
-   <cmf:registerDirectory
-        name="gites_theme_templates"/>
+   <cmf:registerDirectory name="gites_theme_images"/>
+   <cmf:registerDirectory name="gites_theme_scripts"/>
+   <cmf:registerDirectory name="gites_theme_templates"/>
+   <cmf:registerDirectory name="gites_theme_styles"/>
 
 </configure>
