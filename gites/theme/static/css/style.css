@@ -496,12 +496,10 @@ bottom: 0px;
 }
 
 #zone-packperm-membre{
-/*position:relative;
-top:378px;*/
 height:44px;
 width:100%;
-background:url(../images/quadrillage.png);
-opacity:0.8;
+background-image:url(../images/quadrillage.png);
+background-color:#fff;
 }
 
 #zone-package-permanent,
