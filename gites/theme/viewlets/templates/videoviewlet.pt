@@ -1,18 +1,9 @@
 <div id="zone-video"
      tal:condition="viewlet/available">
 
-  <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
-      <img src="++theme++gites.theme/images/video-youtube.png" style="cursor:pointer">
-  </div>
-
-  <div id="thevideo" style="display:none">
-
-    <iframe width="100%"
-            height="539"
-            tal:attributes="src string:${viewlet/getUrl}?rel=0&amp;autoplay=1"
-            frameborder="0"
-            allowfullscreen></iframe>
-
+  <div id="splashvideo">
+      <img src="++theme++gites.theme/images/video-youtube.png" style="cursor:pointer"
+           data-video="" tal:attributes="data-video string:${viewlet/getUrl}">
   </div>
 
 </div>

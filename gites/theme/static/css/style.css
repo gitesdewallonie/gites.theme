@@ -496,12 +496,10 @@ bottom: 0px;
 }
 
 #zone-packperm-membre{
-/*position:relative;
-top:378px;*/
 height:44px;
 width:100%;
-background:url(../images/quadrillage.png);
-opacity:0.8;
+background-image:url(../images/quadrillage.png);
+background-color:#fff;
 }
 
 #zone-package-permanent,
@@ -712,12 +710,14 @@ font-family:'Italianno', cursive;
 }
 
 div#content.ploneroot div#content-core{
+/*
 -moz-column-width: 250px;
 -webkit-column-width: 250px;
 -moz-column-gap: 20px;
 -webkit-column-gap: 20px;
 -moz-column-rule: 1px solid #ddccb5;
 -webkit-column-rule: 1px solid #ddccb5;
+*/
 }
 
 .documentActions{
