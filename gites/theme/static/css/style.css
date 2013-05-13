@@ -839,14 +839,6 @@ div#footer div#autres-sites h2{
 color:#1fda60;
 }
 
-div#footer div#autres-sites li a {
-color:#1fda60;
-}
-
-div#footer div#autres-sites li a:hover {
-color:#138D3D !important;
-}
-
 div#footer div#reseaux-sociaux{
 border-left:1px solid rgba(0,221,230,0.3);
 }
@@ -864,6 +856,7 @@ border-left:1px solid rgba(31,218,96,0.3);
 }
 
 div#footer div#destination-wallonie li,
+div#footer div#association li,
 div#footer div#autres-sites li{
 background-repeat:no-repeat;
 background-position:left center;
@@ -872,9 +865,28 @@ padding-left:7px;
 div#footer div#destination-wallonie li{
 background-image:url(../images/icon_puce_destwal.png);
 }
+div#footer div#association li{
+background-image:url(../images/icon_puce_assoc.png);
+}
 div#footer div#autres-sites li{
 background-image:url(../images/icon_puce_autsite.png);
 }
+div#footer div#destination-wallonie li a,
+div#footer div#association li a,
+div#footer div#autres-sites li a {
+color:#ddd !important;
+border-bottom:1px dotted #999;
+}
+div#footer div#destination-wallonie li a:hover {
+color:#d8b2ec !important;
+}
+div#footer div#association li a:hover {
+color:#74c7f7 !important;
+}
+div#footer div#autres-sites li a:hover {
+color:#1fda60 !important;
+}
+
 
 
 /*** FACEBOOK ***/
