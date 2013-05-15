@@ -726,7 +726,7 @@ div#content.ploneroot div#content-core{
 .documentActions{
 width:95%;
 margin:auto;
-margin-top:40px;
+margin-top:-3px;
 border-top:1px dashed #bbb;
 text-align:right;
 }
