@@ -1482,9 +1482,10 @@ font-size:2.5em;;
 }
 
 div#signaler-un-probleme{
+float:right;
 width:200px;
 height:33px;
-margin:10px auto;
+margin:10px 30px 10px 0px;
 text-align:center;
 line-height:33px;
 border:1px solid #d3dadf;
@@ -1500,6 +1501,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54f6f8f9', e
 
 div#signaler-un-probleme a{
 border-bottom:none !important;
+text-shadow:1px 1px 1px rgba(200, 200, 200,0.8);
 }
 
 div#signaler-un-probleme a:hover {
