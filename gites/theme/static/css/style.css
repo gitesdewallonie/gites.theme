@@ -169,7 +169,7 @@ color:#fff;
 /*** LISTE ICONES ***/
 #icone-reseaux-sociaux{
 float:left;
-margin-left:450px;
+margin-left:280px;
 height:20px;
 }
 
@@ -1912,7 +1912,47 @@ input.datepicker-widget { width: 80px; }
 input#form-widgets-capacityMin { width: 34px; }
 
 
-/*** Zone membre proprio ***/
+/*** ZONE MEMBRE PROPRIO ***/
+div#zone-membre{
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+padding:1em;
+
+}
+
+div#calendrier-zone-proprio,
+div#maj-info{
+width:400px;
+height:200px;
+border:1px solid #aaa;
+border-radius:12px;
+box-shadow:3px 3px 6px rgba(50, 50, 50, 0.5);
+padding:0.8em;
+}
+div#calendrier-zone-proprio{
+float:left;    
+}
+div#maj-info{
+float:right;
+}
+
+div#calendrier-zone-proprio h2,
+div#maj-info h2{
+font-family:"PT Sans Narrow";
+font-size:1.2em;
+font-weight:normal;
+color:#000;
+text-shadow:1px 1px 2px rgba(255,255,255,0.5);
+border-bottom:1px dotted #888;
+text-align:right;
+margin-bottom:5px;
+}
 div.error-center {
 border: 1px solid red;
 color: red;
@@ -1924,7 +1964,6 @@ margin: 20px auto;
 text-align: center;
 width: 60%;
 }
-
 
 div.info-center {
 border: 1px solid green;
