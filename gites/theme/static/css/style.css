@@ -1957,3 +1957,35 @@ text-align: center;
 #video-form .video-details {
 margin-left:40px;
 }
+
+
+#gallery-edition .photo {
+margin:10px;
+float:left;
+box-shadow: 0 5px 8px #000000;
+background-color: #E3E3E1;
+}
+
+#gallery-edition .actions {
+float:right;
+}
+
+#gallery-edition .delete {
+background:url(../images/delete-photo.png) no-repeat;
+height:32px;
+width:32px;
+display: block;
+border-bottom:none;
+margin-bottom:5px;
+cursor:pointer;
+}
+
+#gallery-edition .drag {
+background:url(../images/drag.png) no-repeat;
+height:32px;
+width:32px;
+display: block;
+border-bottom:none;
+margin-bottom:5px;
+cursor:move;
+}
