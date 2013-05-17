@@ -429,7 +429,7 @@ padding-top:5px;
 #maisonhote{
 background-image:url(../images/btn_je_decouvre.png);
 background-repeat:no-repeat;
-width:198px;
+width:196px;
 height:52px;
 padding-top:5px;
 padding-left:3px;
@@ -1977,7 +1977,7 @@ text-align: center;
 width: 60%;
 }
 
-#gallery-form #progress {
+#gallery-form #progress, #proprio-form #progress {
 position:relative;
 width:400px;
 border: 1px solid #ddd;
@@ -1985,7 +1985,11 @@ padding: 1px;
 border-radius: 3px;
 }
 
-#gallery-form .bar {
+#proprio-form #progress {
+margin:auto;
+}
+
+#gallery-form .bar, #proprio-form .bar {
 background-color: #B4F5B4;
 width:0%;
 height:20px;
@@ -2003,6 +2007,10 @@ margin:10px;
 float:left;
 box-shadow: 0 5px 8px #000000;
 background-color: #E3E3E1;
+}
+
+#proprio-form #description-photo-proprio img {
+border: 1px solid #1F8CD1;
 }
 
 #gallery-edition .actions {
@@ -2027,4 +2035,12 @@ display: block;
 border-bottom:none;
 margin-bottom:5px;
 cursor:move;
+}
+
+#proprio-edition-fieldset, #photoproprio-edition-fieldset {
+text-align:center;
+}
+
+table#proprio-edition {
+margin:auto;
 }
