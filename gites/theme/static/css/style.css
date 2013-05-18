@@ -492,6 +492,11 @@ width:100%;
 bottom: 0px;
 }
 
+/* !!! Define the height of the items to avoid a weird behavior when the previous item has a smaller height */
+#package-carousel .carousel-inner div.item {
+height: 401px;
+}
+
 #zone-produit-pacakage{
 }
 
