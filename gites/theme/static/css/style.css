@@ -489,7 +489,7 @@ width:100%;
 }
 
 #package-carousel .carousel-caption {
-bottom: 0px;
+bottom:68px;
 }
 
 /* !!! Define the height of the items to avoid a weird behavior when the previous item has a smaller height */
