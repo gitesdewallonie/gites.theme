@@ -2044,10 +2044,6 @@ margin-top:10px;
 cursor:move;
 }
 
-#proprio-edition-fieldset, #photoproprio-edition-fieldset {
+#photoproprio-edition-fieldset {
 text-align:center;
-}
-
-table#proprio-edition {
-margin:auto;
 }
