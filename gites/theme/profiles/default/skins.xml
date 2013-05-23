@@ -16,19 +16,14 @@
             meta_type="Filesystem Directory View"
             directory="gites.theme:skins/gites_theme_templates"/>
 
-    <object name="gites_theme_styles"
-            meta_type="Filesystem Directory View"
-            directory="gites.theme:skins/gites_theme_styles"/>         
 
 
  <skin-path name="Gites theme"
             based-on="Sunburst Theme">
     <layer name="gites_theme_images"
            insert-after="custom"/>
-    <layer name="gites_theme_styles"
-           insert-after="gites_theme_images"/>
     <layer name="gites_theme_scripts"
-           insert-after="gites_theme_style"/>
+           insert-after="gites_theme_images"/>
     <layer name="gites_theme_templates"
            insert-after="gites_theme_scripts"/>
 

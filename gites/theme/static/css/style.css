@@ -38,6 +38,9 @@ a:hover{
 color:#205C90 !important;
 }
 
+fieldset.bordered {
+border: 1px solid #329FD7 !important;
+}
 
 /*** CALENDAR PICKER FIX ***/
 #ui-datepicker-div {
@@ -166,7 +169,7 @@ color:#fff;
 /*** LISTE ICONES ***/
 #icone-reseaux-sociaux{
 float:left;
-margin-left:450px;
+margin-left:280px;
 height:20px;
 }
 
@@ -426,7 +429,7 @@ padding-top:5px;
 #maisonhote{
 background-image:url(../images/btn_je_decouvre.png);
 background-repeat:no-repeat;
-width:198px;
+width:196px;
 height:52px;
 padding-top:5px;
 padding-left:3px;
@@ -486,7 +489,12 @@ width:100%;
 }
 
 #package-carousel .carousel-caption {
-bottom: 0px;
+bottom:0px;
+}
+
+/* !!! Define the height of the items to avoid a weird behavior when the previous item has a smaller height */
+#hebergement-carousel .carousel-inner div.item {
+height: 401px;
 }
 
 #zone-produit-pacakage{
@@ -723,7 +731,7 @@ div#content.ploneroot div#content-core{
 .documentActions{
 width:95%;
 margin:auto;
-margin-top:40px;
+margin-top:-3px;
 border-top:1px dashed #bbb;
 text-align:right;
 }
@@ -1478,6 +1486,35 @@ margin-top:15px;
 font-size:2.5em;;
 }
 
+div#signaler-un-probleme{
+float:right;
+width:200px;
+height:33px;
+margin:10px 30px 10px 0px;
+text-align:center;
+line-height:33px;
+border:1px solid #d3dadf;
+border-radius:18px;
+background: -moz-linear-gradient(top,  rgba(246,248,249,0.33) 0%, rgba(242,245,246,1) 12%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(238,241,244,1) 88%, rgba(245,247,249,0.33) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,248,249,0.33)), color-stop(12%,rgba(242,245,246,1)), color-stop(50%,rgba(229,235,238,1)), color-stop(51%,rgba(215,222,227,1)), color-stop(88%,rgba(238,241,244,1)), color-stop(100%,rgba(245,247,249,0.33))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(246,248,249,0.33) 0%,rgba(242,245,246,1) 12%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(238,241,244,1) 88%,rgba(245,247,249,0.33) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(246,248,249,0.33) 0%,rgba(242,245,246,1) 12%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(238,241,244,1) 88%,rgba(245,247,249,0.33) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(246,248,249,0.33) 0%,rgba(242,245,246,1) 12%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(238,241,244,1) 88%,rgba(245,247,249,0.33) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(246,248,249,0.33) 0%,rgba(242,245,246,1) 12%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(238,241,244,1) 88%,rgba(245,247,249,0.33) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54f6f8f9', endColorstr='#54f5f7f9',GradientType=0 ); /* IE6-9 */
+}
+
+div#signaler-un-probleme a{
+border-bottom:none !important;
+text-shadow:1px 1px 1px rgba(200, 200, 200,0.8);
+}
+
+div#signaler-un-probleme a:hover {
+color:#333 !important;
+}
+
+
+
 
 /*** CAROUSSEL HEBERGEMENT ***/
 #hebergement-carousel {
@@ -1502,6 +1539,10 @@ box-shadow:0px 5px 8px #000;
 border: none !important;
 background: none;
 margin-top: 0px;
+}
+
+#hebergement-carousel .video {
+text-align: center;
 }
 
 
@@ -1874,3 +1915,135 @@ background-repeat:no-repeat;
 /*** z3c.form ***/
 input.datepicker-widget { width: 80px; }
 input#form-widgets-capacityMin { width: 34px; }
+
+
+/*** ZONE MEMBRE PROPRIO ***/
+div#zone-membre{
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+padding:1em;
+
+}
+
+div#calendrier-zone-proprio,
+div#maj-info{
+width:400px;
+height:200px;
+border:1px solid #aaa;
+border-radius:12px;
+box-shadow:3px 3px 6px rgba(50, 50, 50, 0.5);
+padding:0.8em;
+}
+div#calendrier-zone-proprio{
+float:left;    
+}
+div#maj-info{
+float:right;
+}
+
+div#calendrier-zone-proprio h2,
+div#maj-info h2{
+font-family:"PT Sans Narrow";
+font-size:1.2em;
+font-weight:normal;
+color:#000;
+text-shadow:1px 1px 2px rgba(255,255,255,0.5);
+border-bottom:1px dotted #888;
+text-align:right;
+margin-bottom:5px;
+}
+div.error-center {
+border: 1px solid red;
+color: red;
+font-weight: bold;
+padding: 8px;
+background-color: #FFE4E4;
+border-radius: 5px 5px 5px 5px;
+margin: 20px auto;
+text-align: center;
+width: 60%;
+}
+
+div.info-center {
+border: 1px solid green;
+color: green;
+font-weight: bold;
+padding: 8px;
+background-color: #DDFBDB;
+border-radius: 5px 5px 5px 5px;
+margin: 20px auto;
+text-align: center;
+width: 60%;
+}
+
+#gallery-form #progress, #proprio-form #progress {
+position:relative;
+width:400px;
+border: 1px solid #ddd;
+padding: 1px;
+border-radius: 3px;
+}
+
+#proprio-form #progress {
+margin:auto;
+}
+
+#gallery-form .bar, #proprio-form .bar {
+background-color: #B4F5B4;
+width:0%;
+height:20px;
+border-radius: 3px;
+text-align: center;
+}
+
+#video-form .video-details {
+margin-left:40px;
+}
+
+
+#gallery-edition .photo {
+margin:10px;
+float:left;
+box-shadow: 0 5px 8px #000000;
+background-color: #E3E3E1;
+}
+
+#proprio-form #description-photo-proprio img {
+border: 1px solid #1F8CD1;
+}
+
+#gallery-edition .actions {
+float:right;
+}
+
+#gallery-edition .delete {
+background:url(../images/trash.png) no-repeat;
+height:32px;
+width:32px;
+display: block;
+border-bottom:none;
+margin-top:5px;
+margin-bottom:5px;
+cursor:pointer;
+}
+
+#gallery-edition .drag {
+background:url(../images/drag.png) no-repeat;
+height:32px;
+width:32px;
+display: block;
+border-bottom:none;
+margin-bottom:5px;
+margin-top:10px;
+cursor:move;
+}
+
+#photoproprio-edition-fieldset {
+text-align:center;
+}
