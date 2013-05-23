@@ -489,11 +489,11 @@ width:100%;
 }
 
 #package-carousel .carousel-caption {
-bottom:68px;
+bottom:0px;
 }
 
 /* !!! Define the height of the items to avoid a weird behavior when the previous item has a smaller height */
-#package-carousel .carousel-inner div.item {
+#hebergement-carousel .carousel-inner div.item {
 height: 401px;
 }
 
