@@ -21,6 +21,13 @@ url('../font/PTSansNarrowBold.ttf') format('truetype');
 */
 }
 
+@font-face {
+font-family:'Rodeo Girl';
+src:url('../font/rodeo_girl_bv.ttf') format('truetype');
+font-weight:normal;
+font-style:normal;
+}
+
 body{
 font-family:arial, helvetica, verdana, sans-serif;
 font-size:12pt;
@@ -711,10 +718,13 @@ padding:18px 1em;
 }
 
 div#content.ploneroot h1{
-margin-left:50px;
-font-size:3em;
+font-family:'Rodeo Girl', Helvetica, Arial, sans-serif;
+font-size:5em;
+font-weight:normal;
+color:rgb(50, 50, 50);
 text-shadow:2px 2px 2px rgba(255,255,255,0.5);
-font-family:'Italianno', cursive;
+margin-left:50px;
+background:url(../images/essentiel_underline.png) no-repeat 60px 110px;
 }
 
 div#content.ploneroot div#content-core{
