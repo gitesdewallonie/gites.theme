@@ -704,7 +704,7 @@ opacity:0.3;
 
 /*** ESSENTIEL ***/
 div#content{
-color:#666;
+color:#333;
 min-height:425px;
 padding:3px 10px 1px 10px;
 background:url(../images/bgessentiel.png);
@@ -1084,6 +1084,7 @@ position:relative;
 left:730px;
 top:-40px;
 text-align:right;
+font-size:1.2em;
 }
 
 div#package-large-photo{
@@ -1103,7 +1104,7 @@ padding:0 2em;
 }
 div#package-description{
 font-size:1.2em;
-color:#666;
+color:#333;
 font-weight:bold;
 }
 
