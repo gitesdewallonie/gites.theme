@@ -2129,6 +2129,7 @@ cursor:move;
 
 
 div#zone-proprio-formulaire,
+form#proprio-config-calendrier,
 div#proprio-photo-edition-fieldset{
 width:510px;
 margin:auto;
@@ -2199,12 +2200,15 @@ box-shadow:0 0 3px #0459b7;
 outline:none;
 }
 
+form#proprio-config-calendrier #form-buttons-enregistrer,
 div#zone-proprio-formulaire .submit-form{
 margin-top:20px;
 padding-top:5px;
 border-top:1px solid #aaa;
 text-align:center;
 }
+
+form#proprio-config-calendrier #form-buttons-enregistrer,
 div#zone-proprio-formulaire input[type=submit],
 div#photoproprio-edition-fieldset input[type=file]{
 background:#ddd;
@@ -2219,6 +2223,8 @@ padding:5px 10px;
 text-shadow:0 1px 1px #333;
 text-transform:uppercase;
 }
+
+form#proprio-config-calendrier #form-buttons-enregistrer,
 div#zone-proprio-formulaire input[type=submit]:hover{
 background:#eee;
 background:-moz-linear-gradient(90deg, #067cd3, #0bcdff);
