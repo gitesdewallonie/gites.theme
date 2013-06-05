@@ -21,6 +21,13 @@ url('../font/PTSansNarrowBold.ttf') format('truetype');
 */
 }
 
+@font-face {
+font-family:'Rodeo Girl';
+src:url('../font/rodeo_girl_bv.ttf') format('truetype');
+font-weight:normal;
+font-style:normal;
+}
+
 body{
 font-family:arial, helvetica, verdana, sans-serif;
 font-size:12pt;
@@ -312,9 +319,9 @@ text-shadow:1px 1px 2px rgba(255,255,255,0.5);
 
 #je-recherche #zone-gite-meuble,
 #je-recherche #zone-chambre-hote{
-float:left;
-width:150px;
-margin-left:15px;
+/*float:left;*/
+width:250px;
+margin-left:45px;
 font-family:'PT Sans Narrow';
 }
 
@@ -328,7 +335,7 @@ margin-left:5px;
 #je-recherche #nbre-personne{
 float:left;
 height:27px;
-margin:10px 5px 10px 0px;
+margin:5px 5px 5px 0px;
 }
 
 .ui-datepicker-trigger{
@@ -387,7 +394,7 @@ padding-right:32px;
 }
 
 #je-recherche .trouver{
-margin-top:-10px;
+margin-top:-21px;
 margin-left:259px;
 }
 
@@ -447,7 +454,7 @@ margin-top:5px;
 #gitemeuble a,
 #maisonhote a{
 display:block;
-width:100px;
+width:195px;
 margin-left:5px;
 font-weight:bold;
 font-size:1.1em;
@@ -697,7 +704,7 @@ opacity:0.3;
 
 /*** ESSENTIEL ***/
 div#content{
-color:#666;
+color:#333;
 min-height:425px;
 padding:3px 10px 1px 10px;
 background:url(../images/bgessentiel.png);
@@ -711,10 +718,13 @@ padding:18px 1em;
 }
 
 div#content.ploneroot h1{
-margin-left:50px;
-font-size:3em;
+font-family:'Rodeo Girl', Helvetica, Arial, sans-serif;
+font-size:5em;
+font-weight:normal;
+color:rgb(50, 50, 50);
 text-shadow:2px 2px 2px rgba(255,255,255,0.5);
-font-family:'Italianno', cursive;
+margin-left:50px;
+background:url(../images/essentiel_underline.png) no-repeat 60px 110px;
 }
 
 div#content.ploneroot div#content-core{
@@ -1074,6 +1084,7 @@ position:relative;
 left:730px;
 top:-40px;
 text-align:right;
+font-size:1.2em;
 }
 
 div#package-large-photo{
@@ -1093,7 +1104,7 @@ padding:0 2em;
 }
 div#package-description{
 font-size:1.2em;
-color:#666;
+color:#333;
 font-weight:bold;
 }
 
@@ -1933,19 +1944,90 @@ padding:1em;
 
 div#calendrier-zone-proprio,
 div#maj-info{
-width:400px;
-height:200px;
+width:80%;
+min-height:60px;
 border:1px solid #aaa;
 border-radius:12px;
 box-shadow:3px 3px 6px rgba(50, 50, 50, 0.5);
 padding:0.8em;
+margin:auto;
+margin-bottom:15px;
 }
-div#calendrier-zone-proprio{
-float:left;    
+
+div#proprio-maj-info-menu,
+div#proprio-configuration-calendrier,
+div#proprio-aide{
+float:left;
+margin-left:20px;
 }
-div#maj-info{
+
+div#prorpio-affichage-mensuel{
 float:right;
+margin:8px 10px;
 }
+
+div#proprio-maj-info-menu a,
+div#proprio-configuration-calendrier a,
+div#proprio-aide a,
+div#prorpio-affichage-mensuel a{
+cursor:pointer;
+height:33px;
+margin:0px 20px;
+padding:5px 2em;
+text-align:center;
+line-height:33px;
+border:1px solid #d3dadf;
+border-radius:18px;
+background: -moz-linear-gradient(top,  rgba(246,248,249,0.33) 0%, rgba(242,245,246,1) 12%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(238,241,244,1) 88%, rgba(245,247,249,0.33) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,248,249,0.33)), color-stop(12%,rgba(242,245,246,1)), color-stop(50%,rgba(229,235,238,1)), color-stop(51%,rgba(215,222,227,1)), color-stop(88%,rgba(238,241,244,1)), color-stop(100%,rgba(245,247,249,0.33))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(246,248,249,0.33) 0%,rgba(242,245,246,1) 12%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(238,241,244,1) 88%,rgba(245,247,249,0.33) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(246,248,249,0.33) 0%,rgba(242,245,246,1) 12%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(238,241,244,1) 88%,rgba(245,247,249,0.33) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(246,248,249,0.33) 0%,rgba(242,245,246,1) 12%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(238,241,244,1) 88%,rgba(245,247,249,0.33) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(246,248,249,0.33) 0%,rgba(242,245,246,1) 12%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(238,241,244,1) 88%,rgba(245,247,249,0.33) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54f6f8f9', endColorstr='#54f5f7f9',GradientType=0 ); /* IE6-9 */
+text-shadow:1px 1px 1px rgba(255, 255, 255, 0.8);
+color:#666 !important;
+}
+
+
+div#proprio-maj-info-menu a:hover,
+div#proprio-configuration-calendrier a:hover,
+div#proprio-aide a:hover,
+div#prorpio-affichage-mensuel a:hover{
+color:#222 !important;
+}
+
+
+#proprio-table-hebergement{
+width:90%;
+margin:10px auto;
+border:2px solid #aaa;
+border-radius:6px;
+}
+
+#proprio-table-hebergement th{
+text-shadow:1px 1px 1px rgba(255, 255, 255, 0.8);
+border:1px solid #ddd;
+height:30px;
+padding:5px 10px;
+}
+
+
+#proprio-table-hebergement td{
+border:1px solid #ddd;
+height:30px;
+padding:5px 10px;
+}
+
+#proprio-table-hebergement td a{
+display:block;
+text-align:center;
+}
+
+#proprio-table-hebergement td a:hover{
+color:#ff5400 !important;
+}
+
 
 div#calendrier-zone-proprio h2,
 div#maj-info h2{
@@ -2044,6 +2126,118 @@ margin-top:10px;
 cursor:move;
 }
 
-#photoproprio-edition-fieldset {
+
+
+div#zone-proprio-formulaire,
+form#proprio-config-calendrier,
+div#proprio-photo-edition-fieldset{
+width:510px;
+margin:auto;
+background:#f7f7f7;
+background:-moz-linear-gradient(90deg, #ccc, #fff); /* Firefox */
+background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc)); /* Webkit */
+border:1px solid #aaa;
+border-radius:10px;
+box-shadow:3px 3px 15px rgba(50, 50, 50, 0.5);
+margin:15px auto;
+padding:20px;
+}
+
+div#zone-proprio-formulaire h2,
+div#proprio-photo-edition-fieldset h2{
+border-bottom:1px solid #ccc;
+font-size:11px;
+font-weight:bold;
+letter-spacing:2px;
+margin-bottom:20px;
+text-transform:uppercase;
+}
+
+div#zone-proprio-formulaire label,
+div#photoproprio-edition-fieldset label{
+width:230px;
+cursor:pointer;
+margin-top:15px;
+font-size:14px;
+color:#333; 
+font-weight:bold;
+text-shadow:0 1px 1px #fff;
+}
+
+div#zone-proprio-formulaire label{
+display:block;
+}
+
+
+div#zone-proprio-formulaire input:not([type=submit]) {
+background: rgba(255, 255, 255, 0.9);
+background:-moz-linear-gradient(90deg, #fff, #eee); /* Firefox */
+background:-webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff), color-stop(0.2, #fff)); /* Webkit */
+border:1px solid #aaa;
+border-radius:3px;
+box-shadow:0 0 3px #aaa;
+padding:5px;
+}
+
+div#zone-proprio-formulaire select,
+div#photoproprio-edition-fieldset input[type=file]{
+cursor:pointer;
+padding:3px;
+box-shadow:0 0 3px #aaa;
+}
+div#zone-proprio-formulaire select:active,
+div#zone-proprio-formulaire select:focus,
+div#photoproprio-edition-fieldset input[type=file]:active,
+div#photoproprio-edition-fieldset input[type=file]:focus{
+border:1px solid #093c75;
+box-shadow:0 0 3px #0459b7;
+outline:none;
+}
+
+div#zone-proprio-formulaire input:not([type=submit]):focus:valid {
+border-color:#093c75;
+box-shadow:0 0 3px #0459b7;
+outline:none;
+}
+
+form#proprio-config-calendrier #form-buttons-enregistrer,
+div#zone-proprio-formulaire .submit-form{
+margin-top:20px;
+padding-top:5px;
+border-top:1px solid #aaa;
 text-align:center;
 }
+
+form#proprio-config-calendrier #form-buttons-enregistrer,
+div#zone-proprio-formulaire input[type=submit],
+div#photoproprio-edition-fieldset input[type=file]{
+background:#ddd;
+background:-moz-linear-gradient(90deg, #0459b7, #08adff); /* Firefox */
+background:-webkit-gradient(linear, left top, left bottom, from(#08adff), to(#0459b7)); /* Webkit */
+border:1px solid #093c75;
+border-radius:3px;
+box-shadow:0 1px 0 #fff;
+color:#fff;
+cursor:pointer;
+padding:5px 10px;
+text-shadow:0 1px 1px #333;
+text-transform:uppercase;
+}
+
+form#proprio-config-calendrier #form-buttons-enregistrer,
+div#zone-proprio-formulaire input[type=submit]:hover{
+background:#eee;
+background:-moz-linear-gradient(90deg, #067cd3, #0bcdff);
+background:-webkit-gradient(linear, left top, left bottom, from(#0bcdff), to(#067cd3));
+border-color:#093c75;
+text-decoration:none;
+}
+div#zone-proprio-formulaire input[type=submit]:active,
+div#zone-proprio-formulaire input[type=submit]:focus{
+background:#ccc;
+background:-moz-linear-gradient(90deg, #0bcdff, #067cd3);
+background:-webkit-gradient(linear, left top, left bottom, from(#067cd3), to(#0bcdff));
+border-color:#093c75;
+outline:none;
+}
+
