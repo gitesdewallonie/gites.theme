@@ -83,6 +83,7 @@
 
         <metal:block define-slot="content">
           <div metal:define-macro="content"
+               id="wrapper-content"
                tal:define="show_border context/@@plone/showEditableBorder"
                tal:attributes="class python:show_border and 'documentEditable' or ''">
 
@@ -95,8 +96,7 @@
               </div>
 
               <metal:slot define-slot="body">
-              <div id="content" 
-                   class=""
+              <div id="content"
                    tal:define="frontpage context/@@diazo-parameters/isPortalFrontPage"
                    tal:attributes="class python: frontpage and 'ploneroot' or ''">
                 <metal:header define-slot="header" tal:content="nothing">
