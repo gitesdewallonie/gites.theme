@@ -2241,3 +2241,34 @@ border-color:#093c75;
 outline:none;
 }
 
+/* Overlay */
+div#overlay-comparator {
+display: none;
+width: 984px;
+background-color: #FFF;
+height: 80%;
+z-index: 9999;
+padding: 15px;
+box-shadow:0 0 30px 5px #000;
+-moz-box-shadow:0 0 30px 5px #000;
+-webkit-box-shadow: 0 0 30px #000;
+border-radius:0.5em;
+-webkit-border-radius:0.5em;
+-moz-border-radius:0.5em;
+}
+
+div#overlay-comparator .contentWrap {
+overflow: auto;
+height: 100%;
+}
+
+div#overlay-comparator a.close {
+background-image: url(++resource++plone.app.jquerytools.pb_close.png);
+position: absolute;
+left: -14px;
+top: -14px;
+cursor: pointer;
+height: 30px;
+width: 30px;
+z-index: 10000;
+}
