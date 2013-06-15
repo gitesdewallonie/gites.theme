@@ -708,8 +708,24 @@ min-height:425px;
 padding:3px 10px 1px 10px;
 background:url(../images/bgessentiel.png);
 background-repeat:repeat;
-margin-top:2px;
-margin-bottom:5px;
+margin:0px;
+}
+
+div#content-content{
+padding:1em;
+border:1px solid rgba(200,215,220,0.3);
+border-radius:12px;
+box-shadow:2px 2px 8px rgba(100,100,100,0.5);
+
+/*background-color:rgba(200,215,220,0.3);*/
+background: -moz-linear-gradient(top,  rgba(242,245,246,0.3) 0%, rgba(227,234,237,0.3) 37%, rgba(200,215,220,0.3) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,0.3)), color-stop(37%,rgba(227,234,237,0.3)), color-stop(100%,rgba(200,215,220,0.3))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4df2f5f6', endColorstr='#4dc8d7dc',GradientType=0 ); /* IE6-9 */
+
 }
 
 div#content.ploneroot{
@@ -726,15 +742,8 @@ margin-left:50px;
 background:url(../images/essentiel_underline.png) no-repeat 60px 110px;
 }
 
-div#content.ploneroot div#content-core{
-/*
--moz-column-width: 250px;
--webkit-column-width: 250px;
--moz-column-gap: 20px;
--webkit-column-gap: 20px;
--moz-column-rule: 1px solid #ddccb5;
--webkit-column-rule: 1px solid #ddccb5;
-*/
+div#content.ploneroot,
+div#content-core{
 }
 
 .documentActions{
