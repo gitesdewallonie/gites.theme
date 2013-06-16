@@ -2296,7 +2296,8 @@ margin-bottom:20px;
 text-transform:uppercase;
 }
 
-div#zone-proprio-galerie h4{
+div#zone-proprio-galerie h4,
+.zone-proprio-maj-heb-titre{
 border-radius:8px 8px 0px 0px;
 background-color:#ff862b;
 text-transform:uppercase;
@@ -2307,6 +2308,18 @@ text-shadow:1px 1px 1px rgba(255,255, 255, 0.6);
 padding-left:8px;
 margin-bottom:8px;
 }
+
+.zone-proprio-maj-heb{
+width:90%;
+margin:auto;
+}
+
+.align-right{
+float:right;
+margin-right:8px;
+}
+
+
 
 div#zone-proprio-formulaire label,
 div#zone-proprio-galerie label,
