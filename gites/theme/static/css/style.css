@@ -2214,6 +2214,9 @@ text-align: center;
 margin-left:40px;
 }
 
+#gallery-edition{
+padding-left:90px;
+}
 
 #gallery-edition .photo {
 margin:10px;
@@ -2275,6 +2278,13 @@ margin:15px auto;
 padding:20px;
 }
 
+div#zone-proprio-galerie{
+margin:15px 0px;
+padding:8px;
+border:1px solid #777;
+border-radius:12px;
+}
+
 div#zone-proprio-formulaire h2,
 div#zone-proprio-info-hebergement h2,
 div#proprio-photo-edition-fieldset h2{
@@ -2286,11 +2296,20 @@ margin-bottom:20px;
 text-transform:uppercase;
 }
 
-div#zone-proprio-info-hebergement h3{
-
+div#zone-proprio-galerie h4{
+border-radius:8px 8px 0px 0px;
+background-color:#ff862b;
+text-transform:uppercase;
+font-weight:normal;
+font-size:10pt;
+color:#000;
+text-shadow:1px 1px 1px rgba(255,255, 255, 0.6);
+padding-left:8px;
+margin-bottom:8px;
 }
 
 div#zone-proprio-formulaire label,
+div#zone-proprio-galerie label,
 div#photoproprio-edition-fieldset label{
 width:230px;
 cursor:pointer;
@@ -2305,7 +2324,7 @@ div#zone-proprio-formulaire label{
 display:block;
 }
 
-
+div#zone-proprio-galerie input:not([type=submit]), 
 div#zone-proprio-formulaire input:not([type=submit]) {
 background: rgba(255, 255, 255, 0.9);
 background:-moz-linear-gradient(90deg, #fff, #eee); /* Firefox */
@@ -2317,7 +2336,9 @@ padding:5px;
 }
 
 div#zone-proprio-formulaire select,
-div#photoproprio-edition-fieldset input[type=file]{
+div#photoproprio-edition-fieldset input[type=file],
+div#zone-proprio-galerie select,
+div#zone-proprio-galerie input[type=file]{
 cursor:pointer;
 padding:3px;
 box-shadow:0 0 3px #aaa;
@@ -2325,7 +2346,11 @@ box-shadow:0 0 3px #aaa;
 div#zone-proprio-formulaire select:active,
 div#zone-proprio-formulaire select:focus,
 div#photoproprio-edition-fieldset input[type=file]:active,
-div#photoproprio-edition-fieldset input[type=file]:focus{
+div#photoproprio-edition-fieldset input[type=file]:focus,
+div#zone-proprio-galerie select:active,
+div#zone-proprio-galerie select:focus,
+div#zone-proprio-galerie input[type=file]:active,
+div#zone-proprio-galerie input[type=file]:focus{
 border:1px solid #093c75;
 box-shadow:0 0 3px #0459b7;
 outline:none;
@@ -2338,7 +2363,8 @@ outline:none;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
-div#zone-proprio-formulaire .submit-form{
+div#zone-proprio-formulaire .submit-form,
+div#zone-proprio-galerie .submit-form{
 margin-top:20px;
 padding-top:5px;
 border-top:1px solid #aaa;
@@ -2347,7 +2373,9 @@ text-align:center;
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
 div#zone-proprio-formulaire input[type=submit],
-div#photoproprio-edition-fieldset input[type=file]{
+div#photoproprio-edition-fieldset input[type=file],
+div#zone-proprio-galerie input[type=submit],
+div#zone-proprio-galerie input[type=file]{
 background:#ddd;
 background:-moz-linear-gradient(90deg, #0459b7, #08adff); /* Firefox */
 background:-webkit-gradient(linear, left top, left bottom, from(#08adff), to(#0459b7)); /* Webkit */
@@ -2362,7 +2390,8 @@ text-transform:uppercase;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
-div#zone-proprio-formulaire input[type=submit]:hover{
+div#zone-proprio-formulaire input[type=submit]:hover,
+div#zone-proprio-galerie input[type=submit]:hover{
 background:#eee;
 background:-moz-linear-gradient(90deg, #067cd3, #0bcdff);
 background:-webkit-gradient(linear, left top, left bottom, from(#0bcdff), to(#067cd3));
@@ -2370,7 +2399,9 @@ border-color:#093c75;
 text-decoration:none;
 }
 div#zone-proprio-formulaire input[type=submit]:active,
-div#zone-proprio-formulaire input[type=submit]:focus{
+div#zone-proprio-formulaire input[type=submit]:focus,
+div#zone-proprio-galerie input[type=submit]:active,
+div#zone-proprio-galerie input[type=submit]:focus{
 background:#ccc;
 background:-moz-linear-gradient(90deg, #0bcdff, #067cd3);
 background:-webkit-gradient(linear, left top, left bottom, from(#067cd3), to(#0bcdff));
