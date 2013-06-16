@@ -1478,6 +1478,7 @@ margin-top:10px;
 div.hebergement-gite-listing-detail div#info-bloc-inf div#capacite-max,
 div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-chambre,
 div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-epis,
+div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-cle,
 div.hebergement-gite-listing-detail div#info-bloc-inf div#icon-confort{
 background-color:rgba(200,232,167,0.31);
 }
@@ -1485,6 +1486,7 @@ background-color:rgba(200,232,167,0.31);
 div.hebergement-chambre-listing-detail div#info-bloc-inf div#capacite-max,
 div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-chambre,
 div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-epis,
+div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-cle,
 div.hebergement-chambre-listing-detail div#info-bloc-inf div#icon-confort{
 background-color:rgba(130,167,234,0.19);
 }
@@ -1492,6 +1494,7 @@ background-color:rgba(130,167,234,0.19);
 div#info-bloc-inf div#capacite-max,
 div#info-bloc-inf div#nbre-chambre,
 div#info-bloc-inf div#nbre-epis,
+div#info-bloc-inf div#nbre-cle,
 div#info-bloc-inf div#icon-confort{
 float:left;
 width:114px;
