@@ -37,6 +37,10 @@ padding:0;
 margin:0;
 }
 
+body .popup {
+color:#FFF;
+}
+
 .break-float{
 clear:both;
 }
@@ -1021,6 +1025,10 @@ color:#ddd;
 
 
 /*** LISTING PACKAGES ***/
+body.template-idee_sejour_root #plone-contentmenu-display {
+display: none;
+}
+	
 #idee_sejours_container fieldset{
 margin-top:10px;
 padding-top:10px;
