@@ -249,6 +249,15 @@ padding-top:6px;
 background:url(../images/bg-header-orange.png);
 }
 
+body.gite #main-header{
+background:url(../images/bg-header-vert.png);
+}
+
+body.chambre #main-header{
+background:url(../images/bg-header-bleu.png);
+}
+
+
 /*** LOGO ***/
 #logo{
 float:left;
@@ -1849,10 +1858,6 @@ text-shadow:1px 1px 1px rgba(250,250,250,0.8);
 }
 
 div#description-calendrier{
-}
-
-div#description-calendrier div#calendars{
-margin-left:65px;
 }
 
 div#description-calendrier div#calendars #calendars_menu a {
