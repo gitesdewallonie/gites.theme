@@ -45,6 +45,13 @@ color:#FFF;
 clear:both;
 }
 
+.discreet-info{
+color:#333;
+text-shadow:1px 1px 1px rgba(255,255,255,0.8);
+font-size:0.8em;
+font-style:italic;
+}
+
 a:hover{
 color:#205C90 !important;
 }
