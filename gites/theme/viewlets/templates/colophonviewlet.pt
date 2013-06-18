@@ -8,7 +8,8 @@
         <br />
         B5100 Jambes (Namur)
         <br />
-        <a href="" tal:attributes="href string:${context/@@plone_portal_state/portal_url}/contact-info">info@gitesdewallonie.be</a>
+        <a href=""
+           tal:attributes="href string:${context/@@plone_portal_state/portal_url}/contact-info">info@gitesdewallonie.be</a>
         <br />
         Tel: +32(0) 81 311 800 - Fax: +32(0) 81 310 200
     </div>
@@ -26,7 +27,7 @@
                 </span>
         </div>
         <div id="feder">
-            <img src="++theme++gites.theme/images/logo_wallonie_europe_feder.png"
+            <img src="++theme++gites.theme/images/logo_ue_wallonie.png"
                  alt="FEDER – PROGRAMMATION 2007-2013"
                  title="FEDER – PROGRAMMATION 2007-2013" />
             <span class="partenaire-info">
@@ -41,12 +42,10 @@
                     Mesure 3.03 :Redynamisation urbaine et
                     attractivit&eacute; du territoire
                     <br />
-                    Le Fonds europ&eacute;en de d&eacute;veloppement
+                    Fonds européen agricole pour le développement rural :
                     <br />
-                    r&eacute;gional et la Wallonie investissent
-                    <br />
-                    dans votre avenir.
-                  </span>
+                    l'Europe investit dans les zones rurales. 
+                </span>
             </span>
         </div>
         <div id="wallonie-tourisme">
