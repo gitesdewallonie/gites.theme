@@ -2114,7 +2114,7 @@ float:left;
 margin-left:20px;
 }
 
-div#prorpio-affichage-mensuel{
+div#proprio-affichage-mensuel{
 float:right;
 margin:8px 10px;
 }
@@ -2122,7 +2122,7 @@ margin:8px 10px;
 div#proprio-maj-info-menu a,
 div#proprio-configuration-calendrier a,
 div#proprio-aide a,
-div#prorpio-affichage-mensuel a{
+div#proprio-affichage-mensuel a{
 cursor:pointer;
 height:33px;
 margin:0px 20px;
@@ -2146,7 +2146,7 @@ color:#666 !important;
 div#proprio-maj-info-menu a:hover,
 div#proprio-configuration-calendrier a:hover,
 div#proprio-aide a:hover,
-div#prorpio-affichage-mensuel a:hover{
+div#proprio-affichage-mensuel a:hover{
 color:#222 !important;
 }
 
