@@ -1599,16 +1599,19 @@ margin-right:5px;
 
 /*** DESCRIPTION HEBERGEMENT ***/
 div#description-heb{
-width:1092px;
+width:1065px;
 height:735px;
-margin-left:-10px;
+margin-left:-6px;
+padding-top:5px;
 background-image:url(../images/bg_descriptif.png);
+border-radius:12px;
 }
 
 div#description-info-sup{
 width:98%;
 height:66px;
 margin-bottom:10px;
+margin-left:10px;
 border:2px solid rgba(250,250,250,0.3);
 border-radius:12px;
 background: -moz-linear-gradient(top,  rgba(104,103,102,0.5) 0%, rgba(238,238,238,0.25) 100%); /* FF3.6+ */
@@ -1720,6 +1723,8 @@ position: relative;
 top: 120px;
 }
 #descriptif-accordeon{
+position:relative;
+left:-11px;
 height:586px;
 list-style:none !important;
 width:1040px;
