@@ -1174,11 +1174,16 @@ padding:15px;
 
 div#heb-listing div#listing-result.list-container div#listing-result-block{
 float:right;
+width:-moz-available;
+}
+
+/* Only in package view */
+.template-package_view div#heb-listing div#listing-result.list-container div#listing-result-block{
+width:auto;
 }
 
 div#listing-result-gite-theme{
 float:left;
-margin-left:1em;
 margin-bottom:12px;
 }
 
