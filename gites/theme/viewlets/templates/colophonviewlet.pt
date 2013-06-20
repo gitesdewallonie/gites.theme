@@ -27,21 +27,15 @@
                 </span>
         </div>
         <div id="feder">
+            <br />
             <img src="++theme++gites.theme/images/logo_ue_wallonie.png"
-                 alt="FEDER – PROGRAMMATION 2007-2013"
-                 title="FEDER – PROGRAMMATION 2007-2013" />
+                 alt="FEADER"
+                 title="FEADER" />
             <span class="partenaire-info">
                 <span id="titre-feder">
-                    FEDER<br />
-                    PROGRAMMATION 2007-<span tal:replace="viewlet/getYear"/><br />
+                    FEADER<br />
                 </span>
                 <span id="texte-feder">
-                    Axe prioritaire 3:D&eacute;veloppement territorial
-                    &eacute;quilibr&eacute; et durable
-                    <br />
-                    Mesure 3.03 :Redynamisation urbaine et
-                    attractivit&eacute; du territoire
-                    <br />
                     Fonds européen agricole pour le développement rural :
                     <br />
                     l'Europe investit dans les zones rurales. 

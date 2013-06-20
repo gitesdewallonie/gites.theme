@@ -733,6 +733,7 @@ margin:0px;
 
 div#content-for-khevine{
 padding:1em;
+margin:8px 0px 20px 0px;
 border:1px solid rgba(200,215,220,0.3);
 border-radius:12px;
 box-shadow:2px 2px 8px rgba(100,100,100,0.5);
@@ -1174,11 +1175,16 @@ padding:15px;
 
 div#heb-listing div#listing-result.list-container div#listing-result-block{
 float:right;
+width:-moz-available;
+}
+
+/* Only in package view */
+.template-package_view div#heb-listing div#listing-result.list-container div#listing-result-block{
+width:auto;
 }
 
 div#listing-result-gite-theme{
 float:left;
-margin-left:1em;
 margin-bottom:12px;
 }
 
@@ -1593,16 +1599,19 @@ margin-right:5px;
 
 /*** DESCRIPTION HEBERGEMENT ***/
 div#description-heb{
-width:1092px;
+width:1065px;
 height:735px;
-margin-left:-10px;
+margin-left:-6px;
+padding-top:5px;
 background-image:url(../images/bg_descriptif.png);
+border-radius:12px;
 }
 
 div#description-info-sup{
 width:98%;
 height:66px;
 margin-bottom:10px;
+margin-left:10px;
 border:2px solid rgba(250,250,250,0.3);
 border-radius:12px;
 background: -moz-linear-gradient(top,  rgba(104,103,102,0.5) 0%, rgba(238,238,238,0.25) 100%); /* FF3.6+ */
@@ -1714,6 +1723,8 @@ position: relative;
 top: 120px;
 }
 #descriptif-accordeon{
+position:relative;
+left:-11px;
 height:586px;
 list-style:none !important;
 width:1040px;
@@ -2108,7 +2119,7 @@ float:left;
 margin-left:20px;
 }
 
-div#prorpio-affichage-mensuel{
+div#proprio-affichage-mensuel{
 float:right;
 margin:8px 10px;
 }
@@ -2116,7 +2127,7 @@ margin:8px 10px;
 div#proprio-maj-info-menu a,
 div#proprio-configuration-calendrier a,
 div#proprio-aide a,
-div#prorpio-affichage-mensuel a{
+div#proprio-affichage-mensuel a{
 cursor:pointer;
 height:33px;
 margin:0px 20px;
@@ -2140,7 +2151,7 @@ color:#666 !important;
 div#proprio-maj-info-menu a:hover,
 div#proprio-configuration-calendrier a:hover,
 div#proprio-aide a:hover,
-div#prorpio-affichage-mensuel a:hover{
+div#proprio-affichage-mensuel a:hover{
 color:#222 !important;
 }
 
