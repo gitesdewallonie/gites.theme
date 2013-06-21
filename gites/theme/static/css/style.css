@@ -2613,3 +2613,25 @@ table.blacklist tbody tr.header td {
   text-shadow: 1px 1px 1px rgba(250, 250, 250, 0.5);
   padding: 10px 3px;
 }
+
+div.collapse {
+    border: 1px solid rgba(50, 50, 50, 0.1);
+    border-radius: 10px 0 0 10px;
+    box-shadow: 2px 5px 8px rgba(50, 50, 50, 0.3);
+    margin: -10px auto 0;
+    padding-bottom: 0;
+    width: 800px;
+}
+
+div.collapse-gite-listing-detail {
+    background-color: rgba(200, 232, 167, 0.8);
+}
+
+div.collapse-chambre-listing-detail {
+    background-color:rgba(130,167,234,0.7);
+}
+
+div.collapse div.hebergement-gite-listing-detail,
+div.collapse div.hebergement-chambre-listing-detail {
+    width: 794px;
+}
