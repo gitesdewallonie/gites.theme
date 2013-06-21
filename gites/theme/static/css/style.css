@@ -156,6 +156,7 @@ margin-bottom:0px;
 background-color: #E7E9E8;
 }
 
+
 /*** INTERFACE ***/
 #wrapper{
 width:1100px;
@@ -602,7 +603,7 @@ border-right:none;
 /*** OFFRES PACKAGES ***/
 div#zone-offres{
 position:relative;
-height:352px;
+height:405px;
 background:url(../images/bgblancligne.png);
 background-position:0px 53px;
 box-shadow:0px 5px 8px #000;
@@ -642,7 +643,7 @@ div#zone-offres div#zone-allo-chambre-hote,
 div#zone-offres div#zone-la-boutique{
 float:left;
 width:233px;
-height:241px;
+height:295px;
 background-color:transparent;
 background:url(../images/bg-etiquette.png);
 background-position:2px -5px;
@@ -656,10 +657,11 @@ font-size:0.8em;
 }
 
 div#zone-offres .offre-icon {
-height: 115px;
-width: 246px;
+height: 156px;
+width: 240px;
 box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
-left: -6px;
+left: -3px;
+margin-top: 3px;
 margin-bottom: 6px;
 position: relative;
 }
