@@ -152,6 +152,9 @@ z-index: 1500;
 margin-bottom:0px;
 }
 
+#content #fieldset-default.formPanel {
+background-color: #E7E9E8;
+}
 
 /*** INTERFACE ***/
 #wrapper{
