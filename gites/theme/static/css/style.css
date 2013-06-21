@@ -652,19 +652,18 @@ color:#666;
 font-size:0.8em;
 }
 
-div#zone-offres div#zone-idee-sejour img,
-div#zone-offres div#zone-derniere-minute img,
-div#zone-offres div#zone-la-boutique img{
-float:right;
+div#zone-offres .offre-icon {
+height: 115px;
+width: 246px;
+box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
+left: -6px;
+margin-bottom: 6px;
+position: relative;
 }
 
-div#zone-offres div#zone-allo-chambre-hote div#allo-qrcode{
-position:relative;
-left:-6px;
-box-shadow:2px 2px 4px rgba(50,50,50,0.5);
-margin-bottom:6px;
+p.red {
+color: #BC0000;
 }
-
 
 
 .etiquette{
