@@ -7,6 +7,10 @@
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
     <notheme if-path="gestion_gites" />
+    <notheme if-path="mapBlacklistSearchResult" />
+    <notheme if-path="mapBlacklistRowData" />
+    <notheme if-path="mapBlacklistAddData" />
+    <notheme if-path="hebergement-metadata-update" />
 
     <notheme if="$ajax_load" />
 
