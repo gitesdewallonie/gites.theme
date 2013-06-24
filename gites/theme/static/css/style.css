@@ -67,6 +67,12 @@ display: none;
 }
 
 
+/*** PRINT DETECTION DIV ***/
+#javascript-print-detection {
+display: none;
+}
+
+
 /*** LANGUAGE SELECTOR // PORTAL-PERSONALTOOLS ***/
 #portal-personaltools,
 #languageselector {
