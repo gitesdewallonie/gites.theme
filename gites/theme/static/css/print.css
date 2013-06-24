@@ -11,25 +11,52 @@ mars 2013
         border:none !important;
         background-image:none !important;
         border-radius:none !important;
+		background-color:transparent !important;
     }
+	#javascript-print-detection {
+		display: block;
+	}
+	#wrapper {
+		min-height: 0px;
+	}
     #description-calendrier,
-    .slide3,
     .slide4,
+    .slide5,
     #beforecontent {
         display: none !important;
     }
+	#descriptif-accordeon li.slide3 {
+		page-break-before:always;
+	}
+	#dispocalendars_container table {
+    	float: left;
+	}
 	#accordeon-spin {
         display: none !important;
 	}
-    #descriptif-accordeon {
-        overflow: visible !important;
-    }
-    #descriptif-accordeon li.slide {
-        page-break-before: always;
-        display: inline !important;
-    }
+	#description-heb, #descriptif-accordeon {
+		height: 2000px !important;
+		overflow: visible !important;
+	}
+	#descriptif-accordeon li.slide {
+    	height: 586px !important;
+		margin-top: 60px !important;
+		position: relative !important;
+		top: none !important;
+		width: none !important;
+		left: 0px !important;
+	}
+	#dispocalendars td.indisp {
+		color: red;
+	}
+	#signaler-un-probleme, #contacter-proprio {
+        display: none !important;
+	}
 	.documentActions {
         display: none !important;
+	}
+	#viewlet-social-like {
+		display: none !important;
 	}
     #edit-bar {
         display: none;
