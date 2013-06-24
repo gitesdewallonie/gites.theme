@@ -52,9 +52,6 @@ mars 2013
 	#signaler-un-probleme, #contacter-proprio {
         display: none !important;
 	}
-	.documentActions {
-        display: none !important;
-	}
 	#viewlet-social-like {
 		display: none !important;
 	}

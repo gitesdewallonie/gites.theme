@@ -777,28 +777,6 @@ div#content.ploneroot,
 div#content-core{
 }
 
-.documentActions{
-width:95%;
-margin:auto;
-margin-top:-3px;
-border-top:1px dashed #bbb;
-text-align:right;
-}
-
-.documentActions ul{
-margin, padding:0;
-}
-
-.documentActions ul li{
-list-style-type:none;
-display:inline !important;
-margin-left: 8px;
-}
-
-.documentActions ul li a{
-border-bottom: 0.1em solid #CCCCCC;
-}
-
 
 /*** ZONE-VIDEO ***/
 div#zone-video{
