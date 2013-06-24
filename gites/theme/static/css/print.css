@@ -20,12 +20,13 @@ mars 2013
 		min-height: 0px;
 	}
     #description-calendrier,
+	.slide3.unused,
     .slide4,
     .slide5,
     #beforecontent {
         display: none !important;
     }
-	#descriptif-accordeon li.slide3 {
+	#descriptif-accordeon li.slide3.used {
 		page-break-before:always;
 	}
 	#dispocalendars_container table {
@@ -35,7 +36,6 @@ mars 2013
         display: none !important;
 	}
 	#description-heb, #descriptif-accordeon {
-		height: 2000px !important;
 		overflow: visible !important;
 	}
 	#descriptif-accordeon li.slide {
@@ -45,6 +45,10 @@ mars 2013
 		top: none !important;
 		width: none !important;
 		left: 0px !important;
+	}
+	#descriptif-accordeon li.slide3.unused {
+    	height: 0px !important;
+		margin-top: 0px !important;
 	}
 	#dispocalendars td.indisp {
 		color: red;
