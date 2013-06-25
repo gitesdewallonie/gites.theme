@@ -1,4 +1,5 @@
-<div id="trombino-facebook">
+<div id="trombino-facebook"
+     tal:condition="not: context/@@isMobile | nothing">
     <iframe src="http://www.facebook.com/plugins/likebox.php?id=378914593933&amp;
             width=420&amp;
             connections=14&amp;
