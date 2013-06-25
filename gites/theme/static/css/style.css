@@ -45,6 +45,16 @@ color:#FFF;
 clear:both;
 }
 
+.float-left{
+float:left;
+background-color:#efe;
+}
+
+.float-right{
+float:right;
+background-color:#eef;
+}
+
 .discreet-info{
 color:#333;
 text-shadow:1px 1px 1px rgba(255,255,255,0.8);
@@ -1023,32 +1033,27 @@ color:#ddd;
 body.template-idee_sejour_root #plone-contentmenu-display {
 display: none;
 }
-	
-#idee_sejours_container fieldset{
+
+div#idee-sejours-listing article.article-resume-idee-sejours{
+width:400px;
 margin-top:10px;
 padding-top:10px;
 border: 2px solid #7A7A78;
 border-radius: 10px;
 }
 
-#idee_sejours_container .logo-package {
-float: left;
+div#idee-sejours-listing article.article-resume-idee-sejours .logo-package {
 vertical-align:text-top;
 margin-right: 10px;
 margin-bottom: 2px;
 }
 
-#idee_sejours_container .div_idee_sejours{
-width:99.5%;
-float:left;
-}
-
-#idee_sejours_container .div_idee_sejours .title{
+div#idee-sejours-listing article.article-resume-idee-sejours .title{
 font-size:16px;
 font-weight:bold;
 }
 
-#idee_sejours_container .div_idee_sejours .description{
+div#idee-sejours-listing article.article-resume-idee-sejours .description{
 font-size:11px;
 font-weight:bold;
 color:black;
