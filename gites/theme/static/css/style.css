@@ -47,12 +47,10 @@ clear:both;
 
 .float-left{
 float:left;
-background-color:#efe;
 }
 
 .float-right{
 float:right;
-background-color:#eef;
 }
 
 .discreet-info{
@@ -1034,18 +1032,39 @@ body.template-idee_sejour_root #plone-contentmenu-display {
 display: none;
 }
 
+article.article-resume-idee-sejours h2 {
+font-family:'PT Sans Narrow'!important;
+font-weight:none;
+margin-bottom: 15px;
+border-bottom:1px solid #ddd;
+}
+
+
 div#idee-sejours-listing article.article-resume-idee-sejours{
-width:400px;
-margin-top:10px;
-padding-top:10px;
-border: 2px solid #7A7A78;
-border-radius: 10px;
+width:450px;
+min-height:280px;
+margin:20px 15px;
+padding:10px;
+border: 2px solid #ddd;
+box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
+border-radius:18px;
+text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 
 div#idee-sejours-listing article.article-resume-idee-sejours .logo-package {
-vertical-align:text-top;
-margin-right: 10px;
-margin-bottom: 2px;
+text-align:center;
+margin-bottom:10px;
+}
+div#idee-sejours-listing article.article-resume-idee-sejours .logo-package img {
+box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
 }
 
 div#idee-sejours-listing article.article-resume-idee-sejours .title{
