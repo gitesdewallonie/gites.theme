@@ -680,6 +680,23 @@ margin-bottom: 6px;
 position: relative;
 }
 
+.etiquette-derniere-minute{
+float:left;
+width:72px;
+height:35px;
+padding-top:3px;
+margin-right:5px;
+margin-top:4px;
+background-color:#fff6bb;
+border-radius:8px;
+color:#333;
+text-align:center;
+font-weight:bold;
+box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);
+
+}
+
+
 p.red {
 color: #BC0000;
 }
