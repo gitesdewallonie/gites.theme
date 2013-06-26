@@ -793,10 +793,27 @@ min-height:540px;
 
 /*** ZONE TROMBINO FACEBOOK ***/
 div#trombino-facebook{
-margin-right:10px;
 height: 260px;
-width: 425px;
+width:100%;
 }
+
+div#trombino-facebook #news-letter-link{
+float:left;
+}
+
+div#trombino-facebook #facebook-block{
+float:right;
+}
+
+div#trombino-facebook #news-letter-link,
+div#trombino-facebook #facebook-block{
+margin:0px 40px;
+}
+
+div#trombino-facebook #news-letter-link{
+margin-top:5px;
+}
+
 
 /*** positionnement du viewlet ilike ***/
 #viewlet-social-like {
