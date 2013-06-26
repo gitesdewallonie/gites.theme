@@ -798,6 +798,11 @@ height: 260px;
 width: 425px;
 }
 
+/*** positionnement du viewlet ilike ***/
+#viewlet-social-like {
+margin-top:-5px;
+}
+
 
 /*** FOOTER ***/
 div#footer{
