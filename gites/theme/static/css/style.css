@@ -2638,6 +2638,13 @@ background-color: #FFDDCC;
 border: 1px solid #DD0000;
 }
 
+/* Heb metadata */
+table.listing tbody tr.not-defined td,
+table tbody tr.not-defined td {
+    background-color: #f9e7c6;
+}
+
+/* Blacklisting */
 table.blacklist th,
 table.blacklist td{
   padding: 2px 5px;
