@@ -1,5 +1,11 @@
-<div id="trombino-facebook">
-    <iframe src="http://www.facebook.com/plugins/likebox.php?id=378914593933&amp;
+<div id="trombino-facebook"
+     tal:condition="not: context/@@isMobile | nothing">
+    <div id="news-letter-link">
+        <img src="photo_network.jpg" />
+    </div>
+    
+    <iframe id="facebook-block"
+            src="http://www.facebook.com/plugins/likebox.php?id=378914593933&amp;
             width=420&amp;
             connections=14&amp;
             stream=false&amp;
@@ -11,4 +17,5 @@
             style="border:5px solid #476D84; overflow:hidden; width:420px; height:255px;"
             allowTransparency="true">
     </iframe>
+    <div class="break-float"></div>
 </div>

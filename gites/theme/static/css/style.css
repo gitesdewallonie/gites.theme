@@ -45,6 +45,14 @@ color:#FFF;
 clear:both;
 }
 
+.float-left{
+float:left;
+}
+
+.float-right{
+float:right;
+}
+
 .discreet-info{
 color:#333;
 text-shadow:1px 1px 1px rgba(255,255,255,0.8);
@@ -63,6 +71,12 @@ border: 1px solid #329FD7 !important;
 /*** CALENDAR PICKER FIX ***/
 #ui-datepicker-div {
 z-index: 1100 !important;
+display: none;
+}
+
+
+/*** PRINT DETECTION DIV ***/
+#javascript-print-detection {
 display: none;
 }
 
@@ -152,11 +166,14 @@ z-index: 1500;
 margin-bottom:0px;
 }
 
+#content #fieldset-default.formPanel {
+background-color: #E7E9E8;
+}
+
 
 /*** INTERFACE ***/
 #wrapper{
 width:1100px;
-min-height:2800px;
 margin:auto;
 background-color:#303030;
 }
@@ -474,6 +491,7 @@ margin-top:5px;
 #maisonhote a{
 display:block;
 width:195px;
+height:52px;
 margin-left:5px;
 font-weight:bold;
 font-size:1.1em;
@@ -599,7 +617,7 @@ border-right:none;
 /*** OFFRES PACKAGES ***/
 div#zone-offres{
 position:relative;
-height:352px;
+height:405px;
 background:url(../images/bgblancligne.png);
 background-position:0px 53px;
 box-shadow:0px 5px 8px #000;
@@ -639,7 +657,7 @@ div#zone-offres div#zone-allo-chambre-hote,
 div#zone-offres div#zone-la-boutique{
 float:left;
 width:233px;
-height:241px;
+height:295px;
 background-color:transparent;
 background:url(../images/bg-etiquette.png);
 background-position:2px -5px;
@@ -652,19 +670,36 @@ color:#666;
 font-size:0.8em;
 }
 
-div#zone-offres div#zone-idee-sejour img,
-div#zone-offres div#zone-derniere-minute img,
-div#zone-offres div#zone-la-boutique img{
-float:right;
+div#zone-offres .offre-icon {
+height: 156px;
+width: 240px;
+box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
+left: -3px;
+margin-top: 3px;
+margin-bottom: 6px;
+position: relative;
 }
 
-div#zone-offres div#zone-allo-chambre-hote div#allo-qrcode{
-position:relative;
-left:-6px;
-box-shadow:2px 2px 4px rgba(50,50,50,0.5);
-margin-bottom:6px;
+.etiquette-derniere-minute{
+float:left;
+width:72px;
+height:35px;
+padding-top:3px;
+margin-right:5px;
+margin-top:4px;
+background-color:#fff6bb;
+border-radius:8px;
+color:#333;
+text-align:center;
+font-weight:bold;
+box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);
+
 }
 
+
+p.red {
+color: #BC0000;
+}
 
 
 .etiquette{
@@ -733,6 +768,7 @@ margin:0px;
 
 div#content-for-khevine{
 padding:1em;
+margin:8px 0px 20px 0px;
 border:1px solid rgba(200,215,220,0.3);
 border-radius:12px;
 box-shadow:2px 2px 8px rgba(100,100,100,0.5);
@@ -759,33 +795,11 @@ font-weight:normal;
 color:rgb(50, 50, 50);
 text-shadow:2px 2px 2px rgba(255,255,255,0.5);
 margin-left:50px;
-background:url(../images/essentiel_underline.png) no-repeat 60px 110px;
+background:url(../images/essentiel_underline.png) no-repeat 60px 70px;
 }
 
 div#content.ploneroot,
 div#content-core{
-}
-
-.documentActions{
-width:95%;
-margin:auto;
-margin-top:-3px;
-border-top:1px dashed #bbb;
-text-align:right;
-}
-
-.documentActions ul{
-margin, padding:0;
-}
-
-.documentActions ul li{
-list-style-type:none;
-display:inline !important;
-margin-left: 8px;
-}
-
-.documentActions ul li a{
-border-bottom: 0.1em solid #CCCCCC;
 }
 
 
@@ -797,9 +811,31 @@ min-height:540px;
 
 /*** ZONE TROMBINO FACEBOOK ***/
 div#trombino-facebook{
-margin-right:10px;
 height: 260px;
-width: 425px;
+width:100%;
+}
+
+div#trombino-facebook #news-letter-link{
+float:left;
+}
+
+div#trombino-facebook #facebook-block{
+float:right;
+}
+
+div#trombino-facebook #news-letter-link,
+div#trombino-facebook #facebook-block{
+margin:0px 40px;
+}
+
+div#trombino-facebook #news-letter-link{
+margin-top:5px;
+}
+
+
+/*** positionnement du viewlet ilike ***/
+#viewlet-social-like {
+margin-top:-5px;
 }
 
 
@@ -1035,32 +1071,48 @@ color:#ddd;
 body.template-idee_sejour_root #plone-contentmenu-display {
 display: none;
 }
-	
-#idee_sejours_container fieldset{
-margin-top:10px;
-padding-top:10px;
-border: 2px solid #7A7A78;
-border-radius: 10px;
+
+article.article-resume-idee-sejours h2 {
+font-family:'PT Sans Narrow'!important;
+font-weight:none;
+margin-bottom: 15px;
+border-bottom:1px solid #ddd;
 }
 
-#idee_sejours_container .logo-package {
-float: left;
-vertical-align:text-top;
-margin-right: 10px;
-margin-bottom: 2px;
+
+div#idee-sejours-listing article.article-resume-idee-sejours{
+width:450px;
+min-height:280px;
+margin:20px 15px;
+padding:10px;
+border: 2px solid #ddd;
+box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
+border-radius:18px;
+text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 
-#idee_sejours_container .div_idee_sejours{
-width:99.5%;
-float:left;
+div#idee-sejours-listing article.article-resume-idee-sejours .logo-package {
+text-align:center;
+margin-bottom:10px;
+}
+div#idee-sejours-listing article.article-resume-idee-sejours .logo-package img {
+box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
 }
 
-#idee_sejours_container .div_idee_sejours .title{
+div#idee-sejours-listing article.article-resume-idee-sejours .title{
 font-size:16px;
 font-weight:bold;
 }
 
-#idee_sejours_container .div_idee_sejours .description{
+div#idee-sejours-listing article.article-resume-idee-sejours .description{
 font-size:11px;
 font-weight:bold;
 color:black;
@@ -1174,11 +1226,16 @@ padding:15px;
 
 div#heb-listing div#listing-result.list-container div#listing-result-block{
 float:right;
+width:-moz-available;
+}
+
+/* Only in package view */
+.template-package_view div#heb-listing div#listing-result.list-container div#listing-result-block{
+width:auto;
 }
 
 div#listing-result-gite-theme{
 float:left;
-margin-left:1em;
 margin-bottom:12px;
 }
 
@@ -1593,16 +1650,19 @@ margin-right:5px;
 
 /*** DESCRIPTION HEBERGEMENT ***/
 div#description-heb{
-width:1092px;
+width:1065px;
 height:735px;
-margin-left:-10px;
+margin-left:-6px;
+padding-top:5px;
 background-image:url(../images/bg_descriptif.png);
+border-radius:12px;
 }
 
 div#description-info-sup{
 width:98%;
 height:66px;
 margin-bottom:10px;
+margin-left:10px;
 border:2px solid rgba(250,250,250,0.3);
 border-radius:12px;
 background: -moz-linear-gradient(top,  rgba(104,103,102,0.5) 0%, rgba(238,238,238,0.25) 100%); /* FF3.6+ */
@@ -1675,7 +1735,9 @@ div#signaler-un-probleme a:hover {
 color:#333 !important;
 }
 
-
+.photo_gallery{
+margin-top:15px;
+}
 
 
 /*** CAROUSSEL HEBERGEMENT ***/
@@ -1689,12 +1751,17 @@ margin: auto;
 position:relative;
 }
 
-#hebergement-carousel .carousel-inner .item img {
+#hebergement-carousel .carousel-inner .item img,
+#hebergement-carousel #mobile-gallery-link img {
 height: 377px;
 margin: auto auto 20px;
 border: 2px solid #696969;
 border-radius: 15px;
 box-shadow:0px 5px 8px #000;
+}
+
+#hebergement-carousel #mobile-gallery-link img {
+display: block;
 }
 
 #hebergement-carousel a.carousel-control {
@@ -1707,6 +1774,11 @@ margin-top: 0px;
 text-align: center;
 }
 
+#content a#mobile-gallery-link {
+display: block;
+border-bottom: none;
+}
+
 
 /*** CONTENU ACCORDEON ***/
 #accordeon-spin{
@@ -1714,6 +1786,8 @@ position: relative;
 top: 120px;
 }
 #descriptif-accordeon{
+position:relative;
+left:-11px;
 height:586px;
 list-style:none !important;
 width:1040px;
@@ -1923,6 +1997,32 @@ min-width:30px;
 color:#555;
 }
 
+#description-icone-theme-giteplus{
+position:absolute;
+top:10px;
+left:400px;
+width:300px;
+}
+
+#description-icone-theme-giteplus .button-theme{
+float:left;
+margin-right:6px;
+width:42px;
+height:40px;
+border:1px solid #dedede;
+border-radius:8px;
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(241,241,241,1)), color-stop(51%,rgba(225,225,225,1)), color-stop(100%,rgba(246,246,246,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+text-align:center;
+padding-top:4px;
+}
+
 
 /*** SLIDE DESCRIPTION ***/
 div#description-bloc-gauche{
@@ -2108,7 +2208,7 @@ float:left;
 margin-left:20px;
 }
 
-div#prorpio-affichage-mensuel{
+div#proprio-affichage-mensuel{
 float:right;
 margin:8px 10px;
 }
@@ -2116,7 +2216,7 @@ margin:8px 10px;
 div#proprio-maj-info-menu a,
 div#proprio-configuration-calendrier a,
 div#proprio-aide a,
-div#prorpio-affichage-mensuel a{
+div#proprio-affichage-mensuel a{
 cursor:pointer;
 height:33px;
 margin:0px 20px;
@@ -2140,7 +2240,7 @@ color:#666 !important;
 div#proprio-maj-info-menu a:hover,
 div#proprio-configuration-calendrier a:hover,
 div#proprio-aide a:hover,
-div#prorpio-affichage-mensuel a:hover{
+div#proprio-affichage-mensuel a:hover{
 color:#222 !important;
 }
 
@@ -2277,7 +2377,7 @@ cursor:move;
 }
 
 
-
+div#signaler-un-probleme-formulaire,
 div#zone-proprio-formulaire,
 div#zone-proprio-info-hebergement,
 form#proprio-config-calendrier,
@@ -2341,7 +2441,7 @@ margin-right:8px;
 }
 
 
-
+div#signaler-un-probleme-formulaire label,
 div#zone-proprio-formulaire label,
 div#zone-proprio-galerie label,
 div#photoproprio-edition-fieldset label{
@@ -2358,6 +2458,12 @@ div#zone-proprio-formulaire label{
 display:block;
 }
 
+div#signaler-un-probleme-formulaire .siganler-un-probleme-input{
+margin:10px 6px;
+}
+
+div#signaler-un-probleme-formulaire input:not([type=submit]),
+div#signaler-un-probleme-formulaire input:not([type=submit]),
 div#zone-proprio-galerie input:not([type=submit]), 
 div#zone-proprio-formulaire input:not([type=submit]) {
 background: rgba(255, 255, 255, 0.9);
@@ -2369,6 +2475,8 @@ box-shadow:0 0 3px #aaa;
 padding:5px;
 }
 
+div#signaler-un-probleme-formulaire select,
+div#signaler-un-probleme-formulaire input[type=file],
 div#zone-proprio-formulaire select,
 div#photoproprio-edition-fieldset input[type=file],
 div#zone-proprio-galerie select,
@@ -2377,6 +2485,11 @@ cursor:pointer;
 padding:3px;
 box-shadow:0 0 3px #aaa;
 }
+
+div#signaler-un-probleme-formulaire select:active,
+div#signaler-un-probleme-formulaire select:focus,
+div#signaler-un-probleme-formulaire input[type=file]:active,
+div#signaler-un-probleme-formulaire input[type=file]:focus,
 div#zone-proprio-formulaire select:active,
 div#zone-proprio-formulaire select:focus,
 div#photoproprio-edition-fieldset input[type=file]:active,
@@ -2390,12 +2503,15 @@ box-shadow:0 0 3px #0459b7;
 outline:none;
 }
 
+
+div#signaler-un-probleme-formulaire input:not([type=submit]):focus:valid
 div#zone-proprio-formulaire input:not([type=submit]):focus:valid {
 border-color:#093c75;
 box-shadow:0 0 3px #0459b7;
 outline:none;
 }
 
+div#signaler-un-probleme-formulaire .submit-form,
 form#proprio-config-calendrier #form-buttons-enregistrer,
 div#zone-proprio-formulaire .submit-form,
 div#zone-proprio-galerie .submit-form{
@@ -2406,6 +2522,7 @@ text-align:center;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
+div#signaler-un-probleme-formulaire input[type=submit],
 div#zone-proprio-formulaire input[type=submit],
 div#photoproprio-edition-fieldset input[type=file],
 div#zone-proprio-galerie input[type=submit],
@@ -2424,6 +2541,7 @@ text-transform:uppercase;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
+div#signaler-un-probleme-formulaire input[type=submit]:hover,
 div#zone-proprio-formulaire input[type=submit]:hover,
 div#zone-proprio-galerie input[type=submit]:hover{
 background:#eee;
@@ -2432,6 +2550,9 @@ background:-webkit-gradient(linear, left top, left bottom, from(#0bcdff), to(#06
 border-color:#093c75;
 text-decoration:none;
 }
+
+div#signaler-un-probleme-formulaire input[type=submit]:active,
+div#signaler-un-probleme-formulaire input[type=submit]:focus,
 div#zone-proprio-formulaire input[type=submit]:active,
 div#zone-proprio-formulaire input[type=submit]:focus,
 div#zone-proprio-galerie input[type=submit]:active,
@@ -2446,17 +2567,18 @@ outline:none;
 /* Overlay */
 div#overlay-comparator {
 display: none;
-width: 984px;
-background-color: #FFF;
+width: 1004px;
+background-color: #F6F6F6;
 height: 80%;
 z-index: 9999;
-padding: 15px;
-box-shadow:0 0 30px 5px #000;
+padding: 13px;
+box-shadow:0 0 20px 3px #222;
 -moz-box-shadow:0 0 30px 5px #000;
 -webkit-box-shadow: 0 0 30px #000;
 border-radius:0.5em;
 -webkit-border-radius:0.5em;
 -moz-border-radius:0.5em;
+border: 2px solid #BBB;
 }
 
 div#overlay-comparator .contentWrap {
@@ -2473,4 +2595,158 @@ cursor: pointer;
 height: 30px;
 width: 30px;
 z-index: 10000;
+}
+
+/* Comparator */
+.center { text-align: center; }
+
+.icons-on table.comparison td {
+line-height: 1em;
+padding: 3px 3px;
+}
+
+table.comparison {
+  border: none;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+table.comparison thead { display: none; }
+
+table.comparison tbody tr.header td.description {
+  background-color: #F6F6F6;
+}
+
+table.comparison tbody td {
+  border-right: 1px solid #F6F6F6;
+}
+
+table.comparison tbody tr.header td {
+color: #222222;
+font-family: 'Josefin Sans','Helvetica Neue',Arial,FreeSans,sans-serif;
+font-size: 1.2em;
+text-shadow: 1px 1px 1px rgba(250, 250, 250, 0.5);
+padding: 10px 3px;
+}
+
+table.comparison tbody td.comparison-4 { width: 181px; }
+table.comparison tbody td.comparison-3 { width: 241px; }
+table.comparison tbody td.comparison-2 { width: 362px; }
+
+table.comparison tbody tr.odd td { background-color: #F6F6F6; }
+
+table.comparison tbody tr.even td { background-color: #DFDDD9; }
+table.comparison tbody tr.even td.gites { background-color: #DEEDCF; }
+table.comparison tbody tr.even td.chambres { background-color: #D2DCEF; }
+
+table.comparison tbody tr.header td.gites  {
+  background-color: #ACE087;
+  color: #265902;
+}
+
+table.comparison tbody tr.header td.chambres {
+background-color: #82A7EA;
+color: #00336A;
+}
+
+table.comparison span.icon {
+font-family: 'Josefin Sans','Helvetica Neue',Arial,FreeSans,sans-serif;
+font-weight: bold;
+font-size: 1.8em;
+text-shadow: 1px 1px 1px #666;
+}
+
+table.comparison span.false { color: #CF000E; }
+table.comparison span.true { color: #265902; }
+
+table.comparison td div.timeframe_calendar caption {
+display: block;
+width: 100%;
+}
+
+table.comparison td div.timeframe_calendar thead,
+table.comparison td div.timeframe_calendar tbody {
+display: block;
+}
+
+table.comparison td div.timeframe_calendar div.timeframe_menu {
+margin: 5px 0;
+}
+
+table.comparison td div.timeframe_calendar td,
+table.comparison td div.timeframe_calendar th {
+background-color: #FFF;
+text-align: center;
+border: none;
+padding: 2px 1px;
+}
+
+table.comparison td div.timeframe_calendar th {
+background: none repeat scroll 0 0 #222222;
+color: #EEEEEE;
+}
+
+table.comparison td div.timeframe_calendar td.indisp { background-color: red; }
+
+table.comparison td div.timeframe_calendar td.unselectable,
+table.comparison td div.timeframe_calendar td.beyond {
+background-color: #AAA;
+}
+
+.comparator div.error {
+padding: 0.5em;
+background-color: #FFDDCC;
+border: 1px solid #DD0000;
+}
+
+/* Heb metadata */
+table.listing tbody tr.not-defined td,
+table tbody tr.not-defined td {
+    background-color: #f9e7c6;
+}
+
+/* Blacklisting */
+table.blacklist th,
+table.blacklist td{
+  padding: 2px 5px;
+}
+
+table.blacklist th{
+  border-right: 1px solid #CCC;
+  background-color: #F6F6F6;
+}
+
+table.blacklist tbody td {
+  border-right: 1px solid #F6F6F6;
+  background-color: #CCC;
+}
+
+table.blacklist tbody tr.header td {
+  color: #222222;
+  font-family: 'Josefin Sans','Helvetica Neue',Arial,FreeSans,sans-serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px rgba(250, 250, 250, 0.5);
+  padding: 10px 3px;
+}
+
+div.collapse {
+    border: 0px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 2px 5px 8px rgba(50, 50, 50, 0.3);
+    margin: -10px auto 0;
+    padding-bottom: 0;
+    width: 800px;
+}
+
+div.collapse-gite-listing-detail {
+    background-color: rgba(200, 232, 167, 0.8);
+}
+
+div.collapse-chambre-listing-detail {
+    background-color:rgba(130,167,234,0.7);
+}
+
+div.collapse div.hebergement-gite-listing-detail,
+div.collapse div.hebergement-chambre-listing-detail {
+    width: 794px;
 }

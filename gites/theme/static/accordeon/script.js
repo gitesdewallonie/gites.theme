@@ -1,8 +1,13 @@
 jQuery(document).ready(function($) {
 
-	$('#descriptif-accordeon').accordionza({
-		autoPlay: false,
-	});
+    var printing = ($('#javascript-print-detection').css('display') == 'block') ? true : false;
+
+    if (!printing) {
+    	$('#descriptif-accordeon').accordionza({
+    		autoPlay: false
+    	});
+    }
+
 	$("#accordeon-spin").hide();
 	$("#descriptif-accordeon").show();
 

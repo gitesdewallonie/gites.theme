@@ -27,26 +27,23 @@
                 </span>
         </div>
         <div id="feder">
-            <img src="++theme++gites.theme/images/logo_ue_wallonie.png"
-                 alt="FEDER – PROGRAMMATION 2007-2013"
-                 title="FEDER – PROGRAMMATION 2007-2013" />
-            <span class="partenaire-info">
-                <span id="titre-feder">
-                    FEDER<br />
-                    PROGRAMMATION 2007-<span tal:replace="viewlet/getYear"/><br />
+            <br />
+            <a href="http://ec.europa.eu/agriculture/rurdev/index_fr.htm"
+               target="_blank"
+               title="FEADER">
+                <img src="++theme++gites.theme/images/logo_ue_wallonie.png"
+                     alt="FEADER"
+                     title="FEADER" /></a>
+                <span class="partenaire-info">
+                    <span id="titre-feder">
+                        FEADER<br />
+                    </span>
+                    <span id="texte-feder">
+                        Fonds européen agricole pour le développement rural :
+                        <br />
+                        l'Europe investit dans les zones rurales. 
+                    </span>
                 </span>
-                <span id="texte-feder">
-                    Axe prioritaire 3:D&eacute;veloppement territorial
-                    &eacute;quilibr&eacute; et durable
-                    <br />
-                    Mesure 3.03 :Redynamisation urbaine et
-                    attractivit&eacute; du territoire
-                    <br />
-                    Fonds européen agricole pour le développement rural :
-                    <br />
-                    l'Europe investit dans les zones rurales. 
-                </span>
-            </span>
         </div>
         <div id="wallonie-tourisme">
             <a href="http://www.tourismewallonie.be/"

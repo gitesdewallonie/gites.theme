@@ -19,7 +19,9 @@ class VideoViewlet(grok.Viewlet):
     def available(self):
         context_state = getMultiAdapter((aq_inner(self.context), self.request),
                                         name=u'plone_context_state')
-        return context_state.is_portal_root()
+        isMobile = getMultiAdapter((aq_inner(self.context), self.request),
+                                    name=u'isMobile')
+        return context_state.is_portal_root() and not isMobile()
 
     def getUrl(self):
         language = self.request.get('LANGUAGE', 'fr')

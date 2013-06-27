@@ -5,7 +5,7 @@
                 enabled="0" />
 
     <stylesheet title="Bootstrap Carousel Styles"
-                id="++theme++gites.theme/bootstrap-carousel/css/bootstrap.css"
+                id="++theme++gites.theme/bootstrap-carousel/css/bootstrap.min.css"
                 media="screen" 
                 rel="stylesheet"
                 rendering="import"
@@ -28,9 +28,21 @@
                 applyPrefix="True"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
+    <stylesheet title="Gites Theme Styles"
+                id="++theme++gites.theme/css/mobile.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="python:here.restrictedTraverse('@@isMobile')()"/>
+
     <stylesheet title="Gites Print Styles"
                 id="++theme++gites.theme/css/print.css"
-                media="print"
+                media=""
                 rel="stylesheet"
                 rendering="import"
                 cacheable="True"
@@ -75,6 +87,5 @@
                 enabled="1"
                 applyPrefix="True"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
-
 
 </object>
