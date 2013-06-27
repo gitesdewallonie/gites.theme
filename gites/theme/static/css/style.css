@@ -2377,7 +2377,7 @@ cursor:move;
 }
 
 
-
+div#signaler-un-probleme-formulaire,
 div#zone-proprio-formulaire,
 div#zone-proprio-info-hebergement,
 form#proprio-config-calendrier,
@@ -2441,7 +2441,7 @@ margin-right:8px;
 }
 
 
-
+div#signaler-un-probleme-formulaire label,
 div#zone-proprio-formulaire label,
 div#zone-proprio-galerie label,
 div#photoproprio-edition-fieldset label{
@@ -2458,6 +2458,12 @@ div#zone-proprio-formulaire label{
 display:block;
 }
 
+div#signaler-un-probleme-formulaire .siganler-un-probleme-input{
+margin:10px 6px;
+}
+
+div#signaler-un-probleme-formulaire input:not([type=submit]),
+div#signaler-un-probleme-formulaire input:not([type=submit]),
 div#zone-proprio-galerie input:not([type=submit]), 
 div#zone-proprio-formulaire input:not([type=submit]) {
 background: rgba(255, 255, 255, 0.9);
@@ -2469,6 +2475,8 @@ box-shadow:0 0 3px #aaa;
 padding:5px;
 }
 
+div#signaler-un-probleme-formulaire select,
+div#signaler-un-probleme-formulaire input[type=file],
 div#zone-proprio-formulaire select,
 div#photoproprio-edition-fieldset input[type=file],
 div#zone-proprio-galerie select,
@@ -2477,6 +2485,11 @@ cursor:pointer;
 padding:3px;
 box-shadow:0 0 3px #aaa;
 }
+
+div#signaler-un-probleme-formulaire select:active,
+div#signaler-un-probleme-formulaire select:focus,
+div#signaler-un-probleme-formulaire input[type=file]:active,
+div#signaler-un-probleme-formulaire input[type=file]:focus,
 div#zone-proprio-formulaire select:active,
 div#zone-proprio-formulaire select:focus,
 div#photoproprio-edition-fieldset input[type=file]:active,
@@ -2490,12 +2503,15 @@ box-shadow:0 0 3px #0459b7;
 outline:none;
 }
 
+
+div#signaler-un-probleme-formulaire input:not([type=submit]):focus:valid
 div#zone-proprio-formulaire input:not([type=submit]):focus:valid {
 border-color:#093c75;
 box-shadow:0 0 3px #0459b7;
 outline:none;
 }
 
+div#signaler-un-probleme-formulaire .submit-form,
 form#proprio-config-calendrier #form-buttons-enregistrer,
 div#zone-proprio-formulaire .submit-form,
 div#zone-proprio-galerie .submit-form{
@@ -2506,6 +2522,7 @@ text-align:center;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
+div#signaler-un-probleme-formulaire input[type=submit],
 div#zone-proprio-formulaire input[type=submit],
 div#photoproprio-edition-fieldset input[type=file],
 div#zone-proprio-galerie input[type=submit],
@@ -2524,6 +2541,7 @@ text-transform:uppercase;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
+div#signaler-un-probleme-formulaire input[type=submit]:hover,
 div#zone-proprio-formulaire input[type=submit]:hover,
 div#zone-proprio-galerie input[type=submit]:hover{
 background:#eee;
@@ -2532,6 +2550,9 @@ background:-webkit-gradient(linear, left top, left bottom, from(#0bcdff), to(#06
 border-color:#093c75;
 text-decoration:none;
 }
+
+div#signaler-un-probleme-formulaire input[type=submit]:active,
+div#signaler-un-probleme-formulaire input[type=submit]:focus,
 div#zone-proprio-formulaire input[type=submit]:active,
 div#zone-proprio-formulaire input[type=submit]:focus,
 div#zone-proprio-galerie input[type=submit]:active,
