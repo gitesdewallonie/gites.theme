@@ -2709,7 +2709,7 @@ table.blacklist tbody tr.header td {
 }
 
 div.collapse {
-    border: 1px solid rgba(50, 50, 50, 0.1);
+    border: 0px;
     border-radius: 10px 0 0 10px;
     box-shadow: 2px 5px 8px rgba(50, 50, 50, 0.3);
     margin: -10px auto 0;
