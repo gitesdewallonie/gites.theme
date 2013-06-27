@@ -1993,10 +1993,6 @@ padding:5px;
 min-width:30px;
 }
 
-#content-core.contact-proprio {
-color:#555;
-}
-
 #description-icone-theme-giteplus{
 position:absolute;
 top:10px;
@@ -2376,7 +2372,7 @@ margin-top:10px;
 cursor:move;
 }
 
-
+div#contact-proprio-formulaire,
 div#signaler-un-probleme-formulaire,
 div#zone-proprio-formulaire,
 div#zone-proprio-info-hebergement,
@@ -2406,6 +2402,8 @@ border:1px solid #777;
 border-radius:12px;
 }
 
+div#contact-proprio-formulaire h2,
+div#signaler-un-probleme-formulaire h2,
 div#zone-proprio-formulaire h2,
 div#zone-proprio-info-hebergement h2,
 div#proprio-photo-edition-fieldset h2{
@@ -2440,7 +2438,7 @@ float:right;
 margin-right:8px;
 }
 
-
+div#contact-proprio-formulaire label,
 div#signaler-un-probleme-formulaire label,
 div#zone-proprio-formulaire label,
 div#zone-proprio-galerie label,
@@ -2458,11 +2456,12 @@ div#zone-proprio-formulaire label{
 display:block;
 }
 
-div#signaler-un-probleme-formulaire .siganler-un-probleme-input{
+div#contact-proprio-formulaire .formulaire-input,
+div#signaler-un-probleme-formulaire .formulaire-input{
 margin:10px 6px;
 }
 
-div#signaler-un-probleme-formulaire input:not([type=submit]),
+div#contact-proprio-formulaire input:not([type=submit]),
 div#signaler-un-probleme-formulaire input:not([type=submit]),
 div#zone-proprio-galerie input:not([type=submit]), 
 div#zone-proprio-formulaire input:not([type=submit]) {
@@ -2475,6 +2474,8 @@ box-shadow:0 0 3px #aaa;
 padding:5px;
 }
 
+div#contact-proprio-formulaire select,
+div#contact-proprio-formulaire input[type=file],
 div#signaler-un-probleme-formulaire select,
 div#signaler-un-probleme-formulaire input[type=file],
 div#zone-proprio-formulaire select,
@@ -2486,6 +2487,10 @@ padding:3px;
 box-shadow:0 0 3px #aaa;
 }
 
+div#contact-proprio-formulaire select:active,
+div#contact-proprio-formulaire select:focus,
+div#contact-proprio-formulaire input[type=file]:active,
+div#contact-proprio-formulaire input[type=file]:focus,
 div#signaler-un-probleme-formulaire select:active,
 div#signaler-un-probleme-formulaire select:focus,
 div#signaler-un-probleme-formulaire input[type=file]:active,
@@ -2504,6 +2509,7 @@ outline:none;
 }
 
 
+div#contact-proprio-formulaire input:not([type=submit]):focus:valid
 div#signaler-un-probleme-formulaire input:not([type=submit]):focus:valid
 div#zone-proprio-formulaire input:not([type=submit]):focus:valid {
 border-color:#093c75;
@@ -2511,6 +2517,7 @@ box-shadow:0 0 3px #0459b7;
 outline:none;
 }
 
+div#contact-proprio-formulaire .submit-form,
 div#signaler-un-probleme-formulaire .submit-form,
 form#proprio-config-calendrier #form-buttons-enregistrer,
 div#zone-proprio-formulaire .submit-form,
@@ -2522,6 +2529,7 @@ text-align:center;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
+div#contact-proprio-formulaire input[type=submit],
 div#signaler-un-probleme-formulaire input[type=submit],
 div#zone-proprio-formulaire input[type=submit],
 div#photoproprio-edition-fieldset input[type=file],
@@ -2541,6 +2549,7 @@ text-transform:uppercase;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
+div#contact-proprio-formulaire input[type=submit]:hover,
 div#signaler-un-probleme-formulaire input[type=submit]:hover,
 div#zone-proprio-formulaire input[type=submit]:hover,
 div#zone-proprio-galerie input[type=submit]:hover{
@@ -2553,6 +2562,8 @@ text-decoration:none;
 
 div#signaler-un-probleme-formulaire input[type=submit]:active,
 div#signaler-un-probleme-formulaire input[type=submit]:focus,
+div#contact-proprio-formulaire input[type=submit]:active,
+div#contact-proprio-formulaire input[type=submit]:focus,
 div#zone-proprio-formulaire input[type=submit]:active,
 div#zone-proprio-formulaire input[type=submit]:focus,
 div#zone-proprio-galerie input[type=submit]:active,
