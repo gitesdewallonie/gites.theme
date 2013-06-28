@@ -9,3 +9,8 @@ height:auto !important;
 #partenaire {
 padding:0px 12.5%;
 }
+
+div#content.ploneroot h1 {
+background:none;
+margin-left:auto;
+}
