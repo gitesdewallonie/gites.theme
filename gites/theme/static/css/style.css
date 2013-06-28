@@ -849,7 +849,7 @@ text-align:right;
 
 div#sendTo-printThis a{
 display:inline-block;
-margin:0px 7px;
+margin:0px 0px 10px 0px;
 width:35px;
 height:25px;
 border:1px solid #dedede;
@@ -864,7 +864,11 @@ background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
 text-align:center;
 padding-top:4px;
-
+}
+#print-this-button,
+#send-to-button{
+float:right;
+margin-left:8px;
 }
 
 /*** FOOTER ***/
