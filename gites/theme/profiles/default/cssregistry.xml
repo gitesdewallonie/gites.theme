@@ -4,6 +4,9 @@
     <stylesheet id="columns.css"
                 enabled="0" />
 
+    <stylesheet id="mobile.css"
+                enabled="0" />
+
     <stylesheet title="Bootstrap Carousel Styles"
                 id="++theme++gites.theme/bootstrap-carousel/css/bootstrap.min.css"
                 media="screen" 
