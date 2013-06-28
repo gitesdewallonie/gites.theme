@@ -15,7 +15,7 @@
     </div>
 
     <div id="partenaire">
-        <div id="eurogite">
+        <div id="eurogite" tal:condition="not: context/@@isMobile | nothing">
             <a href="http://www.eurogites.org"
                target="_blank"
                title="Rural and Country Tourism in Europe">
