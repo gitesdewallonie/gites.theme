@@ -112,6 +112,9 @@
                                 <metal:bodytext define-slot="main">
                                     <metal:main define-macro="main">
                                         <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+                                        <div class="visualClear"><!-- --></div>
+
                                         <metal:title define-slot="content-title">
                                             <h1 tal:content="context/Title" class="documentFirstHeading">
                                                 Title or id
