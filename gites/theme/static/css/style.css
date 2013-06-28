@@ -335,10 +335,6 @@ margin-bottom:1px;
 div#je-recherche h3 {
 float:right;
 margin:0;
-padding-right:10px;
-background-image:url(../images/icon_fleche.png);
-background-repeat:no-repeat;
-background-position:right center;
 }
 div#je-recherche h3 a {
 font-family:"PT Sans Narrow";
@@ -346,6 +342,10 @@ font-size:0.8em;
 font-weight:normal;
 color:#000;
 text-shadow:1px 1px 2px rgba(255,255,255,0.5);
+padding-right:10px;
+background-image:url(../images/icon_fleche.png);
+background-repeat:no-repeat;
+background-position:right center;
 }
 
 div#je-recherche h3 a:hover {
@@ -391,8 +391,12 @@ float:left;
 }
 
 #je-recherche #proximite input[type=text]{
-float:left;
 width:250px;
+}
+
+#submit-je-recherche{
+background-color:#000;
+width:200px;
 }
 
 
