@@ -378,12 +378,16 @@ margin:5px 5px 5px 0px;
 margin-left:3px;
 }
 
+#je-recherche img{
+margin-bottom:-3px;
+}
+
 #je-recherche #nbre-personne{
-background-image:url(../images/icon_gugus.png);
-background-repeat:no-repeat;
-background-position:right top;
 width:68px;
-padding-top:5px;
+}
+
+#je-recherche #nbre-personne img {
+margin-left: 3px;
 }
 
 #je-recherche #proximite{
