@@ -15,20 +15,26 @@
             <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
             <a href="//twitter.com/share" class="twitter-share-button" tal:attributes="data-count view/typebutton;
                                                                                        data-via view/twittvia;
-                                                                                       data-lang view/language;
-                                                                                       data-text here/Title;">Tweet</a>
+                                                                                       data-lang request/LANGUAGE;
+                                                                                       data-text here/Title;"></a>
         </li>
 
-        <li class="fb-like" tal:condition="view/fb_enabled">
+        <li class="fb-like" tal:condition="view/fb_enabled"
+            tal:define="language here/@@utils/getFaceBookLanguage">
 
             <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=321358197994003";
-                fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
+
+            <script type="text/javascript" tal:content="structure string:
+              <!--
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = '//connect.facebook.net/${language}/all.js#xfbml=1&appId=321358197994003';
+                    fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+              -->">
+            </script>
 
             <div class="fb-like"
                  data-layout="button_count"

@@ -8,9 +8,14 @@ Copyright by Affinitic sprl
 from five import grok
 from zope.interface import Interface
 from AccessControl import getSecurityManager
-from Products.CMFCore.utils import getToolByName
 
 grok.context(Interface)
+
+FB_LOCALES = ['de_DE',
+              'en_US',
+              'fr_FR',
+              'it_IT',
+              'nl_BE']
 
 
 class UtilsView(grok.View):
@@ -28,6 +33,12 @@ class UtilsView(grok.View):
         if 'Proprietaire' in self.getRoles() or 'Anonymous' in self.getRoles():
             return False
         return True
+
+    def getFaceBookLanguage(self):
+        language = self.request.get('LANGUAGE', 'fr')
+        for locale in FB_LOCALES:
+            if language in locale:
+                return locale
 
     def render(self):
         pass
