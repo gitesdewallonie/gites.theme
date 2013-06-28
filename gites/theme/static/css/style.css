@@ -1463,15 +1463,7 @@ color: #99a1a7;
 transition:transform 0.5s ease-in-out;
 }
 
-
 .heb-comparaison-check:checked + label:after {
-/*position: absolute;
-top: -4px;
-left: 3px;
-content: '\2714';
-font-size: 22px;
-color:#f0f;*/ /*#99a1a7;*/
-
 content:'';
 position:absolute;
 left:5px;
@@ -1692,10 +1684,28 @@ background-position:left 0px;
 background-position:left -43px;
 }
 
-div#listing-result-block div#commune{
+div#commune{
 float:right;
 margin-right:5px;
 }
+
+div#date-promotion{
+position:absolute;
+background-color:rgba(255,198,8,0.5);
+border:1px solid #ffbe03;
+width:180px;
+z-index:10;
+}
+
+div#date-promotion #start,
+div#date-promotion #end,
+div#date-promotion #promotion-text{
+font-size:9pt;
+color:#000;
+float:left;
+}
+
+
 
 
 /*** DESCRIPTION HEBERGEMENT ***/
