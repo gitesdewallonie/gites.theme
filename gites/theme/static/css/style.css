@@ -2787,6 +2787,15 @@ table.blacklist tbody tr.header td {
   padding: 10px 3px;
 }
 
+div#titre-groupe{
+position:relative;
+top:-355px;
+left:-420px;
+-moz-transform:rotate(-90deg);
+-webkit-transform:rotate(-90deg);
+-o-transform:rotate(-90deg);
+}
+
 div.collapse {
     border: 0px;
     border-radius: 10px 0 0 10px;
@@ -2798,6 +2807,7 @@ div.collapse {
 
 div.collapse-gite-listing-detail {
     background-color: rgba(200, 232, 167, 0.8);
+    width:900px;
 }
 
 div.collapse-chambre-listing-detail {
