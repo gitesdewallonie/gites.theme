@@ -12,14 +12,14 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.twitter.com/"
+                <a href="http://twitter.com/GitesWallonie"
                    target="_blank"
                    id="btn-twitter">
                     <span i18n:translate="suivez_nous_twitter">Suivez-nous sur twitter</span>
                 </a>
             </li>
             <li>
-                <a href="http://plus.google.com/"
+                <a href="http://plus.google.com/101294589232969727782"
                    target="_blank"
                    id="btn-google">
                     <span i18n:translate="fans_google">Devenez fans sur Google+</span>
