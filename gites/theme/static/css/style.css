@@ -1477,7 +1477,7 @@ transform:rotate(-40deg) skewX(-30deg) scale(1);
 transform:rotate(-40deg) skewX(-30deg) scale(1.3);
 }
 
-div#signaler-un-probleme,
+div#signaler-un-probleme-button,
 #comparison-button{
 color:#6b004e !important;
 cursor:pointer;
@@ -1498,24 +1498,23 @@ background: linear-gradient(to bottom,  rgba(252,236,252,0.3) 0%,rgba(251,166,22
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dfcecfc', endColorstr='#4dff7cd8',GradientType=0 ); /* IE6-9 */
 }
 
-div#signaler-un-probleme{
+div#signaler-un-probleme-button{
 margin-left:30px;
 margin-top:6px;
 }
 
-div#signaler-un-probleme:hover,
+div#signaler-un-probleme-button:hover,
 #comparison-button:hover{
-color:#f035c2;
+color:#f035c2 !important;
 }
 
-div#signaler-un-probleme a:link{
+div#signaler-un-probleme-button a:link{
 color:#6b004e !important;
 border-bottom:0px !important;
 text-decoration:none !important;
-text-shadow:1px 1px 1px rgba(200, 200, 200,0.8);
 }
 
-div#signaler-un-probleme a:hover {
+div#signaler-un-probleme-button a:hover {
 color:#f035c2 !important;
 }
 
@@ -1907,6 +1906,10 @@ div#description-photo-heb img{
 cursor: pointer;
 }
 
+
+div#dernieres-minute-listing,
+div#promotion-listing,
+div#nouveaux-hebergement-listing,
 div#description-adresse-hebergement,
 div#description-calendrier,
 div#tarification-gite,
@@ -2410,6 +2413,9 @@ border:1px solid #777;
 border-radius:12px;
 }
 
+div#dernieres-minute-listing h2,
+div#promotion-listing h2,
+div#nouveaux-hebergement-listing h2,
 div#contact-proprio-formulaire h2,
 div#signaler-un-probleme-formulaire h2,
 div#zone-proprio-formulaire h2,
