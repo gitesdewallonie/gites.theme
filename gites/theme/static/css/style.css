@@ -2408,6 +2408,7 @@ margin-top:10px;
 cursor:move;
 }
 
+div#recherche-avancee-formulaire,
 div#contact-proprio-formulaire,
 div#signaler-un-probleme-formulaire,
 div#zone-proprio-formulaire,
@@ -2481,6 +2482,7 @@ float:right;
 margin-right:8px;
 }
 
+div#recherche-avancee-formulaire label,
 div#contact-proprio-formulaire label,
 div#signaler-un-probleme-formulaire label,
 div#zone-proprio-formulaire label,
@@ -2499,11 +2501,13 @@ div#zone-proprio-formulaire label{
 display:block;
 }
 
+div#recherche-avancee-formulaire .formulaire-input,
 div#contact-proprio-formulaire .formulaire-input,
 div#signaler-un-probleme-formulaire .formulaire-input{
 margin:10px 6px;
 }
 
+div#recherche-avancee-formulaire input:not([type=submit]),
 div#contact-proprio-formulaire input:not([type=submit]),
 div#signaler-un-probleme-formulaire input:not([type=submit]),
 div#zone-proprio-galerie input:not([type=submit]), 
@@ -2517,6 +2521,7 @@ box-shadow:0 0 3px #aaa;
 padding:5px;
 }
 
+div#recherche-avancee-formulaire select,
 div#contact-proprio-formulaire select,
 div#contact-proprio-formulaire input[type=file],
 div#signaler-un-probleme-formulaire select,
@@ -2530,6 +2535,10 @@ padding:3px;
 box-shadow:0 0 3px #aaa;
 }
 
+div#recherche-avancee-formulaire select:active,
+div#recherche-avancee-formulaire select:focus,
+div#recherche-avancee-formulaire input[type=file]:active,
+div#recherche-avancee-formulaire input[type=file]:focus,
 div#contact-proprio-formulaire select:active,
 div#contact-proprio-formulaire select:focus,
 div#contact-proprio-formulaire input[type=file]:active,
@@ -2551,15 +2560,16 @@ box-shadow:0 0 3px #0459b7;
 outline:none;
 }
 
-
-div#contact-proprio-formulaire input:not([type=submit]):focus:valid
-div#signaler-un-probleme-formulaire input:not([type=submit]):focus:valid
+div#recherche-avancee-formulaire input:not([type=submit]):focus:valid,
+div#contact-proprio-formulaire input:not([type=submit]):focus:valid,
+div#signaler-un-probleme-formulaire input:not([type=submit]):focus:valid,
 div#zone-proprio-formulaire input:not([type=submit]):focus:valid {
 border-color:#093c75;
 box-shadow:0 0 3px #0459b7;
 outline:none;
 }
 
+div#recherche-avancee-formulaire .submit-form,
 div#contact-proprio-formulaire .submit-form,
 div#signaler-un-probleme-formulaire .submit-form,
 form#proprio-config-calendrier #form-buttons-enregistrer,
@@ -2572,6 +2582,7 @@ text-align:center;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
+div#recherche-avancee-formulaire input[type=submit],
 div#contact-proprio-formulaire input[type=submit],
 div#signaler-un-probleme-formulaire input[type=submit],
 div#zone-proprio-formulaire input[type=submit],
@@ -2592,6 +2603,7 @@ text-transform:uppercase;
 }
 
 form#proprio-config-calendrier #form-buttons-enregistrer,
+div#recherche-avancee-formulaire input[type=submit]:hover,
 div#contact-proprio-formulaire input[type=submit]:hover,
 div#signaler-un-probleme-formulaire input[type=submit]:hover,
 div#zone-proprio-formulaire input[type=submit]:hover,
@@ -2603,6 +2615,8 @@ border-color:#093c75;
 text-decoration:none;
 }
 
+div#recherche-avancee-formulaire input[type=submit]:active,
+div#recherche-avancee-formulaire input[type=submit]:focus,
 div#signaler-un-probleme-formulaire input[type=submit]:active,
 div#signaler-un-probleme-formulaire input[type=submit]:focus,
 div#contact-proprio-formulaire input[type=submit]:active,
