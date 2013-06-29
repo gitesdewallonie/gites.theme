@@ -1795,17 +1795,12 @@ margin: auto;
 position:relative;
 }
 
-#hebergement-carousel .carousel-inner .item img,
-#hebergement-carousel #mobile-gallery-link img {
+#hebergement-carousel .carousel-inner .item img {
 height: 377px;
 margin: auto auto 20px;
 border: 2px solid #696969;
 border-radius: 15px;
 box-shadow:0px 5px 8px #000;
-}
-
-#hebergement-carousel #mobile-gallery-link img {
-display: block;
 }
 
 #hebergement-carousel a.carousel-control {
@@ -1816,11 +1811,6 @@ margin-top: 0px;
 
 #hebergement-carousel .video {
 text-align: center;
-}
-
-#content a#mobile-gallery-link {
-display: block;
-border-bottom: none;
 }
 
 
