@@ -1,16 +1,44 @@
+/*** PAGE DESCRIPTIF ***/
+
 #descriptif-accordeon {
 height:auto !important;
 }
 
-#description-heb {
+#hebergement-carousel {
+text-align: center;
+}
+
+div#description-heb {
+padding-bottom:6px;
 height:auto !important;
 }
 
-#partenaire {
-padding:0px 12.5%;
+#hebergement-carousel #mobile-gallery-link img {
+height: 377px;
+margin: auto auto 0px;
+border: 2px solid #696969;
+border-radius: 15px;
+box-shadow:0px 5px 8px #000;
+display: block;
 }
+
+#content a#mobile-gallery-link {
+display: inline-block;
+border-bottom: none;
+}
+
+
+/*** PLONE CONTENT ***/
 
 div#content.ploneroot h1 {
 background:none;
 margin-left:auto;
 }
+
+
+/*** FOOTER ***/
+
+#partenaire {
+padding:0px 12.5%;
+}
+
