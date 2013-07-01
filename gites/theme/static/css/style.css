@@ -1120,7 +1120,8 @@ border-bottom:1px solid #ddd;
 }
 
 
-div#idee-sejours-listing article.article-resume-idee-sejours{
+div#idee-sejours-listing article.article-resume-idee-sejours,
+div#boutique-listing article.article-resume-boutique {
 width:450px;
 min-height:280px;
 margin:20px 15px;
@@ -1139,20 +1140,24 @@ background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 
-div#idee-sejours-listing article.article-resume-idee-sejours .logo-package {
+div#idee-sejours-listing article.article-resume-idee-sejours .logo-package,
+div#boutique-listing article.article-resume-boutique .logo-item {
 text-align:center;
 margin-bottom:10px;
 }
-div#idee-sejours-listing article.article-resume-idee-sejours .logo-package img {
+div#idee-sejours-listing article.article-resume-idee-sejours .logo-package img,
+div#boutique-listing article.article-resume-boutique .logo-item img {
 box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
 }
 
-div#idee-sejours-listing article.article-resume-idee-sejours .title{
+div#idee-sejours-listing article.article-resume-idee-sejours .title,
+div#boutique-listing article.article-resume-boutique .title {
 font-size:16px;
 font-weight:bold;
 }
 
-div#idee-sejours-listing article.article-resume-idee-sejours .description{
+div#idee-sejours-listing article.article-resume-idee-sejours .description,
+div#boutique-listing article.article-resume-boutique .description {
 font-size:11px;
 font-weight:bold;
 color:black;
