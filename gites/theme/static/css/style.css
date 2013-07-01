@@ -806,10 +806,6 @@ margin-left:50px;
 background:url(../images/essentiel_underline.png) no-repeat 60px 70px;
 }
 
-div#content.ploneroot,
-div#content-core{
-}
-
 
 /*** ZONE-VIDEO ***/
 div#zone-video{
@@ -1731,6 +1727,10 @@ float:left;
 
 
 /*** DESCRIPTION HEBERGEMENT ***/
+body.template-hebergement_view #content-core {
+margin-top:-36px;
+}
+
 div#description-heb{
 width:1065px;
 height:735px;
