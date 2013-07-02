@@ -26,7 +26,7 @@
                     Membre d'Eurogîtes
                 </span>
         </div>
-        <div id="feder">
+        <div id="feader">
             <br />
             <a href="http://ec.europa.eu/agriculture/rurdev/index_fr.htm"
                target="_blank"
@@ -41,6 +41,29 @@
                     <span id="texte-feder">
                         Fonds européen agricole pour le développement rural :
                         <br />
+                        l'Europe investit dans les zones rurales. 
+                    </span>
+                </span>
+        </div>
+        <div id="feder">
+            <br />
+            <a href="http://ec.europa.eu/agriculture/rurdev/index_fr.htm"
+               target="_blank"
+               title="FEADER">
+                <img src="++theme++gites.theme/images/logo_wallonie_europe_feder.png"
+                     alt="FEADER"
+                     title="FEADER" /></a>
+                <span class="partenaire-info">
+                    <span id="titre-feder">
+                        FEDER - PROGRAMMATION 2007-2013<br />
+                    </span>
+                    <span id="texte-feder">
+                        Axe prioritaire 3 : Développement territorial équilibré 
+                        et durable
+                        <br />
+                        Mesure 3.03 : Redynamisation urbaine 
+                        et attractivité du territoire
+                        a<br />
                         l'Europe investit dans les zones rurales. 
                     </span>
                 </span>

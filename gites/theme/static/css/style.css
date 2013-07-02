@@ -1021,6 +1021,7 @@ height:310px;
 background:url(../images/bgfooter.png);
 background-repeat:no-repeat;
 padding-top:10px;
+text-align:center;
 }
 
 #coordonnee{
@@ -1032,6 +1033,10 @@ border-bottom:1px dashed #333;
 
 
 /*** PARTENAIRRE ***/
+#partenaire{
+padding-left:12%;;
+}
+
 #partenaire img{
 display:block;
 margin:auto;
@@ -1039,16 +1044,19 @@ margin-bottom:2px;
 }
 
 #eurogite,
+#feader,
 #feder,
 #wallonie-tourisme,
 #wallonie-bruxelles-tourisme{
 float:left;
-width:250px;
+width:150px;
 margin:5px 20px 0px 0px;
 text-align:center;
 font-size:9px;
 font-family:verdana,sans-serif;
 color:#d2d2d2;
+border:1px solid #333;
+border-radius:6px;
 }
 
 #eurogite{
