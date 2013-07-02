@@ -1358,7 +1358,7 @@ width:550px;
 div.hebergement-gite-listing-detail,
 div.hebergement-chambre-listing-detail,
 div#typetype{
-height:126px;
+height:135px;
 }
 
 div.hebergement-gite-listing-detail,
@@ -1366,6 +1366,7 @@ div.hebergement-chambre-listing-detail{
 position:relative;
 z-index:20;
 width:800px;
+height:135px;
 margin:10px auto;
 border:1px solid rgba(50,50,50,0.1);
 border-radius:0px 0px 0px 12px;
@@ -1563,12 +1564,11 @@ color:#f035c2 !important;
 
 div#vignette{
 float:left;
-margin:left:6px;
 width:181px;
 height:115px;
 border:1px solid #999;
 box-shadow:2px 2px 4px rgba(50,50,50,0.3);
-margin:3px 8px 0px 3px;
+margin:8px 8px 0px 3px;
 }
 
 div#info-bloc-sup{
@@ -1615,7 +1615,7 @@ color:#cf000e;
 div#info-bloc-inf{
 float:left;
 width:500px;
-margin-top:10px;
+margin-top:19px;
 }
 
 div.hebergement-gite-listing-detail div#info-bloc-inf div#capacite-max,
@@ -1710,7 +1710,7 @@ margin-right:5px;
 
 div#date-promotion{
 position:relative;
-top :-3px;
+top:2px;
 height:20px;
 background-image:url(../images/bg_promo.png);
 background-position:-180px top;
