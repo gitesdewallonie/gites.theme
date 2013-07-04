@@ -688,13 +688,51 @@ margin-bottom: 6px;
 position: relative;
 }
 
+
+
+div#titre-derniere-minute{
+margin-bottom:6px;
+font-family:"PT Sans Narrow";
+font-size:1.1em;
+}
+
+div#promotion-derniere-minute{
+position:relative;
+top:2px;
+height:18px;
+line-height:20px;
+font-size:0.8em;
+font-family:arial, sans-serif;
+font-weight:bold;
+color:#660800;
+text-shadow:1px 1px 1px rgba(255,255,255,0.8);
+padding-left:10px;
+border-radius:
+background: rgb(254,204,177); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,204,177,1)), color-stop(50%,rgba(241,116,50,1)), color-stop(51%,rgba(234,85,7,1)), color-stop(100%,rgba(251,149,94,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+border-radius:20px 0px 20px 0px;
+box-shadow:1px 1px 1px rgba(255,255,255,1),
+           -1px -1px 1px rgba(135,0,0,0.3);
+
+}
+
+div#info-derniere-minute{
+padding-left:3px
+}
+
 .etiquette-derniere-minute{
 float:left;
 width:72px;
 height:35px;
 padding-top:3px;
-margin-right:5px;
-margin-top:4px;
+margin-right:4px;
+margin-top:7px;
 background-color:#fff6bb;
 border-radius:8px;
 color:#333;
@@ -1722,6 +1760,7 @@ text-shadow:1px 1px 1px rgba(255,255,255,0.8);
 padding-left:5px;
 }
 
+
 /*
 div#date-promotion #start,
 div#date-promotion #end,
@@ -2428,10 +2467,17 @@ margin-top:10px;
 cursor:move;
 }
 
+
+div#recherche-avancee-formulaire,
+div#contact-proprio-formulaire,
+div#signaler-un-probleme-formulaire,
+div#zone-proprio-formulaire,
+div#zone-proprio-info-hebergement,
+form#proprio-config-calendrier,
+div#proprio-photo-edition-fieldset,
 div#listing-dernieres-minutes,
 div#listing-promotions,
 div#listing-nouveaux-hebergements{
-width:80%%;
 margin:auto;
 background: rgb(255,255,255); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
@@ -2449,6 +2495,12 @@ padding:20px;
 }
 
 
+div#listing-dernieres-minutes,
+div#listing-promotions,
+div#listing-nouveaux-hebergements{
+width:80%%;
+}
+
 div#recherche-avancee-formulaire,
 div#contact-proprio-formulaire,
 div#signaler-un-probleme-formulaire,
@@ -2457,20 +2509,6 @@ div#zone-proprio-info-hebergement,
 form#proprio-config-calendrier,
 div#proprio-photo-edition-fieldset{
 width:510px;
-margin:auto;
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
-border:1px solid #aaa;
-border-radius:10px;
-box-shadow:3px 3px 15px rgba(50, 50, 50, 0.5);
-margin:15px auto;
-padding:20px;
 }
 
 #typeautre {
