@@ -690,7 +690,7 @@ position: relative;
 
 
 
-div#titre-derniere-minute{
+div#titre-promotion{
 margin-bottom:6px;
 font-family:"PT Sans Narrow";
 font-size:1.1em;
@@ -701,14 +701,11 @@ position:relative;
 top:2px;
 height:18px;
 line-height:20px;
-font-size:0.9em;
+font-size:0.8em;
 font-family:arial, sans-serif;
 font-weight:bold;
 color:#000;
-/*
-color:#660800;
-text-shadow:1px 1px 1px rgba(255,255,255,0.8);
- */
+text-shadow:1px 1px 1px rgba(255,255,255,0.5);
 padding-left:10px;
 border-radius:
 background: rgb(254,204,177); /* Old browsers */
