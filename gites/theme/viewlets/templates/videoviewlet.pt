@@ -2,8 +2,10 @@
      tal:condition="viewlet/available">
 
   <div id="splashvideo">
-      <img src="++theme++gites.theme/images/video-youtube.png" style="cursor:pointer"
-           data-video="" tal:attributes="data-video string:${viewlet/getUrl}">
+      <img src="++theme++gites.theme/images/video-youtube.jpg"
+           style="cursor:pointer"
+           data-video=""
+           tal:attributes="data-video string:${viewlet/getUrl}">
   </div>
 
 </div>
