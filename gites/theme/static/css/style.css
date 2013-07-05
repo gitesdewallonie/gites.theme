@@ -810,7 +810,7 @@ div#content{
 color:#333;
 min-height:425px;
 padding:3px 10px 1px 10px;
-background:url(../images/bgessentiel.png);
+background:url(../images/bgessentiel.jpg);
 background-repeat:repeat;
 margin:0px;
 }
@@ -918,7 +918,7 @@ margin-left:8px;
 
 /*** FOOTER ***/
 div#footer{
-background:url(../images/degrade-gris.png);
+background:url(../images/degrade-gris.jpg);
 height:414px;
 padding-left:25px;
 color:#ddd;
@@ -1059,7 +1059,7 @@ margin:10px auto 10px auto;
 /*** COLOPHON ***/
 #colophon{
 height:310px;
-background:url(../images/bgfooter.png);
+background:url(../images/bgfooter.jpg);
 background-repeat:no-repeat;
 padding-top:10px;
 text-align:center;
