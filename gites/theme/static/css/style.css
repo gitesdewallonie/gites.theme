@@ -1635,13 +1635,27 @@ font-size:1.6em;
 color:#222;
 text-shadow:1px 1px 1px rgba(250,250,250,0.5);
 margin-top:3px;
-margin-left:30px;
+margin-left:10px;
 }
 
-div#info-bloc-sup div#nom-hebergement a{
-color: #333333;
+div#info-bloc-sup div#nom-hebergement a.gite{
+color:#24590c !important;
 text-decoration: none;
 border-bottom: none;
+}
+
+div#info-bloc-sup div#nom-hebergement a.gite:hover{
+color:#4bd453 !important;
+}
+
+div#info-bloc-sup div#nom-hebergement a.chambre{
+color:#00326a !important;
+text-decoration: none;
+border-bottom: none;
+}
+
+div#info-bloc-sup div#nom-hebergement a.chambre:hover{
+color:#5eadf8i !important;
 }
 
 div#info-bloc-sup div#type{
