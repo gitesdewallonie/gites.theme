@@ -311,7 +311,7 @@ float:left;
 padding:10px;
 padding-top:5px;
 background:rgba(255,255,255,0.1);
-margin-right:20px;
+margin-right:15px;
 border:1px solid #888;
 border-radius:12px;
 height:139px;
@@ -357,7 +357,6 @@ text-shadow:1px 1px 2px rgba(255,255,255,0.5);
 #je-recherche #zone-chambre-hote{
 /*float:left;*/
 width:250px;
-margin-left:45px;
 font-family:'PT Sans Narrow';
 }
 
@@ -411,7 +410,7 @@ background: #eeeeee;
 #je-connais{
 float:left;
 background:rgba(255,255,255,0.1);
-margin-right:12px;
+margin-right:15px;
 border-radius:12px;
 border:1px solid #888;
 box-shadow:3px 3px 5px #000;
@@ -443,7 +442,7 @@ margin-left:259px;
 }
 
 #je-connais .trouver {
-margin-top:32px;
+margin-top:27px;
 margin-left:75px;
 }
 
@@ -484,6 +483,7 @@ width:196px;
 height:52px;
 padding-top:5px;
 padding-left:3px;
+margin-left:10px;
 }
 
 #giteetmeuble{
