@@ -643,7 +643,7 @@ border-right:none;
 /*** OFFRES PACKAGES ***/
 div#zone-offres{
 position:relative;
-height:420px;
+height:435px;
 background:url(../images/bgblancligne.png);
 background-position:0px 53px;
 box-shadow:0px 5px 8px #000;
@@ -682,11 +682,11 @@ div#zone-offres div#zone-derniere-minute,
 div#zone-offres div#zone-allo-chambre-hote,
 div#zone-offres div#zone-la-boutique{
 float:left;
-width:233px;
-height:315px;
+width:235px;
+height:332px;
 background-color:transparent;
 background:url(../images/bg-etiquette.png);
-background-position:2px -5px;
+background-position:2px 0px;
 margin-left:6px;
 margin-top:15px;
 padding:10px 15px 15px 15px;
@@ -718,13 +718,14 @@ div#promotion-derniere-minute{
 position:relative;
 top:2px;
 height:18px;
+margin:10px 0px;
+padding-left:10px;
 line-height:20px;
 font-size:0.8em;
 font-family:arial, sans-serif;
 font-weight:bold;
 color:#000;
 text-shadow:1px 1px 1px rgba(255,255,255,0.5);
-padding-left:10px;
 border-radius:
 background: rgb(254,204,177); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6+ */
@@ -734,7 +735,7 @@ background: -o-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 5
 background: -ms-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
-border-radius:20px 0px 20px 0px;
+border-radius:20px 0px 20px 0px !important;
 box-shadow:1px 1px 1px rgba(255,255,255,1),
            -1px -1px 1px rgba(135,0,0,0.3);
 
@@ -760,11 +761,9 @@ box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);
 
 }
 
-
 p.red {
 color: #BC0000;
 }
-
 
 .etiquette{
 font-size:15pt;
@@ -778,7 +777,7 @@ color:#4f0000;
 
 .plus-info{
 position:absolute;
-bottom:25px;
+bottom:18px;
 width:230px;
 border-top:1px dashed #bbb;
 text-align:right;
