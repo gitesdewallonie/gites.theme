@@ -2033,6 +2033,7 @@ div#tarification-gite,
 div#tarification-chambre,
 div#tarification-table-hote,
 div#description-icone-confort,
+div#description-icone-literie,
 div#description-coordonnee{
 box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
 border-radius:18px;
@@ -2045,6 +2046,14 @@ background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 
 background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+div#description-icone-literie .literie{
+margin-right:12px;
+}
+
+div#description-icone-literie .literie:first-child{
+margin-right:35px;
 }
 
 div#tarification-gite h3,
@@ -2162,13 +2171,15 @@ width:400px;
 float:right;
 }
 
-div#description-icone-confort{
+div#description-icone-confort,
+div#description-icone-literie{
 text-align:center;
 margin-top:8px;
 padding:6px;
 }
 
-div#description-icone-confort .picto{
+div#description-icone-confort .picto,
+div#description-icone-literie .pcto{
 margin:0px 3px;
 }
 
