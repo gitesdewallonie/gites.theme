@@ -2550,8 +2550,7 @@ div#contact-proprio-formulaire,
 div#signaler-un-probleme-formulaire,
 div#zone-proprio-formulaire,
 div#zone-proprio-info-hebergement,
-form#proprio-config-calendrier,
-div#proprio-photo-edition-fieldset{
+form#proprio-config-calendrier {
 width:510px;
 }
 
@@ -2710,6 +2709,7 @@ div#recherche-avancee-formulaire input[type=submit],
 div#contact-proprio-formulaire input[type=submit],
 div#signaler-un-probleme-formulaire input[type=submit],
 div#zone-proprio-formulaire input[type=submit],
+div#photoproprio-edition-fieldset input[type=submit],
 div#photoproprio-edition-fieldset input[type=file],
 div#zone-proprio-galerie input[type=submit],
 div#zone-proprio-galerie input[type=file]{
