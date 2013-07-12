@@ -41,6 +41,7 @@
                 cookable="True"
                 enabled="1"
                 applyPrefix="True"
+                conditionalcomment="IE"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
     <stylesheet title="Gites Theme Styles"
