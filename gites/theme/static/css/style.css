@@ -157,6 +157,15 @@ color:#ff9700 !important;
 border:1px solid rgba(40,40,40,0.1);
 border-radius:18px;
 }
+
+#portal-personaltools {
+position:relative;
+right:0;
+top:0;
+z-index:10;
+}
+
+
 #portal-personaltools dd a {
 line-height:2em;
 padding:0 0.75em;
@@ -221,8 +230,9 @@ color:#fff;
 /*** LISTE ICONES ***/
 #icone-reseaux-sociaux{
 float:left;
-margin-left:280px;
+margin-left:120px;
 height:20px;
+width:260px;
 }
 
 #icone-reseaux-sociaux ul{
@@ -281,11 +291,10 @@ background-position:-190px 0;
 
 #mail{
 background:url(../images/icon_top_header.png);
-background-position:-235px 0;
-width:20px !important;
-margin-left:3px;
+background-position:-232px 0;
+/*width:20px !important;
+margin-left:3px;*/
 }
-
 
 /*** MAIN-HEADER***/
 #main-header{
