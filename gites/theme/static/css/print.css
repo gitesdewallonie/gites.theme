@@ -50,10 +50,13 @@ mars 2013
 	#dispocalendars td.indisp {
 		color: red;
 	}
-	#signaler-un-probleme, #contacter-proprio {
+	#signaler-un-probleme-button, #contacter-proprio {
         display: none !important;
 	}
 	#viewlet-social-like {
+		display: none !important;
+	}
+	#sendTo-printThis {
 		display: none !important;
 	}
     #edit-bar {
