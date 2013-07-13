@@ -2964,3 +2964,7 @@ div.collapse div.hebergement-chambre-listing-detail {
 }
 
 
+/*** SHOP ***/
+#save_order_template, #save_order_template_entry {
+display: none;
+}
