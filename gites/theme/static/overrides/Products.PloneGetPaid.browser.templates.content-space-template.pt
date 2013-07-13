@@ -17,11 +17,13 @@
 <body>
 <div metal:fill-slot="content">
   <div id="content" class="documentEditable">
-    <div id="region-content" class="documentContent">
-      <metal:block define-slot="getpaid_content" tal:content="nothing">
-    	Generic Content Space Template for Getpaid which hides Content
-    	Context UI
-      </metal:block>
+    <div id="content-for-khevine">
+      <div id="region-content" class="documentContent">
+        <metal:block define-slot="getpaid_content" tal:content="nothing">
+    	  Generic Content Space Template for Getpaid which hides Content
+    	  Context UI
+        </metal:block>
+      </div>
     </div>
   </div>
 </div>
