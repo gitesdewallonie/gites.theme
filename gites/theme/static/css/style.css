@@ -68,6 +68,17 @@ fieldset.bordered {
 border: 1px solid #329FD7 !important;
 }
 
+#content table.invisible td:first-child,
+#content table.invisible th:first-child {
+    padding: 0.5em 1em 0.5em 0em;
+}
+
+#content table.invisible td:last-child,
+#content table.invisible th:last-child {
+    padding: 0.5em 0em 0.5em 1em;
+}
+
+
 /*** CALENDAR PICKER FIX ***/
 #ui-datepicker-div {
 z-index: 1100 !important;
