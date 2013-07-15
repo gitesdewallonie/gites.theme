@@ -1,0 +1,73 @@
+img{
+border:none;
+}
+
+
+/*** BARRE PROMOTION ***/
+div#promotion-derniere-minute{
+border:none;
+border-radius:0px;
+}
+
+/*** BOUTON DEVENIR MEMEBRE ***/
+#bouton-devenir-membre{
+border:none;
+}
+
+/*** TITRE ESSENTIEL ***/
+div#content.ploneroot h1{
+font-family:'Rodeo Girl', Helvetica, Arial, sans-serif;
+font-size:5em;
+font-weight:normal;
+color:rgb(50, 50, 50);
+text-shadow:2px 2px 2px rgba(255,255,255,0.5);
+margin-left:50px;
+background:url(../images/essentiel_underline.png) no-repeat 60px 70px;
+}
+
+
+/*** LISTING DES RESULTATS ***/
+div#typetype .texte-vertical{
+position:relative;
+left:-40px;
+top:80px;
+white-space:nowrap;
+display:block;
+text-align:right;
+text-transform:capitalize;
+font-size:13pt;
+background-color:transparent;
+-ms-transform: rotate(-90deg);
+}
+
+div.hebergement-gite-listing-detail div#typetype div.btn-loupe-listing,
+div.hebergement-chambre-listing-detail div#typetype div.btn-loupe-listing{
+position:relative;
+left:0px;
+top:-15px;
+z-index:20;
+width:65px;
+height:130px;
+background-repeat:no-repeat;
+background-position:28px 95px;
+}
+
+div.hebergement-chambre-listing-detail div#typetype div.comparer,
+div.hebergement-gite-listing-detail div#typetype div.comparer{
+position:absolute;
+left:70px;
+top:100px;
+}
+
+.heb-comparaison-check + label:after {
+-ms-transform:rotate(-40deg) skewX(-30deg) scale(0);
+-ms-transform-origin:0 100%;
+}
+
+.heb-comparaison-check:checked + label:after {
+-ms-transform:rotate(-40deg) skewX(-30deg) scale(1);
+}
+
+.heb-comparaison-check:checked + label:hover:after {
+-ms-transform:rotate(-40deg) skewX(-30deg) scale(1.3);
+}
