@@ -1302,18 +1302,33 @@ margin-bottom:15px;
 }
 
 div#listing-result-gite-theme,
-div#listing-result-block{
+div#listing-result-block,
+div.filter_type{
 border:1px solid #999;
 border-radius:12px;
 box-shadow:2px 2px 4px rgba(50,50,50,0.5);
 min-height:300px;
-min-width:150px;
+min-width:200px;
 padding:15px;
+}
+
+div.filter_type {
+min-height:20px;
+margin-bottom:10px;
+}
+
+div#listing-result-advanced-gite-theme {
+width:200px;
+float:left;
 }
 
 div#heb-listing div#listing-result.list-container div#listing-result-block{
 float:right;
 width:-moz-available;
+}
+
+.advanced-search div#heb-listing div#listing-result.list-container div#listing-result-block {
+width:800px;
 }
 
 /* Only in package view */
