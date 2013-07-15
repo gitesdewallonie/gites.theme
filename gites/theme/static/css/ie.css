@@ -1,3 +1,28 @@
+
+/*** BARRE PROMOTION ***/
+div#promotion-derniere-minute{
+border:none;
+border-radius:0px;
+}
+
+/*** BOUTON DEVENIR MEMEBRE ***/
+#bouton-devenir-membre{
+border:none;
+}
+
+/*** TITRE ESSENTIEL ***/
+div#content.ploneroot h1{
+font-family:'Rodeo Girl', Helvetica, Arial, sans-serif;
+font-size:5em;
+font-weight:normal;
+color:rgb(50, 50, 50);
+text-shadow:2px 2px 2px rgba(255,255,255,0.5);
+margin-left:50px;
+background:url(../images/essentiel_underline.png) no-repeat 60px 70px;
+}
+
+
+/*** LISTING DES RESULTATS ***/
 div#typetype .texte-vertical{
 position:relative;
 left:-40px;

@@ -23,10 +23,16 @@ url('../font/PTSansNarrowBold.ttf') format('truetype');
 
 @font-face {
 font-family:'Rodeo Girl';
-src:url('../font/rodeo_girl_bv.ttf') format('truetype');
-font-weight:normal;
-font-style:normal;
+src: url('../font/rodeo_girl_bv-webfont.eot');
+src: url('../font/rodeo_girl_bv-webfont.eot?#iefix') format('embedded-opentype'),
+     url('../font/rodeo_girl_bv-webfont.woff') format('woff'),
+     url('../font/rodeo_girl_bv-webfont.ttf') format('truetype'),
+     url('../font/rodeo_girl_bv-webfont.svg#rodeo_girl_bvregular') format('svg');
+font-weight: normal;
+font-style: normal;
 }
+
+
 
 body{
 font-family:arial, helvetica, verdana, sans-serif;
