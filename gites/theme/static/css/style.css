@@ -1335,6 +1335,19 @@ min-height:20px;
 margin-bottom:10px;
 }
 
+div.filter_type h3{
+color:#333;
+text-shadow:1px 1px 1px rgba(255,255,255,0.8);
+font-size:1.1em;
+}
+
+div.filter_type label,
+div.filter_type input[type=checkbox] {
+cursor:pointer;
+font-size:0.85em;
+}
+
+
 div#listing-result-advanced-gite-theme {
 width:180px;
 float:left;
