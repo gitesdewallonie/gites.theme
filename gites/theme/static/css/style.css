@@ -1321,12 +1321,13 @@ margin-bottom:15px;
 div#listing-result-gite-theme,
 div#listing-result-block,
 div.filter_type{
+background-color:#e5d8e8;
 border:1px solid #999;
 border-radius:12px;
 box-shadow:2px 2px 4px rgba(50,50,50,0.5);
 min-height:300px;
 min-width:200px;
-padding:15px;
+padding:10px;
 }
 
 div.filter_type {
@@ -1335,7 +1336,7 @@ margin-bottom:10px;
 }
 
 div#listing-result-advanced-gite-theme {
-width:200px;
+width:180px;
 float:left;
 }
 
