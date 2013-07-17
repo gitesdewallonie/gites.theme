@@ -2081,6 +2081,7 @@ div#tarification-gite,
 div#tarification-chambre,
 div#tarification-table-hote,
 div#description-icone-confort,
+div#description-icone-activite,
 div#description-icone-literie,
 div#description-coordonnee{
 box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
@@ -2220,6 +2221,7 @@ float:right;
 }
 
 div#description-icone-confort,
+div#description-icone-activite,
 div#description-icone-literie{
 text-align:center;
 margin-top:8px;
@@ -2227,7 +2229,8 @@ padding:6px;
 }
 
 div#description-icone-confort .picto,
-div#description-icone-literie .pcto{
+div#description-icone-activite .picto,
+div#description-icone-literie .picto{
 margin:0px 3px;
 }
 
