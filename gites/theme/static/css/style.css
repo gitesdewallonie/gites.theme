@@ -1347,8 +1347,8 @@ cursor:pointer;
 font-size:0.85em;
 }
 
-div.filter_type.Autorisations h3,
-div.filter_type.Autres h3 {
+div.filter_type.autorisations h3,
+div.filter_type.autres h3 {
 display:none;
 }
 
