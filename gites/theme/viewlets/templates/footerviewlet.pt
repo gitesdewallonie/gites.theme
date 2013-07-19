@@ -60,7 +60,9 @@
                 <a href="http://www.allochambredhotes.be" target="_blank" title="Allo chambre d'hôtes">Allo chambre d'hôtes</a>
             </li>
             <li>
-                <a href="http://www.bnbelgium.be" target="_blank" title="BnBelgium">BnBelgium</a>
+                <a href="http://www.bnbelgium.be"
+                   tal:attributes="href string:http://www.bnbelgium.be?set_language=${request/LANGUAGE}"
+                   target="_blank" title="BnBelgium">BnBelgium</a>
             </li>
         </ul>
     </div><!--autres-sites-->
