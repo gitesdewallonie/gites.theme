@@ -42,3 +42,13 @@ class UtilsView(grok.View):
 
     def render(self):
         pass
+
+
+class IsProprioView(UtilsView):
+    """
+    """
+    grok.name('isProprio')
+    grok.require('zope2.View')
+
+    def __call__(self):
+        return 'Proprietaire' in self.getRoles()

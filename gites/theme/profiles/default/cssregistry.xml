@@ -45,6 +45,18 @@
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
     <stylesheet title="Gites Theme Styles"
+                id="++theme++gites.theme/css/proprio.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="python:here.restrictedTraverse('@@isProprio')()"/>
+
+    <stylesheet title="Gites Theme Styles"
                 id="++theme++gites.theme/css/mobile.css"
                 media="screen"
                 rel="stylesheet"

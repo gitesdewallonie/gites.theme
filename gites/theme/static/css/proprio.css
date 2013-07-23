@@ -1,0 +1,9 @@
+#icone-reseaux-sociaux {
+margin-left:180px;
+}
+
+#personaltools-dashboard,
+#personaltools-preferences,
+#personaltools-getpaid_manage_cart {
+display:none;
+}
