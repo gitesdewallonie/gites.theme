@@ -3034,3 +3034,7 @@ div.collapse div.hebergement-chambre-listing-detail {
 #save_order_template, #save_order_template_entry {
 display: none;
 }
+
+label.disabled {
+color: #C4C4C4;
+}
