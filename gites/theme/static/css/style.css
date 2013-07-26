@@ -1354,6 +1354,13 @@ cursor:pointer;
 font-size:0.85em;
 }
 
+div.filter_type label.disabled,
+div.filter_type label.disabled .discreet-info,
+div.filter_type input[type=checkbox]:disabled {
+cursor:default;
+color:#8D8D8D;
+}
+
 div.filter_type.autorisations h3,
 div.filter_type.autres h3 {
 display:none;
@@ -3035,7 +3042,7 @@ div.collapse div.hebergement-chambre-listing-detail {
 display: none;
 }
 
-label.disabled {
+#mailing-address label.disabled {
 color: #C4C4C4;
 }
 
