@@ -29,13 +29,13 @@ background:url(../images/essentiel_underline.png) no-repeat 60px 70px;
 /*** LISTING DES RESULTATS ***/
 div#typetype .texte-vertical{
 position:relative;
-left:-40px;
-top:80px;
+left:-34px;
+top:50px;
 white-space:nowrap;
 display:block;
 text-align:right;
 text-transform:capitalize;
-font-size:13pt;
+font-size:19pt;
 background-color:transparent;
 -ms-transform: rotate(-90deg);
 }
