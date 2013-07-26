@@ -1508,6 +1508,7 @@ top:50px;
 -webkit-transform:rotate(270deg);
 -moz-transform:rotate(270deg);
 -o-transform: rotate(270deg);
+-ms-transform: rotate(-90deg);
 white-space:nowrap;
 display:block;
 text-align:right;
