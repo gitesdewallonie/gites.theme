@@ -463,8 +463,9 @@ padding-right:32px;
 }
 
 #je-recherche .trouver{
-margin-top:-21px;
-margin-left:259px;
+position:relative;
+top:-21px;
+left:259px;
 }
 
 #je-connais .trouver {
