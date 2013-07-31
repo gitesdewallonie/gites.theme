@@ -415,10 +415,6 @@ width:68px;
 margin-left: 3px;
 }
 
-#je-recherche #proximite{
-float:left;
-}
-
 #je-recherche #proximite input[type=text]{
 width:250px;
 }
