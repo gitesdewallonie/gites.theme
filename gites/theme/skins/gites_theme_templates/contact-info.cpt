@@ -21,8 +21,8 @@
         i18n:translate="heading_contact_form">Contact form</h1>
 
     <div class="documentDescription"
-         tal:condition="portal/description"
-         tal:content="portal/description">Site Description</div>
+         i18n:domain="gites"
+         i18n:translate="site_description">Les Gîtes de Wallonie, c'est la garantie d'un séjour réussi où la qualité et la chaleur de l'accueil sont toujours présentes.</div>
 
     <div tal:condition="not:email_from_address">
 
