@@ -227,10 +227,19 @@ font-weight:bold;
 color:#fff;
 }
 
+#titre-site .home-link{
+font-size:80%;
+color: #F97F18;
+}
+
+#titre-site .home-link:hover{
+color: #FFFFFF !important;
+}
+
 /*** LISTE ICONES ***/
 #icone-reseaux-sociaux{
 float:left;
-margin-left:280px;
+margin-left:220px;
 height:20px;
 width:230px;
 }
