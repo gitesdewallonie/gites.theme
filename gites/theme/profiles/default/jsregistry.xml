@@ -4,6 +4,9 @@
     <javascript id="dropdown.js"
                 authenticated="False" />
 
+    <javascript id="collective.js.jqueryui.custom.min.js"
+                compression="none" />
+
     <javascript cacheable="True"
                 compression="safe"
                 cookable="True"

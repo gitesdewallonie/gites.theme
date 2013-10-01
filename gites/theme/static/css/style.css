@@ -227,10 +227,19 @@ font-weight:bold;
 color:#fff;
 }
 
+#titre-site .home-link{
+font-size:80%;
+color: #FF9700;
+}
+
+#titre-site .home-link:hover{
+color: #FFFFFF !important;
+}
+
 /*** LISTE ICONES ***/
 #icone-reseaux-sociaux{
 float:left;
-margin-left:280px;
+margin-left:220px;
 height:20px;
 width:230px;
 }
@@ -380,8 +389,6 @@ text-shadow:1px 1px 2px rgba(255,255,255,0.5);
 
 #je-recherche #zone-gite-meuble,
 #je-recherche #zone-chambre-hote{
-/*float:left;*/
-width:250px;
 font-family:'PT Sans Narrow';
 margin-left:50px;
 }
@@ -413,10 +420,6 @@ width:68px;
 
 #je-recherche #nbre-personne img {
 margin-left: 3px;
-}
-
-#je-recherche #proximite{
-float:left;
 }
 
 #je-recherche #proximite input[type=text]{
@@ -463,8 +466,9 @@ padding-right:32px;
 }
 
 #je-recherche .trouver{
-margin-top:-21px;
-margin-left:259px;
+position:relative;
+top:-21px;
+left:259px;
 }
 
 #je-connais .trouver {
