@@ -1070,7 +1070,7 @@ div#footer div#destination-wallonie li a,
 div#footer div#association li a,
 div#footer div#autres-sites li a {
 color:#ddd !important;
-border-bottom:1px dotted #999;
+/*border-bottom:1px dotted #999;*/
 }
 div#footer div#destination-wallonie li a:hover {
 color:#d8b2ec !important;
