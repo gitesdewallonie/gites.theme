@@ -366,11 +366,24 @@ text-shadow:1px 1px 2px rgba(255,255,255,0.5);
 margin-bottom:1px;
 }
 
-div#je-recherche h3 {
-float:right;
-margin:0;
+div#recherche-avancee{
+margin-top:-30px;
 }
-div#je-recherche h3 a {
+
+div#recherche-cartographique{
+margin-top:-10px;
+}
+
+div#recherche-avancee,
+div#recherche-cartographique {
+float:right;
+border:1px solid rgba(217, 168, 105, 0.1); /*si on enlève border, ça flotte mal*/
+width:200px;
+text-align:right;
+}
+
+div#recherche-avancee h3 a,
+div#recherche-cartographique h3 a {
 font-family:"PT Sans Narrow";
 font-size:0.8em;
 font-weight:normal;
@@ -382,25 +395,33 @@ background-repeat:no-repeat;
 background-position:right center;
 }
 
-div#je-recherche h3 a:hover {
+div#recherche-avancee h3 a:hover,
+div#recherche-cartographique h3 a:hover {
 color:#205C90;
 text-shadow:1px 1px 2px rgba(255,255,255,0.5);
 }
 
-#je-recherche #zone-gite-meuble,
-#je-recherche #zone-chambre-hote{
+div#form-je-cherche{
+margin-top:-22px;
+}
+
+div#je-recherche #zone-gite-meuble,
+div#je-recherche #zone-chambre-hote{
 font-family:'PT Sans Narrow';
-margin-left:50px;
+margin-left:20px;
+width:270px;
+border:1px solid rgba(217, 168, 105, 0.1);
 }
 
-#je-recherche #zone-gite-meuble label,
-#je-recherche #zone-chambre-hote label{
+div#je-recherche #zone-gite-meuble label,
+div#je-recherche #zone-chambre-hote label{
 margin-left:5px;
+width:270px;
 }
 
-#je-recherche #date-start,
-#je-recherche #date-end,
-#je-recherche #nbre-personne{
+div#je-recherche #date-start,
+div#je-recherche #date-end,
+div#je-recherche #nbre-personne{
 float:left;
 height:27px;
 margin:5px 5px 5px 0px;
