@@ -56,6 +56,9 @@ mars 2013
 	#viewlet-social-like {
 		display: none !important;
 	}
+	#back-button {
+		display: none !important;
+	}
 	#sendTo-printThis {
 		display: none !important;
 	}

@@ -935,6 +935,12 @@ margin-top:5px;
 }
 
 
+/*** positionnement du bouton back ***/
+#back-button {
+float:left;
+width:60px;
+}
+
 /*** positionnement du viewlet ilike ***/
 #viewlet-social-like {
 float:left;

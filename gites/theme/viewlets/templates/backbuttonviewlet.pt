@@ -1,0 +1,6 @@
+<div id="back-button"
+     i18n:domain="gites"
+     tal:condition="viewlet/available">
+    <a href="javascript:history.back()"
+       i18n:translate="previous_page">Previous page</a>
+</div>
