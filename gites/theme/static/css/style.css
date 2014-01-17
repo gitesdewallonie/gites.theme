@@ -935,11 +935,6 @@ margin-top:5px;
 }
 
 
-/*** positionnement du bouton back ***/
-#back-button {
-float:left;
-width:60px;
-}
 
 /*** positionnement du viewlet ilike ***/
 #viewlet-social-like {
@@ -948,14 +943,38 @@ margin-top:-5px;
 width:40%;
 }
 
-/*** positionnement des boutons printThis et sendTo ***/
+/*** positionnement des boutons printThis sendTo et back-button ***/
+div#back-button {
+float:left;
+margin-right:30px;
+}
+
+div#back-button a:after{
+content:" ➜";
+}
+
+div#back-button a{
+font-size:12px;
+font-weight:bold;
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+writing-mode: lr-tb;
+}
+
+div#back-button a:hover{
+color:#800 !important;
+}
+
+
 div#sendTo-printThis{
 float:right;
 width:20%;
 text-align:right;
 }
 
-div#sendTo-printThis a{
+div#sendTo-printThis a,
+div#back-button a{
 display:inline-block;
 margin:0px 0px 10px 0px;
 width:35px;
@@ -973,8 +992,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 text-align:center;
 padding-top:4px;
 }
-#print-this-button,
-#send-to-button{
+
+div#print-this-button,
+div#send-to-button{
 float:right;
 margin-left:8px;
 }
