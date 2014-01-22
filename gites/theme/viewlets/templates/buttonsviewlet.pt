@@ -27,3 +27,5 @@
         </a>
     </div>
 </div>
+
+<div tal:replace="structure provider:plone.abovecontenttitle" />
