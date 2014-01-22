@@ -938,49 +938,35 @@ margin-top:5px;
 
 
 
+/*** BLOC BOUTON SEN PRINT BACK TWEET FB TOP DESCRIPTION ***/
+div#button-top-descritpion{
+margin-top:30px;
+}
+
 /*** positionnement du viewlet ilike ***/
 #viewlet-social-like {
-float:left;
-margin-top:-5px;
-width:40%;
+float:right;
+width:280px;
 }
 
 /*** positionnement des boutons printThis sendTo et back-button ***/
-div#back-button {
-float:left;
-margin-right:30px;
-}
-
-div#back-button a:after{
-content:" ➜";
-}
-
-div#back-button a{
-font-size:12px;
-font-weight:bold;
--webkit-transform: rotate(180deg);
--moz-transform: rotate(180deg);
--o-transform: rotate(180deg);
-writing-mode: lr-tb;
-}
-
-div#back-button a:hover{
-color:#800 !important;
-}
-
-
 div#sendTo-printThis{
-float:right;
-width:20%;
-text-align:right;
+float:left;
+width:150px;
+margin-top:6px;
 }
 
-div#sendTo-printThis a,
-div#back-button a{
-display:inline-block;
-margin:0px 0px 10px 0px;
+
+div#print-this-button,
+div#send-to-button,
+div#back-button{
+float:left;
 width:35px;
 height:25px;
+margin:0px 0px 10px 8px;
+padding-top:4px;
+font-size:1.5em;
+font-weight:bold;
 border:1px solid #dedede;
 border-radius:8px;
 background: rgb(255,255,255); /* Old browsers */
@@ -991,15 +977,38 @@ background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 
 background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
-text-align:center;
-padding-top:4px;
 }
 
-div#print-this-button,
-div#send-to-button{
-float:right;
-margin-left:8px;
+div#back-button a:after{
+content:" ➜";
 }
+
+div#back-button{
+padding-top:0px;
+padding-bottom:4px;
+}
+
+div#back-button a{
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+writing-mode: lr-tb;
+border-bottom:none !important;
+}
+
+div#back-button a:hover{
+color:#800 !important;
+}
+
+div#sendTo-printThis a,
+div#back-button a{
+display:inline-block;
+width:35px;
+height:25px;
+text-align:center;
+border-bottom:none !important;
+}
+
 
 /*** FOOTER ***/
 div#footer{
