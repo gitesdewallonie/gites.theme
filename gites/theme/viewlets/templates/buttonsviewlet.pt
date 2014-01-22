@@ -2,13 +2,15 @@
      i18n:domain="gites"
      tal:condition="viewlet/backButtonAvailable">
     <a href="javascript:history.back()"
-       i18n:translate="previous_page">Previous page</a>
+       title="Previous page"
+       i18n:attributes="title previous_page">  </a>
 </div>
 
 <div id="sendTo-printThis">
     <div id="print-this-button">
         <a href="javascript:this.print();"
            title="Print this"
+           i18n:domain="gites"
            i18n:attributes="title print_this">
             <img alt="Print this" src="icon_print.gif"
                  i18n:attributes="alt print_this">
@@ -18,6 +20,7 @@
         <a href=""
            title="Send this page to someone"
            tal:attributes="href string:${request/ACTUAL_URL}/gdw_sendto_form"
+           i18n:domain="gites"
            i18n:attributes="title send_to">
             <img alt="Send this page to someone" src="icon_sendto.gif"
                  i18n:attributes="alt send_to">
