@@ -1,18 +1,21 @@
 from five import grok
-from plone.app.layout.viewlets.interfaces import IAboveContentTitle
 from Products.CMFCore.utils import getToolByName
 
 from gites.db.interfaces import IHebergement
+
 
 grok.templatedir('templates')
 grok.context(IHebergement)
 
 
-class BackButtonViewlet(grok.Viewlet):
-    grok.name("control.backbutton")
-    grok.viewletmanager(IAboveContentTitle)
+class HebergementViewletManager(grok.ViewletManager):
+    grok.name('gites.hebergement')
 
-    def available(self):
+
+class ButtonsViewlet(grok.Viewlet):
+    grok.order(10)
+
+    def backButtonAvailable(self):
         """
         Show back button only if we were already on gites website
         """
@@ -23,3 +26,6 @@ class BackButtonViewlet(grok.Viewlet):
         if referer and referer.startswith(portalUrl):
             return True
         return False
+
+
+grok.viewletmanager(HebergementViewletManager)
