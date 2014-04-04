@@ -2448,6 +2448,7 @@ box-shadow:0px 5px 8px #000;
 /*** z3c.form ***/
 input.datepicker-widget { width: 80px; }
 input#form-widgets-capacityMin { width: 34px; }
+input#form-widgets-roomAmount { width: 34px; }
 
 
 /*** ZONE MEMBRE PROPRIO ***/
