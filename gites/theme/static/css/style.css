@@ -2198,7 +2198,9 @@ div#tarification-gite table,
 div#tarification-chambre table,
 div#tarification-table-hote table,
 div#tarification-gite div#description-tarification-divers,
-div#tarification-chambre div#description-tarification-divers{
+div#tarification-chambre div#description-tarification-divers,
+div#tarification-gite div#lien-tarification,
+div#tarification-chambre div#lien-tarification{
 width:400px;
 margin:auto;
 }
@@ -2208,7 +2210,9 @@ margin-top:15px;
 }
 
 div#tarification-gite div#description-tarification-divers,
-div#tarification-chambre div#description-tarification-divers{
+div#tarification-chambre div#description-tarification-divers,
+div#tarification-gite div#lien-tarification,
+div#tarification-chambre div#lien-tarification{
 margin-top:10px;
 }
 
