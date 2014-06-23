@@ -3146,3 +3146,7 @@ color: #C4C4C4;
 #mailing-address {
 padding-top: 2.5em;
 }
+
+.tarif-min-input, .tarif-max-input{
+width: 55px;
+}
