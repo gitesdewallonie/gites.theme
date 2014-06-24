@@ -572,6 +572,16 @@ color:#f79a05 !important;
 
 
 /*** ZONE PRODUIT PACKAGE ***/
+/*** VISUEL PHOTO ***/
+#visuel-photo {
+height: 333px;
+}
+
+#visuel-photo img {
+height:333px;
+width:100%;
+}
+
 /*** CAROUSEL ***/
 #package-carousel {
 height: 333px;
@@ -650,22 +660,22 @@ text-shadow:1px 1px 1px rgba(250,250,250,0.8);
 font-family:"PT Sans Narrow";
 }
 
-#mice,
-#city-trip,
-#insolite{
+#produit-mice,
+#produit-city-trip,
+#produit-insolite{
 width:80px;
 border-right:2px solid #888;
 padding-right:20px;
 margin-left:25px;
 margin-top:8px;
 }
-#mice a{
+#produit-mice a{
 color:#0F0 !important;
 }
-#city-trip a{
+#produit-city-trip a{
 color:#406cd3 !important;
 }
-#insolite a{
+#produit-insolite a{
 color:#ff00bd !important;
 border-right:none;
 }
@@ -1380,6 +1390,12 @@ margin-bottom:10px;
 margin-bottom:15px;
 }
 
+div.reset_criteria {
+margin: auto auto 5px;
+text-align: center;
+width: 100%;
+}
+
 div#listing-result-gite-theme,
 div#listing-result-block,
 div.filter_type{
@@ -1422,7 +1438,7 @@ display:none;
 }
 
 div#listing-result-advanced-gite-theme {
-width:180px;
+width:222px;
 float:left;
 }
 
@@ -2188,7 +2204,9 @@ div#tarification-gite table,
 div#tarification-chambre table,
 div#tarification-table-hote table,
 div#tarification-gite div#description-tarification-divers,
-div#tarification-chambre div#description-tarification-divers{
+div#tarification-chambre div#description-tarification-divers,
+div#tarification-gite div#lien-tarification,
+div#tarification-chambre div#lien-tarification{
 width:400px;
 margin:auto;
 }
@@ -2198,7 +2216,9 @@ margin-top:15px;
 }
 
 div#tarification-gite div#description-tarification-divers,
-div#tarification-chambre div#description-tarification-divers{
+div#tarification-chambre div#description-tarification-divers,
+div#tarification-gite div#lien-tarification,
+div#tarification-chambre div#lien-tarification{
 margin-top:10px;
 }
 
@@ -2438,6 +2458,7 @@ box-shadow:0px 5px 8px #000;
 /*** z3c.form ***/
 input.datepicker-widget { width: 80px; }
 input#form-widgets-capacityMin { width: 34px; }
+input#form-widgets-roomAmount { width: 34px; }
 
 
 /*** ZONE MEMBRE PROPRIO ***/
@@ -2765,9 +2786,14 @@ div#contact-proprio-formulaire input:not([type=submit]),
 div#signaler-un-probleme-formulaire input:not([type=submit]),
 div#zone-proprio-galerie input:not([type=submit]), 
 div#zone-proprio-formulaire input:not([type=submit]) {
-background: rgba(255, 255, 255, 0.9);
-background:-moz-linear-gradient(90deg, #fff, #eee); /* Firefox */
-background:-webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff), color-stop(0.2, #fff)); /* Webkit */
+background: rgb(238,238,238); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 20%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(255,255,255,1)), color-stop(20%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 20%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 20%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 20%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 20%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 border:1px solid #aaa;
 border-radius:3px;
 box-shadow:0 0 3px #aaa;
@@ -2843,9 +2869,14 @@ div#photoproprio-edition-fieldset input[type=submit],
 div#photoproprio-edition-fieldset input[type=file],
 div#zone-proprio-galerie input[type=submit],
 div#zone-proprio-galerie input[type=file]{
-background:#ddd;
-background:-moz-linear-gradient(90deg, #0459b7, #08adff); /* Firefox */
-background:-webkit-gradient(linear, left top, left bottom, from(#08adff), to(#0459b7)); /* Webkit */
+background: rgb(4,89,183); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(4,89,183,1) 0%, rgba(8,173,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(4,89,183,1)), color-stop(100%,rgba(8,173,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(4,89,183,1) 0%,rgba(8,173,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(4,89,183,1) 0%,rgba(8,173,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(4,89,183,1) 0%,rgba(8,173,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(4,89,183,1) 0%,rgba(8,173,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0459b7', endColorstr='#08adff',GradientType=0 ); /* IE6-9 */
 border:1px solid #093c75;
 border-radius:3px;
 box-shadow:0 1px 0 #fff;
@@ -2862,9 +2893,14 @@ div#contact-proprio-formulaire input[type=submit]:hover,
 div#signaler-un-probleme-formulaire input[type=submit]:hover,
 div#zone-proprio-formulaire input[type=submit]:hover,
 div#zone-proprio-galerie input[type=submit]:hover{
-background:#eee;
-background:-moz-linear-gradient(90deg, #067cd3, #0bcdff);
-background:-webkit-gradient(linear, left top, left bottom, from(#0bcdff), to(#067cd3));
+background: rgb(6,124,211); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(6,124,211,1) 0%, rgba(11,205,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(6,124,211,1)), color-stop(100%,rgba(11,205,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(6,124,211,1) 0%,rgba(11,205,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(6,124,211,1) 0%,rgba(11,205,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(6,124,211,1) 0%,rgba(11,205,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(6,124,211,1) 0%,rgba(11,205,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#067cd3', endColorstr='#0bcdff',GradientType=0 ); /* IE6-9 */
 border-color:#093c75;
 text-decoration:none;
 }
@@ -2879,9 +2915,14 @@ div#zone-proprio-formulaire input[type=submit]:active,
 div#zone-proprio-formulaire input[type=submit]:focus,
 div#zone-proprio-galerie input[type=submit]:active,
 div#zone-proprio-galerie input[type=submit]:focus{
-background:#ccc;
-background:-moz-linear-gradient(90deg, #0bcdff, #067cd3);
-background:-webkit-gradient(linear, left top, left bottom, from(#067cd3), to(#0bcdff));
+background: rgb(11,205,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(11,205,255,1) 0%, rgba(6,124,211,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(11,205,255,1)), color-stop(100%,rgba(6,124,211,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(11,205,255,1) 0%,rgba(6,124,211,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(11,205,255,1) 0%,rgba(6,124,211,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(11,205,255,1) 0%,rgba(6,124,211,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(11,205,255,1) 0%,rgba(6,124,211,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0bcdff', endColorstr='#067cd3',GradientType=0 ); /* IE6-9 */
 border-color:#093c75;
 outline:none;
 }

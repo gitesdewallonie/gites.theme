@@ -26,11 +26,11 @@ class VideoViewlet(grok.Viewlet):
     def getUrl(self):
         language = self.request.get('LANGUAGE', 'fr')
         if language == 'fr':
-            return 'http://www.youtube.com/embed/mQNk9xSErBg'
+            return 'https://www.youtube.com/embed/_KZvRhTGnbA'
         elif language == 'nl':
-            return 'http://www.youtube.com/embed/BCJHP0T8g0k'
+            return 'https://www.youtube.com/embed/6SA-2HRJnyE'
         else:
-            return 'http://www.youtube.com/embed/qZ41Dpgqgds'
+            return 'https://www.youtube.com/embed/mpI0Y3Skp-s'
 
 
 class FacebookViewlet(grok.Viewlet):
