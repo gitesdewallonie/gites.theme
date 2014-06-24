@@ -3105,3 +3105,13 @@ color: #C4C4C4;
 #mailing-address {
 padding-top: 2.5em;
 }
+
+/*** TARIF FORM ***/
+table.z3c-listing input.tarif-min-input, table.z3c-listing input.tarif-max-input {
+width: 5.5em;
+text-align: right;
+}
+
+table.z3c-listing input.tarif-cmt-input {
+width: 35em;
+}
