@@ -3154,5 +3154,9 @@ text-align: right;
 }
 
 table.z3c-listing input.tarif-cmt-input {
-width: 35em;
+width: 30em;
+}
+
+table.z3c-listing input.tarif-to-confirm {
+background-color: yellow;
 }
