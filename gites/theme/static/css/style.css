@@ -2167,6 +2167,7 @@ div#promotion-listing,
 div#nouveaux-hebergement-listing,
 div#description-adresse-hebergement,
 div#description-calendrier,
+div#tarification-hebergement,
 div#tarification-gite,
 div#tarification-chambre,
 div#tarification-table-hote,
@@ -2195,16 +2196,20 @@ div#description-icone-literie .literie:first-child{
 margin-right:35px;
 }
 
+div#tarification-hebergement h3,
 div#tarification-gite h3,
 div#tarification-chambre h3{
 color:#A66723;
 }
 
+div#tarification-hebergement table,
 div#tarification-gite table,
 div#tarification-chambre table,
 div#tarification-table-hote table,
+div#tarification-hebergement div#description-tarification-divers,
 div#tarification-gite div#description-tarification-divers,
 div#tarification-chambre div#description-tarification-divers,
+div#tarification-hebergement div#lien-tarification,
 div#tarification-gite div#lien-tarification,
 div#tarification-chambre div#lien-tarification{
 width:400px;
@@ -2215,8 +2220,10 @@ div#tarification-table-hote{
 margin-top:15px;
 }
 
+div#tarification-hebergement div#description-tarification-divers,
 div#tarification-gite div#description-tarification-divers,
 div#tarification-chambre div#description-tarification-divers,
+div#tarification-hebergement div#lien-tarification,
 div#tarification-gite div#lien-tarification,
 div#tarification-chambre div#lien-tarification{
 margin-top:10px;
@@ -2237,6 +2244,7 @@ div#description-calendrier div#calendars #calendars_menu a {
 border-bottom: none;
 }
 
+div#tarification-hebergement,
 div#tarification-gite,
 div#tarification-chambre{
 width:460px;
@@ -2244,6 +2252,7 @@ margin:0px 0px 0px 5px;
 padding:8px 20px;
 }
 
+div#tarification-hebergement .tarif-periode,
 div#tarification-gite .tarif-periode,
 div#tarification-chambre .tarif-periode,
 div#tarification-table-hote .tarif-periode{
@@ -2253,6 +2262,7 @@ font-weight:bold;
 text-align:center;
 }
 
+div#tarification-hebergement .tarif-saison,
 div#tarification-gite .tarif-saison,
 div#tarification-chambre .tarif-saison,
 div#tarification-table-hote .tarif-saison{
@@ -2262,6 +2272,7 @@ text-align:left;
 padding:5px;
 }
 
+div#tarification-hebergement .tarif-prix,
 div#tarification-gite .tarif-prix,
 div#tarification-chambre .tarif-prix,
 div#tarification-table-hote .tarif-prix{
@@ -2269,6 +2280,7 @@ text-align:center;
 padding:5px;
 }
 
+div#tarification-hebergement .empty-cell,
 div#tarification-gite .empty-cell,
 div#tarification-chambre .empty-cell,
 div#tarification-table-hote .empty-cell{
@@ -3159,4 +3171,21 @@ width: 30em;
 
 table.z3c-listing .tarif-to-confirm {
 background-color: yellow;
+}
+
+div#tarification-hebergement table.hebergement-tarif-display {
+width: 100%;
+height: 490px;
+}
+
+table.hebergement-tarif-display th{
+text-align: left;
+}
+
+table.hebergement-tarif-display tr.even{
+background-color: #ceddce;
+}
+
+table.hebergement-tarif-display td{
+padding: 2px;
 }
