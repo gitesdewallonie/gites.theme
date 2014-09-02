@@ -3189,3 +3189,8 @@ background-color: #ceddce;
 table.hebergement-tarif-display td{
 padding: 2px;
 }
+
+/*** Notification listing ***/
+table.notification-listing {
+background-color: white;
+}
