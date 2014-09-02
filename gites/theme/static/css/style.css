@@ -3173,10 +3173,6 @@ table.z3c-listing .tarif-to-confirm {
 background-color: yellow;
 }
 
-div#tarification-hebergement div.tarifs-tables-block {
-height: 490px;
-}
-
 div#tarification-hebergement table.hebergement-tarif-display {
 width: 100%;
 }
