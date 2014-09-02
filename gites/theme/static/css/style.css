@@ -3175,7 +3175,6 @@ background-color: yellow;
 
 div#tarification-hebergement table.hebergement-tarif-display {
 width: 100%;
-height: 490px;
 }
 
 table.hebergement-tarif-display th{
@@ -3188,6 +3187,10 @@ background-color: #ceddce;
 
 table.hebergement-tarif-display td{
 padding: 2px;
+}
+
+table.hebergement-tarif-display thead.tarif-periode{
+display: none;
 }
 
 /*** Notification listing ***/
