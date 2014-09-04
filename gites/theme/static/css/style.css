@@ -3197,3 +3197,7 @@ display: none;
 table.notification-listing {
 background-color: white;
 }
+
+table.hebergement-tarif-display td{
+    width: 50%;
+}
