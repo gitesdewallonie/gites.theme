@@ -22,7 +22,6 @@
     <notheme if-path="attributes.htm"/>
 
     <!-- Common Plone rules -->
-    <drop theme="/html/head/meta" />
     <drop theme="/html/head/title" />
     <drop theme="/html/head/base" />
     <drop theme="/html/head/style" />
