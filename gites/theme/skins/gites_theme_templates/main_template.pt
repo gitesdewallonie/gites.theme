@@ -24,10 +24,11 @@
                   isRTL python: False"
       tal:attributes="lang lang;
                       xml:lang lang">
-
+  <meta name="p:domain_verify" content="8c2f9d8ba302cc1d2f0f45687c485602" />
   <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
     Get the global cache headers located in global_cache_settings.
   </metal:cache>
+  
 
   <head>
 

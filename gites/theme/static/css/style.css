@@ -322,10 +322,13 @@ float:left;
 background:url(../images/logo.png);
 background-repeat:no-repeat;
 background-position:center;
-margin-left:0px;
-margin-right:8px;
+background-color:rgba(255,255,255,0.75);
+border:1px solid rgb(255,255,255);
+border-radius:8px;
+margin-left:4px;
+margin-right:4px;
 margin-top:0px;
-height:160px;
+height:155px;
 width:150px;
 }
 
