@@ -1642,7 +1642,7 @@ box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.0
 box-shadow:inset 1px 1px 2px rgba(0,0,0,.4), inset 0px 0px 1px rgba(0,0,0,.2);
 }
 
-.heb-comparaison-check + label:active, 
+.heb-comparaison-check + label:active,
 .heb-comparaison-check:checked + label:active {
 box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
 }
@@ -2211,10 +2211,7 @@ div#tarification-chambre table,
 div#tarification-table-hote table,
 div#tarification-hebergement div#description-tarification-divers,
 div#tarification-gite div#description-tarification-divers,
-div#tarification-chambre div#description-tarification-divers,
-div#tarification-hebergement div#lien-tarification,
-div#tarification-gite div#lien-tarification,
-div#tarification-chambre div#lien-tarification{
+div#tarification-chambre div#description-tarification-divers{
 width:400px;
 margin:auto;
 }
@@ -2225,12 +2222,30 @@ margin-top:15px;
 
 div#tarification-hebergement div#description-tarification-divers,
 div#tarification-gite div#description-tarification-divers,
-div#tarification-chambre div#description-tarification-divers,
-div#tarification-hebergement div#lien-tarification,
-div#tarification-gite div#lien-tarification,
-div#tarification-chambre div#lien-tarification{
+div#tarification-chambre div#description-tarification-divers{
 margin-top:10px;
 }
+
+div#lien-tarification{
+position:relative;
+top:6px;
+font-size:0.8em;
+width:200px;
+margin:auto;
+border:1px solid #eee;
+border-radius:25px;
+text-align:center;
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+
 
 div#description-adresse-hebergement{
 margin-bottom:10px;
@@ -2781,7 +2796,7 @@ width:230px;
 cursor:pointer;
 margin-top:15px;
 font-size:14px;
-color:#333; 
+color:#333;
 font-weight:bold;
 text-shadow:0 1px 1px #fff;
 }
@@ -2799,7 +2814,7 @@ margin:10px 6px;
 div#recherche-avancee-formulaire input:not([type=submit]),
 div#contact-proprio-formulaire input:not([type=submit]),
 div#signaler-un-probleme-formulaire input:not([type=submit]),
-div#zone-proprio-galerie input:not([type=submit]), 
+div#zone-proprio-galerie input:not([type=submit]),
 div#zone-proprio-formulaire input:not([type=submit]) {
 background: rgb(238,238,238); /* Old browsers */
 background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 20%); /* FF3.6+ */
