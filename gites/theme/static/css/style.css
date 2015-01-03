@@ -2226,6 +2226,7 @@ div#tarification-chambre div#description-tarification-divers{
 margin-top:10px;
 }
 
+/* lien qui pointe vers une page descriptive des période de tarification */
 div#lien-tarification{
 position:relative;
 top:6px;
