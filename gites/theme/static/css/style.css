@@ -575,16 +575,6 @@ color:#f79a05 !important;
 
 
 /*** ZONE PRODUIT PACKAGE ***/
-/*** VISUEL PHOTO ***/
-#visuel-photo {
-height: 333px;
-}
-
-#visuel-photo img {
-height:333px;
-width:100%;
-}
-
 /*** CAROUSEL ***/
 #package-carousel {
 height: 333px;
