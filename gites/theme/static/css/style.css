@@ -43,6 +43,15 @@ body .popup {
 color:#FFF;
 }
 
+
+div#description-calendrier{
+display:none;
+}
+
+
+
+
+
 .break-float{
 clear:both;
 }
@@ -2168,22 +2177,25 @@ font-weight:bold;
 .OsMoteur a.OsMoteurBtnRecherche:link,
 .OsMoteur a.OsMoteurBtnRecherche:active,
 .OsMoteur a.OsMoteurBtnRecherche:visited {
-background: #f9c667; /* Old browsers */
-background: -moz-linear-gradient(top,  #f9c667 0%, #f79621 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9c667), color-stop(100%,#f79621)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #f9c667 0%,#f79621 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #f9c667 0%,#f79621 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #f9c667 0%,#f79621 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #f9c667 0%,#f79621 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 ); /* IE6-9 */
-border-radius: 5px;
-color: #fff !important;
+color: #c72231 !important;
 display: block;
 font-weight: bold;
 padding: 5px 10px;
 text-align: center;
 text-decoration: none;
 text-transform: uppercase;
+box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
+border-radius:18px !important;
+text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+margin-top:20px;
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 .OsMoteur a.OsMoteurBtnRecherche:hover{
@@ -2192,7 +2204,6 @@ color:#000 !important;
 
 .OsMoteur.OptMoteurEnLigne {
 background-color:transparent !important;
-border-radius:5px;
 clear:both;
 float:left;
 padding:8px;
