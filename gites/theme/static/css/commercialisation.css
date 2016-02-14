@@ -1,0 +1,19 @@
+/* Modiifcation des widgets pour la commercialisation */
+#reservation-chambre{
+width:95%;
+margin:auto;
+background-color:#c72231;
+border: 1px solid rgba(50, 50, 50, 0.1);
+border-radius:18px;
+color:#fff;
+padding:0.8em;
+font-size:1.3em;
+margin-bottom:8px;
+}
+
+.OsMoteur.OptMoteurEnLigne .OsMoteurBody {
+float: left;
+margin: auto;
+background-color:#c72231;
+color:#fff;
+}
