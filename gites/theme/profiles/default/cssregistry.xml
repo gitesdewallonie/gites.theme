@@ -99,7 +99,7 @@
                 rendering="link"
                 cacheable="True"
                 compression="safe"
-                cookable="True"
+                cookable="False"
                 enabled="1"
                 applyPrefix="True"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
@@ -111,7 +111,7 @@
                 rendering="link"
                 cacheable="True"
                 compression="safe"
-                cookable="True"
+                cookable="False"
                 enabled="1"
                 applyPrefix="True"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
