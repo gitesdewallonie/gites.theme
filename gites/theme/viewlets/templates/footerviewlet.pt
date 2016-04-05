@@ -65,8 +65,13 @@
             </li>
             <li>
                 <a href="http://www.bnbelgium.be"
-                   tal:attributes="href string:http://www.bnbelgium.be?set_language=${lang}"
-                   target="_blank" title="BnBelgium">BnBelgium</a>
+                   tal:attributes="href string:http://www.marmitonetpolochon.be?set_language=${lang}"
+                   target="_blank" title="BnBelgium">Marmiton & Polochon</a>
+            </li>
+            <li>
+                <a href="http://www.bnbelgium.be"
+                   tal:attributes="href string:http://www.belholidays.com"
+                   target="_blank" title="BnBelgium">Belholidays</a>
             </li>
         </ul>
     </div><!--autres-sites-->
