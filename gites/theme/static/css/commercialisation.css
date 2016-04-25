@@ -1,14 +1,40 @@
 /* Modiifcation des widgets pour la commercialisation */
 #reservation-chambre{
-width:95%;
+width:400px;
+height:50px;
+line-height:45px;
 margin:auto;
 background-color:#c72231;
-border: 1px solid rgba(50, 50, 50, 0.1);
+border: 1px solid rgba(50, 50, 50, 1);
 border-radius:18px;
-color:#fff;
-padding:0.8em;
-font-size:1.3em;
 margin-bottom:8px;
+text-align:center;
+transition:all 0.5s ease-in-out;
+}
+
+#reservation-chambre a:link{
+display:inline-block;
+width:400px;
+height:50px;
+font-size:1.3em;
+font-weight:bold;
+color:#fff !important;
+border-bottom:none;
+border-radius:18px;
+letter-spacing: 5px;
+}
+
+#reservation-chambre a:hover{
+color:#fff !important;
+}
+
+#reservation-chambre:hover{
+background-color:#e94248;
+}
+
+
+#reservation-chambre a:visited{
+color:#fff;
 }
 
 .OsMoteur.OptMoteurEnLigne .OsMoteurBody {
