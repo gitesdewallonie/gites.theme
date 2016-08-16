@@ -3210,6 +3210,7 @@ box-shadow: 2px 5px 8px rgba(50, 50, 50, 0.3);
 margin:auto;
 padding-bottom: 0;
 width:900px;
+height:auto;
 border-radius: 4px 4px 60px 60px;
 transition: height 1200ms linear;
 }
