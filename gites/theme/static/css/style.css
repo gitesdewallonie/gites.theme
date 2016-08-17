@@ -1374,15 +1374,6 @@ font-weight:bold;
 
 div#package-content{
 text-align:justify;
-/* mise en colonne automatique */
-/*
--moz-column-width: 500px;
--webkit-column-width: 500px;
--moz-column-gap: 20px;
--webkit-column-gap: 20px;
--moz-column-rule: 1px solid #ddccb5;
--webkit-column-rule: 1px solid #ddccb5;
-*/
 margin-bottom:10px;
 }
 
@@ -3147,7 +3138,9 @@ background: none repeat scroll 0 0 #222222;
 color: #EEEEEE;
 }
 
-table.comparison td div.timeframe_calendar td.indisp { background-color: red; }
+table.comparison td div.timeframe_calendar td.indisp {
+background-color: red;
+}
 
 table.comparison td div.timeframe_calendar td.unselectable,
 table.comparison td div.timeframe_calendar td.beyond {
@@ -3190,6 +3183,8 @@ text-shadow: 1px 1px 1px rgba(250, 250, 250, 0.5);
 padding: 10px 3px;
 }
 
+
+/*** GESTION AFFICHAGE GROUPEMENT ***/
 div#titre-groupe{
 position:relative;
 top:-250px;
@@ -3202,6 +3197,10 @@ font-size:1.2em;
 text-shadow: 1px 1px 1px rgba(250, 250, 250, 0.5);
 }
 
+div#groupelist{
+height:auto;
+}
+
 div.collapse {
 position:relative;
 z-index:1;
@@ -3210,27 +3209,25 @@ box-shadow: 2px 5px 8px rgba(50, 50, 50, 0.3);
 margin:auto;
 padding-bottom: 0;
 width:900px;
-height:auto;
 border-radius: 4px 4px 60px 60px;
-transition: height 1200ms linear;
-}
-
-div.collapse-gite-listing-detail,
-div.collapse-chambre-listing-detail {
-
+transform: scaleY(0);
+transform-origin: 50% 0;
+transition:transform 3s ease;
 }
 
 div.collapse-chambre-listing-detail {
 background-color:rgba(130,167,234,0.7);
+transform: scaleY(1);
 }
 
 div.collapse-gite-listing-detail {
 background-color:rgba(220, 243, 212, 0.8);
+transform: scaleY(1);
 }
 
-div.collapse div.hebergement-gite-listing-detail,
-div.collapse div.hebergement-chambre-listing-detail {
-}
+
+
+
 
 
 /*** SHOP ***/
@@ -3245,6 +3242,10 @@ color: #C4C4C4;
 #mailing-address {
 padding-top: 2.5em;
 }
+
+
+
+
 
 /*** TARIF FORM ***/
 table.z3c-listing input.tarif-min-input, table.z3c-listing input.tarif-max-input {
