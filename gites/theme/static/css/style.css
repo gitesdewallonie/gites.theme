@@ -43,7 +43,6 @@ body .popup {
 color:#FFF;
 }
 
-
 div#description-calendrier{
 /*display:none;*/
 }
@@ -602,6 +601,7 @@ width:100%;
 }
 
 #package-carousel .carousel-caption {
+display:none;
 bottom:0px;
 }
 
