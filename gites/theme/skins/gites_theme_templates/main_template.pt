@@ -28,7 +28,7 @@
   <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
     Get the global cache headers located in global_cache_settings.
   </metal:cache>
-  
+
 
   <head>
 

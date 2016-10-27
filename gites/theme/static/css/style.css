@@ -3,6 +3,11 @@ CSS BY AFFINITIC
 mars 2013
 */
 
+/****
+rouge logo
+rgb(201,37,43)
+****/
+
 /*** SKIN STYLES ***/
 @font-face {
 font-family:'PT Sans Narrow';
@@ -112,7 +117,7 @@ color:#fff !important;
 #languageselector {
 float:right;
 position:relative;
-z-index:3;          /* personaltools should be above #portal-header (with z-index:2) */
+z-index:25;          /* personaltools should be above #portal-header (with z-index:2) */
 top:0;
 right:0;
 padding:0.25em 0.5em;
@@ -135,7 +140,6 @@ div#portal-header dl#languageselector.actionMenu dt.actionMenuHeader a:hover,
 div#portal-header div#portal-personaltools-wrapper dl#portal-personaltools.actionMenu dt.actionMenuHeader a:hover{
 color:#fff !important;
 }
-
 
 #languageselector dt {
 font-weight:normal;
@@ -206,7 +210,6 @@ background-color: #E7E9E8;
 width:1100px;
 margin:auto;
 background-color:#ffffff;
-border:1px solid #f00;
 }
 
 
@@ -263,6 +266,7 @@ display:block;
 div#header-lien{
 display:table;
 float:right;
+margin-right:50px;
 }
 
 div#header-derniere-minute,
@@ -277,7 +281,9 @@ padding-bottom:5px;
 font-size:1.2em;
 }
 
-
+div#header-shop{
+text-align:center;
+}
 
 /*** PORTAL-BREADCRUMBS ***/
 div#portal-breadcrumbs{
@@ -294,13 +300,17 @@ color:#f79a05 !important;
 }
 
 
-/*** ZONE PRODUIT PACKAGE ***/
-div#zone-photo{
+/*** ZONE PRODUIT PACKAGE CAROUSEL ***/
+div#zone-produit-package{
 position:relative;
 top:-100px;
+border:1px solid #000;
+height:372px;
 }
 
-/*** CAROUSEL ***/
+div#zone-photo{
+}
+
 #package-carousel {
 height: 333px;
 margin-bottom: 0px;
@@ -327,7 +337,6 @@ bottom:0px;
 height: 401px;
 }
 
-#zone-produit-pacakage{
 }
 
 
@@ -521,22 +530,23 @@ border-right:none;
 /*** OFFRES PACKAGES ***/
 div#zone-offres{
 display:table;
-border-collapse: separate;
+border-collapse:separate;
+border-spacing:8px;
 width:100%;
 height:435px;
-position:relative;
-z-index:10;
 }
 
 div#zone-offres h2{
-height:42px;
+display:talble-row;
+height:20px;
 padding-top:10px;
-background-color:#f4dbba;
-border-bottom:1px solid #f1cd9c;
 font-family:'PT Sans Narrow'!important;
+color:rgb(201,37,43);
 font-weight:none;
-text-align:center;
-text-shadow:1px 1px 1px rgba(250,250,250,0.6);
+text-align:left;
+padding-left:2em;
+border:1px solid #000;
+width:100%;
 }
 
 div#zone-offres h3 a{
@@ -552,13 +562,11 @@ div#zone-offres div#zone-derniere-minute,
 div#zone-offres div#zone-allo-chambre-hote,
 div#zone-offres div#zone-la-boutique{
 display:table-cell;
-float:left;
 width:235px;
 height:332px;
 background-color:#EFEFEF;
 border:1px solid #ccc;
-margin:15px 4px 0px 4px;
-margin-top:15px;
+margin:15px 0px;
 padding:10px 15px 15px 15px;
 border-radius:4px;
 color:#666;
@@ -581,8 +589,6 @@ font-size:1.1em;
 }
 
 div#promotion-derniere-minute{
-position:relative;
-top:2px;
 height:18px;
 margin:10px 0px;
 padding-left:10px;
@@ -694,7 +700,7 @@ margin:0px;
 
 div#content-for-khevine{
 padding:1em;
-margin:8px 0px 20px 0px;
+margin:8px 0px 0px 0px;
 border:1px solid rgba(200,215,220,0.3);
 border-radius:12px;
 background: -moz-linear-gradient(top,  rgba(242,245,246,0.3) 0%, rgba(227,234,237,0.3) 37%, rgba(200,215,220,0.3) 100%); /* FF3.6+ */
@@ -738,6 +744,7 @@ background-image:url(../images/bg_zone_facebook.jpg);
 }
 */
 /*** FACEBOOK ***/
+/*
 #trombino-facebook{
 /*width: 425px;*/
 }
@@ -762,6 +769,8 @@ div#trombino-facebook #news-letter-link{
 margin-top:5px;
 }
 */
+
+
 
 
 /*** BLOC BOUTON SEN PRINT BACK TWEET FB TOP DESCRIPTION ***/
@@ -833,6 +842,44 @@ width:35px;
 height:25px;
 text-align:center;
 border-bottom:none !important;
+}
+
+
+/*** CONNEXION MEMEBRE ***/
+section#connexion-membre{
+display:table;
+border-collapse:separate;
+border-spacing:3px;
+width:100%;
+margin-bottom:4px;
+}
+
+div#mygdw,
+div#newsletter,
+div#devenir-membre{
+display:table-cell;
+text-align:center;
+width: 33%;
+height:30px;
+line-height:30px;
+}
+
+div#mygdw{
+background-color:#c6e2cc;
+color:#6d8572;
+border:1px solid #a8c2ad;
+}
+
+div#newsletter{
+background-color:#bae1e0;
+color:#6d908f;
+border:1px solid #9cc0bf;
+}
+
+div#devenir-membre{
+background-color:#fff4cc;
+color:#9d936e;
+border:1px solid #dacfa8;
 }
 
 
