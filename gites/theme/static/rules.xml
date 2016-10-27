@@ -50,7 +50,7 @@
         <after css:content="#zone-produit-package" css:theme-children="#beforecontent" />
         <after css:content="#zone-offres" css:theme-children="#beforecontent" />
 
-        <after css:content="#zone-video" css:theme-children="#bottompage" />
+        <!--<after css:content="#zone-video" css:theme-children="#bottompage" />-->
     </rules>
 
     <rules if-path="zone-membre/">
@@ -64,7 +64,7 @@
         <after css:content="#zone-offres" css:theme-children="#aftercontent" />
     </rules>
 
-    <after css:content="#trombino-facebook" css:theme-children="#bottompage" />
+    <!--<after css:content="#trombino-facebook" css:theme-children="#bottompage" />-->
     <after css:content="#footer" css:theme-children="#bottompage" />
     <after css:content="#colophon" css:theme-children="#bottompage" />
 
