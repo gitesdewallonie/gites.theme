@@ -81,6 +81,8 @@
 
         <div id="viewlet-gites-packages" tal:content="structure provider:gites.produitpackage" />
 
+        <div id="viewlet-gites-rechercher" tal:content="structure provider:gites.rechercher" />
+
         <div id="viewlet-gites-offres" tal:content="structure provider:gites.offres" />
 
 
