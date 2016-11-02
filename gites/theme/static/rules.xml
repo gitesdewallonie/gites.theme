@@ -49,6 +49,7 @@
     <rules if="$is_portal_root">
         <after css:content="#zone-produit-package" css:theme-children="#beforecontent" />
         <after css:content="#zone-offres" css:theme-children="#beforecontent" />
+        <drop css:content="#portal-column-content" />
 
         <!--<after css:content="#zone-video" css:theme-children="#bottompage" />-->
     </rules>
