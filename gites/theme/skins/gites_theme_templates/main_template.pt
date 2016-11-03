@@ -81,13 +81,16 @@
 
         <div id="viewlet-gites-packages" tal:content="structure provider:gites.produitpackage" />
 
+
+
         <div id="viewlet-gites-rechercher" tal:content="structure provider:gites.rechercher" />
+
+
 
         <div id="viewlet-gites-offres" tal:content="structure provider:gites.offres" />
 
 
         <div id="portal-column-content">
-
             <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
 
             <div id="viewlet-gites-zone-membre" tal:content="structure provider:gites.zonemembre" />
