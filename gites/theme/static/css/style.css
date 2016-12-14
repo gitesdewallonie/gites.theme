@@ -36,10 +36,10 @@ font-style: normal;
 
 
 body{
-font-family:arial, helvetica, verdana, sans-serif;
+font-family:Verdana, Geneva, sans-serif;
 font-size:12pt;
 color:#333;
-background:#ffffff;
+background:#fafafa;
 padding:0;
 margin:0;
 }
@@ -51,15 +51,6 @@ color:#FFF;
 div#description-calendrier{
 /*display:none;*/
 }
-
-div#rechercher{
-background-color:#f00;
-heigth:200px;
-width:600px;
-}
-
-
-
 
 
 .break-float{
@@ -79,6 +70,15 @@ color:#333;
 text-shadow:1px 1px 1px rgba(255,255,255,0.8);
 font-size:0.8em;
 font-style:italic;
+}
+
+
+h1, h2 {
+letter-spacing:normal;
+font-family:Verdana, Geneva, Arial, sans-serif;
+font-weight:normal;
+color:#888;
+line-height:1.5em;
 }
 
 a:hover{
@@ -220,8 +220,19 @@ background-color:#ffffff;
 
 
 /*** HEADER ***/
+div#header-bg-color{
+background-color:#ebebeb;
+}
+
+
+#header-deco{
+width:100%;
+background-color:#ccc;
+}
+
 #header{
 height:200px;
+background-color:#ebebeb;
 }
 
 
@@ -307,17 +318,21 @@ color:#f79a05 !important;
 
 
 /*** ZONE PRODUIT PACKAGE CAROUSEL ***/
+div#carrousssel-produit-package{
+margin-bottom:-65px;
+}
+
 div#zone-produit-package{
 position:relative;
 top:-100px;
-height:372px;
+/*height:300px;*/
 }
 
 div#zone-photo{
 }
 
 #package-carousel {
-height: 333px;
+/*height: 333px;*/
 margin-bottom: 0px;
 }
 
@@ -330,7 +345,9 @@ position:relative;
 #package-carousel .carousel-inner .item img {
 height:333px;
 width:100%;
+height:100%;
 }
+
 
 #package-carousel .carousel-caption {
 display:none;
@@ -342,47 +359,33 @@ bottom:0px;
 height: 401px;
 }
 
-}
-
-
 
 /*** MOTEUR DE RECHERHCE ***/
 /*** JE CHERCHE ***/
+
 div#je-recherche{
-position:relative;
-float:left;
 padding:10px;
-padding-top:5px;
-background:rgba(255,255,255,0.1);
-margin-right:15px;
-border:1px solid #888;
-border-radius:12px;
-height:139px;
-width:402px;
-box-shadow:3px 3px 5px #000;
+padding-top:32px;
+height:150px;
+border: 1px solid #ccc;
+background-color:rgb(201,37,43);
 }
 
-div#je-recherche h2{
-float:left;
-margin-top:-5px;
-font-family:"PT Sans Narrow";
-font-size:1.2em;
-font-weight:bold;
-color:#000;
-text-shadow:1px 1px 2px rgba(255,255,255,0.5);
-margin-bottom:1px;
-}
 
-div#form-je-cherche{
-margin-top:-22px;
+div#form-je-cherche {
+display: table;
+height: 84px;
+width: 100%;
+margin-bottom: 30px;
+padding-top: 20px;
+background-color:rgb(201,37,43);
 }
 
 div#je-recherche #zone-gite-meuble,
 div#je-recherche #zone-chambre-hote{
-font-family:'PT Sans Narrow';
 margin-left:20px;
-width:270px;
 border:1px solid rgba(217, 168, 105, 0.1);
+color:#fff;
 }
 
 div#je-recherche #zone-gite-meuble label,
@@ -391,12 +394,34 @@ margin-left:5px;
 width:270px;
 }
 
+div#select-type-hebergement,
 div#je-recherche #date-start,
 div#je-recherche #date-end,
-div#je-recherche #nbre-personne{
-float:left;
-height:27px;
+div#je-recherche #nbre-personne,
+div#je-recherche #proximite,
+div#trouver-homepage{
+display:table-cell;
+height:65px;
 margin:5px 5px 5px 0px;
+vertical-align:middle;
+padding-left:10px;
+}
+
+::-webkit-input-placeholder {
+color:#666;
+font-size:14px;
+}
+::-moz-placeholder{
+color:#666;
+font-size:14px;
+}
+:-ms-input-placeholder{
+color:#666;
+font-size:14px;
+}
+input:-moz-placeholder{
+color:#666;
+font-size:14px;
 }
 
 .ui-datepicker-trigger{
@@ -416,11 +441,21 @@ margin-left: 3px;
 }
 
 #je-recherche #proximite input[type=text]{
-width:250px;
+height:35px;
+width:200px;
+}
+
+#je-recherche input#form-widgets-capacityMin {
+height:35px;
+width:120px;
+}
+
+#je-recherche input.datepicker-widget {
+height:35px;
+width:120px;
 }
 
 #submit-je-recherche{
-background-color:#000;
 width:200px;
 }
 
@@ -432,20 +467,13 @@ background: #eeeeee;
 
 #je-recherche .trouver{
 border:none;
-width:149px;
-height:32px;
+background-color:#fff;
+height:35px;
 cursor: pointer;
-background:url(../images/trouver.png);
 font-size:1.1em;
-text-shadow:1px 1px 1px rgba(250,250,250,0.7);
-padding-right:32px;
+padding:2px 32px;
 }
 
-#je-recherche .trouver{
-position:relative;
-top:-21px;
-left:259px;
-}
 
 
 #info{
@@ -580,7 +608,6 @@ font-size:0.8em;
 
 
 #zone-idee-sejour-contenu{
-border:1px solid #0f0;
 height:315px;
 }
 
@@ -711,13 +738,9 @@ padding:1em;
 margin:8px 0px 0px 0px;
 border:1px solid rgba(200,215,220,0.3);
 border-radius:12px;
-background: -moz-linear-gradient(top,  rgba(242,245,246,0.3) 0%, rgba(227,234,237,0.3) 37%, rgba(200,215,220,0.3) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,0.3)), color-stop(37%,rgba(227,234,237,0.3)), color-stop(100%,rgba(200,215,220,0.3))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4df2f5f6', endColorstr='#4dc8d7dc',GradientType=0 ); /* IE6-9 */
+}
+
+div#content-for-khevine h1{
 }
 
 div#content.ploneroot{
@@ -725,13 +748,8 @@ padding:18px 0;
 }
 
 div#content.ploneroot h1{
-font-family:'Rodeo Girl', Helvetica, Arial, sans-serif;
 font-size:5em;
-font-weight:normal;
-color:rgb(50, 50, 50);
-text-shadow:2px 2px 2px rgba(255,255,255,0.5);
 margin-left:50px;
-background:url(../images/essentiel_underline.png) no-repeat 60px 70px;
 }
 
 
@@ -876,7 +894,7 @@ text-align:center;
 min-width:180px;
 height:30px;
 line-height:30px;
-color:#fff;
+color:#666;
 }
 
 div#mygdw{
@@ -892,7 +910,8 @@ border:1px solid #dacfa8;
 
 /*** FOOTER ***/
 div#footer{
-background:url(../images/degrade-gris.jpg);
+/*background:url(../images/degrade-gris.jpg);*/
+background-color:#666;
 height:414px;
 padding-left:25px;
 color:#ddd;
@@ -1024,8 +1043,8 @@ color:#1fda60 !important;
 /*** COLOPHON ***/
 #colophon{
 height:310px;
-background:url(../images/bgfooter.jpg);
-background-repeat:no-repeat;
+/*background:url(../images/bgfooter.jpg);*/
+background-color:#333;
 padding-top:10px;
 text-align:center;
 }
@@ -1268,9 +1287,9 @@ div#listing-result-gite-theme,
 div#listing-result-block,
 div.filter_type{
 background-color:#e5d8e8;
-border:1px solid #999;
-border-radius:12px;
-box-shadow:2px 2px 4px rgba(50,50,50,0.5);
+border:1px solid #ddd;
+/*border-radius:12px;*/
+/*box-shadow:2px 2px 4px rgba(50,50,50,0.5);*/
 min-height:300px;
 min-width:200px;
 padding:10px;
@@ -1337,16 +1356,9 @@ margin-bottom:12px;
 div#listing-result-info{
 border:2px solid rgba(250,250,250,0.3);
 height:40px;
-border-radius:18px;
+/*border-radius:18px;*/
 padding:10px;
-background: rgb(215,212,206); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(215,212,206,1) 0%, rgba(242,242,242,1) 83%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(215,212,206,1)), color-stop(83%,rgba(242,242,242,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d4ce', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+background: rgba(240,240,240,0.5); /* Old browsers */
 }
 
 div#listing-result-gite-theme{
@@ -1363,13 +1375,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1afb83fa', e
 
 div#listing-result-block{
 background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
 
 div#listing-result-gite-theme label{
@@ -1411,17 +1416,16 @@ height:135px;
 margin:10px auto;
 border:1px solid rgba(50,50,50,0.1);
 border-radius:0px 0px 0px 12px;
-box-shadow:2px 5px 8px rgba(50,50,50,0.3);
+/*box-shadow:2px 5px 8px rgba(50,50,50,0.3);*/
 }
 
 div.hebergement-gite-listing-detail{
-background-image:url(../images/bg_listing_gite.png);
-background-color:rgba(217,255,178,0.3);
+/*background-image:url(../images/bg_listing_gite.png);*/
 }
 
 div.hebergement-chambre-listing-detail{
-background-image:url(../images/bg_listing_chambre.png);
-background-color:rgba(210,254,255,0.3);
+/*background-image:url(../images/bg_listing_chambre.png);*/
+
 }
 
 div#typetype{
@@ -1433,11 +1437,11 @@ font-size:2em;
 }
 
 div.hebergement-gite-listing-detail div#typetype{
-background-color:#ace087;
+background-color:rgba(217,255,178,0.3);
 color:#265902;
 }
 div.hebergement-chambre-listing-detail div#typetype{
-background-color:#82a7ea;
+background-color:rgba(210,254,255,0.3);
 color:#00336a;
 }
 div#typetype .texte-vertical{
@@ -1503,19 +1507,19 @@ background:-moz-linear-gradient(top, rgba(255,255,255,.6), rgba(255,255,255,.9))
 background:-o-linear-gradient(top, rgba(255,255,255,.6), rgba(255,255,255,.9));
 background:linear-gradient(top, rgba(255,255,255,.6), rgba(255,255,255,.9));
 border-radius:3px;
-box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-box-shadow:inset 1px 1px 2px rgba(0,0,0,.4), inset 0px 0px 1px rgba(0,0,0,.2);
+/*box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+box-shadow:inset 1px 1px 2px rgba(0,0,0,.4), inset 0px 0px 1px rgba(0,0,0,.2);*/
 }
 
 .heb-comparaison-check + label:active,
 .heb-comparaison-check:checked + label:active {
-box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+/*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);*/
 }
 
 .heb-comparaison-check:checked + label {
 background-color: #e9ecee;
 border: 1px solid #adb8c0;
-box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.3), inset 15px 10px -12px rgba(255,255,255,0.1);
+/*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.3), inset 15px 10px -12px rgba(255,255,255,0.1);*/
 color: #99a1a7;
 }
 
@@ -1606,8 +1610,8 @@ div#vignette{
 float:left;
 width:181px;
 height:115px;
-border:1px solid #999;
-box-shadow:2px 2px 4px rgba(50,50,50,0.3);
+/*border:1px solid #ddd;*/
+/*box-shadow:2px 2px 4px rgba(50,50,50,0.3);*/
 margin:8px 8px 0px 3px;
 }
 
@@ -1699,11 +1703,10 @@ float:left;
 width:114px;
 height:66px;
 border-radius:12px;
-box-shadow:2px 2px 4px rgba(50,50,50,0.5);
 margin:3px 5px;
 text-align:center;
 font-weight:bold;
-color:#333;
+color:#777;
 }
 
 .nombre{
