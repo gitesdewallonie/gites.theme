@@ -44,10 +44,11 @@
 
     <replace css:content="#portal-top" css:theme="#plonetop" />
 
-    <after css:content="#header" css:theme-children="#beforecontent" />
+    <after css:content="#header" css:theme-children="#header-theme" />
 
     <rules if="$is_portal_root">
-        <after css:content="#zone-produit-package" css:theme-children="#beforecontent" />
+        <after css:content="#zone-produit-package" css:theme-children="#carrousssel-produit-package" />
+        <after css:content="#rechercher" css:theme-children="#moteur-recherche" />
         <after css:content="#zone-offres" css:theme-children="#beforecontent" />
         <drop css:content="#portal-column-content" />
 
