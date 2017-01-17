@@ -693,6 +693,19 @@ color:#ccc1b3;
 font-size:8pt;
 color:#a66723 !important;
 }
+.info-chambre{
+position:relative;
+bottom:-52px;
+}
+.info-derniere-minute{
+position:relative;
+bottom:-30px;
+}
+.info-idee-sejour{
+position:relative;
+bottom:-3px;
+}
+
 
 .idee{
 width:114px;
