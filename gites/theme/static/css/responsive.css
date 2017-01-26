@@ -1,0 +1,493 @@
+/*** IPhone 6 in portrait & landscape ***/
+@media only screen
+and (min-device-width : 340px)
+and (max-device-width : 736px) {
+    body{
+        background-color:#f00;
+    }
+    div#wrapper {
+        width:100%;
+        margin: auto;
+        background-color: #fafafa;
+    }
+    /*** LOGO ***/
+    div#logo{
+        float:left;
+        background:url(../images/logo_small.png);
+        background-repeat:no-repeat;
+        background-position:center;
+        background-color:rgba(255,255,255,0.95);
+        margin-left:15px;
+        margin-right:4px;
+        margin-top:-19px;
+        height: 120px;
+        width: 120px;
+        border-radius: 3px;
+    }
+
+    div#logo a{
+        height:50px;
+        width:50px;
+        display:block;
+    }
+    div#reserver-en-ligne,
+    div#header-derniere-minute,
+    div#header-shop,
+    div#carrousssel-produit-package{
+        display:none;
+    }
+
+    /*** JE CHERCHE ***/
+    div#je-recherche{
+        padding:10px;
+        padding-top:32px;
+        border: 1px solid #ccc;
+        background-color:rgb(201,37,43);
+    }
+    div#form-je-cherche {
+        width:100%;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        background-color:rgb(201,37,43);
+    }
+    div#select-type-hebergement,
+    div#je-recherche #date-start,
+    div#je-recherche #date-end,
+    div#je-recherche #nbre-personne,
+    div#je-recherche #proximite,
+    div#trouver-homepage{
+        clear:both;
+        display:block;
+        height:65px;
+        width:210px;
+        margin:5px auto;
+        padding-left:0px;
+        text-align:center;
+    }
+    input#chambre-hote
+    input#gite-meuble{
+        width:32px;
+        height:32px;
+    }
+    div#je-recherche input#form-widgets-capacityMin,
+    div#je-recherche input[type="text"],
+    div#je-recherche .trouver{
+        height: 35px;
+        width: 200px;
+        padding-left:5px;
+    }
+
+
+    /*** OFFRES ***/
+    div#zone-offres{
+        width:100%;
+        height:100%;
+        padding:0px;
+    }
+    div#zone-offres div#zone-idee-sejour,
+    div#zone-offres div#zone-derniere-minute,
+    div#zone-offres div#zone-allo-chambre-hote{
+        clear:both;
+        width:240px;
+        height:332px;
+        background-color:#EFEFEF;
+        border:1px solid #ccc;
+        margin:15px auto;
+        padding:10px 15px 1px 15px;
+        border-radius:4px;
+        color:#666;
+        font-size:0.73em;
+    }
+    div#zone-offres h2{
+        color:rgb(201,37,43);
+        height:20px;
+        padding-top:0px;
+        padding-left:15px;
+        margin-bottom:30px;
+        text-align:left;
+        width:100%;
+    }
+    section#connexion-membre{
+        display:none;
+    }
+    /*** FOOTER ***/
+    div#footer{
+        background-color:#666;
+        padding-left:25px;
+        color:#ddd;
+    }
+    div#footer div#reseaux-sociaux,
+    div#footer div#contact,
+    div#footer div#destination-wallonie,
+    div#footer div#association,
+    div#footer div#autres-sites{
+        clear:both;
+        height:312px;
+        width:170px;
+        margin-right:25px;
+        margin-top:50px;
+        padding-left:15px;
+        font-size:9pt;
+    }
+    /*** COLOPHON ***/
+    div#colophon{
+        background-color:#333;
+        padding-top:10px;
+        text-align:center;
+    }
+    #eurogite,
+    #feader,
+    #feder,
+    #wallonie-tourisme,
+    #wallonie-bruxelles-tourisme{
+        clear:both;
+        margin:auto;
+        width:150px;
+        margin:5px 20px 0px 0px;
+        text-align:center;
+        font-size:9px;
+        font-family:verdana,sans-serif;
+        color:#d2d2d2;
+    }
+
+    /*** LISTING IDEE SEJOUR ***/
+    div#idee-sejours-listing article.article-resume-idee-sejours{
+        width:200px;
+        min-height:280px;
+        margin:20px 0px;
+        padding:10px;
+        border: 1px solid #ddd;
+        text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+        background:#f0efeb;
+    }
+
+    /*** LISTING RESULTAT RECHERCHE ***/
+    div.hebergement-gite-listing-detail,
+    div.hebergement-chambre-listing-detail{
+        position:relative;
+        z-index:20;
+        width:300px;
+        margin:10px auto;
+        border:1px solid rgba(50,50,50,0.1);
+        border-radius:0px 0px 0px 12px;
+    }
+    div#info-bloc-sup{
+        clear:both;
+        width:500px;
+        height:26px;
+    }
+    div#info-bloc-sup div#distance{
+        clear:both;
+        margin-top:7px;
+        font-weight:bold;
+        color:#555;
+    }
+    div#info-bloc-sup div#nom-hebergement{
+        clear:both;
+        font-family:'Josefin Sans', 'Helvetica Neue', Arial, FreeSans, sans-serif;
+        font-size:1.6em;
+        color:#222;
+        text-shadow:1px 1px 1px rgba(250,250,250,0.5);
+        margin-top:3px;
+        margin-left:10px;
+    }
+    div#info-bloc-inf{
+        clear:both;
+        width:500px;
+        margin-top:19px;
+    }
+    div#info-bloc-inf div#capacite-max,
+    div#info-bloc-inf div#nbre-chambre,
+    div#info-bloc-inf div#nbre-epis,
+    div#info-bloc-inf div#nbre-cle,
+    div#info-bloc-inf div#icon-confort{
+        clear:both;
+        width:114px;
+        height:66px;
+        border-radius:12px;
+        margin:3px 5px;
+        text-align:center;
+        font-weight:bold;
+        color:#777;
+    }
+
+    /*** DESCRIPTION HEBERGEMENT ***/
+    #reservation-chambre {
+        width: 340px;
+        height: 50px;
+        line-height: 45px;
+        margin: auto;
+        background-color: #c72231;
+        border: 1px solid rgba(50, 50, 50, 1);
+        border-radius: 18px;
+        margin-bottom: 8px;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+    div#description-heb{
+        width:330px;
+        min-height:800px;
+        margin-left:-6px;
+        padding-top:5px;
+        border-radius:12px;
+    }
+    div#descriptif-accordeon{
+        height:670px;
+        list-style:none !important;
+        width:338px;
+        display:block;
+        margin-bottom:10px;
+    }
+    div#descriptif-accordeon .slide_content{
+        background:#f0efeb;
+        background-image:url(background_body.jpg);
+        background-repeat:no-repeat;
+        background-position:center;
+        margin-left:0px;
+        margin-bottom:25px;
+        padding:15px;
+    }
+    div#description-bloc-gauche,
+    div#description-bloc-droite{
+        width:312px;
+        clear:both;
+        text-align:justify;
+    }
+}
+
+
+
+/*** Desktops and laptops ***/
+@media only screen and (min-width : 1224px){
+    /*** INTERFACE ***/
+    div#wrapper{
+        width:1100px;
+        margin:auto;
+        background-color:#fafafa;
+    }
+    /*** LOGO ***/
+    div#logo{
+        float:left;
+        background:url(../images/logo.png);
+        background-repeat:no-repeat;
+        background-position:center;
+        background-color:rgba(255,255,255,0.95);
+        margin-left:10px;
+        margin-right:4px;
+        margin-top:-25px;
+    }
+    div#logo a{
+        height:153px;
+        width:148px;
+        display:block;
+    }
+
+    /*** JE CHERCHE ***/
+    div#je-recherche{
+        padding:10px;
+        padding-top:32px;
+        height:150px;
+        border: 1px solid #ccc;
+        background-color:rgb(201,37,43);
+    }
+    div#form-je-cherche {
+        height: 84px;
+        width:1100px;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        background-color:rgb(201,37,43);
+    }
+    div#select-type-hebergement,
+    div#je-recherche #date-start,
+    div#je-recherche #date-end,
+    div#je-recherche #nbre-personne,
+    div#je-recherche #proximite,
+    div#trouver-homepage{
+        float:left;
+        height:65px;
+        margin:5px 5px 5px 0px;
+        vertical-align:middle;
+        padding-left:10px;
+    }
+
+    /*** OFFRES ***/
+    div#zone-offres{
+        width:1065px;
+        height:435px;
+    }
+    div#zone-offres div#zone-idee-sejour,
+    div#zone-offres div#zone-derniere-minute,
+    div#zone-offres div#zone-allo-chambre-hote{
+        float:left;
+        width:245px;
+        height:332px;
+        background-color:#EFEFEF;
+        border:1px solid #ccc;
+        margin:15px 35px;
+        padding:10px 15px 1px 15px;
+        border-radius:4px;
+        color:#666;
+        font-size:0.73em;
+    }
+    div#zone-offres h2{
+        height:20px;
+        padding-top:10px;
+        font-family:'PT Sans Narrow'!important;
+        color:rgb(201,37,43);
+        font-weight:none;
+        text-align:left;
+        padding-left:2em;
+        width:100%;
+    }
+
+    /*** FOOTER ***/
+    div#footer{
+        background-color:#666;
+        height:414px;
+        padding-left:25px;
+        color:#ddd;
+    }
+    div#footer div#reseaux-sociaux,
+    div#footer div#contact,
+    div#footer div#destination-wallonie,
+    div#footer div#association,
+    div#footer div#autres-sites{
+        float:left;
+        height:312px;
+        width:170px;
+        margin-right:25px;
+        margin-top:50px;
+        padding-left:15px;
+        font-size:9pt;
+    }
+    /*** COLOPHON ***/
+    div#colophon{
+        height:310px;
+        background-color:#333;
+        padding-top:10px;
+        text-align:center;
+    }
+    #eurogite,
+    #feader,
+    #feder,
+    #wallonie-tourisme,
+    #wallonie-bruxelles-tourisme{
+        float:left;
+        width:150px;
+        margin:5px 20px 0px 0px;
+        text-align:center;
+        font-size:9px;
+        font-family:verdana,sans-serif;
+        color:#d2d2d2;
+    }
+
+    /*** LISTING IDEE SEJOUR ***/
+    div#idee-sejours-listing article.article-resume-idee-sejours{
+        width:450px;
+        min-height:280px;
+        margin:20px 15px;
+        padding:10px;
+        border: 1px solid #ddd;
+        text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+        background:#f0efeb;
+    }
+
+    /*** LISTING RESULTAT RECHERCHE ***/
+    div.hebergement-gite-listing-detail,
+    div.hebergement-chambre-listing-detail{
+        position:relative;
+        z-index:20;
+        width:800px;
+        height:135px;
+        margin:10px auto;
+        border:1px solid rgba(50,50,50,0.1);
+        border-radius:0px 0px 0px 12px;
+    }
+    div#info-bloc-sup{
+        float:left;
+        width:500px;
+        height:26px;
+    }
+    div#info-bloc-sup div#distance{
+        float:left;
+        margin-top:7px;
+        font-weight:bold;
+        color:#555;
+    }
+    div#info-bloc-sup div#nom-hebergement{
+        float:left;
+        font-family:'Josefin Sans', 'Helvetica Neue', Arial, FreeSans, sans-serif;
+        font-size:1.6em;
+        color:#222;
+        text-shadow:1px 1px 1px rgba(250,250,250,0.5);
+        margin-top:3px;
+        margin-left:10px;
+    }
+    div#info-bloc-inf{
+        float:left;
+        width:500px;
+        margin-top:19px;
+    }
+    div#info-bloc-inf div#capacite-max,
+    div#info-bloc-inf div#nbre-chambre,
+    div#info-bloc-inf div#nbre-epis,
+    div#info-bloc-inf div#nbre-cle,
+    div#info-bloc-inf div#icon-confort{
+        float:left;
+        width:114px;
+        height:66px;
+        border-radius:12px;
+        margin:3px 5px;
+        text-align:center;
+        font-weight:bold;
+        color:#777;
+    }
+
+    /*** DESCRIPTION HEBERGEMENT ***/
+    #reservation-chambre {
+        width: 340px;
+        height: 50px;
+        line-height: 45px;
+        margin: auto;
+        background-color: #c72231;
+        border: 1px solid rgba(50, 50, 50, 1);
+        border-radius: 18px;
+        margin-bottom: 8px;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+    div#description-heb{
+        width:1065px;
+        min-height:800px;
+        margin-left:-6px;
+        padding-top:5px;
+        border-radius:12px;
+    }
+    div#descriptif-accordeon{
+        height:670px;
+        list-style:none !important;
+        width:1040px;
+        display:block;
+        margin-bottom:10px;
+    }
+    div#descriptif-accordeon .slide_content{
+        background:#f0efeb;
+        background-image:url(background_body.jpg);
+        background-repeat:no-repeat;
+        background-position:center;
+        margin-left:28px;
+        margin-bottom:25px;
+        padding:15px;
+    }
+    div#description-bloc-gauche{
+        width:400px;
+        float:left;
+    }
+    div#description-bloc-droite{
+        width:400px;
+        float:right;
+    }
+
+
+
+}

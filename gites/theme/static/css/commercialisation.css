@@ -1,4 +1,5 @@
 /* Modiifcation des widgets pour la commercialisation */
+/*
 #reservation-chambre{
 width:400px;
 height:50px;
@@ -11,6 +12,7 @@ margin-bottom:8px;
 text-align:center;
 transition:all 0.5s ease-in-out;
 }
+*/
 
 #reservation-chambre a:link{
 display:inline-block;

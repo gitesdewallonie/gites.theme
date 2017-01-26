@@ -31,6 +31,18 @@
                 applyPrefix="True"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
+    <stylesheet title="Gites Theme Styles For Mobile"
+                id="++theme++gites.theme/css/responsive.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
     <stylesheet title="Gites Theme Styles"
                 id="++theme++gites.theme/css/ie.css"
                 media="screen"
