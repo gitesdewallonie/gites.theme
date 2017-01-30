@@ -3,6 +3,32 @@ CSS BY AFFINITIC
 mars 2013
 */
 
+/* Hide 'powered by Google' on autocomplete field */
+.pac-logo::after {
+    background-image: none !important;
+    height: 0px;
+}
+
+.pac-container {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.pac-container, .pac-item {
+    width: inherit !important;
+}
+
+.pac-container .pac-item {
+	padding: 0em 1em;
+}
+
+/* Hide Google icon on autocomplete field */
+.pac-container .pac-item .pac-icon {
+    display: none;
+}
+
+
+
 /*** SKIN STYLES ***/
 @font-face {
 font-family:'PT Sans Narrow';
