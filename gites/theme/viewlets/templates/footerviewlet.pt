@@ -34,6 +34,35 @@
             </li>
         </ul>
     </div><!--reseaux-sociaux-->
+    <div id="reseaux-sociaux-mobile">
+        <h2 i18n:translate="rejoignez_nous">Rejoignez-nous</h2>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/GitesdeWallonie"
+                   target="_blank"
+                   id="btn-facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/GitesWallonie"
+                   target="_blank"
+                   id="btn-twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/101294589232969727782"
+                   target="_blank"
+                   id="btn-google">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCgvYj4ev_tlUedjJ1Pf1VDg"
+                   target="_blank"
+                   id="btn-youtube">
+                </a>
+            </li>
+        </ul>
+    </div><!--reseaux-sociaux-mobile-->
 
     <div id="contact"
          tal:define="content python: here.restrictedTraverse('@@footer_view').getContent('contact')">

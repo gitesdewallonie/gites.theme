@@ -3,7 +3,7 @@
 and (min-device-width : 340px)
 and (max-device-width : 736px) {
     body{
-        background-color:#f00;
+        /*background-color:#f00;*/
     }
     div#wrapper {
         width:100%;
@@ -12,19 +12,18 @@ and (max-device-width : 736px) {
     }
     /*** LOGO ***/
     div#logo{
-        float:left;
-        background:url(../images/logo_small.png);
-        background-repeat:no-repeat;
-        background-position:center;
-        background-color:rgba(255,255,255,0.95);
-        margin-left:15px;
-        margin-right:4px;
-        margin-top:-19px;
-        height: 120px;
+        loat: left;
+        background: url(../images/logo_small.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255,255,255,0.95);
+        margin-left: 116px;
+        margin-right: 4px;
+        margin-top: -17px;
+        height: 135px;
         width: 120px;
         border-radius: 3px;
     }
-
     div#logo a{
         height:50px;
         width:50px;
@@ -85,8 +84,10 @@ and (max-device-width : 736px) {
         padding:0px;
     }
     div#zone-offres div#zone-idee-sejour,
-    div#zone-offres div#zone-derniere-minute,
     div#zone-offres div#zone-allo-chambre-hote{
+        display:none;
+    }
+    div#zone-offres div#zone-derniere-minute{
         clear:both;
         width:240px;
         height:332px;
@@ -99,6 +100,7 @@ and (max-device-width : 736px) {
         font-size:0.73em;
     }
     div#zone-offres h2{
+        display:none;
         color:rgb(201,37,43);
         height:20px;
         padding-top:0px;
@@ -113,42 +115,95 @@ and (max-device-width : 736px) {
     /*** FOOTER ***/
     div#footer{
         background-color:#666;
-        padding-left:25px;
+        padding-left:0px;
         color:#ddd;
     }
-    div#footer div#reseaux-sociaux,
     div#footer div#contact,
     div#footer div#destination-wallonie,
     div#footer div#association,
     div#footer div#autres-sites{
-        clear:both;
+        display:none;
+    }
+    div#footer div#reseaux-sociaux-mobile{
+    }
+    div#footer div#reseaux-sociaux-mobile ul{
+        width:310px;
+        margin:auto;
+    }
+    div#footer div#reseaux-sociaux-mobile li{
+        display:inline-block;
+    }
+    div#footer div#reseaux-sociaux{
+        display:none;
+        /*clear:both;
         height:312px;
         width:170px;
         margin-right:25px;
         margin-top:50px;
         padding-left:15px;
-        font-size:9pt;
+        font-size:9pt;*/
     }
-    /*** COLOPHON ***/
+    div#footer div#reseaux-sociaux-mobile h2{
+        font-family: 'PT Sans Narrow' !important;
+        color:rgba(50,50,50,0.5);
+        margin:auto;
+        margin-bottom:8px;
+        font-weight:normal;
+        font-size:20pt;
+        text-align:center;
+    }
+    div#footer div#reseaux-sociaux-mobile ul li a{
+        display:block;
+        height:35px;
+        padding-left:52px;
+        padding-top:15px;
+        background-repeat:no-repeat;
+        background-position:left top;
+        margin:0px 10px;
+    }
+    div#footer div#reseaux-sociaux-mobile ul li #btn-facebook{
+        background-image:url(../images/icone_fb_small.png);
+    }
+    div#footer div#reseaux-sociaux-mobile ul li #btn-twitter{
+        background-image:url(../images/icone_tw_small.png);
+    }
+    div#footer div#reseaux-sociaux-mobile ul li #btn-google{
+        background-image:url(../images/icone_g+_small.png);
+    }
+    div#footer div#reseaux-sociaux-mobile ul li #btn-youtube{
+        background-image:url(../images/icone_yt_small.png);
+    }
+
+    /*** COLOPHON  PARTENAIRES LOGO***/
     div#colophon{
         background-color:#333;
         padding-top:10px;
         text-align:center;
     }
-    #eurogite,
-    #feader,
-    #feder,
-    #wallonie-tourisme,
-    #wallonie-bruxelles-tourisme{
-        clear:both;
-        margin:auto;
-        width:150px;
-        margin:5px 20px 0px 0px;
-        text-align:center;
-        font-size:9px;
-        font-family:verdana,sans-serif;
-        color:#d2d2d2;
+    div#colophon div#partenaire{
+        display:none;
     }
+    div#colophon div#partenaire-mobile{
+        display:block;
+        width:265px;
+        margin:auto;
+    }
+    div#colophon div#partenaire{-mobile
+        padding-left:0px;
+    }
+    div#colophon div#partenaire-mobile img{
+        display:inline;
+        margin:12px 6px;
+    }
+    div#colophon div#partenaire-mobile div#eurogite,
+    div#colophon div#partenaire-mobile div#feader,
+    div#colophon div#partenaire-mobile div#feder,
+    div#colophon div#partenaire-mobile div#wallonie-tourisme,
+    div#colophon div#partenaire-mobile div#wallonie-bruxelles-tourisme{
+        float:left;
+        margin:5px 8px;
+        }
+
 
     /*** LISTING IDEE SEJOUR ***/
     div#idee-sejours-listing article.article-resume-idee-sejours{
@@ -184,7 +239,7 @@ and (max-device-width : 736px) {
     }
     div#info-bloc-sup div#nom-hebergement{
         clear:both;
-        font-family:'Josefin Sans', 'Helvetica Neue', Arial, FreeSans, sans-serif;
+        font-family:'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
         font-size:1.6em;
         color:#222;
         text-shadow:1px 1px 1px rgba(250,250,250,0.5);
@@ -212,6 +267,15 @@ and (max-device-width : 736px) {
     }
 
     /*** DESCRIPTION HEBERGEMENT ***/
+    div#sendTo-printThis{
+        display:none;
+    }
+    div#accueil-bloc-gauche{
+        clear:both;
+    }
+    div#accueil-bloc-droite{
+        clear:both;
+    }
     #reservation-chambre {
         width: 340px;
         height: 50px;
@@ -230,6 +294,41 @@ and (max-device-width : 736px) {
         margin-left:-6px;
         padding-top:5px;
         border-radius:12px;
+    }
+    div#description-info-sup{
+        width:337px;
+        margin:auto;
+        margin-bottom:10px;
+        background-color:#f0efeb;
+        padding:6px 0px;
+    }
+    div#description-icone-theme-giteplus{
+        position:static;
+        width:300px;
+    }
+    div#nom-heb{
+        display:block;
+        margin-top:8px;
+        font-size:16pt;
+        font-weight:bold;
+        color:#c9252b;
+        text-align:center;
+    }
+    .etiquette-sup{
+        float:right;
+        width:80px;
+        height:56px;
+        margin-right:2px;
+        margin-top:4px;
+        color:#777;
+        text-align:center;
+        /*box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);*/
+    }
+    .etiquette-sup span{
+        display:block;
+        margin-top:15px;
+        margin-bottom:4px;
+        font-size:1.2em;;
     }
     div#descriptif-accordeon{
         height:670px;
@@ -253,7 +352,76 @@ and (max-device-width : 736px) {
         clear:both;
         text-align:justify;
     }
+    div#description-icone-confort,
+    div#description-icone-activite,
+    div#description-icone-literie{
+        text-align:center;
+        margin:12px 0px;
+        padding:0px;
+    }
+
+    div#description-icone-confort .picto,
+    div#description-icone-activite .picto,
+    div#description-icone-literie .picto{
+        margin:8px;
+        width:32px;
+        height:32px;
+    }
+    div#description-heb div#description-map div#map_div {
+        clear:both;
+        margin:auto;
+        height: 470px;
+        width: 300px;
+    }
+    div#description-heb div#description-map div#map_menu{
+        clear:both;
+        margin:4px auto;
+        word-wrap:break-word;
+        width:190px;
+        padding:30px 10px;
+        border:1px solid #999;
+        border-radius:18px;
+    }
+    div#description-heb div#description-coordonnee{
+        clear:both;
+        margin:8px auto;
+        width:300px;
+        padding:5px;
+        font-size:0.8em;
+    }
+    div#tarification-hebergement,
+    div#tarification-gite,
+    div#tarification-chambre{
+        margin:0px;
+        padding:8px 20px;
+        border-radius:3px;
+        background: rgb(255,255,255);
+    }
+    div#description-photo-heb{
+        margin:auto;
+        margin-bottom:10px;
+        border-radius:0px;
+    }
+    div#description-adresse-hebergement{
+        margin-bottom:10px;
+        padding:6px;
+        text-align:center;
+        color:#333;
+        border-radius:3px;
+        background: rgb(255,255,255);
+    }
+    div#description-heb div#map_menu{
+        display:none;
+    }
+    div#description-heb div#description-coordonnee div#nom-proprio{
+        margin-bottom:20px;
+        font-size:1.em;
+    }
 }
+
+
+
+/*** ================================================= ***/
 
 
 
@@ -347,6 +515,9 @@ and (max-device-width : 736px) {
         padding-left:25px;
         color:#ddd;
     }
+    div#footer div#reseaux-sociaux-mobile{
+        display:none;
+    }
     div#footer div#reseaux-sociaux,
     div#footer div#contact,
     div#footer div#destination-wallonie,
@@ -360,18 +531,63 @@ and (max-device-width : 736px) {
         padding-left:15px;
         font-size:9pt;
     }
-    /*** COLOPHON ***/
+    div#footer div#reseaux-sociaux h2{
+        color:rgba(0,221,230,1);
+        margin-left:-35px;
+        margin-top:-25px;
+        font-weight:normal;
+        font-size:11pt;
+    }
+    div#footer div#reseaux-sociaux ul.contact-ul li a{
+        display:block;
+        height:35px;
+        padding-left:52px;
+        padding-top:15px;
+        color:#ddd !important;
+        font-size:0.8em;
+        background-repeat:no-repeat;
+        background-position:left top;
+        margin:10px 0px;
+    }
+    div#footer div#reseaux-sociaux ul.contact-ul li a:hover{
+        color:#fff !important;
+    }
+    div#footer div#reseaux-sociaux ul.contact-ul li #btn-facebook{
+        background-image:url(../images/facebook.png);
+    }
+    div#footer div#reseaux-sociaux ul.contact-ul li #btn-twitter{
+        background-image:url(../images/twitter.png);
+    }
+    div#footer div#reseaux-sociaux ul.contact-ul li #btn-google{
+        background-image:url(../images/google.png);
+    }
+    div#footer div#reseaux-sociaux ul.contact-ul li #btn-youtube{
+        background-image:url(../images/youtube.png);
+    }
+
+    /*** COLOPHON  PARTENAIRES LOGO***/
     div#colophon{
         height:310px;
         background-color:#333;
         padding-top:10px;
         text-align:center;
     }
-    #eurogite,
-    #feader,
-    #feder,
-    #wallonie-tourisme,
-    #wallonie-bruxelles-tourisme{
+    div#colophon div#partenaire-mobile{
+        display:none;
+    }
+    div#colophon div#partenaire{
+        padding-left:12%;
+    }
+    div#colophon div#partenaire img{
+        display:block;
+        margin:auto;
+        margin-bottom:2px;
+    }
+    div#colophon div#partenaire div#eurogite,
+    div#colophon div#partenaire div#feader,
+    div#colophon div#partenaire div#feder,
+    div#colophon div#partenaire div#wallonie-tourisme,
+    div#colophon div#partenaire div#wallonie-bruxelles-tourisme{
         float:left;
         width:150px;
         margin:5px 20px 0px 0px;
@@ -444,6 +660,12 @@ and (max-device-width : 736px) {
     }
 
     /*** DESCRIPTION HEBERGEMENT ***/
+    /*** boutons printThis sendTo et back-button ***/
+    div#sendTo-printThis{
+        float:left;
+        width:150px;
+        margin-top:6px;
+    }
     #reservation-chambre {
         width: 340px;
         height: 50px;
@@ -462,6 +684,49 @@ and (max-device-width : 736px) {
         margin-left:-6px;
         padding-top:5px;
         border-radius:12px;
+    }
+    div#description-info-sup{
+        width:1010px;
+        height:66px;
+        margin:auto;
+        margin-bottom:10px;
+        background-color:#f0efeb;
+    }
+    div#description-icone-theme-giteplus{
+        position:absolute;
+        top:10px;
+        left:400px;
+        width:300px;
+    }
+    div#nom-heb{
+        float:left;
+        width:610px;
+        height:60px;
+        margin-left:10px;
+        margin-top:3px;
+        font-size:16pt;
+        font-weight:bold;
+        color:#c9252b;
+        text-align:center;
+        text-shadow:1px 1px 1px rgba(250,250,250,0.9);
+        line-height:55px;
+    }
+    .etiquette-sup{
+        float:right;
+        width:93px;
+        height:56px;
+        margin-right:2px;
+        margin-top:4px;
+        color:#777;
+        text-align:center;
+        font-weight:bold;
+        /*box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);*/
+    }
+    .etiquette-sup span{
+        display:block;
+        margin-top:15px;
+        margin-bottom:4px;
+        font-size:2.5em;;
     }
     div#descriptif-accordeon{
         height:670px;
@@ -487,7 +752,72 @@ and (max-device-width : 736px) {
         width:400px;
         float:right;
     }
+    div#accueil-bloc-gauche{
+        float:left;
+    }
+    div#accueil-bloc-droite{
+        float:right;
+    }
+    div#description-icone-confort,
+    div#description-icone-activite,
+    div#description-icone-literie{
+        text-align:center;
+        margin-top:8px;
+        padding:6px;
+    }
 
-
-
+    div#description-icone-confort .picto,
+    div#description-icone-activite .picto,
+    div#description-icone-literie .picto{
+        margin:0px 6px;
+        width:32px;
+        height:32px;
+    }
+    div#description-heb div#description-map div#map_div {
+        float:left;
+        height: 470px;
+        width: 620px;
+    }
+    div#description-heb div#description-map div#map_menu{
+        float:right;
+        word-wrap:break-word;
+        width:190px;
+        padding:30px 10px;
+        border:1px solid #999;
+        border-radius:18px;
+    }
+    div#description-heb div#description-coordonnee{
+        float:left;
+        margin-top:20px;
+        margin-left:20px;
+        width:499px;
+        padding:15px;
+        font-size:1em;
+    }
+    div#tarification-hebergement,
+    div#tarification-gite,
+    div#tarification-chambre{
+        width:460px;
+        margin:0px 0px 0px 5px;
+        padding:8px 20px;
+        border-radius:18px;
+        background: rgb(255,255,255);
+    }
+    div#description-photo-heb{
+        margin:0px auto 10px;
+        border-radius:18px;
+    }
+    div#description-adresse-hebergement{
+        margin-bottom:10px;
+        padding:6px;
+        text-align:center;
+        color:#333;
+        text-shadow:1px 1px 1px rgba(250,250,250,0.8);
+        border-radius:18px;
+        background: rgb(255,255,255);
+    }
+    div#description-heb div#description-coordonnee div#nom-proprio{
+        margin-bottom:20px;
+        font-size:14pt;
+    }
 }

@@ -41,7 +41,7 @@
                     <span id="texte-feder">
                         Fonds européen agricole pour le développement rural :
                         <br />
-                        l'Europe investit dans les zones rurales. 
+                        l'Europe investit dans les zones rurales.
                     </span>
                 </span>
         </div>
@@ -58,13 +58,13 @@
                         FEDER - PROGRAMMATION 2007-2013<br />
                     </span>
                     <span id="texte-feder">
-                        Axe prioritaire 3 : Développement territorial équilibré 
+                        Axe prioritaire 3 : Développement territorial équilibré
                         et durable
                         <br />
-                        Mesure 3.03 : Redynamisation urbaine 
+                        Mesure 3.03 : Redynamisation urbaine
                         et attractivité du territoire
                         a<br />
-                        l'Europe investit dans les zones rurales. 
+                        l'Europe investit dans les zones rurales.
                     </span>
                 </span>
         </div>
@@ -95,6 +95,56 @@
         </div>
         <div class="break-float"></div>
     </div>
+
+    <div id="partenaire-mobile">
+        <div id="feader">
+            <br />
+            <a href="http://ec.europa.eu/agriculture/rurdev/index_fr.htm"
+               target="_blank"
+               title="FEADER">
+                <img src="++theme++gites.theme/images/logo_ue_wallonie_small.png"
+                     alt="FEADER"
+                     title="FEADER" /></a>
+        </div>
+        <div id="feder">
+            <br />
+            <a href="http://plushaut.europe.wallonie.be/leurope-nous"
+               target="_blank"
+               title="FEADER">
+                <img src="++theme++gites.theme/images/logo_wallonie_europe_feder_small.png"
+                     alt="FEADER"
+                     title="FEADER" /></a>
+        </div>
+        <div class="break-float"></div>
+        <div id="eurogite" tal:condition="not: context/@@isMobile | nothing">
+            <a href="http://www.eurogites.org"
+               target="_blank"
+               title="Rural and Country Tourism in Europe">
+                <img src="++theme++gites.theme/images/logo_eurogit_small.png"
+                     alt="Eurogites"
+                     title="Eurogites" /></a>
+        </div>
+        <div id="wallonie-tourisme">
+            <a href="http://www.tourismewallonie.be/"
+               target="_blank"
+               title="Tourisme en Wallonie">
+                <img src="++theme++gites.theme/images/logo_wallonie_small.gif"
+                     alt="Tourisme en Wallonie"
+                     title="Tourisme en Wallonie" /></a>
+        </div>
+        <div id="wallonie-bruxelles-tourisme">
+            <a href="http://www.wallonietourisme.be/"
+               target="_blank"
+               title="Wallonie-Bruxelles tourisme">
+                <img src="++theme++gites.theme/images/logo_wallonie_bruxelles_tourisme_small.png"
+                     alt="Wallonie-Bruxelles tourisme"
+                     title="Wallonie-Bruxelles tourisme" /></a>
+        </div>
+        <div class="break-float"></div>
+    </div>
+
+
+
 
     <div id="madeby">
         <div id="affinitic"><span i18n:translate="developed_by">Développé par</span> <a href="http://www.affinitic.be" target="_blank">Affinitic</a></div>
