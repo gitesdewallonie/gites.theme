@@ -10,6 +10,10 @@ and (max-device-width : 736px) {
         margin: auto;
         background-color: #fafafa;
     }
+    #portal-header {
+        position:relative;
+        z-index:1000;
+    }
     /*** LOGO ***/
     div#logo{
         loat: left;
@@ -25,9 +29,11 @@ and (max-device-width : 736px) {
         border-radius: 3px;
     }
     div#logo a{
-        height:50px;
-        width:50px;
+        height:135px;
+        width:120px;
         display:block;
+        border:1px solid rgba(220,220,220,0.5);
+        border-radius:3px;
     }
     div#reserver-en-ligne,
     div#header-derniere-minute,
@@ -217,6 +223,29 @@ and (max-device-width : 736px) {
     }
 
     /*** LISTING RESULTAT RECHERCHE ***/
+    h1#nbr-heb-trouve,
+    div#listing-result-block div#listing-result-batch,
+    div#listing-result-block div#listing-result-count{
+        display:none;
+    }
+    div#listing-result-info-top,
+    div#listing-result-info-bottom{
+        border:2px solid rgba(250,250,250,0.5);
+        height:40px;
+        padding:10px;
+        background: rgba(240,240,240,0.5);
+    }
+    div#listing-result-info-bottom div#sort-bottom{
+        display:none;
+    }
+    div#listing-result-info-bottom div#listing-result-batch{
+        display:block;
+    }
+    div#listing-result-info-bottom div#listing-result-batch a{
+        display:inline-block;
+        margin:0px 3px;
+        font-size:1.2em;
+    }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail{
         position:relative;
@@ -251,19 +280,69 @@ and (max-device-width : 736px) {
         width:500px;
         margin-top:19px;
     }
+    div.hebergement-gite-listing-detail,
+    div.hebergement-chambre-listing-detail{
+        /*height:135px;*/
+        background-color:#fafafa;
+        border-radius:3px;
+    }
+    div#typetype{
+        clear:both;
+        font-size:1.2em;
+        line-height:23px;
+        height:25px;
+    }
+    div#typetype .texte-vertical{
+        display:block;
+        text-align:right;
+        padding-right:5px;
+        text-transform:capitalize;
+    }
+    div#vignette{
+        clear:both;
+        width:181px;
+        height:115px;
+        margin:8px auto;
+    }
+    div#info-bloc-sup div#type{
+        clear:both;
+        font-size:0.9em;
+        color:#cf000e;
+    }
     div#info-bloc-inf div#capacite-max,
     div#info-bloc-inf div#nbre-chambre,
     div#info-bloc-inf div#nbre-epis,
     div#info-bloc-inf div#nbre-cle,
     div#info-bloc-inf div#icon-confort{
-        clear:both;
-        width:114px;
-        height:66px;
-        border-radius:12px;
-        margin:3px 5px;
-        text-align:center;
-        font-weight:bold;
+        float:left;
+        width:75px;
+        height:56px;
+        margin:8px 0px;
         color:#777;
+        text-align:center;
+    }
+    .nombre{
+        display:block;
+        margin-top:15px;
+        margin-bottom:4px;
+        font-size:1.2em;
+    }
+    .reference{
+        clear:both;
+        font-size:5pt;
+        display:block;
+    }
+    div#info-bloc-inf div#icon-confort-dog{
+        float:left;
+        margin-top:13px;
+        margin-left:10px;
+    }
+    div#info-bloc-inf div#icon-confort-smoker{
+        display:none;
+    }
+    div#commune{
+        float:right;
+        margin-right:5px;
     }
 
     /*** DESCRIPTION HEBERGEMENT ***/
@@ -328,7 +407,7 @@ and (max-device-width : 736px) {
         display:block;
         margin-top:15px;
         margin-bottom:4px;
-        font-size:1.2em;;
+        font-size:1.2em;
     }
     div#descriptif-accordeon{
         height:670px;
@@ -422,6 +501,7 @@ and (max-device-width : 736px) {
 
 
 /*** ================================================= ***/
+
 
 
 
@@ -609,6 +689,26 @@ and (max-device-width : 736px) {
     }
 
     /*** LISTING RESULTAT RECHERCHE ***/
+    div#listing-result-count{
+        position:relative;
+        top:-10px;
+        width:550px;
+    }
+    div#listing-result-block div#listing-result-batch{
+        float:left;
+        margin-left:10px;
+    }
+    div#listing-result-info-top,
+    div#listing-result-info-bottom{
+        border:2px solid rgba(250,250,250,0.5);
+        height:40px;
+        padding:10px;
+        background: rgba(240,240,240,0.5);
+    }
+    div#listing-result-block div#sort{
+        float:right;
+        margin-right:10px;
+    }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail{
         position:relative;
@@ -658,6 +758,67 @@ and (max-device-width : 736px) {
         font-weight:bold;
         color:#777;
     }
+    div.hebergement-gite-listing-detail,
+    div.hebergement-chambre-listing-detail,
+    div#typetype{
+        height:135px;
+    }
+    div#typetype{
+        float:left;
+        width:100px;
+        text-shadow:-1px 1px 1px rgba(255,255,255,0.5);
+        border-radius:0px 0px 0px 12px;
+        font-size:2em;
+    }
+    div#typetype .texte-vertical{
+        position:relative;
+        left:-34px;
+        top:60px;
+        -webkit-transform:rotate(270deg);
+        -moz-transform:rotate(270deg);
+        -o-transform: rotate(270deg);
+        -ms-transform: rotate(-90deg);
+        white-space:nowrap;
+        display:block;
+        text-align:right;
+        text-transform:capitalize;
+    }
+    div#vignette{
+        float:left;
+        width:181px;
+        height:115px;
+        margin:8px 8px 0px 3px;
+    }
+    div#info-bloc-sup div#type{
+        float:right;
+        font-size:0.9em;
+        color:#cf000e;
+    }
+    .nombre{
+        display:block;
+        font-size:2.5em;
+        margin-top:18px;
+    }
+    .reference{
+        float:left;
+        font-size:7pt;
+        display:block;
+    }
+    div#info-bloc-inf div#icon-confort-dog{
+        float:left;
+        margin-top:13px;
+        margin-left:10px;
+    }
+    div#info-bloc-inf div#icon-confort-smoker{
+        float:right;
+        margin-top:13px;
+        margin-right:10px;
+    }
+    div#commune{
+        float:right;
+        margin-right:5px;
+    }
+
 
     /*** DESCRIPTION HEBERGEMENT ***/
     /*** boutons printThis sendTo et back-button ***/
