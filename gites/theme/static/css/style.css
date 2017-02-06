@@ -13,15 +13,29 @@ rgb(201,37,43)
 @font-face {
 font-family:'PT Sans Narrow';
 src:url('../font/PTSansNarrow.ttf') format('truetype');
-font-weight:normal;
-font-style:normal;
 /*
 src:url('../font/PTSansCaption.ttf') format('truetype'),
 url('../font/PTSansItalic.ttf') format('truetype'),
 url('../font/PTSansNarrow.ttf') format('truetype'),
 url('../font/PTSansNarrowBold.ttf') format('truetype');
 */
+font-weight:normal;
+font-style:normal;
 }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../font/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../font/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+       url('../font/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+       url('../font/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+       url('../font/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+       url('../font/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 
 
@@ -37,6 +51,7 @@ margin:0;
 body .popup {
 color:#FFF;
 }
+
 
 div#description-calendrier{
 /*display:none;*/
@@ -377,19 +392,21 @@ background-color:rgb(201,37,43);
 border:1px solid #000;
 }
 */
-
+/*
 div#je-recherche #zone-gite-meuble,
 div#je-recherche #zone-chambre-hote{
 margin-left:20px;
 border:1px solid rgba(217, 168, 105, 0.1);
 color:#fff;
 }
-
+*/
+/*
 div#je-recherche #zone-gite-meuble label,
 div#je-recherche #zone-chambre-hote label{
 margin-left:5px;
 width:270px;
 }
+*/
 
 /*
 div#select-type-hebergement,
@@ -413,6 +430,59 @@ div#je-recherche #nbre-personne input,
 div#je-recherche #proximite input,
 div#trouver-homepage input{
     border:0px;
+}
+
+div#je-recherche #form-widgets-fromDate,
+div#je-recherche #form-widgets-toDate,
+div#je-recherche #form-widgets-capacityMin,
+div#je-recherche #form-widgets-nearTo{
+position:relative;
+background-color:rgba(255,0,0,0);
+}
+
+div#je-recherche #form-widgets-fromDate,
+div#je-recherche #form-widgets-toDate,
+div#je-recherche #form-widgets-nearTo{
+top:-25px;
+left:0px;
+}
+
+div#je-recherche #form-widgets-capacityMin{
+top:-27px;
+left:-180px;
+}
+
+/*** class pour les polices glyphes awesome ***/
+.fa {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.fa-calendar:before {
+  content: "\f073";
+  color:#bbb;
+}
+
+.fa-user-o:before {
+content: "\f2c0";
+color:#bbb;
+}
+.fa-map-o:before {
+content: "\f278";
+color:#bbb;
+}
+
+.fa-user-o,
+.fa-calendar,
+.fa-map-o {
+position: relative;
+top: 2px;
+left: 178px;
+font-size: 25px;
 }
 
 ::-webkit-input-placeholder {
