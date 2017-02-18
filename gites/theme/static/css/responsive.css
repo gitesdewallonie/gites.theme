@@ -1,18 +1,26 @@
-/*** IPhone 6 in portrait & landscape ***/
+/*
+reservez #d81b60
+*/
+
+
+/*** IPhone 5 in portrait & landscape ***/
 @media only screen
-and (min-device-width : 340px)
-and (max-device-width : 736px) {
+and (min-device-width : 320px)
+and (max-device-width : 568px){
     body{
-        /*background-color:#f00;*/
+        background-color:#fafafa;
     }
-    div#wrapper {
+    .wrapper-theme{
         width:100%;
-        margin: auto;
-        background-color: #fafafa;
+        margin:auto;
+        background-color:#fafafa;
     }
-    #portal-header {
+    div#portal-header {
         position:relative;
         z-index:1000;
+    }
+    div#header{
+        margin-top:-26px;
     }
     /*** LOGO ***/
     div#logo{
@@ -21,7 +29,7 @@ and (max-device-width : 736px) {
         background-repeat: no-repeat;
         background-position: center;
         background-color: rgba(255,255,255,0.95);
-        margin-left: 116px;
+        margin-left: 105px;
         margin-right: 4px;
         margin-top: -17px;
         height: 135px;
@@ -44,16 +52,21 @@ and (max-device-width : 736px) {
 
     /*** JE CHERCHE ***/
     div#je-recherche{
-        padding:10px;
+        padding:0px;
         padding-top:32px;
         border: 1px solid #ccc;
-        background-color:rgb(201,37,43);
+        background-image:url(../images/bg_mobile.jpg);
+        background-size:cover;
+    }
+    div#je-recherche .wrapper-theme{
+        background-color:transparent;
+        /*background-color:rgba(50,50,50,0.5);*/
     }
     div#form-je-cherche {
         width:100%;
         margin-bottom: 30px;
         padding-top: 40px;
-        background-color:rgb(201,37,43);
+        /*background-color:rgb(201,37,43);*/
     }
     div#select-type-hebergement,
     div#je-recherche #date-start,
@@ -93,7 +106,19 @@ and (max-device-width : 736px) {
         width: 200px;
         padding-left:5px;
     }
-
+    div#btn-reserver-en-ligne-mob{
+        width:100%;
+        height:50px;
+        margin-top:25px;
+        background-color:#d81b60;
+        text-align:center;
+        line-height:45px;
+        cursor:pointer;
+    }
+    div#btn-reserver-en-ligne-mob a{
+        color:#fff;
+        font-size:20px;
+    }
 
     /*** OFFRES ***/
     div#zone-offres{
@@ -131,7 +156,14 @@ and (max-device-width : 736px) {
         display:none;
     }
     /*** FOOTER ***/
+    div#viewlet-gites-footer{
+        display:none;
+    }
+    div#bottompage{
+        clear:both;
+    }
     div#footer{
+        clear:both;
         background-color:#666;
         padding-left:0px;
         color:#ddd;
@@ -146,10 +178,12 @@ and (max-device-width : 736px) {
     }
     div#footer div#reseaux-sociaux-mobile ul{
         width:310px;
-        margin:auto;
+        margin:0px auto;
     }
     div#footer div#reseaux-sociaux-mobile li{
         display:inline-block;
+        margin-top:4px;
+        margin-bottom:-8px;
     }
     div#footer div#reseaux-sociaux{
         display:none;
@@ -163,7 +197,7 @@ and (max-device-width : 736px) {
     }
     div#footer div#reseaux-sociaux-mobile h2{
         font-family: 'PT Sans Narrow' !important;
-        color:rgba(50,50,50,0.5);
+        color:rgba(248, 243, 243, 0.5);
         margin:auto;
         margin-bottom:8px;
         font-weight:normal;
@@ -224,6 +258,12 @@ and (max-device-width : 736px) {
 
 
     /*** LISTING IDEE SEJOUR ***/
+    div#content-for-khevine{
+        padding:0px 3px;
+        margin:8px 0px 0px 0px;
+        border:1px solid rgba(200,215,220,0.3);
+        border-radius:12px;
+    }
     div#idee-sejours-listing article.article-resume-idee-sejours{
         width:200px;
         min-height:280px;
@@ -239,6 +279,10 @@ and (max-device-width : 736px) {
     div#listing-result-block div#listing-result-batch,
     div#listing-result-block div#listing-result-count{
         display:none;
+    }
+    div.hebergement-gite-listing-detail div#typetype,
+    div.hebergement-chambre-listing-detail div#typetype{
+        background-color:transparent;
     }
     div#listing-result-info-top,
     div#listing-result-info-bottom{
@@ -343,6 +387,18 @@ and (max-device-width : 736px) {
         color:#777;
         text-align:center;
     }
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#capacite-max,
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-chambre,
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-epis,
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-cle,
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#icon-confort,
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#capacite-max,
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-chambre,
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-epis,
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-cle,
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#icon-confort{
+        background-color:#f0efeb;
+    }
     .nombre{
         display:block;
         margin-top:15px;
@@ -374,8 +430,17 @@ and (max-device-width : 736px) {
 
 
     /*** DESCRIPTION HEBERGEMENT ***/
+    div#content{
+        color:#333;
+        padding:0px;
+        margin-bottom:8px;
+    }
     div#sendTo-printThis{
         display:none;
+    }
+    #hebergement-carousel .carousel-inner .item img {
+        width: 305px;
+        margin: auto auto 20px;
     }
     div#accueil-bloc-gauche{
         clear:both;
@@ -396,14 +461,12 @@ and (max-device-width : 736px) {
         transition: all 0.5s ease-in-out;
     }
     div#description-heb{
-        width:330px;
         min-height:800px;
-        margin-left:-6px;
+        margin-left:0px;
         padding-top:5px;
         border-radius:12px;
     }
     div#description-info-sup{
-        width:337px;
         margin:auto;
         margin-bottom:10px;
         background-color:#f0efeb;
@@ -423,9 +486,9 @@ and (max-device-width : 736px) {
     }
     .etiquette-sup{
         float:right;
-        width:80px;
+        width:76px;
         height:56px;
-        margin-right:2px;
+        margin-right:0px;
         margin-top:4px;
         color:#777;
         text-align:center;
@@ -440,7 +503,6 @@ and (max-device-width : 736px) {
     div#descriptif-accordeon{
         height:670px;
         list-style:none !important;
-        width:338px;
         display:block;
         margin-bottom:10px;
     }
@@ -451,13 +513,15 @@ and (max-device-width : 736px) {
         background-position:center;
         margin-left:0px;
         margin-bottom:25px;
-        padding:15px;
+        padding:0px;
     }
     div#description-bloc-gauche,
     div#description-bloc-droite{
-        width:312px;
+        width:286px;
         clear:both;
         text-align:justify;
+        padding:10px;
+        background-color:#fafafa;
     }
     div#description-icone-confort,
     div#description-icone-activite,
@@ -505,9 +569,17 @@ and (max-device-width : 736px) {
         background: rgb(255,255,255);
     }
     div#description-photo-heb{
-        margin:auto;
+        margin-left:-18px;
         margin-bottom:10px;
         border-radius:0px;
+    }
+    div#description-photo-heb img{
+        width:306px;
+        height:auto;
+        margin-left:4px;
+    }
+    section#description-disponibilite{
+        display:none;
     }
     div#description-adresse-hebergement{
         margin-bottom:10px;
@@ -524,6 +596,10 @@ and (max-device-width : 736px) {
         margin-bottom:20px;
         font-size:1.em;
     }
+    div#description-heb div#description-photo-proprio{
+        clear:both;
+        display:block;
+    }
 }
 
 
@@ -536,9 +612,14 @@ and (max-device-width : 736px) {
 /*** Desktops and laptops ***/
 @media only screen and (min-width : 1100px){
     /*** INTERFACE ***/
-    div#wrapper{
+    div.wrapper-theme{
         width:1100px;
         margin:auto;
+        background-color:#fafafa;
+    }
+    div#portal-header {
+        position:relative;
+        z-index:1000;
         background-color:#fafafa;
     }
     /*** LOGO ***/
@@ -595,9 +676,30 @@ and (max-device-width : 736px) {
     div#trouver-homepage{
         float:left;
         height:65px;
+        width:150px;
         margin:5px 5px 5px 0px;
         vertical-align:middle;
         padding-left:10px;
+        background-color:#fff;
+    }
+    div#je-recherche #zone-gite-meuble label,
+    div#je-recherche #zone-chambre-hote label{
+        color:#888;
+        font-weight:normal;
+        font-size:12px;
+        padding-left:6px;
+    }
+    input#chambre-hote
+    input#gite-meuble{
+        width:32px;
+        height:32px;
+    }
+    div#je-recherche input#form-widgets-capacityMin,
+    div#je-recherche input[type="text"],
+    div#je-recherche .trouver{
+        height: 35px;
+        width: 200px;
+        padding-left:5px;
     }
 
 
@@ -721,6 +823,12 @@ and (max-device-width : 736px) {
     }
 
     /*** LISTING IDEE SEJOUR ***/
+    div#content-for-khevine{
+        padding:1em;
+        margin:8px 0px 0px 0px;
+        border:1px solid rgba(200,215,220,0.3);
+        border-radius:12px;
+    }
     div#idee-sejours-listing article.article-resume-idee-sejours{
         width:450px;
         min-height:280px;
@@ -740,6 +848,14 @@ and (max-device-width : 736px) {
     div#listing-result-block div#listing-result-batch{
         float:left;
         margin-left:10px;
+    }
+    div.hebergement-gite-listing-detail div#typetype{
+        background-color:rgba(217,255,178,0.3);
+        color:#265902;
+    }
+    div.hebergement-chambre-listing-detail div#typetype{
+        background-color:rgba(210,254,255,0.3);
+        color:#00336a;
     }
     div#listing-result-info-top,
     div#listing-result-info-bottom{
@@ -800,6 +916,20 @@ and (max-device-width : 736px) {
         text-align:center;
         font-weight:bold;
         color:#777;
+    }
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#capacite-max,
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-chambre,
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-epis,
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-cle,
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#icon-confort{
+        background-color:rgba(200,232,167,0.31);
+    }
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#capacite-max,
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-chambre,
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-epis,
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-cle,
+    div.hebergement-chambre-listing-detail div#info-bloc-inf div#icon-confort{
+        background-color:rgba(130,167,234,0.19);
     }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail,
@@ -864,11 +994,20 @@ and (max-device-width : 736px) {
 
 
     /*** DESCRIPTION HEBERGEMENT ***/
+    div#content{
+        color:#333;
+        padding:3px 0px 1px 0px;
+        margin-bottom:8px;
+    }
     /*** boutons printThis sendTo et back-button ***/
     div#sendTo-printThis{
         float:left;
         width:150px;
         margin-top:6px;
+    }
+    #hebergement-carousel .carousel-inner .item img {
+        height: 377px;
+        margin: auto auto 20px;
     }
     #reservation-chambre {
         width: 340px;
@@ -1011,6 +1150,9 @@ and (max-device-width : 736px) {
         margin:0px auto 10px;
         border-radius:18px;
     }
+    section#description-disponibilite{
+        display:block;
+    }
     div#description-adresse-hebergement{
         margin-bottom:10px;
         padding:6px;
@@ -1023,5 +1165,12 @@ and (max-device-width : 736px) {
     div#description-heb div#description-coordonnee div#nom-proprio{
         margin-bottom:20px;
         font-size:14pt;
+    }
+    div#description-heb div#description-photo-proprio{
+        float:right;
+        margin-top:60px;
+        margin-right:30px;
+        width:196px;
+        height:170px;
     }
 }

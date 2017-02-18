@@ -35,7 +35,6 @@
         </ul>
     </div><!--reseaux-sociaux-->
     <div id="reseaux-sociaux-mobile">
-        <h2 i18n:translate="rejoignez_nous">Rejoignez-nous</h2>
         <ul>
             <li>
                 <a href="https://www.facebook.com/GitesdeWallonie"

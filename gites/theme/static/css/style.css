@@ -225,7 +225,7 @@ background-color: #E7E9E8;
 
 /*** INTERFACE ***/
 /*
-#wrapper{
+.wrapper-theme{
 width:1100px;
 margin:auto;
 background-color:#fafafa;
@@ -827,14 +827,14 @@ opacity:0.3;
 
 
 /*** ESSENTIEL ***/
+/*
 div#content{
 color:#333;
-/*min-height:425px;*/
 padding:3px 0px 1px 0px;
 margin-bottom:8px;
 }
+*/
 
-div#content-for-khevine,
 div#zone-offres,
 section#inscription-newsletter{
 padding:1em;
@@ -999,7 +999,6 @@ width:100%;
 
 /*** CONNEXION MEMEBRE ***/
 section#connexion-membre{
-display:table;
 border-collapse:separate;
 border-spacing:6px;
 margin:auto;
@@ -1008,34 +1007,21 @@ margin-bottom:4px;
 
 div#mygdw,
 div#devenir-membre{
-display:table-cell;
-color:#666 !important;
+
+color:#fff !important;
 cursor:pointer;
 width:198px;
 height:33px;
 line-height:33px;
-margin-right:15px;
-margin-top:3px;
 text-align:center;
 border:1px solid rgba(155,155,155,0.5);
 border-radius:18px;
-margin-left:30px;
-margin-top:30px;
+margin:30px 20px;
 }
 
-div#mygdw{
-background: -moz-linear-gradient(top, rgba(242,255,239,0.3) 0%, rgba(186,255,170,0.3) 50%, rgba(161,255,140,0.3) 51%, rgba(146,255,124,0.3) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(242,255,239,0.3) 0%,rgba(186,255,170,0.3) 50%,rgba(161,255,140,0.3) 51%,rgba(146,255,124,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(242,255,239,0.3) 0%,rgba(186,255,170,0.3) 50%,rgba(161,255,140,0.3) 51%,rgba(146,255,124,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4df2ffef', endColorstr='#4d92ff7c',GradientType=0 );border:1px solid #a8c2ad;
-}
-
+div#mygdw,
 div#devenir-membre{
-background: -moz-linear-gradient(top, rgba(255,250,239,0.3) 0%, rgba(255,229,170,0.3) 50%, rgba(255,220,140,0.3) 51%, rgba(255,215,124,0.3) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,250,239,0.3) 0%,rgba(255,229,170,0.3) 50%,rgba(255,220,140,0.3) 51%,rgba(255,215,124,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,250,239,0.3) 0%,rgba(255,229,170,0.3) 50%,rgba(255,220,140,0.3) 51%,rgba(255,215,124,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dfffaef', endColorstr='#4dffd77c',GradientType=0 );
-}
+background-color:#c9252b;}
 
 
 /*** FOOTER ***/
@@ -1567,6 +1553,7 @@ font-size:2em;
 }
 */
 
+/*
 div.hebergement-gite-listing-detail div#typetype{
 background-color:rgba(217,255,178,0.3);
 color:#265902;
@@ -1575,6 +1562,7 @@ div.hebergement-chambre-listing-detail div#typetype{
 background-color:rgba(210,254,255,0.3);
 color:#00336a;
 }
+*/
 /*
 div#typetype .texte-vertical{
 position:relative;
@@ -1832,6 +1820,7 @@ width:500px;
 margin-top:19px;
 }
 */
+/*
 div.hebergement-gite-listing-detail div#info-bloc-inf div#capacite-max,
 div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-chambre,
 div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-epis,
@@ -1847,6 +1836,7 @@ div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-cle,
 div.hebergement-chambre-listing-detail div#info-bloc-inf div#icon-confort{
 background-color:rgba(130,167,234,0.19);
 }
+*/
 /*
 div#info-bloc-inf div#capacite-max,
 div#info-bloc-inf div#nbre-chambre,
@@ -2051,23 +2041,18 @@ margin: auto;
 position:relative;
 }
 
+/*
 #hebergement-carousel .carousel-inner .item img {
 height: 377px;
 margin: auto auto 20px;
-/*border: 2px solid #696969;*/
-/*border-radius: 15px;*/
 }
+*/
 
 #hebergement-carousel a.carousel-control {
 border: none !important;
 background: none;
 margin-top: 0px;
 }
-
-#hebergement-carousel .video {
-text-align: center;
-}
-
 
 /*** CONTENU ACCORDEON ***/
 /*#accordeon-spin{
@@ -2141,18 +2126,17 @@ cursor:default;
 #descriptif-accordeon .slide_opened .slide_handle div{
 background-position:0 -7px;
 }
-
+/*
 #descriptif-accordeon .slide_content{
 background:#f0efeb;
 background-image:url(background_body.jpg);
 background-repeat:no-repeat;
 background-position:center;
-/*position:absolute;*/
 margin-left:28px;
 margin-bottom:25px;
 padding:15px;
-/*border-bottom:1px solid #ddd;*/
 }
+*/
 
 #descriptif-accordeon h2{
 font-weight:normal;
@@ -2525,7 +2509,7 @@ font-size:1em;
 }
 */
 
-
+/*
 div#description-heb div#description-photo-proprio{
 float:right;
 margin-top:60px;
@@ -2533,6 +2517,7 @@ margin-right:30px;
 width:196px;
 height:170px;
 }
+*/
 
 div#description-heb div#description-coordonnee div#nom-proprio,
 div#description-heb div#description-coordonnee div#langue-proprio,
