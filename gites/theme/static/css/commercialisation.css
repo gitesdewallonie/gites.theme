@@ -16,7 +16,6 @@ transition:all 0.5s ease-in-out;
 
 #reservation-chambre a:link{
 display:inline-block;
-width:400px;
 height:50px;
 font-size:1.3em;
 font-weight:bold;

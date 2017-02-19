@@ -7,6 +7,14 @@ mars 2013
 rouge logo
 rgb(201,37,43)
 #c9252b
+
+vert logo gites
+rgb(21,183,143)
+#15b78f
+
+bleu logo chambre
+rgb(17,158,218)
+#119eda
 ****/
 
 /*** SKIN STYLES ***/
@@ -1393,7 +1401,6 @@ width: 100%;
 }
 
 div#listing-result-gite-theme,
-div#listing-result-block,
 div.filter_type{
 background-color:#e5d8e8;
 border:1px solid #ddd;
@@ -1485,7 +1492,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1afb83fa', e
 }
 
 div#listing-result-block{
-background:#f0efeb; #/* Old browsers */
+background:#f0efeb;
 }
 
 div#listing-result-gite-theme label{
@@ -1787,24 +1794,24 @@ margin-left:10px;
 
 div#info-bloc-sup div#nom-hebergement a.gite-nom:link,
 div#info-bloc-sup div#nom-hebergement a.gite-nom:visited{
-color:#24590c !important;
+color:#15b78f !important;
 text-decoration: none;
 border-bottom: none;
 }
 
 div#info-bloc-sup div#nom-hebergement a.gite-nom:hover{
-color:#4bd453 !important;
+color:#007e5b !important;
 }
 
 div#info-bloc-sup div#nom-hebergement a.chambre-nom:link,
 div#info-bloc-sup div#nom-hebergement a.chambre-nom:visited{
-color:#00326a !important;
+color:#119eda !important;
 text-decoration: none;
 border-bottom: none;
 }
 
 div#info-bloc-sup div#nom-hebergement a.chambre-nom:hover{
-color:#5eadf8 !important;
+color:#00558b !important;
 }
 /*
 div#info-bloc-sup div#type{
@@ -2226,7 +2233,7 @@ div#description-photo-heb img{
 cursor: pointer;
 }
 
-
+/*
 div#dernieres-minute-listing,
 div#promotion-listing,
 div#nouveaux-hebergement-listing,
@@ -2235,8 +2242,9 @@ div#tarification-chambre,
 div#tarification-table-hote,
 div#description-coordonnee{
 border-radius:18px;
-background: rgb(255,255,255); /* Old browsers */
+background: rgb(255,255,255);
 }
+*/
 
 div#description-icone-literie .literie{
 margin-right:12px;
