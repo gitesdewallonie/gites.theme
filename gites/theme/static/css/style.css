@@ -28,39 +28,56 @@ mars 2013
 }
 
 
+/****
+rouge logo
+rgb(201,37,43)
+#c9252b
+
+vert logo gites
+rgb(21,183,143)
+#15b78f
+
+bleu logo chambre
+rgb(17,158,218)
+#119eda
+****/
+
 
 /*** SKIN STYLES ***/
 @font-face {
 font-family:'PT Sans Narrow';
 src:url('../font/PTSansNarrow.ttf') format('truetype');
-font-weight:normal;
-font-style:normal;
 /*
 src:url('../font/PTSansCaption.ttf') format('truetype'),
 url('../font/PTSansItalic.ttf') format('truetype'),
 url('../font/PTSansNarrow.ttf') format('truetype'),
 url('../font/PTSansNarrowBold.ttf') format('truetype');
 */
+font-weight:normal;
+font-style:normal;
 }
 
 @font-face {
-font-family:'Rodeo Girl';
-src: url('../font/rodeo_girl_bv-webfont.eot');
-src: url('../font/rodeo_girl_bv-webfont.eot?#iefix') format('embedded-opentype'),
-     url('../font/rodeo_girl_bv-webfont.woff') format('woff'),
-     url('../font/rodeo_girl_bv-webfont.ttf') format('truetype'),
-     url('../font/rodeo_girl_bv-webfont.svg#rodeo_girl_bvregular') format('svg');
-font-weight: normal;
-font-style: normal;
+  font-family: 'FontAwesome';
+  src: url('../font/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../font/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+       url('../font/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+       url('../font/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+       url('../font/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+       url('../font/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
+
 
 
 
 body{
-font-family:arial, helvetica, verdana, sans-serif;
+font-family:Verdana, Geneva, sans-serif;
 font-size:12pt;
 color:#333;
-background:#191919;
+background:#fafafa;
 padding:0;
 margin:0;
 }
@@ -73,9 +90,6 @@ color:#FFF;
 div#description-calendrier{
 /*display:none;*/
 }
-
-
-
 
 
 .break-float{
@@ -95,6 +109,22 @@ color:#333;
 text-shadow:1px 1px 1px rgba(255,255,255,0.8);
 font-size:0.8em;
 font-style:italic;
+}
+
+
+h1, h2 {
+letter-spacing:normal;
+font-family:Verdana, Geneva, Arial, sans-serif;
+font-weight:normal;
+line-height:1.5em;
+}
+
+h1{
+color:#c9252b;
+}
+
+h2{
+color:#888;
 }
 
 a:hover{
@@ -139,8 +169,8 @@ color:#fff !important;
 #languageselector {
 float:right;
 position:relative;
-z-index:3;          /* personaltools should be above #portal-header (with z-index:2) */
-top:0;
+z-index:10000;          /* personaltools should be above #portal-header (with z-index:2) */
+top:0px;
 right:0;
 padding:0.25em 0.5em;
 font-size:80%;
@@ -162,7 +192,6 @@ div#portal-header dl#languageselector.actionMenu dt.actionMenuHeader a:hover,
 div#portal-header div#portal-personaltools-wrapper dl#portal-personaltools.actionMenu dt.actionMenuHeader a:hover{
 color:#fff !important;
 }
-
 
 #languageselector dt {
 font-weight:normal;
@@ -227,19 +256,16 @@ margin-bottom:0px;
 background-color: #E7E9E8;
 }
 
-
-/*** INTERFACE ***/
-#wrapper{
-width:1100px;
-margin:auto;
-background-color:#303030;
+/*** HEADER ***/
+div#header-bg-color,
+div#header{
+background-color:#f0efeb;
 }
 
 
-/*** HEADER ***/
-#header{
-height:200px;
-box-shadow:0px 5px 8px #000;
+#header-deco{
+width:100%;
+background-color:#ccc;
 }
 
 
@@ -247,351 +273,44 @@ box-shadow:0px 5px 8px #000;
 #top-header{
 height:24px;
 padding-top:2px;
-background-color:#000;
-/*background-image:url(../images/bg-menu-haut.png);*/
 }
 
-#titre-site{
-float:left;
-margin-left:10px;
-font-weight:bold;
-color:#fff;
-}
-
-#titre-site .home-link{
-font-size:80%;
-color: #FF9700;
-}
-
-#titre-site .home-link:hover{
-color: #FFFFFF !important;
-}
-
-/*** LISTE ICONES ***/
-#icone-reseaux-sociaux{
-float:left;
-margin-left:70px;
-height:20px;
-width:230px;
-}
-
-#icone-reseaux-sociaux ul{
-display:inline;
-list-style:none;
-padding:0;
-}
-
-#icone-reseaux-sociaux ul li{
-display:inline-block;
-height:20px;
-width:23px;
-}
-
-#icone-reseaux-sociaux ul li a{
-display:block;
-width:23px;
-height:20px;
-color:#ddd !important;
-}
-
-#android{
-background-image:url(../images/icon_top_header.png);
-}
-
-#apple{
-background:url(../images/icon_top_header.png);
-background-position:-22px 0px;
-}
-
-#iconyoutube{
-background:url(../images/icon_top_header.png);
-background-position:-96px 0;
-}
-
-#google{
-background:url(../images/icon_top_header.png);
-background-position:-120px 0;
-}
-
-#twitter{
-background:url(../images/icon_top_header.png);
-background-position:-144px 0;
-}
-
-#facebook{
-background:url(../images/icon_top_header.png);
-background-position:-168px 0;
-}
-
-#Pinterest{
-background:url(../images/icon_top_header.png);
-background-position:-190px 0;
-}
-
-#mail{
-background:url(../images/icon_top_header.png);
-background-position:-232px 0;
-/*width:20px !important;
-margin-left:3px;*/
-}
 
 /*** MAIN-HEADER***/
 #main-header{
-height:164px;
-padding-top:6px;
-background:url(../images/bg-header-orange.png);
+height:67px;
+position:relative;
+top:-3px;
+z-index:10;
 }
 
-body.gite #main-header{
-background:url(../images/bg-header-vert.png);
-}
-
-body.chambre #main-header{
-background:url(../images/bg-header-bleu.png);
-}
-
-
-/*** LOGO ***/
-#logo{
-float:left;
-background:url(../images/logo.png);
-background-repeat:no-repeat;
-background-position:center;
-background-color:rgba(255,255,255,0.75);
-border:1px solid rgb(255,255,255);
-border-radius:8px;
-margin-left:4px;
-margin-right:4px;
-margin-top:0px;
-height:155px;
+div#logo,
+div#header-derniere-minute,
+div#reserver-en-ligne{
 width:150px;
 }
 
-#logo a{
-height:153px;
-width:148px;
-display:block;
-}
-
-
-/*** JE CHERCHE ***/
-div#je-recherche{
-position:relative;
-float:left;
-padding:10px;
-padding-top:5px;
-background:rgba(255,255,255,0.1);
-margin-right:15px;
-border:1px solid #888;
-border-radius:12px;
-height:139px;
-width:402px;
-box-shadow:3px 3px 5px #000;
-}
-
-div#je-recherche h2,
-div#je-connais h2,
-div#je-decouvre h2{
-float:left;
-margin-top:-5px;
-font-family:"PT Sans Narrow";
-font-size:1.2em;
-font-weight:bold;
-color:#000;
-text-shadow:1px 1px 2px rgba(255,255,255,0.5);
-margin-bottom:1px;
-}
-
-div#recherche-avancee{
-margin-top:-30px;
-}
-
-div#recherche-cartographique{
-margin-top:-10px;
-}
-
-div#recherche-avancee,
-div#recherche-cartographique {
+/*** HEADER-LIEN : derminiere minute - reserver - shop ***/
+div#header-lien{
+display:table;
 float:right;
-border:1px solid rgba(217, 168, 105, 0.1); /*si on enlève border, ça flotte mal*/
-width:200px;
-text-align:right;
+margin-right:80px;
 }
 
-div#recherche-avancee h3 a,
-div#recherche-cartographique h3 a {
-font-family:"PT Sans Narrow";
-font-size:0.8em;
-font-weight:normal;
-color:#000;
-text-shadow:1px 1px 2px rgba(255,255,255,0.5);
-padding-right:10px;
-background-image:url(../images/icon_fleche.png);
-background-repeat:no-repeat;
-background-position:right center;
+div#header-derniere-minute,
+div#reserver-en-ligne,
+div#header-shop{
+display:table-cell;
+vertical-align:bottom;
+height:63px;
+border-left:5px solid rgb(201,37,43);
+padding-left:10px;
+padding-bottom:5px;
+font-size:1.2em;
 }
 
-div#recherche-avancee h3 a:hover,
-div#recherche-cartographique h3 a:hover {
-color:#205C90;
-text-shadow:1px 1px 2px rgba(255,255,255,0.5);
-}
-
-div#form-je-cherche{
-margin-top:-22px;
-}
-
-div#je-recherche #zone-gite-meuble,
-div#je-recherche #zone-chambre-hote{
-font-family:'PT Sans Narrow';
-margin-left:20px;
-width:270px;
-border:1px solid rgba(217, 168, 105, 0.1);
-}
-
-div#je-recherche #zone-gite-meuble label,
-div#je-recherche #zone-chambre-hote label{
-margin-left:5px;
-width:270px;
-}
-
-div#je-recherche #date-start,
-div#je-recherche #date-end,
-div#je-recherche #nbre-personne{
-float:left;
-height:27px;
-margin:5px 5px 5px 0px;
-}
-
-.ui-datepicker-trigger{
-margin-left:3px;
-}
-
-#je-recherche img{
-margin-bottom:-3px;
-}
-
-#je-recherche #nbre-personne{
-width:80px;
-}
-
-#je-recherche #nbre-personne img {
-margin-left: 3px;
-}
-
-#je-recherche #proximite input[type=text]{
-width:250px;
-}
-
-#submit-je-recherche{
-background-color:#000;
-width:200px;
-}
-
-
-.ui-widget-content{
-background: #eeeeee;
-}
-
-#je-connais{
-float:left;
-background:rgba(255,255,255,0.1);
-margin-right:15px;
-border-radius:12px;
-border:1px solid #888;
-box-shadow:3px 3px 5px #000;
-height:139px;
-width:217px;
-padding:10px;
-padding-top:5px;
-}
-
-#je-connais #nom-ou-reference{
-margin-top:15px;
-}
-
-#je-recherche .trouver,
-#je-connais .trouver{
-border:none;
-width:149px;
-height:32px;
-cursor: pointer;
-background:url(../images/trouver.png);
-font-size:1.1em;
-text-shadow:1px 1px 1px rgba(250,250,250,0.7);
-padding-right:32px;
-}
-
-#je-recherche .trouver{
-position:relative;
-top:-21px;
-left:259px;
-}
-
-#je-connais .trouver {
-margin-top:27px;
-margin-left:75px;
-}
-
-#je-connais label{
-display:block;
-}
-#je-connais #nom-ou-reference {
-font-family:"PT Sans Narrow";
-}
-
-#info{
-margin-left:130px;
-margin-bottom:-12px;
-}
-
-#jcn{
-margin-left:7px;
-margin-bottom:28px;
-}
-
-#je-decouvre{
-float:left;
-background:rgba(255,255,255,0.1);
-box-shadow:3px 3px 5px #000;
-border-radius:12px;
-border:1px solid #888;
-height:139px;
-width:217px;
-padding:10px;
-padding-top:5px;
-}
-
-#gitemeuble,
-#maisonhote{
-background-image:url(../images/btn_je_decouvre.png);
-background-repeat:no-repeat;
-width:196px;
-height:52px;
-padding-top:5px;
-padding-left:3px;
-margin-left:10px;
-}
-
-#giteetmeuble{
-background-position:left top;
-}
-
-#maisonhote{
-background-position:left -59px;
-margin-top:5px;
-}
-
-#gitemeuble a,
-#maisonhote a{
-display:block;
-width:195px;
-height:52px;
-margin-left:5px;
-font-weight:bold;
-font-size:1.1em;
-color:#fff !important;
-text-shadow:1px 1px 1px rgba(50,50,50,0.5);
+div#header-shop{
+text-align:center;
 }
 
 /*** PORTAL-BREADCRUMBS ***/
@@ -609,10 +328,22 @@ color:#f79a05 !important;
 }
 
 
-/*** ZONE PRODUIT PACKAGE ***/
-/*** CAROUSEL ***/
+/*** ZONE PRODUIT PACKAGE CAROUSEL ***/
+div#carrousssel-produit-package{
+/*margin-bottom:-65px;*/
+}
+
+div#zone-produit-package{
+position:relative;
+top:-61px;
+/*height:300px;*/
+}
+
+div#zone-photo{
+}
+
 #package-carousel {
-height: 333px;
+/*height: 333px;*/
 margin-bottom: 0px;
 }
 
@@ -625,9 +356,12 @@ position:relative;
 #package-carousel .carousel-inner .item img {
 height:333px;
 width:100%;
+height:100%;
 }
 
+
 #package-carousel .carousel-caption {
+display:none;
 bottom:0px;
 }
 
@@ -636,16 +370,115 @@ bottom:0px;
 height: 401px;
 }
 
-#zone-produit-pacakage{
+
+/*** MOTEUR DE RECHERHCE ***/
+/*** JE CHERCHE ***/
+div#select-type-hebergement input,
+div#je-recherche #date-start input,
+div#je-recherche #date-end input,
+div#je-recherche #nbre-personne input,
+div#je-recherche #proximite input,
+div#trouver-homepage input{
+border:0px;
 }
 
-#zone-photo{
+div#je-recherche #form-widgets-fromDate,
+div#je-recherche #form-widgets-toDate,
+div#je-recherche #form-widgets-capacityMin,
+div#je-recherche #form-widgets-nearTo{
+position:relative;
+background-color:rgba(255,255,255,0);
 }
+
+/*** class pour les polices glyphes awesome ***/
+.fa {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+color:#888;
+}
+
+.fa-calendar:before {
+content: "\f073";
+}
+
+.fa-user-o:before {
+content: "\f2c0";
+}
+.fa-map-o:before {
+content: "\f278";
+}
+
+
+::-webkit-input-placeholder {
+color:#666;
+font-size:14px;
+}
+::-moz-placeholder{
+color:#666;
+font-size:14px;
+}
+:-ms-input-placeholder{
+color:#666;
+font-size:14px;
+}
+input:-moz-placeholder{
+color:#666;
+font-size:14px;
+}
+
+.ui-datepicker-trigger{
+display:none;
+}
+
+#je-recherche img{
+margin-bottom:-3px;
+}
+
+#je-recherche #nbre-personne img {
+margin-left: 3px;
+}
+
+#submit-je-recherche{
+width:200px;
+}
+
+.ui-widget-content{
+background: #eeeeee;
+}
+
+/*
+#je-recherche .trouver{
+border:none;
+border-radius:0px;
+background-color:#fff;
+height:35px;
+cursor: pointer;
+font-size:1.1em;
+padding:2px 32px;
+}
+*/
+
+
+#info{
+margin-left:130px;
+margin-bottom:-12px;
+}
+
+#jcn{
+margin-left:7px;
+margin-bottom:28px;
+}
+
+
+
 
 #zone-packperm-membre{
 height:44px;
 width:100%;
-background-image:url(../images/quadrillage.png);
 background-color:#fff;
 }
 
@@ -659,86 +492,12 @@ line-height:33px;
 float:left;
 width:400px;
 margin-top:8px;
+background-color:#ccc;
 /*display:none;*/
-}
-
-#bouton-devenir-membre{
-float:right;
-width:198px;
-height:33px;
-line-height:33px;
-margin-right:15px;
-margin-top:3px;
-border:1px solid #9d7d11;
-border-radius:18px;
-background: rgb(237,207,95); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(237,207,95,1) 0%, rgba(232,194,57,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,207,95,1)), color-stop(100%,rgba(232,194,57,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(237,207,95,1) 0%,rgba(232,194,57,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edcf5f', endColorstr='#e8c239',GradientType=0 ); /* IE6-9 */
-}
-
-#bouton-devenir-membre a{
-display:block;
-text-align:center;
-color:#333;
-text-shadow:1px 1px 1px rgba(250,250,250,0.8);
-font-family:"PT Sans Narrow";
-}
-
-#produit-mice,
-#produit-city-trip,
-#produit-insolite{
-width:80px;
-border-right:2px solid #888;
-padding-right:20px;
-margin-left:25px;
-margin-top:8px;
-}
-#produit-mice a{
-color:#0B0 !important;
-}
-#produit-city-trip a{
-color:#406cd3 !important;
-}
-#produit-insolite a{
-color:#ff00bd !important;
-border-right:none;
 }
 
 
 /*** OFFRES PACKAGES ***/
-div#zone-offres{
-position:relative;
-height:435px;
-background:url(../images/bgblancligne.png);
-background-position:0px 53px;
-box-shadow:0px 5px 8px #000;
-z-index:10;
-}
-
-div#zone-offres h2{
-height:42px;
-padding-top:10px;
-background-color:#f4dbba;
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(247,219,183,1) 97%, rgba(212,144,69,1) 99%, rgba(241,205,156,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(97%,rgba(247,219,183,1)), color-stop(99%,rgba(212,144,69,1)), color-stop(100%,rgba(241,205,156,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,219,183,1) 97%,rgba(212,144,69,1) 99%,rgba(241,205,156,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,219,183,1) 97%,rgba(212,144,69,1) 99%,rgba(241,205,156,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,219,183,1) 97%,rgba(212,144,69,1) 99%,rgba(241,205,156,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(247,219,183,1) 97%,rgba(212,144,69,1) 99%,rgba(241,205,156,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1cd9c',GradientType=0 ); /* IE6-9 */
-border-bottom:1px solid #f1cd9c;
-font-family:'PT Sans Narrow'!important;
-font-weight:none;
-text-align:center;
-text-shadow:1px 1px 1px rgba(250,250,250,0.6);
-}
-
 div#zone-offres h3 a{
 color:#000;
 }
@@ -746,37 +505,18 @@ div#zone-offres h3 a:hover{
 color:#205C90;
 }
 
-
-div#zone-offres div#zone-idee-sejour,
-div#zone-offres div#zone-derniere-minute,
-div#zone-offres div#zone-allo-chambre-hote,
-div#zone-offres div#zone-la-boutique{
-float:left;
-width:235px;
-height:332px;
-background-color:transparent;
-background:url(../images/bg-etiquette.png);
-background-position:2px 0px;
-margin-left:6px;
-margin-top:15px;
-padding:10px 15px 15px 15px;
-box-shadow:3px 3px 7px #444;
-border-radius:4px;
-color:#666;
-font-size:0.8em;
+#zone-idee-sejour-contenu{
+height:315px;
 }
 
 div#zone-offres .offre-icon {
 height: 156px;
 width: 240px;
-box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.5);
 left: -3px;
 margin-top: 3px;
 margin-bottom: 6px;
 position: relative;
 }
-
-
 
 div#titre-promotion{
 margin-bottom:2px;
@@ -785,8 +525,6 @@ font-size:1.1em;
 }
 
 div#promotion-derniere-minute{
-position:relative;
-top:2px;
 height:18px;
 margin:10px 0px;
 padding-left:10px;
@@ -808,7 +546,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 border-radius:20px 0px 20px 0px !important;
 box-shadow:1px 1px 1px rgba(255,255,255,1),
            -1px -1px 1px rgba(135,0,0,0.3);
-
 }
 
 div#info-derniere-minute{
@@ -820,15 +557,14 @@ float:left;
 width:72px;
 height:35px;
 padding-top:3px;
-margin-right:4px;
+margin-right:2px;
 margin-top:7px;
 background-color:#fff6bb;
+border:1px solid #c4bd85;
 border-radius:8px;
 color:#333;
 text-align:center;
 font-weight:bold;
-box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);
-
 }
 
 p.red {
@@ -846,8 +582,6 @@ color:#4f0000;
 }
 
 .plus-info{
-position:absolute;
-bottom:18px;
 width:230px;
 border-top:1px dashed #bbb;
 text-align:right;
@@ -858,6 +592,19 @@ text-decoration:none;
 color:#ccc1b3;
 font-size:8pt;
 color:#a66723 !important;
+}
+
+.info-chambre{
+position:relative;
+bottom:-52px;
+}
+.info-derniere-minute{
+position:relative;
+bottom:-30px;
+}
+.info-idee-sejour{
+position:relative;
+px;
 }
 
 .idee{
@@ -890,60 +637,45 @@ opacity:0.3;
 
 
 /*** ESSENTIEL ***/
-div#content{
-color:#333;
-min-height:425px;
-padding:3px 10px 1px 10px;
-background:url(../images/bgessentiel.jpg);
-background-repeat:repeat;
-margin:0px;
-}
-
-div#content-for-khevine{
+div#zone-offres,
+section#inscription-newsletter{
 padding:1em;
-margin:8px 0px 20px 0px;
+margin:8px 0px 0px 0px;
 border:1px solid rgba(200,215,220,0.3);
 border-radius:12px;
-box-shadow:2px 2px 8px rgba(100,100,100,0.5);
-background: -moz-linear-gradient(top,  rgba(242,245,246,0.3) 0%, rgba(227,234,237,0.3) 37%, rgba(200,215,220,0.3) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,0.3)), color-stop(37%,rgba(227,234,237,0.3)), color-stop(100%,rgba(200,215,220,0.3))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(242,245,246,0.3) 0%,rgba(227,234,237,0.3) 37%,rgba(200,215,220,0.3) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4df2f5f6', endColorstr='#4dc8d7dc',GradientType=0 ); /* IE6-9 */
+}
+
+div#content-for-khevine h1{
 }
 
 div#content.ploneroot{
-padding:18px 1em;
+padding:18px 0;
 }
 
 div#content.ploneroot h1{
-font-family:'Rodeo Girl', Helvetica, Arial, sans-serif;
 font-size:5em;
-font-weight:normal;
-color:rgb(50, 50, 50);
-text-shadow:2px 2px 2px rgba(255,255,255,0.5);
 margin-left:50px;
-background:url(../images/essentiel_underline.png) no-repeat 60px 70px;
 }
 
 
 /*** ZONE-VIDEO ***/
+/*
 div#zone-video{
 min-height:540px;
 }
-
+*/
 
 /*** ZONE TROMBINO FACEBOOK ***/
+/*
 div#trombino-facebook{
 height: 284px;
 width:100%;
 margin:0px auto;
 background-image:url(../images/bg_zone_facebook.jpg);
 }
-
+*/
 /*** FACEBOOK ***/
+/*
 #trombino-facebook{
 /*width: 425px;*/
 }
@@ -954,7 +686,7 @@ div#trombino-facebook #news-letter-link{
 float:left;
 }
 */
-
+/*
 div#trombino-facebook #facebook-block{
 float:right;
 }
@@ -967,6 +699,8 @@ margin:8px 40px 0px 0px;
 div#trombino-facebook #news-letter-link{
 margin-top:5px;
 }
+*/
+
 
 
 
@@ -980,14 +714,6 @@ margin-top:30px;
 float:right;
 width:280px;
 }
-
-/*** positionnement des boutons printThis sendTo et back-button ***/
-div#sendTo-printThis{
-float:left;
-width:150px;
-margin-top:6px;
-}
-
 
 div#print-this-button,
 div#send-to-button,
@@ -1042,30 +768,72 @@ border-bottom:none !important;
 }
 
 
-/*** FOOTER ***/
-div#footer{
-background:url(../images/degrade-gris.jpg);
-height:414px;
-padding-left:25px;
-color:#ddd;
+/*** INSCRIPTION NEWSLETTER ***/
+div#newsletter{
+background-color:#f0efeb;
+/*border:1px solid #9cc0bf;*/
 }
 
+div#mc_embed_signup {
+background:#f0efeb;
+}
+
+
+section#inscription-newsletter h2{
+height:20px;
+padding-top:10px;
+font-family:'PT Sans Narrow'!important;
+color:rgb(201,37,43);
+font-weight:none;
+text-align:left;
+width:100%;
+}
+
+/*** CONNEXION MEMEBRE ***/
+section#connexion-membre{
+border-collapse:separate;
+border-spacing:6px;
+margin:auto;
+margin-bottom:4px;
+}
+/*
+div#mygdw,
+div#devenir-membre{
+color:#fff !important;
+cursor:pointer;
+width:198px;
+height:33px;
+line-height:33px;
+text-align:center;
+border:1px solid rgba(155,155,155,0.5);
+border-radius:18px;
+margin:30px 20px;
+background-color:#c9252b;
+}
+*/
+div#mygdw a,
+div#devenir-membre a{
+display:inline-block;
+width:198px;
+height:33px;
+border-radius:18px;
+color:#fff !important;
+}
+div#mygdw{
+float:left;
+margin-left:200px;
+}
+div#devenir-membre{
+float:right;
+margin-right:200px;
+}
+
+
+
+
+/*** FOOTER ***/
 div#footer li{
 display:block;
-}
-
-div#footer div#reseaux-sociaux,
-div#footer div#contact,
-div#footer div#destination-wallonie,
-div#footer div#association,
-div#footer div#autres-sites{
-float:left;
-height:312px;
-width:170px;
-margin-right:25px;
-margin-top:50px;
-padding-left:15px;
-font-size:9pt;
 }
 
 div#footer div#reseaux-sociaux h2,
@@ -1078,38 +846,6 @@ margin-top:-25px;
 font-weight:normal;
 font-size:11pt;
 }
-div#footer div#reseaux-sociaux h2{
-color:rgba(0,221,230,1);
-}
-div#footer div#reseaux-sociaux ul.contact-ul li a{
-display:block;
-height:35px;
-padding-left:52px;
-padding-top:15px;
-color:#ddd !important;
-font-size:0.8em;
-background-repeat:no-repeat;
-background-position:left top;
-margin:10px 0px;
-}
-
-div#footer div#reseaux-sociaux ul.contact-ul li a:hover{
-color:#fff !important;
-}
-
-div#footer div#reseaux-sociaux ul.contact-ul li #btn-facebook{
-background-image:url(../images/facebook.png);
-}
-div#footer div#reseaux-sociaux ul.contact-ul li #btn-twitter{
-background-image:url(../images/twitter.png);
-}
-div#footer div#reseaux-sociaux ul.contact-ul li #btn-google{
-background-image:url(../images/google.png);
-}
-div#footer div#reseaux-sociaux ul.contact-ul li #btn-youtube{
-background-image:url(../images/youtube.png);
-}
-
 
 div#footer div#contact h2{
 color:#fe606b;
@@ -1174,14 +910,6 @@ color:#1fda60 !important;
 
 
 /*** COLOPHON ***/
-#colophon{
-height:310px;
-background:url(../images/bgfooter.jpg);
-background-repeat:no-repeat;
-padding-top:10px;
-text-align:center;
-}
-
 #coordonnee{
 font-size:0.8em;
 color:#ddd;
@@ -1191,43 +919,6 @@ border-bottom:1px dashed #333;
 
 
 /*** PARTENAIRRE ***/
-#partenaire{
-padding-left:12%;;
-}
-
-#partenaire img{
-display:block;
-margin:auto;
-margin-bottom:2px;
-}
-
-#eurogite,
-#feader,
-#feder,
-#wallonie-tourisme,
-#wallonie-bruxelles-tourisme{
-float:left;
-width:150px;
-margin:5px 20px 0px 0px;
-text-align:center;
-font-size:9px;
-font-family:verdana,sans-serif;
-color:#d2d2d2;
-}
-
-#eurogite{
-}
-
-#feder{
-}
-
-#wallonie-tourisme{
-}
-
-#wallonie-bruxelle-tourisme{
-}
-
-
 
 /*** MADE BY PLONE AFFINITIC ***/
 #madeby{
@@ -1239,7 +930,7 @@ border-top:1px dashed #333;
 
 #affinitic,
 #plone{
-width:220px;
+width:120px;
 font-size:9px;
 font-family:verdana,sans-serif;
 color:#666;
@@ -1268,9 +959,10 @@ color:#ddd;
 
 
 /*** LISTING PACKAGES ***/
-body.template-idee_sejour_root #plone-contentmenu-display {
+body.templat:e-idee_sejour_root #plone-contentmenu-display {
 display: none;
 }
+
 
 article.article-resume-idee-sejours h2 {
 font-family:'PT Sans Narrow'!important;
@@ -1280,24 +972,15 @@ border-bottom:1px solid #ddd;
 }
 
 
-div#idee-sejours-listing article.article-resume-idee-sejours,
+/*div#idee-sejours-listing article.article-resume-idee-sejours,*/
 div#boutique-listing article.article-resume-boutique {
 width:450px;
 min-height:280px;
 margin:20px 15px;
 padding:10px;
-border: 2px solid #ddd;
-box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
-border-radius:18px;
+border: 1px solid #ddd;
 text-shadow:1px 1px 1px rgba(250,250,250,0.8);
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+background:#f0efeb;
 }
 
 div#idee-sejours-listing article.article-resume-idee-sejours .logo-package,
@@ -1417,12 +1100,11 @@ width: 100%;
 }
 
 div#listing-result-gite-theme,
-div#listing-result-block,
 div.filter_type{
 background-color:#e5d8e8;
-border:1px solid #999;
-border-radius:12px;
-box-shadow:2px 2px 4px rgba(50,50,50,0.5);
+border:1px solid #ddd;
+/*border-radius:12px;*/
+/*box-shadow:2px 2px 4px rgba(50,50,50,0.5);*/
 min-height:300px;
 min-width:200px;
 padding:10px;
@@ -1461,12 +1143,12 @@ div#listing-result-advanced-gite-theme {
 width:222px;
 float:left;
 }
-
+/*
 div#heb-listing div#listing-result.list-container div#listing-result-block{
 float:right;
 width:-moz-available;
 }
-
+*/
 .advanced-search div#heb-listing div#listing-result.list-container div#listing-result-block {
 width:800px;
 }
@@ -1486,21 +1168,6 @@ margin:auto;
 margin-bottom:12px;
 }
 
-div#listing-result-info{
-border:2px solid rgba(250,250,250,0.3);
-height:40px;
-border-radius:18px;
-padding:10px;
-background: rgb(215,212,206); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(215,212,206,1) 0%, rgba(242,242,242,1) 83%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(215,212,206,1)), color-stop(83%,rgba(242,242,242,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(215,212,206,1) 0%,rgba(242,242,242,1) 83%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d4ce', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
-}
-
 div#listing-result-gite-theme{
 width:180px;
 word-wrap:break-word;
@@ -1514,23 +1181,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1afb83fa', e
 }
 
 div#listing-result-block{
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+background:#f0efeb;
 }
 
 div#listing-result-gite-theme label{
 font-weight:normal;
-}
-
-div#listing-result-block div#listing-result-batch{
-float:left;
-margin-left:10px;
 }
 
 div#listing-result-block div#sort{
@@ -1542,338 +1197,32 @@ div#listing-result-block div#sort label{
 display:block;
 }
 
-div#listing-result-count{
-position:relative;
-top:-10px;
-width:550px;
-}
-
-div.hebergement-gite-listing-detail,
-div.hebergement-chambre-listing-detail,
-div#typetype{
-height:135px;
-}
-
-div.hebergement-gite-listing-detail,
-div.hebergement-chambre-listing-detail{
-position:relative;
-z-index:20;
-width:800px;
-height:135px;
-margin:10px auto;
-border:1px solid rgba(50,50,50,0.1);
-border-radius:0px 0px 0px 12px;
-box-shadow:2px 5px 8px rgba(50,50,50,0.3);
-}
-
 div.hebergement-gite-listing-detail{
-background-image:url(../images/bg_listing_gite.png);
-background-color:rgba(217,255,178,0.3);
 }
 
 div.hebergement-chambre-listing-detail{
-background-image:url(../images/bg_listing_chambre.png);
-background-color:rgba(210,254,255,0.3);
-}
-
-div#typetype{
-float:left;
-width:100px;
-text-shadow:-1px 1px 1px rgba(255,255,255,0.5);
-border-radius:0px 0px 0px 12px;
-font-size:2em;
-}
-
-div.hebergement-gite-listing-detail div#typetype{
-background-color:#ace087;
-color:#265902;
-}
-div.hebergement-chambre-listing-detail div#typetype{
-background-color:#82a7ea;
-color:#00336a;
-}
-div#typetype .texte-vertical{
-position:relative;
-left:-34px;
-top:50px;
--webkit-transform:rotate(270deg);
--moz-transform:rotate(270deg);
--o-transform: rotate(270deg);
--ms-transform: rotate(-90deg);
-white-space:nowrap;
-display:block;
-text-align:right;
-text-transform:capitalize;
-}
-
-div.hebergement-gite-listing-detail div#typetype div.btn-loupe-listing,
-div.hebergement-chambre-listing-detail div#typetype div.btn-loupe-listing{
-width:95px;
-height:100px;
-background-repeat:no-repeat;
-background-position:37px bottom;
-}
-div.hebergement-gite-listing-detail div#typetype div.btn-loupe-listing a,
-div.hebergement-chambre-listing-detail div#typetype div.btn-loupe-listing a{
-display:block;
-width:95px;
-height:100px;
-border-bottom:none;
-}
-div.hebergement-gite-listing-detail div#typetype div.btn-loupe-listing{
-background-image:url(../images/btn_loupe_gite.png);
-}
-div.hebergement-chambre-listing-detail div#typetype div.btn-loupe-listing{
-background-image:url(../images/btn_loupe_chambre.png);
-}
-
-div.hebergement-chambre-listing-detail div#typetype div.comparer,
-div.hebergement-gite-listing-detail div#typetype div.comparer{
-position:relative;
-left:70px;
-top:-22px;
-}
-
-div.hebergement-chambre-listing-detail div#typetype div.comparer label,
-div.hebergement-gite-listing-detail div#typetype div.comparer label{
-display:inline-block;
-}
-
-.heb-comparaison-check{
-display:none;
-}
-
-.heb-comparaison-check + label {
-position:relative;
-display:inline-block;
-width:22px;
-height:22px;
-background-color: rgba(252,236,252,1);
-background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.6)), to(rgba(255,255,255,.9)));
-background:-webkit-linear-gradient(top, rgba(255,255,255,.6), rgba(255,255,255,.9));
-background:-moz-linear-gradient(top, rgba(255,255,255,.6), rgba(255,255,255,.9));
-background:-o-linear-gradient(top, rgba(255,255,255,.6), rgba(255,255,255,.9));
-background:linear-gradient(top, rgba(255,255,255,.6), rgba(255,255,255,.9));
-border-radius:3px;
-box-shadow:0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-box-shadow:inset 1px 1px 2px rgba(0,0,0,.4), inset 0px 0px 1px rgba(0,0,0,.2);
-}
-
-.heb-comparaison-check + label:active,
-.heb-comparaison-check:checked + label:active {
-box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
-}
-
-.heb-comparaison-check:checked + label {
-background-color: #e9ecee;
-border: 1px solid #adb8c0;
-box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.3), inset 15px 10px -12px rgba(255,255,255,0.1);
-color: #99a1a7;
-}
-
-.heb-comparaison-check + label:after {
-transition:transform 0.5s ease-in-out;
-}
-
-.heb-comparaison-check:checked + label:after {
-content:'';
-position:absolute;
-left:5px;
-top:4px;
-width:23px;
-height:10px;
-border-style:solid;
-border-color:#f0f;
-border-width:0 0 3px 5px;
-box-shadow:-1px 1px 1px rgba(0,0,0,0.9);
-}
-
-.heb-comparaison-check + label:after {
--webkit-transform:rotateZ(-40deg) skewX(-30deg) scale(0);
--moz-transform:rotate(-40deg) skewX(-30deg) scale(0);
--o-transform:rotate(-40deg) skewX(-30deg) scale(0);
-transform:rotate(-40deg) skewX(-30deg) scale(0);
--webkit-transform-origin:0 100%;
--moz-transform-origin:0 100%;
--o-transform-origin:0 100%;
-transform-origin:0 100%;
-}
-
-.heb-comparaison-check:checked + label:after {
--webkit-transform:rotateZ(-40deg) skewX(-30deg) scale(1);
--moz-transform:rotate(-40deg) skewX(-30deg) scale(1);
--o-transform:rotate(-40deg) skewX(-30deg) scale(1);
-transform:rotate(-40deg) skewX(-30deg) scale(1);
-}
-
-.heb-comparaison-check:checked + label:hover:after {
--webkit-transform:rotateZ(-40deg) skewX(-30deg) scale(1.3);
--moz-transform:rotate(-40deg) skewX(-30deg) scale(1.3);
--o-transform:rotate(-40deg) skewX(-30deg) scale(1.3);
-transform:rotate(-40deg) skewX(-30deg) scale(1.3);
-}
-
-div#signaler-un-probleme-button,
-#comparison-button{
-color:#6b004e !important;
-cursor:pointer;
-width:198px;
-height:33px;
-line-height:33px;
-margin-right:15px;
-margin-top:3px;
-text-align:center;
-border:1px solid rgba(192,141,218,0.5);
-border-radius:18px;
-background: -moz-linear-gradient(top,  rgba(252,236,252,0.3) 0%, rgba(251,166,225,0.3) 50%, rgba(253,137,215,0.3) 51%, rgba(255,124,216,0.3) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,236,252,0.3)), color-stop(50%,rgba(251,166,225,0.3)), color-stop(51%,rgba(253,137,215,0.3)), color-stop(100%,rgba(255,124,216,0.3))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(252,236,252,0.3) 0%,rgba(251,166,225,0.3) 50%,rgba(253,137,215,0.3) 51%,rgba(255,124,216,0.3) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(252,236,252,0.3) 0%,rgba(251,166,225,0.3) 50%,rgba(253,137,215,0.3) 51%,rgba(255,124,216,0.3) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(252,236,252,0.3) 0%,rgba(251,166,225,0.3) 50%,rgba(253,137,215,0.3) 51%,rgba(255,124,216,0.3) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(252,236,252,0.3) 0%,rgba(251,166,225,0.3) 50%,rgba(253,137,215,0.3) 51%,rgba(255,124,216,0.3) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dfcecfc', endColorstr='#4dff7cd8',GradientType=0 ); /* IE6-9 */
-}
-
-div#signaler-un-probleme-button{
-margin-left:30px;
-margin-top:6px;
-}
-
-div#signaler-un-probleme-button:hover,
-#comparison-button:hover{
-color:#f035c2 !important;
-}
-
-div#signaler-un-probleme-button a:link{
-color:#6b004e !important;
-border-bottom:0px !important;
-text-decoration:none !important;
-}
-
-div#signaler-un-probleme-button a:hover {
-color:#f035c2 !important;
-}
-
-div#vignette{
-float:left;
-width:181px;
-height:115px;
-border:1px solid #999;
-box-shadow:2px 2px 4px rgba(50,50,50,0.3);
-margin:8px 8px 0px 3px;
-}
-
-div#info-bloc-sup{
-float:left;
-width:500px;
-height:26px;
-}
-
-div#info-bloc-sup .digit{
-float:left;
-cursor:pointer;
-}
-
-div#info-bloc-sup div#distance{
-float:left;
-margin-top:7px;
-font-weight:bold;
-color:#555;
-}
-
-div#info-bloc-sup div#nom-hebergement{
-float:left;
-/*font-family: 'Gloria Hallelujah', cursive;*/
-font-family:'Josefin Sans', 'Helvetica Neue', Arial, FreeSans, sans-serif;
-font-size:1.6em;
-color:#222;
-text-shadow:1px 1px 1px rgba(250,250,250,0.5);
-margin-top:3px;
-margin-left:10px;
 }
 
 div#info-bloc-sup div#nom-hebergement a.gite-nom:link,
 div#info-bloc-sup div#nom-hebergement a.gite-nom:visited{
-color:#24590c !important;
+color:#15b78f !important;
 text-decoration: none;
 border-bottom: none;
 }
 
 div#info-bloc-sup div#nom-hebergement a.gite-nom:hover{
-color:#4bd453 !important;
+color:#007e5b !important;
 }
 
 div#info-bloc-sup div#nom-hebergement a.chambre-nom:link,
 div#info-bloc-sup div#nom-hebergement a.chambre-nom:visited{
-color:#00326a !important;
+color:#119eda !important;
 text-decoration: none;
 border-bottom: none;
 }
 
 div#info-bloc-sup div#nom-hebergement a.chambre-nom:hover{
-color:#5eadf8 !important;
-}
-
-div#info-bloc-sup div#type{
-float:right;
-font-size:0.9em;
-color:#cf000e;
-}
-
-div#info-bloc-inf{
-float:left;
-width:500px;
-margin-top:19px;
-}
-
-div.hebergement-gite-listing-detail div#info-bloc-inf div#capacite-max,
-div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-chambre,
-div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-epis,
-div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-cle,
-div.hebergement-gite-listing-detail div#info-bloc-inf div#icon-confort{
-background-color:rgba(200,232,167,0.31);
-}
-
-div.hebergement-chambre-listing-detail div#info-bloc-inf div#capacite-max,
-div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-chambre,
-div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-epis,
-div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-cle,
-div.hebergement-chambre-listing-detail div#info-bloc-inf div#icon-confort{
-background-color:rgba(130,167,234,0.19);
-}
-
-div#info-bloc-inf div#capacite-max,
-div#info-bloc-inf div#nbre-chambre,
-div#info-bloc-inf div#nbre-epis,
-div#info-bloc-inf div#nbre-cle,
-div#info-bloc-inf div#icon-confort{
-float:left;
-width:114px;
-height:66px;
-border-radius:12px;
-box-shadow:2px 2px 4px rgba(50,50,50,0.5);
-margin:3px 5px;
-text-align:center;
-font-weight:bold;
-color:#333;
-}
-
-.nombre{
-display:block;
-font-size:2.5em;
-margin-top:18px;
-}
-
-.reference{
-float:left;
-font-size:7pt;
-display:block;
-}
-
-div#info-bloc-inf div#icon-confort-dog{
-float:left;
-margin-top:13px;
-margin-left:10px;
+color:#00558b !important;
 }
 
 .dog,
@@ -1892,11 +1241,6 @@ background-position:left 0px;
 background-position:left -43px;
 }
 
-div#info-bloc-inf div#icon-confort-smoker{
-float:right;
-margin-top:13px;
-margin-right:10px;
-}
 .smoke,
 .no-smoke{
 width:40px;
@@ -1911,123 +1255,36 @@ background-position:left 0px;
 background-position:left -43px;
 }
 
-div#commune{
-float:right;
-margin-right:5px;
-}
-
 div#date-promotion{
 position:relative;
 top:2px;
 height:20px;
-/*
-background-image:url(../images/bg_promo.png);
-background-position:-180px top;
-*/
 font-size:0.9em;
 font-family:arial, sans-serif;
 font-weight:bold;
-/*
-color:#660800;
-text-shadow:1px 1px 1px rgba(255,255,255,0.8);
-*/
 color:#000;
 padding-left:15px;
 background: rgb(254,204,177); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,204,177,1)), color-stop(50%,rgba(241,116,50,1)), color-stop(51%,rgba(234,85,7,1)), color-stop(100%,rgba(251,149,94,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,204,177,1)), color-stop(50%,rgba(241,116,50,1)), color-stop(51%,rgba(234,85,7,1)), color-stop(100%,rgba(251,149,94,1)));
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%);
+background: -o-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%);
+background: -ms-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%);
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 );
 border-radius:20px 0px 20px 0px;
 box-shadow:1px 1px 1px rgba(255,255,255,1),
            -1px -1px 1px rgba(135,0,0,0.3);
-
 }
-
-
-/*
-div#date-promotion #start,
-div#date-promotion #end,
-div#date-promotion #promotion-text{
-font-size:9pt;
-color:#000;
-float:left;
-}
-*/
-
-
 
 /*** DESCRIPTION HEBERGEMENT ***/
 body.template-hebergement_view #content-core {
-margin-top:-36px;
+/*margin-top:-36px;*/
 }
 
 body.template-hebergement_view div.overlay-ajax #content-core {
 margin-top:0px;
 }
-
-div#description-heb{
-width:1065px;
-min-height:800px;
-margin-left:-6px;
-padding-top:5px;
-background-image:url(../images/bg_descriptif.png);
-border-radius:12px;
-}
-
-div#description-info-sup{
-width:98%;
-height:66px;
-margin-bottom:10px;
-margin-left:10px;
-border:2px solid rgba(250,250,250,0.3);
-border-radius:12px;
-background: -moz-linear-gradient(top,  rgba(104,103,102,0.5) 0%, rgba(238,238,238,0.25) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(104,103,102,0.5)), color-stop(100%,rgba(238,238,238,0.25))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(104,103,102,0.5) 0%,rgba(238,238,238,0.25) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(104,103,102,0.5) 0%,rgba(238,238,238,0.25) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(104,103,102,0.5) 0%,rgba(238,238,238,0.25) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(104,103,102,0.5) 0%,rgba(238,238,238,0.25) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80686766', endColorstr='#40eeeeee',GradientType=0 ); /* IE6-9 */
-}
-
-div#nom-heb{
-float:left;
-width:610px;
-height:60px;
-margin-left:10px;
-margin-top:3px;
-font-size:16pt;
-font-weight:bold;
-color:#555;
-text-align:center;
-text-shadow:1px 1px 1px rgba(250,250,250,0.8);
-line-height:55px;
-}
-
-.etiquette-sup{
-float:right;
-width:93px;
-height:56px;
-margin-right:8px;
-margin-top:4px;
-background-color:#fff6bb;
-border-radius:8px;
-color:#333;
-text-align:center;
-font-weight:bold;
-box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);
-}
-
-.etiquette-sup span{
-display:block;
-margin-top:15px;
-font-size:2.5em;;
-}
-
 
 .photo_gallery{
 margin-top:15px;
@@ -2047,41 +1304,15 @@ margin: auto;
 position:relative;
 }
 
-#hebergement-carousel .carousel-inner .item img {
-height: 377px;
-margin: auto auto 20px;
-border: 2px solid #696969;
-border-radius: 15px;
-box-shadow:0px 5px 8px #000;
-}
-
 #hebergement-carousel a.carousel-control {
 border: none !important;
 background: none;
 margin-top: 0px;
 }
 
-#hebergement-carousel .video {
-text-align: center;
+#descriptif-accordeon section.slide{
 }
 
-
-/*** CONTENU ACCORDEON ***/
-#accordeon-spin{
-position: relative;
-top: 120px;
-}
-#descriptif-accordeon{
-position:relative;
-left:-11px;
-height:670px;
-list-style:none !important;
-width:1040px;
-}
-#descriptif-accordeon li.slide{
-height:670px;
-position:relative;
-}
 #descriptif-accordeon .slide_handle{
 position:absolute;
 bottom:0;
@@ -2121,7 +1352,6 @@ background-position:-112px bottom;
 background-position:-140px bottom;
 }
 #descriptif-accordeon .slide_handle div{
-background:url(../images/arrows.gif);
 bottom:16px;
 height:7px;
 left:10px;
@@ -2134,29 +1364,12 @@ cursor:default;
 #descriptif-accordeon .slide_opened .slide_handle div{
 background-position:0 -7px;
 }
-#descriptif-accordeon .slide_content{
-background: rgb(252,253,251); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(252,253,251,1) 0%, rgba(235,234,234,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,253,251,1)), color-stop(100%,rgba(235,234,234,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(252,253,251,1) 0%,rgba(235,234,234,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(252,253,251,1) 0%,rgba(235,234,234,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(252,253,251,1) 0%,rgba(235,234,234,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(252,253,251,1) 0%,rgba(235,234,234,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfdfb', endColorstr='#ebeaea',GradientType=0 ); /* IE6-9 */
-position:absolute;
-left:28px; /* Matches the width of .slide_handle */
-right:0;
-top:0;
-bottom:0;
-padding:15px;
-border-top:2px solid #ddd;
-border-bottom:2px solid #ddd;
-}
 
-ul#descriptif-accordeon h2{
-font-family:'PT Sans Narrow'!important;
-font-weight:none;
-margin-bottom: 15px;
+#descriptif-accordeon h2{
+font-weight:normal;
+margin-left:28px;
+margin-bottom:25px;
+color:#c9252b;
 }
 
 /*** SLIDE ACCUEIL ***/
@@ -2217,52 +1430,12 @@ padding:8px;
 position:relative;
 }
 
-div#accueil-bloc-gauche{
-float:left;
-}
-div#accueil-bloc-droite{
-float:right;
-}
-
-div#description-photo-heb{
-margin:0px auto 10px;
-box-shadow:3px 3px 6px rgba(50,50,50,0.5);
-border-radius:18px;
-}
-
 div#description-photo-heb img{
-border-radius:18px;
+/*border-radius:18px;*/
 }
 
 div#description-photo-heb img{
 cursor: pointer;
-}
-
-
-div#dernieres-minute-listing,
-div#promotion-listing,
-div#nouveaux-hebergement-listing,
-div#description-adresse-hebergement,
-div#description-calendrier,
-div#tarification-hebergement,
-div#tarification-gite,
-div#tarification-chambre,
-div#tarification-table-hote,
-div#description-icone-confort,
-div#description-icone-activite,
-div#description-icone-literie,
-div#description-coordonnee{
-box-shadow:2px 2px 8px rgba(50, 50, 50, 0.3);
-border-radius:18px;
-text-shadow:1px 1px 1px rgba(250,250,250,0.8);
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 div#description-icone-literie .literie{
@@ -2320,16 +1493,6 @@ background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-
-
-div#description-adresse-hebergement{
-margin-bottom:10px;
-padding:6px;
-text-align:center;
-color:#333;
-text-shadow:1px 1px 1px rgba(250,250,250,0.8);
-}
-
 div#description-calendrier{
 }
 
@@ -2345,14 +1508,6 @@ margin:10px;
 padding:0;
 text-align:center;
 text-shadow:none;
-}
-
-div#tarification-hebergement,
-div#tarification-gite,
-div#tarification-chambre{
-width:460px;
-margin:0px 0px 0px 5px;
-padding:8px 20px;
 }
 
 div#tarification-hebergement .tarif-periode,
@@ -2392,13 +1547,6 @@ padding:5px;
 min-width:30px;
 }
 
-#description-icone-theme-giteplus{
-position:absolute;
-top:10px;
-left:400px;
-width:300px;
-}
-
 #description-icone-theme-giteplus .button-theme{
 float:left;
 margin-right:6px;
@@ -2419,32 +1567,9 @@ padding-top:4px;
 }
 
 
-/*** SLIDE DESCRIPTION ***/
-div#description-bloc-gauche{
-width:400px;
-float:left;
-}
-div#description-bloc-droite{
-width:400px;
-float:right;
-}
+/*** DESCRIPTION ***/
 
-div#description-icone-confort,
-div#description-icone-activite,
-div#description-icone-literie{
-text-align:center;
-margin-top:8px;
-padding:6px;
-}
-
-div#description-icone-confort .picto,
-div#description-icone-activite .picto,
-div#description-icone-literie .picto{
-margin:0px 3px;
-}
-
-
-/*** SLIDE DISPONIBILITES ***/
+/*** DISPONIBILITES ***/
 #description-dispo-calendrier #dispocalendars_menu a {
 border-bottom: none;
 }
@@ -2462,42 +1587,16 @@ margin-bottom: 5px;
 margin-bottom: 30px;
 }
 
-
-/*** SLIDE LOCALIЅATION ***/
+/*** LOCALIЅATION ***/
 div#map_div{
 border:1px solid #999;
-box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);
 margin-bottom:12px;
 margin-top:10px;
 }
 
-div#description-heb div#description-map div#map_div {
-height:470px;
-width:620px;
-}
-
 div#description-heb div#map_div{
-float:left;
 border:1px solid #999;
-box-shadow:0px 3px 5px rgba(50, 50, 50, 0.5);
 margin-top:0px;
-}
-div#description-heb div#map_menu{
-float:right;
-word-wrap:break-word;
-width:190px;
-padding:30px 10px;
-border:1px solid #999;
-border-radius:18px;
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-box-shadow:3px 3px 5px rgba(50, 50, 50, 0.5);
 }
 
 div#description-heb div#map_menu label{
@@ -2519,17 +1618,7 @@ div#map_menu label.unzoomed_legend_label {
 color: #CECECE !important;
 }
 
-
-/*** SLIDE CONTACT ***/
-div#description-heb div#description-coordonnee{
-float:left;
-margin-top:20px;
-margin-left:20px;
-width:499px;
-padding:15px;
-font-size:1em;
-}
-
+/*** CONTACT ***/
 div#description-heb div#description-coordonnee div#nom-proprio,
 div#description-heb div#description-coordonnee div#langue-proprio,
 div#description-heb div#description-coordonnee div#phone-proprio,
@@ -2541,11 +1630,6 @@ div#description-heb div#description-coordonnee div#contacter-proprio{
 margin:10px;
 }
 
-div#description-heb div#description-coordonnee div#nom-proprio{
-margin-bottom:20px;
-font-size:14pt;
-}
-
 div#description-heb div#description-coordonnee div#contacter-proprio{
 margin-top:35px;
 margin-left:30px;
@@ -2555,18 +1639,9 @@ div#description-heb div#description-coordonnee div#contacter-proprio a{
 border-bottom:none;
 }
 
-div#description-heb div#description-photo-proprio{
-float:right;
-margin-top:60px;
-margin-right:30px;
-width:196px;
-height:170px;
-}
-
 div#description-heb div#description-photo-proprio img {
 border: 2px solid #696969;
 border-radius: 10px;
-box-shadow:0px 5px 8px #000;
 }
 
 
@@ -2587,7 +1662,6 @@ background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1)
 background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 padding:1em;
-
 }
 
 div#calendrier-zone-proprio,
@@ -2637,14 +1711,12 @@ text-shadow:1px 1px 1px rgba(255, 255, 255, 0.8);
 color:#666 !important;
 }
 
-
 div#proprio-maj-info-menu a:hover,
 div#proprio-configuration-calendrier a:hover,
 div#proprio-aide a:hover,
 div#proprio-affichage-mensuel a:hover{
 color:#222 !important;
 }
-
 
 #proprio-table-hebergement{
 width:90%;
@@ -2659,7 +1731,6 @@ border:1px solid #ddd;
 height:30px;
 padding:5px 10px;
 }
-
 
 #proprio-table-hebergement td{
 border:1px solid #ddd;
@@ -2777,38 +1848,31 @@ margin-top:10px;
 cursor:move;
 }
 
-
 div#recherche-avancee-formulaire,
 div#contact-proprio-formulaire,
 div#signaler-un-probleme-formulaire,
 div#zone-proprio-formulaire,
 div#zone-proprio-info-hebergement,
 form#proprio-config-calendrier,
-div#proprio-photo-edition-fieldset,
-div#listing-dernieres-minutes,
-div#listing-promotions,
-div#listing-nouveaux-hebergements{
+div#proprio-photo-edition-fieldset{
 margin:auto;
-background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
-border:1px solid #aaa;
-border-radius:10px;
-box-shadow:3px 3px 15px rgba(50, 50, 50, 0.5);
+background:#f0efeb; /* Old browsers */
 margin:15px auto;
 padding:20px;
 }
-
 
 div#listing-dernieres-minutes,
 div#listing-promotions,
 div#listing-nouveaux-hebergements{
 width:80%%;
+}
+
+div#listing-dernieres-minutes h2,
+div#listing-promotions h2,
+div#listing-nouveaux-hebergements h2{
+color:#c9252b;
+padding:6px 0px 0px 12px;
+border-bottom:none;
 }
 
 div#recherche-avancee-formulaire,
@@ -3251,11 +2315,6 @@ background-color:rgba(220, 243, 212, 0.8);
 transform: scaleY(1);
 }
 
-
-
-
-
-
 /*** SHOP ***/
 #save_order_template, #save_order_template_entry {
 display: none;
@@ -3270,11 +2329,9 @@ padding-top: 2.5em;
 }
 
 
-
-
-
 /*** TARIF FORM ***/
-table.z3c-listing input.tarif-min-input, table.z3c-listing input.tarif-max-input {
+table.z3c-listing input.tarif-min-input,
+table.z3c-listing input.tarif-max-input {
 width: 5.5em;
 text-align: right;
 }
@@ -3296,7 +2353,7 @@ text-align: left;
 }
 
 table.hebergement-tarif-display tr.even{
-background-color: #ceddce;
+background-color: #f7f7f7;
 }
 
 table.hebergement-tarif-display td{

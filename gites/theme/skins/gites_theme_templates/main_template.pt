@@ -28,7 +28,7 @@
   <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
     Get the global cache headers located in global_cache_settings.
   </metal:cache>
-  
+
 
   <head>
 
@@ -66,14 +66,12 @@
 
 
 <metal:block define-slot="wrapper">
-
     <div id="visual-portal-wrapper">
 
         <div id="spin"
              style="display:none;"></div>
 
         <div id="portal-top" i18n:domain="plone">
-
             <div tal:replace="structure provider:plone.portaltop" tal:condition="not:ajax_load" />
         </div>
 
@@ -81,11 +79,11 @@
 
         <div id="viewlet-gites-packages" tal:content="structure provider:gites.produitpackage" />
 
+        <div id="viewlet-gites-rechercher" tal:content="structure provider:gites.rechercher" />
+
         <div id="viewlet-gites-offres" tal:content="structure provider:gites.offres" />
 
-
         <div id="portal-column-content">
-
             <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
 
             <div id="viewlet-gites-zone-membre" tal:content="structure provider:gites.zonemembre" />
@@ -149,7 +147,6 @@
             </metal:block>
 
         <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />
-
         </div>
 
         <div class="visualClear"><!-- --></div>
