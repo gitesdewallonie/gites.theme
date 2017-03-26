@@ -1731,6 +1731,9 @@ and (max-device-width : 1024px){
         text-align:right;
         font-size:1.2em;
     }
+    div#listing-result-count{
+        display:none;
+    }
 
 
     /*** LISTING IDEE SEJOUR ***/
