@@ -244,16 +244,16 @@ and (max-device-width : 568px){
         margin:0px 10px;
     }
     div#footer div#reseaux-sociaux-mobile ul li #btn-facebook{
-        background-image:url(../images/icone_fb_small.png);
+        background-image:url(../images/icone_sociale_facebook_small.png);
     }
     div#footer div#reseaux-sociaux-mobile ul li #btn-twitter{
-        background-image:url(../images/icone_tw_small.png);
+        background-image:url(../images/icone_sociale_twitter_small.png);
     }
     div#footer div#reseaux-sociaux-mobile ul li #btn-google{
-        background-image:url(../images/icone_g+_small.png);
+        background-image:url(../images/icone_sociale_googleplus_small.png);
     }
     div#footer div#reseaux-sociaux-mobile ul li #btn-youtube{
-        background-image:url(../images/icone_yt_small.png);
+        background-image:url(../images/icone_sociale_youtube_small.png);
     }
 
     /*** COLOPHON  PARTENAIRES LOGO***/
@@ -931,16 +931,16 @@ and (max-device-width : 1024px){
         color:#fff !important;
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-facebook{
-        background-image:url(../images/facebook.png);
+        background-image:url(../images/icone_sociale_facebook.png);
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-twitter{
-        background-image:url(../images/twitter.png);
+        background-image:url(../images/icone_sociale_twitter.png);
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-google{
-        background-image:url(../images/google.png);
+        background-image:url(../images/icone_sociale_googleplus.png);
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-youtube{
-        background-image:url(../images/youtube.png);
+        background-image:url(../images/icone_sociale_youtube.png);
     }
 
     /*** COLOPHON  PARTENAIRES LOGO***/
@@ -1622,16 +1622,16 @@ and (max-device-width : 1024px){
         color:#fff !important;
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-facebook{
-        background-image:url(../images/facebook.png);
+        background-image:url(../images/icone_sociale_facebook.png);
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-twitter{
-        background-image:url(../images/twitter.png);
+        background-image:url(../images/icone_sociale_twitter.png);
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-google{
-        background-image:url(../images/google.png);
+        background-image:url(../images/icone_sociale_googleplus.png);
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-youtube{
-        background-image:url(../images/youtube.png);
+        background-image:url(../images/icone_sociale_youtube.png);
     }
 
     /*** COLOPHON  PARTENAIRES LOGO***/
