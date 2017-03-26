@@ -700,6 +700,7 @@ and (max-device-width : 568px){
     div#description-heb div#description-photo-proprio{
         clear:both;
         display:block;
+        text-align:center;
     }
     div#dernieres-minute-listing,
     div#promotion-listing,
@@ -1770,7 +1771,7 @@ and (max-device-width : 1024px){
 
     /*** LISTING IDEE SEJOUR ***/
     div#content-for-khevine{
-        padding:1em;
+        padding:1em 1em 2em 1em;
         margin:8px 0px 0px 0px;
         border:1px solid rgba(200,215,220,0.3);
         border-radius:12px;

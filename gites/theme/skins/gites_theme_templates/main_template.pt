@@ -106,6 +106,7 @@
                         <div id="content"
                              tal:define="frontpage context/@@diazo-parameters/isPortalFrontPage"
                              tal:attributes="class python: frontpage and 'ploneroot' or ''">
+
                             <div id="content-for-khevine">
                                 <metal:header define-slot="header" tal:content="nothing">
                                     Visual Header
@@ -114,7 +115,7 @@
                                     <metal:main define-macro="main">
                                         <div tal:replace="structure provider:plone.abovecontenttitle" />
 
-                                        <div class="visualClear"><!-- --></div>
+                                        <div class="visualClear"></div>
 
                                         <metal:title define-slot="content-title">
                                             <h1 tal:content="context/Title" class="documentFirstHeading">
@@ -126,9 +127,7 @@
                                         <metal:description define-slot="content-description">
                                             <div class="documentDescription description"
                                                  tal:content="context/Description"
-                                                 tal:condition="python:context.Description()">
-                                                Description
-                                            </div>
+                                                 tal:condition="python:context.Description()"></div>
                                         </metal:description>
 
                                         <div tal:replace="structure provider:plone.abovecontentbody" />
@@ -139,13 +138,13 @@
                                         </div>
                                     </metal:main>
                                 </metal:bodytext>
+                                <div class="visualClear"></div>
                             </div><!--content-for-khevine-->
+
                         </div><!--content-->
                     </metal:slot>
-
                 </div>
             </metal:block>
-
         <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />
         </div>
 

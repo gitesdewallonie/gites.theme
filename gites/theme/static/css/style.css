@@ -1303,58 +1303,6 @@ margin-top: 0px;
 #descriptif-accordeon section.slide{
 }
 
-#descriptif-accordeon .slide_handle{
-position:absolute;
-bottom:0;
-left:0;
-top:0;
-width:28px;
-cursor:pointer;
-}
-#descriptif-accordeon .slide_handle_fr{
-background:url(../images/tab_accordeon_fr.png) no-repeat 0 bottom;
-}
-#descriptif-accordeon .slide_handle_en{
-background:url(../images/tab_accordeon_en.png) no-repeat 0 bottom;
-}
-#descriptif-accordeon .slide_handle_nl{
-background:url(../images/tab_accordeon_nl.png) no-repeat 0 bottom;
-}
-#descriptif-accordeon .slide_handle_it{
-background:url(../images/tab_accordeon_it.png) no-repeat 0 bottom;
-}
-#descriptif-accordeon .slide_handle_de{
-background:url(../images/tab_accordeon_de.png) no-repeat 0 bottom;
-}
-#descriptif-accordeon .slide2 .slide_handle{
-background-position:-28px bottom;
-}
-#descriptif-accordeon .slide3 .slide_handle{
-background-position:-56px bottom;
-}
-#descriptif-accordeon .slide4 .slide_handle{
-background-position:-84px bottom;
-}
-#descriptif-accordeon .slide5 .slide_handle{
-background-position:-112px bottom;
-}
-#descriptif-accordeon .slide6 .slide_handle{
-background-position:-140px bottom;
-}
-#descriptif-accordeon .slide_handle div{
-bottom:16px;
-height:7px;
-left:10px;
-position:absolute;
-width:7px;
-}
-#descriptif-accordeon .slide_opened .slide_handle{
-cursor:default;
-}
-#descriptif-accordeon .slide_opened .slide_handle div{
-background-position:0 -7px;
-}
-
 #descriptif-accordeon h2{
 font-weight:normal;
 margin-left:28px;
