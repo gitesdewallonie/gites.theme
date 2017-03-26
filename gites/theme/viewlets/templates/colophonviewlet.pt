@@ -1,7 +1,8 @@
 <div id="colophon"
      i18n:domain="gites">
     <div id="coordonnee">
-        Fédération des Gites de Wallonie asbl. -
+        Fédération des Gites de Wallonie asbl.
+        <br />
         © 2004 - <span tal:replace="viewlet/getYear"/> - All rights reserved.
         <br />
         avenue Prince de Liège, 1/21
@@ -12,7 +13,9 @@
            tal:attributes="href string:${context/@@plone_portal_state/portal_url}/contact-info"
            class="email-gite">info@gitesdewallonie.be</a>
         <br />
-        Tel: +32(0) 81 311 800 - Fax: +32(0) 81 310 200
+        Tel: +32(0) 81 311 800
+        <br />
+        Fax: +32(0) 81 310 200
     </div>
 
     <div id="partenaire">
