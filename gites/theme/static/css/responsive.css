@@ -115,10 +115,14 @@ and (max-device-width : 568px){
     }
     div#je-recherche #form-widgets-fromDate,
     div#je-recherche #form-widgets-toDate,
-    div#je-recherche #form-widgets-capacityMin,
     div#je-recherche #form-widgets-nearTo{
         top:-25px;
         left:0px;
+    }
+    div#je-recherche input#form-widgets-capacityMin{
+        /*background-color:rgba(50,50,50,0.5);*/
+        top:-28px;
+        left:-180px;
     }
     div#je-recherche input#form-widgets-capacityMin,
     div#je-recherche input[type="text"],
@@ -286,8 +290,7 @@ and (max-device-width : 568px){
         margin:5px 8px;
         }
 
-
-/*** LISTING PACKAGE ***/
+    /*** LISTING PACKAGE ***/
     div#aside-container{
         height:auto;
         margin:auto;
@@ -318,8 +321,6 @@ and (max-device-width : 568px){
         text-align:center;
         font-size:1.2em;
     }
-
-
 
     /*** LISTING IDEE SEJOUR ***/
     div#content-for-khevine{
@@ -740,6 +741,22 @@ and (max-device-width : 568px){
 
 
 
+
+
+
+/*** XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ***/
+/*** XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ***/
+/*** XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ***/
+
+
+
+
+
+
+
+
+
+
 /*** =============================================== ***/
 /*** Tablette ***/
 @media only screen
@@ -831,7 +848,6 @@ and (max-device-width : 1024px){
     }
     div#je-recherche #form-widgets-fromDate,
     div#je-recherche #form-widgets-toDate,
-    div#je-recherche #form-widgets-capacityMin,
     div#je-recherche #form-widgets-nearTo{
         top:-25px;
         left:0px;
@@ -1230,7 +1246,6 @@ and (max-device-width : 1024px){
         border-radius:20px 0px 20px 0px;
         box-shadow:1px 1px 1px rgba(255,255,255,1),
                    -1px -1px 1px rgba(135,0,0,0.3);
-
         }
 
 
@@ -1432,6 +1447,20 @@ and (max-device-width : 1024px){
 
 
 
+
+
+
+/*** XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ***/
+/*** XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ***/
+/*** XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ***/
+
+
+
+
+
+
+
+
 /*** =============================================== ***/
 /*** Desktops and laptops ***/
 @media only screen and (min-width : 1100px){
@@ -1527,12 +1556,15 @@ and (max-device-width : 1024px){
     }
     div#je-recherche #form-widgets-fromDate,
     div#je-recherche #form-widgets-toDate,
-    div#je-recherche #form-widgets-capacityMin,
     div#je-recherche #form-widgets-nearTo{
         top:-10px;
         left:0px;
     }
-
+    div#je-recherche input#form-widgets-capacityMin{
+        /*background-color:rgba(50,50,50,0.5);*/
+        top:-30px;
+        left:-120px;
+    }
     div#je-recherche input.datepicker-widget,
     div#je-recherche input#form-widgets-capacityMin,
     div#je-recherche input[type="text"],
@@ -1763,12 +1795,23 @@ and (max-device-width : 1024px){
         float:left;
         margin-left:10px;
     }
-    div#sort-top{
+    div#sort-top,
+    div#sort-bottom{
         float:right;
     }
     div#heb-listing div#listing-result.list-container div#listing-result-block{
         float:right;
         width:-moz-available;
+    }
+    div#listing-result-info-top div#listing-result-batch,
+    div#listing-result-info-bottom div#listing-result-batch{
+        display:block;
+    }
+    div#listing-result-info-top div#listing-result-batch,
+    div#listing-result-info-bottom div#listing-result-batch a{
+        display:inline-block;
+        margin:0px 3px;
+        font-size:1.2em;
     }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail{
