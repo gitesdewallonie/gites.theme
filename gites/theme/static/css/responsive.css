@@ -120,11 +120,20 @@ and (max-device-width : 568px){
         left:0px;
     }
     div#je-recherche input#form-widgets-capacityMin{
-        /*background-color:rgba(50,50,50,0.5);*/
         top:-28px;
         left:-180px;
+        height:35px;
+        width:160px;
+        padding-left:40px;
     }
-    div#je-recherche input#form-widgets-capacityMin,
+    div#je-recherche div#nbre-personne span.texte-placeholder{
+        position:relative;
+        top:8px;
+        left:6px;
+        font-size:14px;
+        color:#aaa;
+    }
+
     div#je-recherche input[type="text"],
     div#je-recherche .trouver{
         height: 35px;
@@ -145,10 +154,19 @@ and (max-device-width : 568px){
     .fa-calendar,
     .fa-map-o {
         position: relative;
-        top: 2px;
         left: 178px;
         font-size: 25px;
     }
+    .fa-user-o{
+        top:-15px;
+    }
+    .fa-calendar{
+        top: 2px;
+    }
+    .fa-map-o{
+        top: 2px;
+    }
+
     div#btn-reserver-en-ligne-mob a{
         color:#fff;
         font-size:20px;
@@ -1566,6 +1584,16 @@ and (max-device-width : 1024px){
         top:-30px;
         left:-120px;
     }
+    div#je-recherche div#nbre-personne span.texte-placeholder{
+        position:relative;
+        top:3px;
+        left:6px
+        font-size:14px;
+        color:#aaa;
+    }
+
+
+
     div#je-recherche input.datepicker-widget,
     div#je-recherche input#form-widgets-capacityMin,
     div#je-recherche input[type="text"],
@@ -1592,9 +1620,17 @@ and (max-device-width : 1024px){
     .fa-calendar,
     .fa-map-o {
         position: relative;
-        top:20px;
-        left:120px;
-        font-size:25px;
+        left: 178px;
+        font-size: 25px;
+    }
+    .fa-user-o{
+        top:-9px;
+    }
+    .fa-calendar{
+        top: 2px;
+    }
+    .fa-map-o{
+        top: 2px;
     }
     div#btn-reserver-en-ligne-mob{
         display:none;
