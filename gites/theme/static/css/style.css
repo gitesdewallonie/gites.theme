@@ -91,17 +91,8 @@ div#description-calendrier{
 /*display:none;*/
 }
 
-
 .break-float{
 clear:both;
-}
-
-.float-left{
-float:left;
-}
-
-.float-right{
-float:right;
 }
 
 .discreet-info{
