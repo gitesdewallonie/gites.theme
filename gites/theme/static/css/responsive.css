@@ -775,7 +775,7 @@ reservez #d81b60
 
 /*** =============================================== ***/
 /*** Tablette ***/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1100px){
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
     /*** INTERFACE ***/
     div.wrapper-theme{
         width:100%;
