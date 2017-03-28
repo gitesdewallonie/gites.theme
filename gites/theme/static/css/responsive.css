@@ -912,25 +912,26 @@ and (max-device-width : 1100px){
 
     /*** OFFRES ***/
     div#zone-offres{
-        width:1065px;
-        height:435px;
+        width:100%;
+        height:100%;
+        padding:0px;
     }
     div#zone-offres div#zone-idee-sejour,
     div#zone-offres div#zone-derniere-minute,
     div#zone-offres div#zone-allo-chambre-hote{
-        float:left;
+        clear:both;
         width:245px;
         height:332px;
         background-color:#EFEFEF;
         border:1px solid #ccc;
-        margin:15px 35px;
+        margin:15px auto;
         padding:10px 15px 1px 15px;
         border-radius:4px;
         color:#666;
         font-size:0.73em;
     }
     div#zone-offres h2{
-        height:20px;
+        display:none;
         padding-top:10px;
         font-family:'PT Sans Narrow'!important;
         color:rgb(201,37,43);
@@ -1013,21 +1014,21 @@ and (max-device-width : 1100px){
 
     /*** COLOPHON  PARTENAIRES LOGO***/
     div#colophon{
-        height:310px;
         background-color:#333;
         padding-top:10px;
         text-align:center;
     }
-    div#colophon div#partenaire-mobile{
+    div#colophon div#partenaire{
         display:none;
     }
-    div#colophon div#partenaire{
-        padding-left:12%;
+    div#colophon div#partenaire-mobile{
+        display:block;
+        width:265px;
+        margin:auto;
     }
     div#colophon div#partenaire img{
-        display:block;
-        margin:auto;
-        margin-bottom:2px;
+        display:inline;
+        margin:12px 6px;
     }
     div#colophon div#partenaire div#eurogite,
     div#colophon div#partenaire div#feader,
@@ -1035,12 +1036,7 @@ and (max-device-width : 1100px){
     div#colophon div#partenaire div#wallonie-tourisme,
     div#colophon div#partenaire div#wallonie-bruxelles-tourisme{
         float:left;
-        width:150px;
-        margin:5px 20px 0px 0px;
-        text-align:center;
-        font-size:9px;
-        font-family:verdana,sans-serif;
-        color:#d2d2d2;
+        margin:5px 8px;
     }
 
     /*** LISTING IDEE SEJOUR ***/
