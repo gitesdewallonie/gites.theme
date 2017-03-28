@@ -780,7 +780,7 @@ and (max-device-width : 568px){
 /*** Tablette ***/
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px){
+and (max-device-width : 1100px){
     /*** INTERFACE ***/
     div.wrapper-theme{
         width:100%;
@@ -1046,13 +1046,13 @@ and (max-device-width : 1024px){
 
     /*** LISTING IDEE SEJOUR ***/
     div#content-for-khevine{
-        padding:1em;
+        padding:12px 4px;
         margin:8px 0px 0px 0px;
         border:1px solid rgba(200,215,220,0.3);
         border-radius:12px;
     }
     div#idee-sejours-listing article.article-resume-idee-sejours{
-        width:450px;
+        width:440px;
         min-height:280px;
         margin:20px 15px;
         padding:10px;
@@ -1300,9 +1300,7 @@ and (max-device-width : 1024px){
         width:400px;
     }
     div#description-heb{
-        width:1065px;
         min-height:800px;
-        margin-left:-6px;
         padding-top:5px;
         border-radius:12px;
     }
@@ -1352,7 +1350,7 @@ and (max-device-width : 1024px){
     div#descriptif-accordeon{
         height:670px;
         list-style:none !important;
-        width:1040px;
+        /*width:1040px;*/
         display:block;
         margin-bottom:10px;
     }
@@ -1361,7 +1359,6 @@ and (max-device-width : 1024px){
         background-image:url(background_body.jpg);
         background-repeat:no-repeat;
         background-position:center;
-        margin-left:28px;
         margin-bottom:25px;
         padding:15px;
     }
@@ -1816,6 +1813,7 @@ and (max-device-width : 1024px){
         border-radius:12px;
     }
     div#idee-sejours-listing article.article-resume-idee-sejours{
+        clear:both;
         width:450px;
         min-height:280px;
         margin:20px 15px;
