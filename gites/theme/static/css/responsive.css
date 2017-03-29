@@ -954,8 +954,12 @@ reservez #d81b60
         text-align:center;
         border:1px solid rgba(155,155,155,0.5);
         border-radius:18px;
-        margin:10px 10px;
+        margin:10px auto;
         background-color:#c9252b;
+    }
+    div#mygdw,
+    div#devenir-membre{
+        display:block
     }
 
     /*** FOOTER ***/
@@ -1694,6 +1698,23 @@ reservez #d81b60
         margin:30px 20px;
         background-color:#c9252b;
     }
+    div#mygdw a,
+    div#devenir-membre a{
+        display:inline-block;
+        width:198px;
+        height:33px;
+        border-radius:18px;
+        color:#fff !important;
+    }
+    div#mygdw{
+        float:left;
+        margin-left:200px;
+    }
+    div#devenir-membre{
+        float:right;
+        margin-right:200px;
+    }
+
     /*** FOOTER ***/
     div#footer{
         background-color:#666;
