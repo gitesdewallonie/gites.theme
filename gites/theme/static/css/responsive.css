@@ -1283,8 +1283,9 @@ reservez #d81b60
         margin-top:6px;
     }
     #hebergement-carousel .carousel-inner .item img {
-        height: 377px;
-        margin: auto auto 20px;
+        width:80%;
+        height:auto;
+        margin:20px auto;
     }
     div#accueil-bloc-gauche{
         clear:both;
@@ -1453,6 +1454,7 @@ reservez #d81b60
         clear:both;
         display:block;
         text-align:center;
+        margin:10px auto;
     }
     div#dernieres-minute-listing,
     div#promotion-listing,
