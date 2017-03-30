@@ -1948,20 +1948,30 @@ reservez #d81b60
         width:500px;
         height:26px;
     }
+    div#info-bloc-sup .digit{
+        width:100px;
+        position:relative;
+        left:-233px;
+        top:5px;
+    }
     div#info-bloc-sup div#distance{
-        float:left;
-        margin-top:7px;
+        position:relative;
+        left:13px;
+        top:-7px;
+        /*float:left;*/
         font-weight:bold;
         color:#555;
     }
     div#info-bloc-sup div#nom-hebergement{
-        float:left;
+        /*float:left;*/
+        position:relative;
+        top:-47px;
+        left:13px;
         font-family:'Josefin Sans', 'Helvetica Neue', Arial, FreeSans, sans-serif;
         font-size:1.6em;
         color:#222;
         text-shadow:1px 1px 1px rgba(250,250,250,0.5);
-        margin-top:5px;
-        margin-left:10px;
+
     }
     div#vignette img{
         width:181px;
@@ -2032,14 +2042,20 @@ reservez #d81b60
         margin:8px 8px 0px 3px;
     }
     div#info-bloc-sup div#type{
-        float:right;
+        /*float:right;*/
+        position:relative;
+        top:-46px;
+        left:336px;
+        width:150px;
+        text-align:right;
         font-size:0.9em;
         color:#cf000e;
     }
     .nombre{
         display:block;
         font-size:2.5em;
-        margin-top:18px;
+        margin-top: 12px;
+        margin-bottom: 9px;
     }
     .reference{
         float:left;
