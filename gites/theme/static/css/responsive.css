@@ -1845,6 +1845,24 @@ reservez #d81b60
     div#listing-result-count{
         display:none;
     }
+    a.btn-listing-resultat{
+        display:inline-block;
+        height:32px;
+        width:auto;
+        padding:0px 22px;
+        line-height:32px;
+        text-align:center;
+        border-radius:4px;
+        background-color:#aaa;
+        color:#fff !important;
+        cursor:pointer;
+        fon-size:15px;
+        transition: all 0.23s ease-in-out 0s;
+    }
+    a.btn-listing-resultat:hover{
+        background-color:#777;
+        color:#fff !important;
+    }
 
 
     /*** LISTING IDEE SEJOUR ***/
