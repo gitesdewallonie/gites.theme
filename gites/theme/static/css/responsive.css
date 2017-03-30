@@ -1855,7 +1855,6 @@ reservez #d81b60
         border-radius:12px;
     }
     div#idee-sejours-listing article.article-resume-idee-sejours{
-        clear:both;
         width:450px;
         min-height:280px;
         margin:20px 15px;
