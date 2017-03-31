@@ -1084,34 +1084,16 @@ reservez #d81b60
     .float-left{
         clear:both;
     }
-    div#listing-result-count{
-        position:relative;
-        top:-10px;
-        width:550px;
-    }
-    div#listing-result-block div#listing-result-batch{
-        float:left;
-        margin-left:10px;
-    }
-    div#sort-top{
-        float:right;
-    }
-    div.hebergement-gite-listing-detail,
-    div.hebergement-chambre-listing-detail{
-        background-color:#fafafa;
-    }
-    div.hebergement-gite-listing-detail div#typetype{
-        background-color:rgba(217,255,178,0.3);
-        color:#265902;
-    }
-    div.hebergement-chambre-listing-detail div#typetype{
-        background-color:rgba(210,254,255,0.3);
-        color:#00336a;
-    }
+    h1#nbr-heb-trouve,
     div#listing-result-block div#listing-result-batch,
     div#listing-result-block div#listing-result-count{
         display:none;
     }
+    div.hebergement-gite-listing-detail div#typetype,
+    div.hebergement-chambre-listing-detail div#typetype{
+        background-color:transparent;
+    }
+    div#listing-result-info-top,
     div#listing-result-info-bottom{
         border:2px solid rgba(250,250,250,0.5);
         height:40px;
@@ -1119,27 +1101,76 @@ reservez #d81b60
         background: rgba(240,240,240,0.5);
     }
     div#listing-result-block{
-        clear:both;
-        background-color:#f0efeb;
+        /*background-color:#e5d8e8;*/
         border:1px solid #ddd;
-        /*border-radius:12px;*/
+        border-radius:12px;
         min-height:300px;
-        min-width:200px;
         padding:0px;
     }
-    div#listing-result-block div#sort{
-        float:right;
-        margin-right:10px;
+    div#listing-result-info-bottom div#sort-bottom{
+        display:none;
+    }
+    div#listing-result-info-bottom div#listing-result-batch{
+        display:block;
+    }
+    div#listing-result-info-bottom div#listing-result-batch a{
+        display:inline-block;
+        margin:0px 3px;
+        font-size:1.2em;
     }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail{
         position:relative;
         z-index:20;
-        width:800px;
-        height:135px;
+        width:300px;
         margin:10px auto;
-        border:1px solid rgba(50,50,50,0.1);
+        border:1px solid rgba(50,50,50,0.6);
         border-radius:0px 0px 0px 12px;
+    }
+    div#info-bloc-sup{
+        clear:both;
+        height:45px;
+    }
+    div#info-bloc-sup div#distance{
+        clear:both;
+        position:relative;
+        top:13px;
+        left:128px;
+        font-weight:normal;
+        font-size:10px;
+        color:#555;
+    }
+    div#info-bloc-sup div#nom-hebergement{
+        clear:both;
+        position:relative;
+        bottom:53px;
+        left:2px;
+        font-family:'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
+        font-size:17px
+        font-weight:normal;
+        color:#222;
+        margin-top:auto;
+        text-align:center;
+    }
+    div#info-bloc-sup div#type{
+        clear:both;
+        position:relative;
+        bottom:25px;
+        left:131px;
+        width:165px;
+        font-size:0.9em;
+        color:#cf000e;
+        text-align:right;
+    }
+    div#info-bloc-inf{
+        clear:both;
+        margin-top:8px;
+        height:85px;
+    }
+    div.hebergement-gite-listing-detail,
+    div.hebergement-chambre-listing-detail{
+        background-color:#fafafa;
+        border-radius:3px;
     }
     div#listing-dernieres-minutes,
     div#listing-promotions,
@@ -1147,37 +1178,28 @@ reservez #d81b60
         margin:auto;
         background:#f0efeb;
         margin:15px auto;
-        padding:20px;
+        padding:0px;
     }
-
-    div#info-bloc-sup{
-        float:left;
-        width:500px;
-        height:26px;
+    div#typetype{
+        clear:both;
+        font-size:1.2em;
+        line-height:23px;
+        height:25px;
     }
-    div#info-bloc-sup div#distance{
-        float:left;
-        margin-top:7px;
-        font-weight:bold;
-        color:#555;
+    div#typetype .texte-vertical{
+        display:block;
+        text-align:left;
+        padding-left:5px;
+        text-transform:capitalize;
     }
-    div#info-bloc-sup div#nom-hebergement{
-        float:left;
-        font-family:'Josefin Sans', 'Helvetica Neue', Arial, FreeSans, sans-serif;
-        font-size:1.6em;
-        color:#222;
-        text-shadow:1px 1px 1px rgba(250,250,250,0.5);
-        margin-top:3px;
-        margin-left:10px;
+    div#vignette{
+        clear:both;
+        margin:8px auto;
     }
     div#vignette img{
-        width:181px;
-        height:115px;
-    }
-    div#info-bloc-inf{
-        float:left;
-        width:500px;
-        margin-top:19px;
+        width:300px;
+        height:auto;
+        margin-left:0px;
     }
     div#info-bloc-inf div#capacite-max,
     div#info-bloc-inf div#nbre-chambre,
@@ -1185,72 +1207,33 @@ reservez #d81b60
     div#info-bloc-inf div#nbre-cle,
     div#info-bloc-inf div#icon-confort{
         float:left;
-        width:114px;
+        width:75px;
         height:66px;
-        border-radius:12px;
-        margin:3px 5px;
-        text-align:center;
-        font-weight:bold;
+        margin-top:19px;
         color:#777;
+        text-align:center;
     }
     div.hebergement-gite-listing-detail div#info-bloc-inf div#capacite-max,
     div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-chambre,
     div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-epis,
     div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-cle,
-    div.hebergement-gite-listing-detail div#info-bloc-inf div#icon-confort{
-        background-color:rgba(200,232,167,0.31);
-    }
+    div.hebergement-gite-listing-detail div#info-bloc-inf div#icon-confort,
     div.hebergement-chambre-listing-detail div#info-bloc-inf div#capacite-max,
     div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-chambre,
     div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-epis,
     div.hebergement-chambre-listing-detail div#info-bloc-inf div#nbre-cle,
     div.hebergement-chambre-listing-detail div#info-bloc-inf div#icon-confort{
-        background-color:rgba(130,167,234,0.19);
-    }
-    div.hebergement-gite-listing-detail,
-    div.hebergement-chambre-listing-detail,
-    div#typetype{
-        height:135px;
-    }
-    div#typetype{
-        float:left;
-        width:100px;
-        text-shadow:-1px 1px 1px rgba(255,255,255,0.5);
-        border-radius:0px 0px 0px 12px;
-        font-size:2em;
-    }
-    div#typetype .texte-vertical{
-        position:relative;
-        left:-34px;
-        top:60px;
-        -webkit-transform:rotate(270deg);
-        -moz-transform:rotate(270deg);
-        -o-transform: rotate(270deg);
-        -ms-transform: rotate(-90deg);
-        white-space:nowrap;
-        display:block;
-        text-align:right;
-        text-transform:capitalize;
-    }
-    div#vignette{
-        float:left;
-        width:181px;
-        height:115px;
-        margin:8px 8px 0px 3px;
-    }
-    div#info-bloc-sup div#type{
-        float:right;
-        font-size:0.9em;
-        color:#cf000e;
+        background-color:#f0efeb;
     }
     .nombre{
         display:block;
-        font-size:2.5em;
-        margin-top:18px;
+        margin-top:15px;
+        margin-bottom:4px;
+        font-size:1.2em;
     }
     .reference{
-        float:left;
-        font-size:7pt;
+        clear:both;
+        font-size:5pt;
         display:block;
     }
     div#info-bloc-inf div#icon-confort-dog{
@@ -1259,36 +1242,31 @@ reservez #d81b60
         margin-left:10px;
     }
     div#info-bloc-inf div#icon-confort-smoker{
-        float:right;
-        margin-top:13px;
-        margin-right:10px;
+        display:none;
     }
-    div#commune{
-        float:right;
+    div#info-bloc-inf div#commune{
+        clear:both;
+        position:relative;
+        top:-87px;
+        left:3px;
         margin-right:5px;
+        font-weight:normal;
+        font-size:10px;
     }
     div#date-promotion{
         position:relative;
-        top:2px;
+        top:-5px;
+        width:285px;
         height:20px;
         font-size:0.9em;
         font-family:arial, sans-serif;
         font-weight:bold;
         color:#000;
         padding-left:15px;
-        background: rgb(254,204,177); /* Old browsers */
-        background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,204,177,1)), color-stop(50%,rgba(241,116,50,1)), color-stop(51%,rgba(234,85,7,1)), color-stop(100%,rgba(251,149,94,1)));
-        background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%);
-        background: -o-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%);
-        background: -ms-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%);
-        background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 );
-        border-radius:20px 0px 20px 0px;
-        box-shadow:1px 1px 1px rgba(255,255,255,1),
-                   -1px -1px 1px rgba(135,0,0,0.3);
+        background: rgb(255, 89, 0); /* Old browsers */
+        border-radius:0px;
+        box-shadow:none;
         }
-
 
     /*** DESCRIPTION HEBERGEMENT ***/
     div#content{
