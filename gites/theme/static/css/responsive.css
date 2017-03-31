@@ -1362,13 +1362,18 @@ reservez #d81b60
         padding:15px;
         display:block;
     }
-    div#description-bloc-gauche{
-        width:360px;
-        float:left;
+    div#description-bloc-gauche,
+    div#description-bloc-droite{
+        width:330px;
+        text-align:justify;
     }
     div#description-bloc-droite{
-        width:360px;
         float:right;
+
+    }
+    div#description-bloc-gauche{
+        float:left;
+
     }
     div#accueil-bloc-gauche,
     div#accueil-bloc-droite{
