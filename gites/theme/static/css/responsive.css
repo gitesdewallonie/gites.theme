@@ -873,6 +873,13 @@ reservez #d81b60
         width: 400px;
         padding-left:5px;
     }
+    div#je-recherche input#form-widgets-capacityMin{
+        top:-5px;
+        left:-396px;
+        height:35px;
+        width:160px;
+        padding-left:40px;
+    }
     div#je-recherche .trouver{
         border:none;
         border-radius:0px;
@@ -901,13 +908,13 @@ reservez #d81b60
     }
     .fa-user-o{
         position: relative;
-        top:-13px;
-        left:375px;
+        top:5px;
+        left:345px;
         font-size:25px;
     }
     div#je-recherche div#nbre-personne span.texte-placeholder{
         position:relative;
-        top:7px;
+        top:1px;
         left:8px;
         font-size:13px;
         color:#888;
@@ -1131,10 +1138,15 @@ reservez #d81b60
         clear:both;
         height:45px;
     }
+    .digit{
+        width:35px;
+        margin-left:265px;
+        margin-top:-23px;
+    }
     div#info-bloc-sup div#distance{
         clear:both;
         position:relative;
-        top:13px;
+        top:50px;
         left:128px;
         font-weight:normal;
         font-size:10px;
@@ -1143,7 +1155,7 @@ reservez #d81b60
     div#info-bloc-sup div#nom-hebergement{
         clear:both;
         position:relative;
-        bottom:53px;
+        bottom:-3px;
         left:2px;
         font-family:'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
         font-size:17px
@@ -1155,7 +1167,7 @@ reservez #d81b60
     div#info-bloc-sup div#type{
         clear:both;
         position:relative;
-        bottom:25px;
+        bottom:-11px;
         left:131px;
         width:165px;
         font-size:0.9em;
@@ -1194,7 +1206,9 @@ reservez #d81b60
     }
     div#vignette{
         clear:both;
-        margin:8px auto;
+        position:relative;
+        top:0px;
+        margin:auto;
     }
     div#vignette img{
         width:300px;
@@ -1255,7 +1269,7 @@ reservez #d81b60
     }
     div#date-promotion{
         position:relative;
-        top:-5px;
+        bottom:0px;
         width:285px;
         height:20px;
         font-size:0.9em;

@@ -1579,7 +1579,7 @@ border-radius: 10px;
 
 /*** z3c.form ***/
 input.datepicker-widget { width: 80px; }
-input#form-widgets-capacityMin { width: 34px; }
+/*input#form-widgets-capacityMin { width: 34px; }*/
 input#form-widgets-roomAmount { width: 34px; }
 
 
