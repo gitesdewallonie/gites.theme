@@ -892,13 +892,25 @@ reservez #d81b60
         cursor:pointer;
     }
     /*** class pour les polices glyphes awesome ***/
-    .fa-user-o,
     .fa-calendar,
     .fa-map-o {
         position: relative;
-        top: 2px;
-        left: 375px;
-        font-size: 25px;
+        top:2px;
+        left:375px;
+        font-size:25px;
+    }
+    .fa-user-o{
+        position: relative;
+        top:-13px;
+        left:375px;
+        font-size:25px;
+    }
+    div#je-recherche div#nbre-personne span.texte-placeholder{
+        position:relative;
+        top:7px;
+        left:8px;
+        font-size:13px;
+        color:#888;
     }
     div#btn-reserver-en-ligne-mob{
         display:none;
@@ -946,7 +958,7 @@ reservez #d81b60
     }
     div#mygdw,
     div#devenir-membre{
-        color:#fff !important;
+        display:block;
         cursor:pointer;
         width:198px;
         height:33px;
@@ -957,9 +969,13 @@ reservez #d81b60
         margin:10px auto;
         background-color:#c9252b;
     }
-    div#mygdw,
-    div#devenir-membre{
-        display:block
+    div#mygdw a,
+    div#devenir-membre a{
+        display:inline-block;
+        width:198px;
+        height:33px;
+        border-radius:18px;
+        color:#fff !important;
     }
 
     /*** FOOTER ***/
