@@ -1978,15 +1978,16 @@ reservez #d81b60
         width:500px;
         height:26px;
     }
-    div#info-bloc-sup .digit{
+    .digit{
         width:100px;
         position:relative;
-        left:-233px;
-        top:5px;
+        left:0px;
+        top:0px;
+        display:inline-block;
     }
     div#info-bloc-sup div#distance{
         position:relative;
-        left:13px;
+        left:40px;
         top:-7px;
         /*float:left;*/
         font-weight:bold;
@@ -1996,7 +1997,7 @@ reservez #d81b60
         /*float:left;*/
         position:relative;
         top:-47px;
-        left:13px;
+        left:40px;
         font-family:'Josefin Sans', 'Helvetica Neue', Arial, FreeSans, sans-serif;
         font-size:1.6em;
         color:#222;
@@ -2010,7 +2011,7 @@ reservez #d81b60
     div#info-bloc-inf{
         float:left;
         width:500px;
-        margin-top:19px;
+        margin-top:-20px;
     }
     div#info-bloc-inf div#capacite-max,
     div#info-bloc-inf div#nbre-chambre,
