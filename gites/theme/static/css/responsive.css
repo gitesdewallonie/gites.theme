@@ -1576,7 +1576,7 @@ reservez #d81b60
     }
     div#je-recherche #zone-gite-meuble,
     div#je-recherche #zone-chambre-hote{
-        margin-left:20px;
+        margin-left:0px;
         color:#fff;
     }
 
