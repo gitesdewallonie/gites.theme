@@ -1541,6 +1541,23 @@ reservez #d81b60
         border:1px solid rgba(220,220,220,0.5);
         border-radius:3px;
     }
+    /*** HEADER-LIEN : derminiere minute - reserver - shop ***/
+    div#header-lien{
+        display:table;
+        float:right;
+        margin-right:80px;
+    }
+
+    div#header-derniere-minute,
+    div#reserver-en-ligne{
+        display:table-cell;
+        vertical-align:bottom;
+        height:63px;
+        border-left:5px solid rgb(201,37,43);
+        padding-left:10px;
+        padding-bottom:5px;
+        font-size:1.2em;
+    }
 
     /*** JE CHERCHE ***/
     div#je-recherche{

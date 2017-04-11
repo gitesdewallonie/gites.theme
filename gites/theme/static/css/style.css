@@ -282,6 +282,7 @@ width:150px;
 }
 
 /*** HEADER-LIEN : derminiere minute - reserver - shop ***/
+/*
 div#header-lien{
 display:table;
 float:right;
@@ -298,6 +299,7 @@ padding-left:10px;
 padding-bottom:5px;
 font-size:1.2em;
 }
+*/
 
 /*
 div#header-derniere-minute a,
