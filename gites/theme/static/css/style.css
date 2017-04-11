@@ -329,12 +329,12 @@ color:#f79a05 !important;
 
 /*** ZONE PRODUIT PACKAGE CAROUSEL ***/
 div#carrousssel-produit-package{
-/*margin-bottom:-65px;*/
+margin-bottom:-60px;
 }
 
 div#zone-produit-package{
 position:relative;
-top:-61px;
+top:-64px;
 /*height:300px;*/
 }
 
