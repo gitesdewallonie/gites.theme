@@ -35,6 +35,9 @@ reservez #d81b60
     div#header{
         margin-top:-26px;
     }
+    div#header-lien{
+        display:none;
+    }
     /*** LOGO ***/
     div#logo{
         loat: left;
