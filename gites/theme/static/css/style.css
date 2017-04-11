@@ -74,7 +74,7 @@ font-style:normal;
 
 
 body{
-font-family:Verdana, Geneva, sans-serif;
+font-family:Verdana, Geneva, sans-serif !important;
 font-size:12pt;
 color:#333;
 background:#fafafa;

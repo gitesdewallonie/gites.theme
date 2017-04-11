@@ -1626,12 +1626,12 @@ reservez #d81b60
         top:-30px;
         left:-120px;
     }
-    div#je-recherche div#nbre-personne span.texte-placeholder{
-        position:relative;
-        top:21px;
-        left:6px
-        font-size:11px;
-        color:#999;
+    .texte-placeholder{
+        position: relative;
+        top: 23px;
+        left: 0px;
+        font-size: 14px !important;
+        color: #666;
     }
 
     div#je-recherche input.datepicker-widget,
