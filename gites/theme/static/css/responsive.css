@@ -395,6 +395,7 @@ reservez #d81b60
     }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail{
+        clear:both;
         position:relative;
         z-index:20;
         width:300px;
@@ -2014,6 +2015,8 @@ reservez #d81b60
     div.hebergement-chambre-listing-detail{
         background-color:#fafafa;
         border-radius:3px;
+        float: left;
+        margin: 46px 24px;
     }
     div#listing-dernieres-minutes,
     div#listing-promotions,
