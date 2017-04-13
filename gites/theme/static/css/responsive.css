@@ -1621,15 +1621,16 @@ reservez #d81b60
         top:-10px;
         left:0px;
     }
-    div#je-recherche input#form-widgets-capacityMin{
+    div#je-recherche #form-widgets-capacityMin{
         /*background-color:rgba(50,50,50,0.5);*/
-        top:-30px;
-        left:-120px;
+        top:-1px;
+        left:-100px;
     }
+
     .texte-placeholder{
         position: relative;
-        top: 23px;
-        left: 0px;
+        top:17px;
+        left:0px;
         font-size: 14px !important;
         color: #666;
     }
@@ -1664,14 +1665,15 @@ reservez #d81b60
     .fa-calendar,
     .fa-map-o {
         position: relative;
-        left:123px;
         font-size: 25px;
     }
     .fa-user-o{
-        top:-3px;
+        top:17px;
+        left:92px;
     }
     .fa-calendar{
         top:17px;
+        left:123px;
     }
     .fa-map-o{
         top:20px;
@@ -1918,7 +1920,7 @@ reservez #d81b60
     /*** LISTING RESULTAT RECHERCHE ***/
     .float-right,
     .float-left{
-        clear:both;
+        /*clear:both;*/
     }
     h1#nbr-heb-trouve,
     div#listing-result-block div#listing-result-batch,
