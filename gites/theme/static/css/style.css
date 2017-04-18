@@ -573,29 +573,36 @@ color:#4f0000;
 }
 
 .plus-info{
-width:230px;
-border-top:1px dashed #bbb;
+/*width:230px;*/
+/*border-top:1px dashed #bbb;*/
 text-align:right;
 padding-right:8px;
 }
 .plus-info a{
+display:inline-block;
+border:1px solid #ccc;
+border-radius:18px;
+background-color:#b8eae1;     /*#c9252b;*/
+padding:4px 8px;
 text-decoration:none;
-color:#ccc1b3;
 font-size:8pt;
-color:#a66723 !important;
+color:#4a4a4a !important;
 }
 
-.info-chambre{
+.info-idee-sejour{
 position:relative;
-bottom:-52px;
+bottom:9px;
 }
 .info-derniere-minute{
 position:relative;
-bottom:-30px;
+bottom:-17px;
 }
-.info-idee-sejour{
+.info-chambre{
 position:relative;
-px;
+bottom:-2px;
+}
+.contenu-offre{
+height:98px;
 }
 
 .idee{
