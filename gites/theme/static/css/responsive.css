@@ -113,7 +113,7 @@ reservez #d81b60
     }
     div#je-recherche #form-widgets-fromDate,
     div#je-recherche #form-widgets-toDate,
-    div#je-recherche #form-widgets-nearTo{
+    div#je-recherche #nearto-autocomplete{
         top:-25px;
         left:0px;
     }
@@ -880,7 +880,7 @@ reservez #d81b60
     }
     div#je-recherche #form-widgets-fromDate,
     div#je-recherche #form-widgets-toDate,
-    div#je-recherche #form-widgets-nearTo{
+    div#je-recherche #nearto-autocomplete{
         top:-25px;
         left:0px;
     }
@@ -1634,7 +1634,7 @@ reservez #d81b60
     }
     div#je-recherche #form-widgets-fromDate,
     div#je-recherche #form-widgets-toDate,
-    div#je-recherche #form-widgets-nearTo{
+    div#je-recherche #nearto-autocomplete{
         top:-10px;
         left:0px;
     }

@@ -386,7 +386,7 @@ border:0px;
 div#je-recherche #form-widgets-fromDate,
 div#je-recherche #form-widgets-toDate,
 div#je-recherche #form-widgets-capacityMin,
-div#je-recherche #form-widgets-nearTo{
+div#je-recherche #nearto-autocomplete{
 position:relative;
 background-color:rgba(255,255,255,0);
 }
