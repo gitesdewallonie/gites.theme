@@ -2141,8 +2141,9 @@ reservez #d81b60
     /*** boutons printThis sendTo et back-button ***/
     div#sendTo-printThis{
         float:left;
-        width:150px;
-        margin-top:6px;
+        width:200px;
+        position:relative;
+        left:13px;
     }
     #hebergement-carousel .carousel-inner .item img {
         height: 377px;
@@ -2178,9 +2179,9 @@ reservez #d81b60
         background-color:#f0efeb;
     }
     div#description-icone-theme-giteplus{
-        position:absolute;
-        top:10px;
-        left:400px;
+        position:relative;
+        top:0px;
+        /*left:400px;*/
         width:300px;
     }
     div#nom-heb{

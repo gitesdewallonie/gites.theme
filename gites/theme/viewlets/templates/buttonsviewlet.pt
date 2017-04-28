@@ -16,6 +16,7 @@
                      src="icon_print.gif"
                      i18n:attributes="alt print_this"></a>
         </div>
+
         <div id="send-to-button">
             <a href=""
                title="Send this page to someone"
@@ -28,6 +29,41 @@
         </div>
     </div>
 
+    <div id="description-icone-theme-giteplus">
+        <tal:for repeat="metadata python:view.getHebMetadatasByType('themes')">
+            <div class="button-theme">
+                <img src=""
+                     title=""
+                     alt=""
+                     tal:attributes="src string:${context/@@plone_portal_state/portal_url}/${metadata/id}.png;
+                                     alt metadata/title;
+                                     title metadata/title" />
+            </div>
+          </tal:for>
+
+        <tal:for repeat="metadata python:view.getHebMetadatasByType('gitesplus')">
+            <div class="button-theme">
+                <img src=""
+                     title=""
+                     alt=""
+                     tal:attributes="src string:${context/@@plone_portal_state/portal_url}/${metadata/id}.png;
+                                     alt metadata/title;
+                                     title metadata/title" />
+            </div>
+        </tal:for>
+        <tal:for repeat="metadata python:view.getHebMetadatasByType('iconedescription')">
+            <div class="button-theme">
+                <img src=""
+                     title=""
+                     alt=""
+                     tal:attributes="src string:${context/@@plone_portal_state/portal_url}/${metadata/id}.png;
+                                     alt metadata/title;
+                                     title metadata/title" />
+            </div>
+        </tal:for>
+    </div>
+
     <div tal:replace="structure provider:plone.abovecontenttitle" />
+
     <div class="Visualclear"></div>
 </div>
