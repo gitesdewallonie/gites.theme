@@ -2,6 +2,20 @@
 CSS BY AFFINITIC
 mars 2013
 */
+/****
+rouge logo
+rgb(201,37,43)
+#c9252b
+
+vert logo gites
+rgb(21,183,143)
+#15b78f
+
+bleu logo chambre
+rgb(17,158,218)
+#119eda
+****/
+
 
 /* Hide 'powered by Google' on autocomplete field */
 .pac-logo::after {
@@ -26,21 +40,6 @@ mars 2013
 .pac-container .pac-item .pac-icon {
     display: none;
 }
-
-
-/****
-rouge logo
-rgb(201,37,43)
-#c9252b
-
-vert logo gites
-rgb(21,183,143)
-#15b78f
-
-bleu logo chambre
-rgb(17,158,218)
-#119eda
-****/
 
 
 /*** SKIN STYLES ***/
@@ -70,9 +69,6 @@ font-style:normal;
 }
 
 
-
-
-
 body{
 font-family:Verdana, Geneva, sans-serif !important;
 font-size:12pt;
@@ -85,7 +81,6 @@ margin:0;
 body .popup {
 color:#FFF;
 }
-
 
 div#description-calendrier{
 /*display:none;*/
@@ -331,7 +326,7 @@ color:#f79a05 !important;
 
 /*** ZONE PRODUIT PACKAGE CAROUSEL ***/
 div#carrousssel-produit-package{
-margin-bottom:-60px;
+/*margin-bottom:-60px;*/
 }
 
 div#zone-produit-package{
@@ -716,11 +711,11 @@ width:280px;
 div#print-this-button,
 div#send-to-button,
 div#back-button{
-float:left;
-width:35px;
-height:25px;
-margin:0px 0px 10px 8px;
-padding-top:4px;
+float: left;
+width: 42px;
+height:30px;
+margin: 0px 0px 10px 10px;
+padding-top:13px;
 font-size:1.5em;
 font-weight:bold;
 border:1px solid #dedede;
@@ -759,8 +754,8 @@ color:#800 !important;
 div#sendTo-printThis a,
 div#back-button a{
 display:inline-block;
-width:35px;
-height:25px;
+width:42px;
+height:40px;
 text-align:center;
 border-bottom:none !important;
 }
