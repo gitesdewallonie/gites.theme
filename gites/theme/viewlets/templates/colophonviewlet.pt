@@ -155,4 +155,4 @@
         <div id="plone"><span i18n:translate="made_with">Propulsé par</span> <a href="http://www.plone.org" target="_blank">Plone</a></div>
         <div class="break-float"></div>
     </div>
-</div>
+</div><!--colophon-->
