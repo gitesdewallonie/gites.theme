@@ -64,7 +64,6 @@
 <body tal:define="body_class python:plone_view.bodyClass(template, view);"
     tal:attributes="class body_class">
 
-
 <metal:block define-slot="wrapper">
     <div id="visual-portal-wrapper">
 

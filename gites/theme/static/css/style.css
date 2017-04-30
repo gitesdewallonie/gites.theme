@@ -1266,9 +1266,13 @@ box-shadow:1px 1px 1px rgba(255,255,255,1),
 */
 
 /*** DESCRIPTION HEBERGEMENT ***/
+/*
 body.template-hebergement_view #content-core {
-/*margin-top:-36px;*/
+margin-top:-36px;
+border:1px solid #F00;
+height:4100px;
 }
+*/
 
 body.template-hebergement_view div.overlay-ajax #content-core {
 margin-top:0px;
