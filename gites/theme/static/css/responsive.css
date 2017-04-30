@@ -1528,7 +1528,7 @@ reservez #d81b60
 @media only screen and (min-width : 1025px){
     body.template-hebergement_view #content-core-description {
         margin-top:-36px;
-        border:1px solid #F00;
+        /*border:1px solid #F00;*/
         /*height:4050px;*/
     }
 
