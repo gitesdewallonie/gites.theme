@@ -2304,6 +2304,7 @@ reservez #d81b60
         margin:auto;
         margin-top:10px;
         width:580px;
+        text-align:auto;
     }
     section#description-disponibilite{
         display:block;
