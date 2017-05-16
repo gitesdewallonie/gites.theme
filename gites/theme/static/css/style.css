@@ -363,6 +363,7 @@ bottom:0px;
 
 /* !!! Define the height of the items to avoid a weird behavior when the previous item has a smaller height */
 #hebergement-carousel .carousel-inner div.item {
+text-align:center;
 height: 401px;
 }
 
