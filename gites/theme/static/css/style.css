@@ -857,6 +857,10 @@ div#footer div#autres-sites h2{
 color:#1fda60;
 }
 
+#contact > p:nth-child(12) > a:nth-child(1){
+color:#fafafa !important;
+}
+
 div#footer div#reseaux-sociaux{
 border-left:1px solid rgba(0,221,230,0.3);
 }
