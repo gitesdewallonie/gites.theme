@@ -19,13 +19,6 @@
                 </a>
             </li>
             <li>
-                <a href="https://plus.google.com/101294589232969727782"
-                   target="_blank"
-                   id="btn-google">
-                    <span i18n:translate="fans_google">Devenez fans sur Google+</span>
-                </a>
-            </li>
-            <li>
                 <a href="https://www.youtube.com/channel/UCgvYj4ev_tlUedjJ1Pf1VDg"
                    target="_blank"
                    id="btn-youtube">
