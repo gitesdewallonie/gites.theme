@@ -264,7 +264,7 @@ padding-top:2px;
 
 /*** MAIN-HEADER***/
 #main-header{
-height:67px;
+height:71px;
 position:relative;
 top:-3px;
 z-index:10;
@@ -702,12 +702,6 @@ margin-top:5px;
 /*** BLOC BOUTON SEN PRINT BACK TWEET FB TOP DESCRIPTION ***/
 div#button-top-descritpion{
 margin-top:30px;
-}
-
-/*** positionnement du viewlet ilike ***/
-#viewlet-social-like {
-float:right;
-width:280px;
 }
 
 div#print-this-button,
