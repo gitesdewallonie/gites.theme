@@ -788,7 +788,7 @@ reservez #d81b60
 
 /*** =============================================== ***/
 /*** Tablette ***/
-@media only screen and (min-device-width : 768px) and (max-device-width :992px){
+@media only screen and (min-device-width : 768px) and (max-device-width 1023px){
     /*** INTERFACE ***/
     div.wrapper-theme
         width:100%;
@@ -1524,7 +1524,7 @@ reservez #d81b60
 
 /*** =============================================== ***/
 /*** Desktops and laptops ***/
-@media only screen and (min-width : 993px){
+@media only screen and (min-width :1024px){
     body.template-hebergement_view #content-core-description {
         margin-top:-36px;
         /*border:1px solid #F00;*/
@@ -1831,6 +1831,7 @@ reservez #d81b60
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-youtube{
         background-image:url(../images/icone_sociale_youtube.png);
     }
+
 
     /*** COLOPHON  PARTENAIRES LOGO***/
     div#colophon{
