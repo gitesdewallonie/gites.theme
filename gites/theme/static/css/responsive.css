@@ -302,7 +302,7 @@ reservez #d81b60
         width:265px;
         margin:auto;
     }
-    div#colophon div#partenaire{-mobile
+    div#colophon div#partenaire{
         padding-left:0px;
     }
     div#colophon div#partenaire-mobile img{
@@ -431,7 +431,7 @@ reservez #d81b60
         top:-3px;
         left:4px;
         font-family:'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
-        font-size:17px
+        font-size:17px;
         font-weight:normal;
         color:#222;
         margin-top:auto;
@@ -755,7 +755,7 @@ reservez #d81b60
         background-color:#aaa;
         color:#fff !important;
         cursor:pointer;
-        fon-size:15px;
+        font-size:15px;
         transition: all 0.23s ease-in-out 0s;
     }
     a.btn-listing-resultat:hover{
@@ -788,9 +788,9 @@ reservez #d81b60
 
 /*** =============================================== ***/
 /*** Tablette ***/
-@media only screen and (min-device-width : 768px) and (max-device-width 1023px){
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px){
     /*** INTERFACE ***/
-    div.wrapper-theme
+    div.wrapper-theme{
         width:100%;
         margin:auto;
         background-color:#fafafa;
@@ -969,7 +969,7 @@ reservez #d81b60
         padding-top:10px;
         font-family:'PT Sans Narrow'!important;
         color:rgb(201,37,43);
-        font-weight:none;
+        font-weight:normal;
         text-align:left;
         padding-left:2em;
         width:100%;
@@ -1176,7 +1176,7 @@ reservez #d81b60
         bottom:-3px;
         left:2px;
         font-family:'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
-        font-size:17px
+        font-size:17px;
         font-weight:normal;
         color:#222;
         margin-top:auto;
@@ -1298,7 +1298,7 @@ reservez #d81b60
         background: rgb(255, 89, 0); /* Old browsers */
         border-radius:0px;
         box-shadow:none;
-        }
+    }
 
     /*** DESCRIPTION HEBERGEMENT ***/
     div#content{
@@ -1501,7 +1501,7 @@ reservez #d81b60
     div#tarification-table-hote,
     div#description-coordonnee{
         border-radius:18px;
-        background: rgb(255,255,255); /* Old browsers */
+        background: rgb(255,255,255);
     }
 }
 /*** ==FIN TABLETTE=============================== ***/
@@ -1731,7 +1731,7 @@ reservez #d81b60
         padding-top:10px;
         font-family:'PT Sans Narrow'!important;
         color:rgb(201,37,43);
-        font-weight:none;
+        font-weight:normal;
         text-align:left;
         padding-left:2em;
         width:100%;
@@ -1917,7 +1917,7 @@ reservez #d81b60
         background-color:#aaa;
         color:#fff !important;
         cursor:pointer;
-        fon-size:15px;
+        font-size:15px;
         transition: all 0.23s ease-in-out 0s;
     }
     a.btn-listing-resultat:hover{
@@ -2015,7 +2015,7 @@ reservez #d81b60
         bottom:-3px;
         left:2px;
         font-family:'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
-        font-size:17px
+        font-size:17px;
         font-weight:normal;
         color:#222;
         margin-top:auto;
