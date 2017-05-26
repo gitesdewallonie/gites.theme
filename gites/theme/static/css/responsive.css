@@ -617,14 +617,25 @@ reservez #d81b60
         color:#c9252b;
         text-align:center;
     }
+    div#description-info-sup-detail{
+
+    }
+    div#description-info-sup-detail ul{
+        margin:0px;
+        padding:0px;
+    }
+    div#description-info-sup-detail ul li{
+        display:inline-block;
+    }
     .etiquette-sup{
-        float:right;
-        width:76px;
+        width:93px;
         height:56px;
-        margin-right:0px;
+        margin-right:2px;
         margin-top:4px;
         color:#777;
         text-align:center;
+        font-weight:bold;
+        /*box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);*/
     }
     .etiquette-sup span{
         display:block;
@@ -1363,7 +1374,6 @@ reservez #d81b60
     }
     div#description-icone-theme-giteplus{
         position:static;
-        width:300px
     }
     div#nom-heb{
         display:block;
@@ -1374,17 +1384,28 @@ reservez #d81b60
         text-align:center;;
     }
     div#description-info-sup-detail{
-        width:330px;
         margin:auto;
     }
-    .etiquette-sup{
+    div#description-info-sup-detail{
+
+    }
+    div#description-info-sup-detail ul{
+        margin:0px auto;
+        padding:0px;
+        text-align: center;
+    }
+    div#description-info-sup-detail ul li{
         display:inline-block;
-        width:76px;
+    }
+    .etiquette-sup{
+        width:93px;
         height:56px;
-        margin:auto;
+        margin-right:2px;
         margin-top:4px;
         color:#777;
         text-align:center;
+        font-weight:bold;
+        /*box-shadow:2px 2px 4px rgba(50, 50, 50, 0.5);*/
     }
     .etiquette-sup span{
         display:block;
@@ -2202,7 +2223,7 @@ reservez #d81b60
     }
     div#description-info-sup{
         width:1010px;
-        height:66px;
+        height:140px;
         margin:auto;
         margin-bottom:10px;
         background-color:#f0efeb;
@@ -2213,10 +2234,8 @@ reservez #d81b60
         width:500px;
     }
     div#nom-heb{
-        float:left;
-        width:610px;
+        width:100%;
         height:60px;
-        margin-left:10px;
         margin-top:3px;
         font-size:16pt;
         font-weight:bold;
@@ -2225,8 +2244,17 @@ reservez #d81b60
         text-shadow:1px 1px 1px rgba(250,250,250,0.9);
         line-height:55px;
     }
+    div#description-info-sup-detail{
+    }
+    div#description-info-sup-detail ul{
+        margin:0px auto;
+        padding:0px;
+        text-align: center;
+    }
+    div#description-info-sup-detail ul li{
+        display:inline-block;
+    }
     .etiquette-sup{
-        float:right;
         width:93px;
         height:56px;
         margin-right:2px;
