@@ -62,6 +62,11 @@ reservez #d81b60
         display:none;
     }
 
+    /*** VIEWLET SOCIAL LIKE ***/
+    #viewlet-social-like {
+        display:none;
+    }
+
     /*** JE CHERCHE ***/
     div#je-recherche{
         padding:0px;
@@ -829,6 +834,12 @@ reservez #d81b60
         display:none;
     }
 
+    /*** VIEWLET SOCIAL LIKE ***/
+    #viewlet-social-like {
+        float:right;
+        width:280px;
+    }
+
     /*** JE CHERCHE ***/
     div#je-recherche{
         padding:0px;
@@ -1581,6 +1592,12 @@ reservez #d81b60
         padding-bottom:5px;
         font-size:1.2em;
     }
+    /*** VIEWLET SOCIAL LIKE ***/
+    #viewlet-social-like {
+        float:right;
+        width:280px;
+    }
+
 
     /*** JE CHERCHE ***/
     div#je-recherche{
@@ -2192,8 +2209,7 @@ reservez #d81b60
     div#description-icone-theme-giteplus{
         position:relative;
         top:0px;
-        /*left:400px;*/
-        width:300px;
+        width:500px;
     }
     div#nom-heb{
         float:left;
