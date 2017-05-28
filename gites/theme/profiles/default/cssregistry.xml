@@ -56,6 +56,19 @@
                 conditionalcomment="IE"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
+    <stylesheet title="Gites Theme Styles for IE10 - Responsive"
+                id="++theme++gites.theme/css/ie10.css"
+                media="all"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                conditionalcomment="IE"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
     <stylesheet title="Gites Theme Styles"
                 id="++theme++gites.theme/css/proprio.css"
                 media="screen"
@@ -68,7 +81,7 @@
                 applyPrefix="True"
                 expression="python:here.restrictedTraverse('@@isProprio')()"/>
 
-<stylesheet title="Commercialisation"
+    <stylesheet title="Commercialisation"
                 id="++theme++gites.theme/css/commercialisation.css"
                 media="screen"
                 rel="stylesheet"
