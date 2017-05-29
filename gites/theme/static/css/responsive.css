@@ -659,9 +659,8 @@ reservez #d81b60
     }
     div#description-bloc-gauche,
     div#description-bloc-droite{
-        width: 286px;
         border-radius: 3px;
-        margin-left: 4px;
+        margin: 0px 4px;
         text-align: justify;
         background-color: #fafafa;
         padding: 6px;
@@ -706,7 +705,7 @@ reservez #d81b60
     div#tarification-hebergement,
     div#tarification-gite,
     div#tarification-chambre{
-        margin:0px;
+        margin:0px 4px;
         padding:8px 20px;
         border-radius:3px;
         background: rgb(255,255,255);
@@ -717,7 +716,7 @@ reservez #d81b60
         border-radius:0px;
     }
     div#description-photo-heb img{
-        width:306px;
+        width:100%;
         height:auto;
         margin-left:0px;
     }
@@ -725,9 +724,7 @@ reservez #d81b60
         display:none;
     }
     div#description-adresse-hebergement{
-        width: 286px;
-        margin-left: 4px;
-        margin-bottom:10px;
+        margin: 0px 4px 10px 4px;
         padding:6px;
         text-align:center;
         color:#333;
