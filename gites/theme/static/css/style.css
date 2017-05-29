@@ -355,18 +355,10 @@ width:100%;
 height:100%;
 }
 
-
 #package-carousel .carousel-caption {
 display:none;
 bottom:0px;
 }
-
-/* !!! Define the height of the items to avoid a weird behavior when the previous item has a smaller height */
-#hebergement-carousel .carousel-inner div.item {
-text-align:center;
-height: 401px;
-}
-
 
 /*** MOTEUR DE RECHERHCE ***/
 /*** JE CHERCHE ***/
@@ -1282,24 +1274,6 @@ margin-top:0px;
 margin-top:15px;
 box-shadow:3px 3px 6px rgba(50,50,50,0.5);
 display:block;
-}
-
-
-/*** CAROUSSEL HEBERGEMENT ***/
-#hebergement-carousel {
-height: 377px;
-}
-
-#hebergement-carousel .carousel-inner {
-overflow:hidden;
-margin: auto;
-position:relative;
-}
-
-#hebergement-carousel a.carousel-control {
-border: none !important;
-background: none;
-margin-top: 0px;
 }
 
 #descriptif-accordeon section.slide{

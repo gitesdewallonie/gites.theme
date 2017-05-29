@@ -569,10 +569,32 @@ reservez #d81b60
     div#sendTo-printThis{
         display:none;
     }
-    #hebergement-carousel .carousel-inner .item img {
-        width: 305px;
-        margin: auto auto 20px;
+    /*** carousel descriptif hebergement ***/
+    #hebergement-carousel {
     }
+    #hebergement-carousel .carousel-inner {
+    overflow:hidden;
+    margin: auto;
+    position:relative;
+    }
+    #hebergement-carousel a.carousel-control {
+    /*border: none !important;*/
+    background: none;
+    margin-top: 0px;
+    color:#FFF;
+    }
+    #hebergement-carousel .carousel-inner .item img {
+        width:100%;
+        height:auto;
+        margin:0px auto;
+    }
+    /* !!! Define the height of the items to avoid a weird
+    behavior when the previous item has a smaller height */
+    #hebergement-carousel .carousel-inner div.item {
+    text-align:center;
+    height:268px;
+    }
+
     div#accueil-bloc-gauche{
         clear:both;
     }
@@ -2190,10 +2212,31 @@ reservez #d81b60
         position:relative;
         left:13px;
     }
+    /*** carousel descriptif hebergement ***/
+    #hebergement-carousel {
+    height: 377px;
+    }
+    #hebergement-carousel .carousel-inner {
+    overflow:hidden;
+    margin: auto;
+    position:relative;
+    }
+    #hebergement-carousel a.carousel-control {
+    border: none !important;
+    background: none;
+    margin-top: 0px;
+    }
     #hebergement-carousel .carousel-inner .item img {
         height: 377px;
         margin: auto auto 20px;
     }
+    /* !!! Define the height of the items to avoid a weird
+    behavior when the previous item has a smaller height */
+    #hebergement-carousel .carousel-inner div.item {
+    text-align:center;
+    height: 401px;
+    }
+
     div#reservation-chambre {
         width: 340px;
         height: 50px;
