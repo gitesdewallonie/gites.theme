@@ -3,7 +3,6 @@
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 /* IE10+ CSS styles go here */
-    .selector { property:value\9; }
     body.template-hebergement_view #content-core-description {
         margin-top:-36px;
         /*border:1px solid #F00;*/
