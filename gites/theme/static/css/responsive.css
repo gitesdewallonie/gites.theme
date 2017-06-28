@@ -1966,22 +1966,13 @@ reservez #d81b60
     }
     a.btn-listing-resultat{
         display:inline-block;
-        height:32px;
-        width:auto;
-        padding:0px 22px;
-        line-height:32px;
         text-align:center;
-        border-radius:4px;
-        background-color:#aaa;
-        color:#fff !important;
+        /*background-color:#aaa;*/
         cursor:pointer;
-        font-size:15px;
-        transition: all 0.23s ease-in-out 0s;
-        border-bottom:0px;
     }
     a.btn-listing-resultat:hover{
-        background-color:#777;
-        color:#fff !important;
+        /*background-color:#777;*/
+        color:#c9252b !important;
     }
     .btn-listing-current-page{
         display:inline-block;
@@ -1992,6 +1983,14 @@ reservez #d81b60
         width:75px;
         text-align:center;
         padding:4px;
+    }
+    .fa-caret-square-o-left,
+    .fa-caret-square-o-right{
+        position: relative;
+        font-size:28px;
+        top:5px;
+        left:0px;
+        color:#c9252b;
     }
 
 
@@ -2050,6 +2049,7 @@ reservez #d81b60
         display:inline-block;
         margin:0px 3px;
         font-size:1.2em;
+        border-bottom:none !important;
     }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail{

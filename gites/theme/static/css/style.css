@@ -401,6 +401,12 @@ content: "\f2c0";
 .fa-map-o:before {
 content: "\f278";
 }
+.fa-caret-square-o-right:before{
+content: "\f152";
+}
+.fa-caret-square-o-left:before{
+content:"\f191";
+}
 
 
 ::-webkit-input-placeholder {
