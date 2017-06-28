@@ -646,6 +646,7 @@ reservez #d81b60
         margin:0px auto;
         padding:0px;
         width:300px;
+        border:1px solid #ddd;
     }
     div#description-info-sup-detail ul li{
         display:inline-block;
