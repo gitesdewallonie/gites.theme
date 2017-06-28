@@ -1977,10 +1977,21 @@ reservez #d81b60
         cursor:pointer;
         font-size:15px;
         transition: all 0.23s ease-in-out 0s;
+        border-bottom:0px;
     }
     a.btn-listing-resultat:hover{
         background-color:#777;
         color:#fff !important;
+    }
+    .btn-listing-current-page{
+        display:inline-block;
+        border:0px solid #fafafa;
+        border-radius:5px;
+        background-color:#c9252b;
+        color:#fff;
+        width:75px;
+        text-align:center;
+        padding:4px;
     }
 
 
