@@ -1,6 +1,6 @@
 <div id="zone-video"
      tal:condition="viewlet/available">
-    <!--
+<!--
     <div id="splashvideo">
         <img src="++theme++gites.theme/images/video-youtube.jpg"
              style="cursor:pointer"
@@ -8,5 +8,4 @@
              tal:attributes="data-video string:${viewlet/getUrl}">
     </div>
 -->
-
 </div>
