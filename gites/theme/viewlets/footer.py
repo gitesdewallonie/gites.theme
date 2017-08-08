@@ -32,17 +32,24 @@ class VideoViewlet(grok.Viewlet):
         else:
             return 'https://www.youtube.com/embed/mpI0Y3Skp-s'
 
-
-class FacebookViewlet(grok.Viewlet):
+class MailChimpNewsLetterFormViewlet(grok.Viewlet):
     grok.order(20)
 
 
-class FooterViewlet(grok.Viewlet):
+class ConnexionMembreViewlet(grok.Viewlet):
     grok.order(30)
 
 
-class ColophonViewlet(grok.Viewlet):
+class FacebookViewlet(grok.Viewlet):
+    grok.order(30)
+
+
+class FooterViewlet(grok.Viewlet):
     grok.order(40)
+
+
+class ColophonViewlet(grok.Viewlet):
+    grok.order(50)
 
     def getYear(self):
         return datetime.now().year
