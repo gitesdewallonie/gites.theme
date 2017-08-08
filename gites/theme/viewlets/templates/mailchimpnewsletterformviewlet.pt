@@ -1,0 +1,51 @@
+<section id="mailchimp-newsletter-form"
+         i18n:domain="gites"
+         tal:define="portal_state context/@@plone_portal_state;
+                     lang portal_state/language">
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+          rel="stylesheet"
+          type="text/css">
+    <div id="mc_embed_signup">
+        <form action="//belholidays.us7.list-manage.com/subscribe/post?u=19ac4daaab15c61378a3f09df&amp;id=f4276708ad"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_blank"
+              novalidate>
+            <div id="mc_embed_signup_scroll">
+                <h2 i18n:translate="subscribe_to_newsletter">Inscrivez-vous à notre mailing list</h2>
+
+                <input type="email"
+                       value=""
+                       name="EMAIL"
+                       class="email"
+                       id="mce-EMAIL"
+                       placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"
+                     aria-hidden="true">
+                     <input type="text"
+                            name="b_19ac4daaab15c61378a3f09df_f4276708ad"
+                            tabindex="-1"
+                            value="" />
+                </div>
+                <div class="clear">
+                    <input type="hidden"
+                           name="LANGUAGE"
+                           value=""
+                           tal:attributes="value lang" />
+                    <input type="submit"
+                           value="Subscribe"
+                           name="subscribe"
+                           id="mc-embedded-subscribe"
+                           class="button" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+<div class="break-float"></div>
+</section><!--mailchimp-newsletter-form-->
