@@ -388,13 +388,11 @@ font-size: inherit;
 text-rendering: auto;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
-color:#888;
+color:#999;
 }
-
 .fa-calendar:before {
 content: "\f073";
 }
-
 .fa-user-o:before {
 content: "\f2c0";
 }
@@ -409,21 +407,13 @@ content:"\f191";
 }
 
 
-::-webkit-input-placeholder {
-color:#666;
-font-size:14px;
+/*** cas de safari ***/
+::-webkit-input-placeholder{
+font-size:11px;
 }
-::-moz-placeholder{
-color:#666;
-font-size:14px;
-}
-:-ms-input-placeholder{
-color:#666;
-font-size:14px;
-}
-input:-moz-placeholder{
-color:#666;
-font-size:14px;
+::placeholder{
+color:#777;
+font-size:13px;
 }
 
 .ui-datepicker-trigger{

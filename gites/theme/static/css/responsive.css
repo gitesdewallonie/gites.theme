@@ -1705,7 +1705,7 @@ reservez #d81b60
     div#je-recherche #form-widgets-capacityMin{
         /*background-color:rgba(50,50,50,0.5);*/
         top:-1px;
-        left:-126px;
+        left:-140px;
     }
 
     .texte-placeholder{
@@ -1722,6 +1722,9 @@ reservez #d81b60
         height: 35px;
         width: 140px;
         padding-left:5px;
+    }
+    div#je-recherche input::-webkit-input-placeholder{
+        color: #555;
     }
     div#je-recherche input#form-widgets-capacityMin{
         width:110px;
