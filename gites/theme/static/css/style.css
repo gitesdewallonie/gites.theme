@@ -621,7 +621,8 @@ opacity:0.3;
 
 /*** ESSENTIEL ***/
 div#zone-offres,
-section#inscription-newsletter{
+section#mailchimp-newsletter-form,
+section#connexion-membre{
 padding:1em;
 margin:8px 0px 0px 0px;
 border:1px solid rgba(200,215,220,0.3);
@@ -754,18 +755,17 @@ background-color:#f0efeb;
 }
 
 div#mc_embed_signup {
-background:#f0efeb;
+/*background:#f0efeb;*/
 }
 
 
-section#inscription-newsletter h2{
-height:20px;
-padding-top:10px;
+section#mailchimp-newsletter-form h2{
 font-family:'PT Sans Narrow'!important;
 color:rgb(201,37,43);
 font-weight:normal;
 text-align:left;
 width:100%;
+padding-left:20px;
 }
 
 /*** CONNEXION MEMEBRE ***/
