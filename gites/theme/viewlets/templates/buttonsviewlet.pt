@@ -5,8 +5,9 @@
              tal:condition="viewlet/backButtonAvailable">
             <a href="javascript:history.back()"
                title="Previous page"
-               i18n:attributes="title previous_page">  </a>
+               i18n:attributes="title previous_page"></a>
         </div>
+
         <div id="print-this-button">
             <a href="javascript:this.print();"
                title="Print this"
