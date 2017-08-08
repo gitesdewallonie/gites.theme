@@ -1,0 +1,11 @@
+<section id="connexion-membre"
+         i18n:domain="gites">
+    <div id="mygdw">
+        <a href="/zone-membre">My GDW</a>
+    </div>
+    <div id="devenir-membre">
+        <a href="/devenir-gites-de-wallonie"
+           i18n:translate="devenir_membre">Devenir membre</a>
+    </div>
+    <div class="break-float"></div>
+</section>
