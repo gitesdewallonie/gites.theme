@@ -37,10 +37,11 @@
                            value=""
                            tal:attributes="value lang" />
                     <input type="submit"
-                           value="Subscribe"
+                           value=""
                            name="subscribe"
                            id="mc-embedded-subscribe"
-                           class="button" />
+                           class="button"
+                           i18n:attributes="value subscribe_form" />
                 </div>
             </div>
         </form>
