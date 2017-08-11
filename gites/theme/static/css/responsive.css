@@ -458,6 +458,34 @@ reservez #d81b60
         margin-top:8px;
         height:85px;
     }
+    a.btn-listing-resultat{
+        display:inline-block;
+        text-align:center;
+        /*background-color:#aaa;*/
+        cursor:pointer;
+    }
+    a.btn-listing-resultat:hover{
+        /*background-color:#777;*/
+        color:#c9252b !important;
+    }
+    .btn-listing-current-page{
+        display:inline-block;
+        border:0px solid #fafafa;
+        border-radius:5px;
+        background-color:#c9252b;
+        color:#fff;
+        width:75px;
+        text-align:center;
+        padding:4px;
+    }
+    .fa-caret-square-o-left,
+    .fa-caret-square-o-right{
+        position: relative;
+        font-size:28px;
+        top:5px;
+        left:0px;
+        color:#c9252b;
+    }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail{
         background-color:#fafafa;
@@ -779,55 +807,11 @@ reservez #d81b60
     span#batch-numero-page{
         display:inline-block;
     }
+    div#contact-proprio-formulaire{
+        width:98%;
+        padding:20px 5px;
+    }
 
-    a.btn-listing-resultat{
-        display:inline-block;
-        text-align:center;
-        /*background-color:#aaa;*/
-        cursor:pointer;
-    }
-    a.btn-listing-resultat:hover{
-        /*background-color:#777;*/
-        color:#c9252b !important;
-    }
-    .btn-listing-current-page{
-        display:inline-block;
-        border:0px solid #fafafa;
-        border-radius:5px;
-        background-color:#c9252b;
-        color:#fff;
-        width:75px;
-        text-align:center;
-        padding:4px;
-    }
-    .fa-caret-square-o-left,
-    .fa-caret-square-o-right{
-        position: relative;
-        font-size:28px;
-        top:5px;
-        left:0px;
-        color:#c9252b;
-    }
-/*
-    a.btn-listing-resultat{
-        display:inline-block;
-        height:32px;
-        width:auto;
-        padding:0px 22px;
-        line-height:32px;
-        text-align:center;
-        border-radius:4px;
-        background-color:#aaa;
-        color:#fff !important;
-        cursor:pointer;
-        font-size:15px;
-        transition: all 0.23s ease-in-out 0s;
-    }
-    a.btn-listing-resultat:hover{
-        background-color:#777;
-        color:#fff !important;
-    }
-    */
 }
 /*** ==FIN SMARTPHONE=============================== ***/
 
@@ -1269,6 +1253,34 @@ reservez #d81b60
         margin-top:8px;
         height:85px;
     }
+    a.btn-listing-resultat{
+        display:inline-block;
+        text-align:center;
+        /*background-color:#aaa;*/
+        cursor:pointer;
+    }
+    a.btn-listing-resultat:hover{
+        /*background-color:#777;*/
+        color:#c9252b !important;
+    }
+    .btn-listing-current-page{
+        display:inline-block;
+        border:0px solid #fafafa;
+        border-radius:5px;
+        background-color:#c9252b;
+        color:#fff;
+        width:75px;
+        text-align:center;
+        padding:4px;
+    }
+    .fa-caret-square-o-left,
+    .fa-caret-square-o-right{
+        position: relative;
+        font-size:28px;
+        top:5px;
+        left:0px;
+        color:#c9252b;
+    }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail{
         background-color:#fafafa;
@@ -1585,6 +1597,11 @@ reservez #d81b60
         border-radius:18px;
         background: rgb(255,255,255);
     }
+    div#contact-proprio-formulaire{
+        width:510px;
+        padding:20px;
+    }
+
 }
 /*** ==FIN TABLETTE=============================== ***/
 
@@ -2469,5 +2486,9 @@ reservez #d81b60
     div#description-coordonnee{
         border-radius:18px;
         background: rgb(255,255,255); /* Old browsers */
+    }
+    div#contact-proprio-formulaire{
+        width:510px;
+        padding:20px;
     }
 }
