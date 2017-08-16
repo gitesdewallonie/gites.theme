@@ -24,8 +24,8 @@ rgb(17,158,218)
 }
 
 .pac-container {
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .pac-container, .pac-item {
@@ -33,13 +33,14 @@ rgb(17,158,218)
 }
 
 .pac-container .pac-item {
-	padding: 0em 1em;
+    padding: 0em 1em;
 }
 
 /* Hide Google icon on autocomplete field */
 .pac-container .pac-item .pac-icon {
     display: none;
 }
+
 
 
 /*** SKIN STYLES ***/
@@ -1776,7 +1777,7 @@ padding:20px;
 div#listing-dernieres-minutes,
 div#listing-promotions,
 div#listing-nouveaux-hebergements{
-width:80%;
+width:100%;
 }
 
 div#listing-dernieres-minutes h2,
