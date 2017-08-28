@@ -28,7 +28,7 @@
     <drop theme="/html/head/script" />
     <drop theme="/html/head/link" />
     <drop theme="/html/head/comment()" />
-    <drop content="/html/head[style *='portal_css/Plone%20Default/base-cachekey']/style" />
+
     <after content="/html/head/meta" theme-children="/html/head" />
     <after content="/html/head/title" theme-children="/html/head" />
     <after
