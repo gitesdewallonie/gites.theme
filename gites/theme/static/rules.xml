@@ -28,6 +28,7 @@
     <drop theme="/html/head/script" />
     <drop theme="/html/head/link" />
     <drop theme="/html/head/comment()" />
+    <drop content="/html/head[style *='portal_css/Plone%20Default/base-cachekey']/style" />
     <after content="/html/head/meta" theme-children="/html/head" />
     <after content="/html/head/title" theme-children="/html/head" />
     <after
@@ -35,14 +36,6 @@
         theme-children="/html/head"
         />
 
-    <after css:theme-children="head">
-        <link href="responsive.css"
-              type="text/css"
-              rel="stylesheet" />
-        <link rel="stylesheet"
-              type="text/css"
-              href="style.css" />
-    </after>
 
     <copy attributes="xmlns lang xml:lang" content="/html" theme="/html" />
     <copy attributes="class id dir" content="/html/body" theme="/html/body" />
