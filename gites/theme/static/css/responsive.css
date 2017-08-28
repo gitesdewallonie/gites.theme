@@ -1690,7 +1690,8 @@ reservez #d81b60
         height:150px;
         margin:auto;
         padding:32px 0px 0px 10px;
-        border: 1px solid #ccc;
+        /*border: 1px solid #ccc;*/
+        border-radius:12px;
         background-color:rgb(201,37,43);
     }
     div#form-je-cherche {
@@ -1815,7 +1816,7 @@ reservez #d81b60
 
     /*** OFFRES ***/
     div#zone-offres{
-        width:1065px;
+        width:1058px;
         height:435px;
     }
     div#zone-offres div#zone-idee-sejour,
