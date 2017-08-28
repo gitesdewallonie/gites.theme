@@ -19,7 +19,7 @@
                 applyPrefix="True"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
-    <stylesheet title="Gites Theme Styles"
+    <stylesheet title="Gites Common Styles"
                 id="++theme++gites.theme/css/style.css"
                 media="screen"
                 rel="stylesheet"
@@ -31,7 +31,7 @@
                 applyPrefix="True"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
-    <stylesheet title="Gites Theme Styles For Mobile"
+    <stylesheet title="Gites Responsive Styles For Mobile"
                 id="++theme++gites.theme/css/responsive.css"
                 media="screen"
                 rel="stylesheet"
@@ -43,7 +43,7 @@
                 applyPrefix="True"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
-    <stylesheet title="Gites Theme Styles"
+    <stylesheet title="Gites IE Styles"
                 id="++theme++gites.theme/css/ie.css"
                 media="screen"
                 rel="stylesheet"
@@ -56,20 +56,7 @@
                 conditionalcomment="IE"
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
-    <stylesheet title="Gites Theme Styles for IE10 - Responsive"
-                id="++theme++gites.theme/css/ie10.css"
-                media="all"
-                rel="stylesheet"
-                rendering="import"
-                cacheable="True"
-                compression="safe"
-                cookable="True"
-                enabled="1"
-                applyPrefix="True"
-                conditionalcomment="IE"
-                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
-
-    <stylesheet title="Gites Theme Styles"
+    <stylesheet title="Gites Proprio Styles"
                 id="++theme++gites.theme/css/proprio.css"
                 media="screen"
                 rel="stylesheet"
