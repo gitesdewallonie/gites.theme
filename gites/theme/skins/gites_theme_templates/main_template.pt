@@ -1,7 +1,8 @@
 <metal:page define-macro="master">
 <metal:block define-slot="top_slot" />
 
-<tal:doctype tal:replace="structure string:&lt;!DOCTYPE html&gt;" />
+<!--<tal:doctype tal:replace="structure string:&lt;!DOCTYPE html&gt;" />-->
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
