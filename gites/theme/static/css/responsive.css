@@ -189,6 +189,7 @@ reservez #d81b60
     section#connexion-membre{
         border:1px solid rgba(200,215,220,0.3);
         border-radius:12px;
+        padding:0px 1px;
     }
     /*** OFFRES ***/
     div#zone-offres{

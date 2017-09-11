@@ -628,11 +628,10 @@ padding:18px 0;
 
 div#content.ploneroot h1{
     color:rgb(201,37,43);
-    padding-top:0px;
-    padding-left:15px;
+    padding:0px 15px;
     margin-bottom:30px;
     text-align:left;
-    width:100%;
+    width:92%%;
 }
 
 
