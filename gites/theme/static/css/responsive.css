@@ -183,6 +183,13 @@ reservez #d81b60
         font-size:20px;
     }
 
+    /*** ESSENTIEL ***/
+    div#zone-offres,
+    section#mailchimp-newsletter-form,
+    section#connexion-membre{
+        border:1px solid rgba(200,215,220,0.3);
+        border-radius:12px;
+    }
     /*** OFFRES ***/
     div#zone-offres{
         width:100%;
@@ -995,8 +1002,13 @@ reservez #d81b60
         display:none;
     }
 
-
-
+    /*** ESSENTIEL ***/
+    div#zone-offres,
+    section#mailchimp-newsletter-form,
+    section#connexion-membre{
+        border:1px solid rgba(200,215,220,0.3);
+        border-radius:12px;
+    }
     /*** OFFRES ***/
     div#zone-offres{
         width:100%;
@@ -1813,7 +1825,15 @@ reservez #d81b60
         display:none;
     }
 
-
+    /*** ESSENTIEL ***/
+    div#zone-offres,
+    section#mailchimp-newsletter-form,
+    section#connexion-membre{
+        padding:1em;
+        margin:8px 0px 0px 0px;
+        border:1px solid rgba(200,215,220,0.3);
+        border-radius:12px;
+    }
     /*** OFFRES ***/
     div#zone-offres{
         width:1058px;

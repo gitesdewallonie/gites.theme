@@ -619,18 +619,6 @@ background-position:72px 4px;
 opacity:0.3;
 }
 
-
-/*** ESSENTIEL ***/
-div#zone-offres,
-section#mailchimp-newsletter-form,
-section#connexion-membre{
-padding:1em;
-margin:8px 0px 0px 0px;
-border:1px solid rgba(200,215,220,0.3);
-border-radius:12px;
-width:1058px;
-}
-
 div#content-for-khevine h1{
 }
 
@@ -640,7 +628,6 @@ padding:18px 0;
 
 div#content.ploneroot h1{
     color:rgb(201,37,43);
-    height:20px;
     padding-top:0px;
     padding-left:15px;
     margin-bottom:30px;
