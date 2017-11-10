@@ -1988,11 +1988,25 @@ reservez #d81b60
     div#colophon div#partenaire div#wallonie-bruxelles-tourisme{
         float:left;
         width:150px;
-        margin:5px 20px 0px 0px;
         text-align:center;
         font-size:9px;
         font-family:verdana,sans-serif;
         color:#d2d2d2;
+    }
+    div#colophon div#partenaire div#eurogite{
+        margin:14px 20px 0px 0px;
+    }
+    div#colophon div#partenaire div#feader{
+        margin:6px 20px 0px 0px;
+    }
+    div#colophon div#partenaire div#feder{
+        margin:5px 20px 0px 0px;
+    }
+    div#colophon div#partenaire div#wallonie-tourisme{
+        margin:17px 20px 0px 0px;
+    }
+    div#colophon div#partenaire div#wallonie-bruxelles-tourisme{
+        margin:17px 20px 0px 0px;
     }
 
     /*** LISTING PACKAGE ***/

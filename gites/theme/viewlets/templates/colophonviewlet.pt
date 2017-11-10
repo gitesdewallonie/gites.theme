@@ -76,25 +76,24 @@
             <a href="http://www.tourismewallonie.be/"
                target="_blank"
                title="Tourisme en Wallonie">
-                <img src="++theme++gites.theme/images/logo_wallonie.gif"
+                <img src="++theme++gites.theme/images/logo_comissariat_general_tourisme.png"
                      alt="Tourisme en Wallonie"
                      title="Tourisme en Wallonie" /></a>
             <span class="partenaire-info">
                 Commissariat g&eacute;n&eacute;ral<br >
                 au Tourisme<br />
-                de la R&eacute;gion wallonne<br />
             </span>
         </div>
         <div id="wallonie-bruxelles-tourisme">
             <a href="http://www.wallonietourisme.be/"
                target="_blank"
                title="Wallonie-Bruxelles tourisme">
-                <img src="++theme++gites.theme/images/logo_wallonie_bruxelles_tourisme.png"
+                <img src="++theme++gites.theme/images/logo_wallonie_belgique_tourisme.png"
                      alt="Wallonie-Bruxelles tourisme"
                      title="Wallonie-Bruxelles tourisme" /></a>
             <span class="partenaire-info">
-                    Wallonie-Bruxelles
-                    <br/>tourisme.
+                    Wallonie Belgique
+                    <br/>Tourisme.
             </span>
         </div>
         <div class="break-float"></div>
@@ -132,17 +131,17 @@
             <a href="http://www.tourismewallonie.be/"
                target="_blank"
                title="Tourisme en Wallonie">
-                <img src="++theme++gites.theme/images/logo_wallonie_small.gif"
-                     alt="Tourisme en Wallonie"
-                     title="Tourisme en Wallonie" /></a>
+                <img src="++theme++gites.theme/images/logo_comissariat_general_tourisme_small.png"
+                     alt="Wallonie Tourisme CGT"
+                     title="Wallonie Tourisme CGT" /></a>
         </div>
         <div id="wallonie-bruxelles-tourisme">
             <a href="http://www.wallonietourisme.be/"
                target="_blank"
                title="Wallonie-Bruxelles tourisme">
-                <img src="++theme++gites.theme/images/logo_wallonie_bruxelles_tourisme_small.png"
-                     alt="Wallonie-Bruxelles tourisme"
-                     title="Wallonie-Bruxelles tourisme" /></a>
+                <img src="++theme++gites.theme/images/logo_wallonie_belgique_tourisme_small.png"
+                     alt="Wallonie-Belgique-Tourisme"
+                     title="Wallonie-Belgique-Tourisme" /></a>
         </div>
         <div class="break-float"></div>
     </div>
