@@ -436,7 +436,8 @@ reservez #d81b60
         font-size:10px;
         color:#555;
     }
-    div#info-bloc-sup div#nom-hebergement{
+    div#info-bloc-sup div#nom-hebergement,
+    div#nom-hebergement{
         clear:both;
         position:relative;
         top:-3px;
@@ -509,6 +510,7 @@ reservez #d81b60
         font-size:1.2em;
         line-height:23px;
         height:25px;
+        padding-left:2px;
     }
     div#typetype .texte-vertical{
         display:block;
@@ -1309,6 +1311,7 @@ reservez #d81b60
         font-size:1.2em;
         line-height:23px;
         height:25px;
+        padding-left:2px;
     }
     div#typetype .texte-vertical{
         display:block;
@@ -2147,7 +2150,8 @@ reservez #d81b60
         font-size:10px;
         color:#555;
     }
-    div#info-bloc-sup div#nom-hebergement{
+    div#info-bloc-sup div#nom-hebergement,
+    div#nom-hebergement{
         clear:both;
         position:relative;
         bottom:-3px;
@@ -2194,6 +2198,7 @@ reservez #d81b60
         font-size:1.2em;
         line-height:23px;
         height:25px;
+        padding-left:2px;
     }
     div#typetype .texte-vertical{
         display:block;

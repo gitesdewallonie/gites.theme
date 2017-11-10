@@ -132,6 +132,11 @@ border: 1px solid #329FD7 !important;
     padding: 0.5em 0em 0.5em 1em;
 }
 
+#content a:link, dl.portlet a:link {
+    color: #205c90;
+    border-bottom:none !important;
+}
+
 
 /*** CALENDAR PICKER FIX ***/
 #ui-datepicker-div {
@@ -231,7 +236,8 @@ border:1px solid #000;
 
 
 /*** EDIT BAR ***/
-#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {
+#contentActionMenus dl.actionMenu a,
+#contentActionMenus dl.actionMenu.activated dd {
 z-index: 1500;
 }
 
@@ -735,7 +741,7 @@ div#sendTo-printThis a,
 div#back-button a{
 display:inline-block;
 width:42px;
-height:35px;
+height:33px;
 text-align:center;
 border-bottom:none !important;
 }
@@ -1173,17 +1179,26 @@ div#listing-result-block div#sort label{
 display:block;
 }
 
-div.hebergement-gite-listing-detail{
+.type-chambre{
+    color:#119eda !important;
 }
 
-div.hebergement-chambre-listing-detail{
+.type-gite{
+    color:#15b78f !important;
+}
+
+.type-groupeement{
+    color:#fe721a !important;
 }
 
 div#info-bloc-sup div#nom-hebergement a.gite-nom:link,
-div#info-bloc-sup div#nom-hebergement a.gite-nom:visited{
+div#info-bloc-sup div#nom-hebergement a.gite-nom:visited,
+div#nom-hebergement a.gite-nom:link,
+div#nom-hebergement a.gite-nom:visited{
 color:#15b78f !important;
 text-decoration: none;
 border-bottom: none;
+padding-left:2px;
 }
 
 div#info-bloc-sup div#nom-hebergement a.gite-nom:hover{
@@ -1191,10 +1206,13 @@ color:#007e5b !important;
 }
 
 div#info-bloc-sup div#nom-hebergement a.chambre-nom:link,
-div#info-bloc-sup div#nom-hebergement a.chambre-nom:visited{
+div#info-bloc-sup div#nom-hebergement a.chambre-nom:visited,
+div#nom-hebergement a.chambre-nom:link,
+div#nom-hebergement a.chambre-nom:visited{
 color:#119eda !important;
 text-decoration: none;
 border-bottom: none;
+padding-left:2px;
 }
 
 div#info-bloc-sup div#nom-hebergement a.chambre-nom:hover{
