@@ -249,13 +249,13 @@ reservez #d81b60
     div#footer div#reseaux-sociaux-mobile{
     }
     div#footer div#reseaux-sociaux-mobile ul{
-        width:230px;
-        margin:0px auto;
+        width:335px;
+        margin:4px auto 0px auto;
     }
     div#footer div#reseaux-sociaux-mobile li{
         display:inline-block;
-        margin-top:4px;
-        margin-bottom:-8px;
+        margin-top:10px;
+        margin-bottom:5px;
     }
     div#footer div#reseaux-sociaux{
         display:none;
@@ -278,15 +278,17 @@ reservez #d81b60
     }
     div#footer div#reseaux-sociaux-mobile ul li a{
         display:block;
-        height:35px;
-        padding-left:52px;
-        padding-top:15px;
+        height:42px;
+        width:42px;
         background-repeat:no-repeat;
         background-position:left top;
-        margin:0px 10px;
+        margin:0px 18px;
     }
     div#footer div#reseaux-sociaux-mobile ul li #btn-facebook{
         background-image:url(../images/icone_sociale_facebook_small.png);
+    }
+    div#footer div#reseaux-sociaux-mobile ul li #btn-instagram{
+        background-image:url(../images/icone_sociale_instagram_small.png);
     }
     div#footer div#reseaux-sociaux-mobile ul li #btn-twitter{
         background-image:url(../images/icone_sociale_twitter_small.png);
@@ -1076,12 +1078,12 @@ reservez #d81b60
     /*** FOOTER ***/
     div#footer{
         background-color:#666;
-        height:414px;
+        height:60px;
         padding-left:25px;
         color:#ddd;
     }
     div#footer div#reseaux-sociaux-mobile{
-        display:none;
+        /*display:none;*/
     }
     div#footer div#reseaux-sociaux,
     div#footer div#contact,
@@ -1117,16 +1119,19 @@ reservez #d81b60
     div#footer div#reseaux-sociaux ul.contact-ul li a:hover{
         color:#fff !important;
     }
-    div#footer div#reseaux-sociaux ul.contact-ul li #btn-facebook{
+    div#footer div#reseaux-sociaux ul li #btn-facebook{
         background-image:url(../images/icone_sociale_facebook.png);
     }
-    div#footer div#reseaux-sociaux ul.contact-ul li #btn-twitter{
+    div#footer div#reseaux-sociaux ul li #btn-instagram{
+        background-image:url(../images/icone_sociale_instagram.png);
+    }
+    div#footer div#reseaux-sociaux ul li #btn-twitter{
         background-image:url(../images/icone_sociale_twitter.png);
     }
-    div#footer div#reseaux-sociaux ul.contact-ul li #btn-google{
+    div#footer div#reseaux-sociaux ul li #btn-google{
         background-image:url(../images/icone_sociale_googleplus.png);
     }
-    div#footer div#reseaux-sociaux ul.contact-ul li #btn-youtube{
+    div#footer div#reseaux-sociaux ul li #btn-youtube{
         background-image:url(../images/icone_sociale_youtube.png);
     }
     /*** COLOPHON  PARTENAIRES LOGO***/
@@ -1939,19 +1944,22 @@ reservez #d81b60
     div#footer div#reseaux-sociaux ul.contact-ul li a{
         display:block;
         height:35px;
-        padding-left:52px;
+        width:42px;
         padding-top:15px;
         color:#ddd !important;
         font-size:0.8em;
         background-repeat:no-repeat;
         background-position:left top;
-        margin:10px 0px;
+        margin:10px auto;
     }
     div#footer div#reseaux-sociaux ul.contact-ul li a:hover{
         color:#fff !important;
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-facebook{
         background-image:url(../images/icone_sociale_facebook.png);
+    }
+    div#footer div#reseaux-sociaux ul.contact-ul li #btn-instagram{
+        background-image:url(../images/icone_sociale_instagram.png);
     }
     div#footer div#reseaux-sociaux ul.contact-ul li #btn-twitter{
         background-image:url(../images/icone_sociale_twitter.png);

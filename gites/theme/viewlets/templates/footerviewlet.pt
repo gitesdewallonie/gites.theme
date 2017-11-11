@@ -8,21 +8,24 @@
                 <a href="https://www.facebook.com/GitesdeWallonie"
                    target="_blank"
                    id="btn-facebook">
-                    <span i18n:translate="fans_facebook">Devenez fans sur facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/gitesdewallonie/"
+                   target="_blank"
+                   id="btn-instagram">
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/GitesWallonie"
                    target="_blank"
                    id="btn-twitter">
-                    <span i18n:translate="suivez_nous_twitter">Suivez-nous sur twitter</span>
                 </a>
             </li>
             <li>
                 <a href="https://www.youtube.com/channel/UCgvYj4ev_tlUedjJ1Pf1VDg"
                    target="_blank"
                    id="btn-youtube">
-                    <span i18n:translate="regardez_nous_youtube">Regardez-nous sur youtube</span>
                 </a>
             </li>
         </ul>
@@ -36,19 +39,17 @@
                 </a>
             </li>
             <li>
+                <a href="https://www.instagram.com/gitesdewallonie/"
+                   target="_blank"
+                   id="btn-instagram">
+                </a>
+            </li>
+            <li>
                 <a href="https://twitter.com/GitesWallonie"
                    target="_blank"
                    id="btn-twitter">
                 </a>
             </li>
-            <!--
-            <li>
-                <a href="https://plus.google.com/101294589232969727782"
-                   target="_blank"
-                   id="btn-google">
-                </a>
-            </li>
-            -->
             <li>
                 <a href="https://www.youtube.com/channel/UCgvYj4ev_tlUedjJ1Pf1VDg"
                    target="_blank"
