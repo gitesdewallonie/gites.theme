@@ -19,7 +19,7 @@
     </div>
 
     <div id="partenaire">
-        <div id="eurogite" tal:condition="not: context/@@isMobile | nothing">
+        <div id="eurogite">
             <a href="http://www.eurogites.org"
                target="_blank"
                title="Rural and Country Tourism in Europe">
@@ -101,7 +101,6 @@
 
     <div id="partenaire-mobile">
         <div id="feader">
-            <br />
             <a href="http://ec.europa.eu/agriculture/rurdev/index_fr.htm"
                target="_blank"
                title="FEADER">
@@ -134,8 +133,7 @@
                      alt="Wallonie-Belgique-Tourisme"
                      title="Wallonie-Belgique-Tourisme" /></a>
         </div>
-        <br />
-        <div id="eurogite" tal:condition="not: context/@@isMobile | nothing">
+        <div id="eurogite">
             <a href="http://www.eurogites.org"
                target="_blank"
                title="Rural and Country Tourism in Europe">

@@ -325,8 +325,8 @@ reservez #d81b60
     div#colophon div#partenaire-mobile div#feder,
     div#colophon div#partenaire-mobile div#wallonie-tourisme,
     div#colophon div#partenaire-mobile div#wallonie-bruxelles-tourisme{
-        float:left;
-        margin:5px 8px;
+        display:block;
+        margin:auto;
         }
 
     /*** LISTING PACKAGE ***/
@@ -1153,7 +1153,6 @@ reservez #d81b60
     div#colophon div#partenaire div#wallonie-tourisme,
     div#colophon div#partenaire div#wallonie-bruxelles-tourisme{
         display:block;
-        margin:auto;
         margin:5px 8px;
     }
 
