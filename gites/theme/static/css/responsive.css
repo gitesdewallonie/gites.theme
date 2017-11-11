@@ -538,6 +538,7 @@ reservez #d81b60
         margin-top:19px;
         color:#777;
         text-align:center;
+
     }
     div.hebergement-gite-listing-detail div#info-bloc-inf div#capacite-max,
     div.hebergement-gite-listing-detail div#info-bloc-inf div#nbre-chambre,
@@ -1151,7 +1152,8 @@ reservez #d81b60
     div#colophon div#partenaire div#feder,
     div#colophon div#partenaire div#wallonie-tourisme,
     div#colophon div#partenaire div#wallonie-bruxelles-tourisme{
-        float:left;
+        display:block;
+        margin:auto;
         margin:5px 8px;
     }
 

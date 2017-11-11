@@ -110,7 +110,6 @@
                      title="FEADER" /></a>
         </div>
         <div id="feder">
-            <br />
             <a href="http://plushaut.europe.wallonie.be/leurope-nous"
                target="_blank"
                title="FEADER">
@@ -119,14 +118,6 @@
                      title="FEADER" /></a>
         </div>
         <div class="break-float"></div>
-        <div id="eurogite" tal:condition="not: context/@@isMobile | nothing">
-            <a href="http://www.eurogites.org"
-               target="_blank"
-               title="Rural and Country Tourism in Europe">
-                <img src="++theme++gites.theme/images/logo_eurogit_small.png"
-                     alt="Eurogites"
-                     title="Eurogites" /></a>
-        </div>
         <div id="wallonie-tourisme">
             <a href="http://www.tourismewallonie.be/"
                target="_blank"
@@ -142,6 +133,15 @@
                 <img src="++theme++gites.theme/images/logo_wallonie_belgique_tourisme_small.png"
                      alt="Wallonie-Belgique-Tourisme"
                      title="Wallonie-Belgique-Tourisme" /></a>
+        </div>
+        <br />
+        <div id="eurogite" tal:condition="not: context/@@isMobile | nothing">
+            <a href="http://www.eurogites.org"
+               target="_blank"
+               title="Rural and Country Tourism in Europe">
+                <img src="++theme++gites.theme/images/logo_eurogit_small.png"
+                     alt="Eurogites"
+                     title="Eurogites" /></a>
         </div>
         <div class="break-float"></div>
     </div>
