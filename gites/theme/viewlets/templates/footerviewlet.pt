@@ -35,25 +35,33 @@
             <li>
                 <a href="https://www.facebook.com/GitesdeWallonie"
                    target="_blank"
-                   id="btn-facebook">
+                   id="btn-facebook"
+                   alt="Facebook"
+                   title="Facebook">
                 </a>
             </li>
             <li>
                 <a href="https://www.instagram.com/gitesdewallonie/"
                    target="_blank"
-                   id="btn-instagram">
+                   id="btn-instagram"
+                   alt="Instagram"
+                   title="Instagram">
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/GitesWallonie"
                    target="_blank"
-                   id="btn-twitter">
+                   id="btn-twitter"
+                   alt="Twitter"
+                   title="Twitter">
                 </a>
             </li>
             <li>
                 <a href="https://www.youtube.com/channel/UCgvYj4ev_tlUedjJ1Pf1VDg"
                    target="_blank"
-                   id="btn-youtube">
+                   id="btn-youtube"
+                   alt="You Tube"
+                   title="You Tube">
                 </a>
             </li>
         </ul>

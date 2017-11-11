@@ -1116,6 +1116,7 @@ reservez #d81b60
         background-position:left top;
         margin:10px 0px;
     }
+
     div#footer div#reseaux-sociaux ul.contact-ul li a:hover{
         color:#fff !important;
     }
@@ -1951,6 +1952,11 @@ reservez #d81b60
         background-repeat:no-repeat;
         background-position:left top;
         margin:10px auto;
+        transition: all .2s ease-in-out;
+    }
+    div#footer div#reseaux-sociaux ul.contact-ul li a:hover{
+        transform: scale(1.4);
+        transition: all 200ms ease-in;
     }
     div#footer div#reseaux-sociaux ul.contact-ul li a:hover{
         color:#fff !important;
@@ -2017,6 +2023,7 @@ reservez #d81b60
     div#colophon div#partenaire div#wallonie-bruxelles-tourisme{
         margin:17px 20px 0px 0px;
     }
+
 
     /*** LISTING PACKAGE ***/
     .float-left{
