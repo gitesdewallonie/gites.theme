@@ -1944,9 +1944,8 @@ reservez #d81b60
     }
     div#footer div#reseaux-sociaux ul.contact-ul li a{
         display:block;
-        height:35px;
-        width:42px;
-        padding-top:15px;
+        height:55px;
+        width:55px;
         color:#ddd !important;
         font-size:0.8em;
         background-repeat:no-repeat;
