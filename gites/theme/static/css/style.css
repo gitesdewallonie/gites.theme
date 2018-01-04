@@ -1003,8 +1003,15 @@ display:block;
     color:#15b78f !important;
 }
 
-.type-groupeement{
+.type-groupement{
     color:#fe721a !important;
+}
+div#icone-peb-listing,
+div#icone-peb-listing{
+    position:absolute;
+    top:7px;
+    left:112px;
+    width:90px;
 }
 
 div#info-bloc-sup div#nom-hebergement a.gite-nom:link,
