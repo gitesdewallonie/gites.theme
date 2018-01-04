@@ -84,7 +84,6 @@ color:#FFF;
 }
 
 div#description-calendrier{
-/*display:none;*/
 }
 
 .break-float{
@@ -283,33 +282,6 @@ div#reserver-en-ligne{
 width:150px;
 }
 
-/*** HEADER-LIEN : derminiere minute - reserver - shop ***/
-/*
-div#header-lien{
-display:table;
-float:right;
-margin-right:80px;
-}
-
-div#header-derniere-minute,
-div#reserver-en-ligne{
-display:table-cell;
-vertical-align:bottom;
-height:63px;
-border-left:5px solid rgb(201,37,43);
-padding-left:10px;
-padding-bottom:5px;
-font-size:1.2em;
-}
-*/
-
-/*
-div#header-derniere-minute a,
-div#reserver-en-ligne a{
-color:#c9252b !important;
-}
-*/
-
 div#header-derniere-minute a:hover,
 div#reserver-en-ligne a:hover{
 color:#c9252b !important;
@@ -333,21 +305,18 @@ color:#f79a05 !important;
 
 /*** ZONE PRODUIT PACKAGE CAROUSEL ***/
 div#carrousssel-produit-package{
-/*margin-bottom:-60px;*/
 min-height:5px;*/
 }
 
 div#zone-produit-package{
 position:relative;
 top:-40px;
-/*height:300px;*/
 }
 
 div#zone-photo{
 }
 
 #package-carousel {
-/*height: 333px;*/
 margin-bottom: 0px;
 }
 
@@ -416,7 +385,6 @@ content:"\f191";
 
 /*** cas de safari ***/
 ::-webkit-input-placeholder{
-/*font-size:10px;*/
 }
 ::placeholder{
 color:#777;
@@ -443,19 +411,6 @@ width:200px;
 background: #eeeeee;
 }
 
-/*
-#je-recherche .trouver{
-border:none;
-border-radius:0px;
-background-color:#fff;
-height:35px;
-cursor: pointer;
-font-size:1.1em;
-padding:2px 32px;
-}
-*/
-
-
 #info{
 margin-left:130px;
 margin-bottom:-12px;
@@ -465,9 +420,6 @@ margin-bottom:-12px;
 margin-left:7px;
 margin-bottom:28px;
 }
-
-
-
 
 #zone-packperm-membre{
 height:44px;
@@ -486,7 +438,6 @@ float:left;
 width:400px;
 margin-top:8px;
 background-color:#ccc;
-/*display:none;*/
 }
 
 
@@ -565,8 +516,6 @@ color:#4f0000;
 }
 
 .plus-info{
-/*width:230px;*/
-/*border-top:1px dashed #bbb;*/
 text-align:right;
 padding-right:8px;
 }
@@ -639,54 +588,6 @@ div#content.ploneroot h1{
     text-align:left;
     width:92%%;
 }
-
-
-/*** ZONE-VIDEO ***/
-/*
-div#zone-video{
-min-height:540px;
-}
-*/
-
-/*** ZONE TROMBINO FACEBOOK ***/
-/*
-div#trombino-facebook{
-height: 284px;
-width:100%;
-margin:0px auto;
-background-image:url(../images/bg_zone_facebook.jpg);
-}
-*/
-/*** FACEBOOK ***/
-/*
-#trombino-facebook{
-width: 425px;
-}
-*/
-
-
-/*
-div#trombino-facebook #news-letter-link{
-float:left;
-}
-*/
-/*
-div#trombino-facebook #facebook-block{
-float:right;
-}
-
-div#trombino-facebook #news-letter-link,
-div#trombino-facebook #facebook-block{
-margin:8px 40px 0px 0px;
-}
-
-div#trombino-facebook #news-letter-link{
-margin-top:5px;
-}
-*/
-
-
-
 
 /*** BLOC BOUTON SEND PRINT BACK TWEET FB TOP DESCRIPTION ***/
 div#button-top-descritpion{
@@ -766,50 +667,6 @@ text-align:left;
 width:100%;
 padding-left:20px;
 }
-
-/*** CONNEXION MEMEBRE ***/
-/*
-section#connexion-membre{
-border-collapse:separate;
-border-spacing:6px;
-margin:auto;
-margin-bottom:4px;
-}
-*/
-/*
-div#mygdw,
-div#devenir-membre{
-color:#fff !important;
-cursor:pointer;
-width:198px;
-height:33px;
-line-height:33px;
-text-align:center;
-border:1px solid rgba(155,155,155,0.5);
-border-radius:18px;
-margin:30px 20px;
-background-color:#c9252b;
-}
-*/
-/*
-div#mygdw a,
-div#devenir-membre a{
-display:inline-block;
-width:198px;
-height:33px;
-border-radius:18px;
-color:#fff !important;
-}
-div#mygdw{
-float:left;
-margin-left:200px;
-}
-div#devenir-membre{
-float:right;
-margin-right:200px;
-}
-*/
-
 
 
 /*** FOOTER ***/
@@ -1008,40 +865,6 @@ width:100%;
 margin-top:20px;
 }
 
-/*
-div#aside-container{
-height:100px;
-width:1050px;
-margin:auto;
-}
-
-div#aside-content{
-z-index:1000;
-width:1050px;
-margin:auto;
-border-radius:18px;
-background-color:#ff9b00;
-}
-
-div#aside-content h1{
-margin-left:40px;
-margin-top: 5px;
-color:#333;
-text-shadow:1px 1px 1px rgba(250,250,250,0.5);
-}
-div#aside-content div#aside-info{
-margin-left:60px;
-color:#333;
-}
-div#aside-content div#aside-menu{
-width:300px;
-position:relative;
-left:730px;
-top:-40px;
-text-align:right;
-font-size:1.2em;
-}
-*/
 div#package-large-photo{
 height:500px;
 width:900px;
@@ -1085,8 +908,6 @@ div#listing-result-gite-theme,
 div.filter_type{
 background-color:#e5d8e8;
 border:1px solid #ddd;
-/*border-radius:12px;*/
-/*box-shadow:2px 2px 4px rgba(50,50,50,0.5);*/
 min-height:300px;
 min-width:200px;
 padding:10px;
@@ -1125,12 +946,7 @@ div#listing-result-advanced-gite-theme {
 width:222px;
 float:left;
 }
-/*
-div#heb-listing div#listing-result.list-container div#listing-result-block{
-float:right;
-width:-moz-available;
-}
-*/
+
 .advanced-search div#heb-listing div#listing-result.list-container div#listing-result-block {
 width:800px;
 }
@@ -1248,32 +1064,6 @@ background-position:left 0px;
 .no-smoke{
 background-position:left -43px;
 }
-
-/*
-div#date-promotion{
-position:relative;
-top:2px;
-height:20px;
-font-size:0.9em;
-font-family:arial, sans-serif;
-font-weight:bold;
-color:#000;
-padding-left:15px;
-background:#ff9b00;
-border-radius:20px 0px 20px 0px;
-box-shadow:1px 1px 1px rgba(255,255,255,1),
-           -1px -1px 1px rgba(135,0,0,0.3);
-}
-*/
-
-/*** DESCRIPTION HEBERGEMENT ***/
-/*
-body.template-hebergement_view #content-core {
-margin-top:-36px;
-border:1px solid #F00;
-height:4100px;
-}
-*/
 
 body.template-hebergement_view div.overlay-ajax #content-core {
 margin-top:0px;
@@ -1863,7 +1653,7 @@ div#signaler-un-probleme-formulaire label,
 div#zone-proprio-formulaire label,
 div#zone-proprio-galerie label,
 div#photoproprio-edition-fieldset label{
-width:230px;
+/*width:230px;*/
 cursor:pointer;
 margin-top:15px;
 font-size:14px;
@@ -2294,3 +2084,62 @@ background-color: white;
 table.hebergement-tarif-display td{
     width: 50%;
 }
+
+
+/*** CERTIFICAT PEB ***/
+
+.logo_peb{
+    width:155px;
+    height:45px;
+    padding-top:12px;
+    background-repeat:no-repeat;
+    background-position:top right;
+}
+#logo_peb_a{
+    background-image:url(../images/logo_peb_a.png);
+}
+#logo_peb_ap{
+    background-image:url(../images/logo_peb_ap.png);
+}
+#logo_peb_app{
+    background-image:url(../images/logo_peb_app.png);
+}
+#logo_peb_b{
+    background-image:url(../images/logo_peb_b.png);
+}
+#logo_peb_c{
+    background-image:url(../images/logo_peb_c.png);
+}
+#logo_peb_d{
+    background-image:url(../images/logo_peb_d.png);
+}
+#logo_peb_e{
+    background-image:url(../images/logo_peb_e.png);
+}
+#logo_peb_f{
+    background-image:url(../images/logo_peb_f.png);
+}
+#logo_peb_g{
+    background-image:url(../images/logo_peb_g.png);
+}
+#logo_peb_exemple{
+    display:block;
+    margin:auto;
+    box-shadow:4px 4px 8px rgba(50,50,50,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
