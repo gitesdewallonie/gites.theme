@@ -1503,6 +1503,15 @@ text-align: center;
 width: 60%;
 }
 
+div#zone-proprio-certificat-peb-info{
+    width:355px;
+    margin:30px auto;
+    padding:8px 20px;
+    border-radius:18px;
+    background: rgb(255,255,255);
+
+}
+
 #gallery-form #progress, #proprio-form #progress {
 position:relative;
 width:400px;
