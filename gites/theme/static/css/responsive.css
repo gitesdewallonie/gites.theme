@@ -516,8 +516,6 @@ reservez #d81b60
     }
     div#typetype .texte-vertical{
         display:block;
-        text-align:left;
-        padding-left:5px;
         text-transform:capitalize;
     }
     div#vignette{
@@ -1322,8 +1320,6 @@ reservez #d81b60
     }
     div#typetype .texte-vertical{
         display:block;
-        text-align:left;
-        padding-left:5px;
         text-transform:capitalize;
     }
     div#vignette{
@@ -2225,16 +2221,15 @@ reservez #d81b60
     div#typetype{
         position:relative;
         top:7px;
-        clear:both;
         font-size:1.2em;
         line-height:23px;
         height:25px;
-        padding-left:2px;
+        width: 169px;
+        text-align:center;
+        margin:auto;
     }
     div#typetype .texte-vertical{
         display:block;
-        text-align:left;
-        padding-left:5px;
         text-transform:capitalize;
     }
     div#vignette{
