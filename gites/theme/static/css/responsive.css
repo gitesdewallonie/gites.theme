@@ -2173,7 +2173,7 @@ reservez #d81b60
     div#info-bloc-sup div#distance{
         clear:both;
         position:relative;
-        top:50px;
+        top:51px;
         left:128px;
         font-weight:normal;
         font-size:10px;
@@ -2183,7 +2183,7 @@ reservez #d81b60
     div#nom-hebergement{
         clear:both;
         position:relative;
-        bottom:-3px;
+        top:-33px;
         left:2px;
         font-family:'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
         font-size:17px;
@@ -2195,7 +2195,7 @@ reservez #d81b60
     div#info-bloc-sup div#type{
         clear:both;
         position:relative;
-        bottom:-11px;
+        top:31px;
         left:131px;
         width:165px;
         font-size:0.9em;
@@ -2223,6 +2223,8 @@ reservez #d81b60
         padding:0px;
     }
     div#typetype{
+        position:relative;
+        top:7px;
         clear:both;
         font-size:1.2em;
         line-height:23px;
