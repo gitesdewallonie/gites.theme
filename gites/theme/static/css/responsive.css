@@ -2179,7 +2179,7 @@ reservez #d81b60
     div#nom-hebergement{
         clear:both;
         position:relative;
-        top:-15px;
+        top:0px;
         left:2px;
         font-family:'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
         font-size:17px;
