@@ -324,6 +324,7 @@ margin-bottom: 0px;
 overflow:hidden;
 margin: auto;
 position:relative;
+height:560px;
 }
 
 #package-carousel .carousel-inner .item img {
