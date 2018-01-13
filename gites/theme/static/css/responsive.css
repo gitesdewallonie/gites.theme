@@ -2159,49 +2159,57 @@ reservez #d81b60
     }
     div#info-bloc-sup{
         clear:both;
-        height:45px;
+        height:110px;
     }
     .digit{
         width:35px;
         margin-left:265px;
         margin-top:-23px;
     }
-    div#info-bloc-sup div#distance{
-        clear:both;
-        position:relative;
-        top:51px;
-        left:128px;
-        font-weight:normal;
-        font-size:10px;
-        color:#555;
-    }
     div#info-bloc-sup div#nom-hebergement,
     div#nom-hebergement{
-        clear:both;
         position:relative;
         top:0px;
-        left:2px;
+        left:0px;
+        height:60px;
+        padding-top:4px;
         font-family:'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
         font-size:17px;
         font-weight:normal;
         color:#222;
-        margin-top:auto;
         text-align:center;
     }
+
+    div#info-bloc-sup div#distance{
+        position:absolute;
+        bottom:83px;
+        left:0px;
+        width:60px;
+        font-weight:normal;
+        font-size:10px;
+        color:#555;
+        padding-left:4px;
+    }
+    div#info-bloc-sup div#commune{
+        position:absolute;
+        bottom:66px;
+        left:0px;
+        width:150px;
+        font-size:10px;
+        padding-left:4px;
+    }
     div#info-bloc-sup div#type{
-        clear:both;
-        position:relative;
-        top:50px;
-        left:131px;
-        width:165px;
+        position:absolute;
+        bottom:66px;
+        left:165px;
+        width:130px;
         font-size:0.9em;
         color:#cf000e;
         text-align:right;
     }
     div#info-bloc-inf{
-        clear:both;
-        margin-top:8px;
-        height:85px;
+        /*margin-top:8px;*/
+        /*height:85px;*/
     }
     div.hebergement-gite-listing-detail,
     div.hebergement-chambre-listing-detail{
@@ -2220,7 +2228,7 @@ reservez #d81b60
     }
     div#typetype{
         position:relative;
-        top:7px;
+        top:2px;
         font-size:1.2em;
         line-height:23px;
         height:25px;
@@ -2251,7 +2259,7 @@ reservez #d81b60
         float:left;
         width:75px;
         height:66px;
-        margin-top:19px;
+        /*margin-top:19px;*/
         color:#777;
         text-align:center;
     }
@@ -2285,15 +2293,6 @@ reservez #d81b60
     }
     div#info-bloc-inf div#icon-confort-smoker{
         display:none;
-    }
-    div#info-bloc-inf div#commune{
-        clear:both;
-        position:relative;
-        top:-87px;
-        left:3px;
-        margin-right:5px;
-        font-weight:normal;
-        font-size:10px;
     }
     div#date-promotion{
         position:relative;
