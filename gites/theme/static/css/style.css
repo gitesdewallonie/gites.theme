@@ -2146,17 +2146,8 @@ table.hebergement-tarif-display td{
 }
 
 
+/* Fix datepickers when used in overlays */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#ui-datepicker-div {
+    z-index: 10001 !important;
+}
